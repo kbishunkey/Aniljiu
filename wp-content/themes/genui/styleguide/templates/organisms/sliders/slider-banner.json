@@ -1,0 +1,26 @@
+{
+  "banners" : [
+    {
+      "image": "../assets/images/pages/slider1.jpg",
+      "title": "Duis vitae lobortis odio, sed convallis lacus",
+      "link": "#",
+      "content": "Sed euismod blandit leo. Mauris malesuada mi id mi lacinia scelerisque. Vivamus nec nibh nec sem sagittis mollis et luctus neque. Morbi eget ligula euismod, auctor dui at, suscipit est. In a tristique leo, eu tristique augue. Quisque et placerat velit."
+
+    },
+    {
+      "image": "../assets/images/pages/slider2.jpg",
+      "title": "Vivamus nec nibh nec sem sagittis mollis et luctus neque.",
+      "link": "#",
+      "content": "Sed euismod blandit leo. Mauris malesuada mi id mi lacinia scelerisque. Vivamus nec nibh nec sem sagittis mollis et luctus neque. Morbi eget ligula euismod, auctor dui at, suscipit est. In a tristique leo, eu tristique augue. Quisque et placerat velit."
+
+    },
+    {
+      "image": "../assets/images/pages/slider3.jpg",
+      "title": "Vivamus nec nibh nec sem sagittis mollis et luctus neque.",
+      "link": "#",
+      "content": "Sed euismod blandit leo. Mauris malesuada mi id mi lacinia scelerisque. Vivamus nec nibh nec sem sagittis mollis et luctus neque. Morbi eget ligula euismod, auctor dui at, suscipit est. In a tristique leo, eu tristique augue. Quisque et placerat velit."
+
+    }
+  ]
+
+}

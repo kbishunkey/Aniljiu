@@ -1,0 +1,148 @@
+
+.woocommerce-page {
+  .#{$single-template-class-name} {
+
+    .#{$single-template-class-name}__content {
+
+
+
+    }
+
+  }
+}
+.#{$single-template-class-name} {
+  .woocommerce,
+  .-woocommerce{
+
+    font-family: font-family-css( primary );
+
+    .col2-set {
+      margin-left: -2rem;
+      margin-right: -2rem;
+
+    }
+
+    .col-1,
+    .col-2 {
+
+      max-width: none;
+
+    }
+
+    .button {
+
+      font-family: font-family-css( primary );
+
+      &:hover {
+        background: none;
+      }
+
+
+
+      @include button-label-core;
+      border: $button-primary-border;
+      @include btn-specify(primary);
+
+
+
+      &.alt {
+
+        background: none;
+
+        &:hover {
+          background: none;
+        }
+
+      }
+
+      &.add_to_cart_button {
+        @include btn-specify(secondary);
+        font-size: font-size(x-small);
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+
+      &.single_add_to_cart_button {
+        @include btn-specify(secondary);
+
+        &:hover {
+          color: get-color-css(text);
+        }
+      }
+
+    }
+
+    // products price
+
+    .single-product,
+    .products .product{
+
+      .price {
+
+        color: get-color-css(primary);
+
+      }
+
+    }
+
+    // on sale
+
+    .onsale {
+      @extend %#{$class-name-chips-label};
+      background-color: get-color-css(primary);
+      color: get-color-css(invert);
+      min-height: initial;
+    }
+
+
+
+  }
+
+  // widgets
+
+  .-woocommerce {
+
+    .button {
+
+      @include type-setting(xx-small);
+      padding: $button-small-padding;
+
+      &:hover {
+        color: get-color-css(invert);
+      }
+
+    }
+
+    // mini cart
+
+    .woocommerce-mini-cart__total {
+
+      margin: 1rem 0;
+      text-align: right;
+
+    }
+
+    .woocommerce-mini-cart__buttons {
+      text-align: right;
+    }
+
+    // product categories
+
+    .product-categories {
+
+      @extend %#{$class-name-list};
+      @extend %#{$class-name-list}-icon-pointer;
+
+      .cat-item {
+
+        @extend %#{$class-name-list}-icon-pointer__item;
+
+
+
+      }
+
+    }
+
+  }
+
+}

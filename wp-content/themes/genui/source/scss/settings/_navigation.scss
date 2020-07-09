@@ -1,0 +1,41 @@
+//Navigation - submenu
+$sub-nav-width: 220px;
+
+//Main Navigation
+
+$main-nav-bg-color:  get-color(invert);
+$main-nav-text-color: text;
+$main-nav-font-family: font-family-css(secondary);
+$main-nav-font-size-level: 0;
+
+$main-nav-item-padding: 0px 15px;
+$main-nav-item-decorator-color: get-color(primary);
+
+
+$main-nav-sub-nav-item-padding: 3px 20px;
+$main-nav-sub-nav-font-size: 1.4rem;
+$main-nav-sub-nav-line-height: 1 * 1.3;
+$main-nav-sub-nav-item-padding: 0.5rem 2rem;
+$main-nav-sub-nav-border-bottom: 1px solid get-color(gray4);
+$main-nav-sub-nav-color: get-color(text);
+$main-nav-sub-nav-color-hover: get-color(invert);
+$main-nav-sub-nav-background-hover: get-color(primary);
+$main-nav-header-width: 24.5rem;
+$main-nav-close-width: 4rem;
+
+//Main Navbar
+$navbar-main-height: 7.7rem;
+$navbar-main-icon-item-height: 4rem;
+$main-nav-search-height: 4rem;
+$fixed-navbar-box-shadow: 0 3px 3px -2px rgba(0,0,0,.2);
+$fixed-navbar-transition: all 0.2s ease;
+
+//Pagination
+
+$pagination-btn-size: 3.2rem;
+$pagination-btn-line-height: 2.9rem;
+$pagination-btn-padding: $button-small-padding;
+$pagination-btn-space-between: 0.5rem;
+
+
+

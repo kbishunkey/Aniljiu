@@ -1,0 +1,47 @@
+/*
+Overall Box
+
+
+Labels for displaying info
+
+.-card-stack - card stacked version
+.-text-box - large amount of text
+.-card-stack-on-hover - stacked version on hover
+
+
+Markup: ../../../../styleguide/templates/organisms/box-overall.html
+
+
+Style guide: Organisms.box-overall
+
+Wrapper:
+<div style="max-width:900px">
+<wrapper-content/>
+</div>
+
+*/
+
+$class-name-box-overall: rocksite-o-box-overall;
+.#{$class-name-box-overall} {
+
+  .#{$class-name-box-overall}__header {
+
+    margin-bottom: 2rem;
+
+    .#{$class-name-box-overall}__header__title {
+
+      @extend %#{$class-name-heading};
+      @extend %-h4;
+
+
+    }
+
+  }
+
+  .#{$class-name-box-overall}__content {
+
+    position: static;
+
+  }
+
+}

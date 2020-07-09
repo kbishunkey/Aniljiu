@@ -1,0 +1,36 @@
+<div class="rocksite-o-content-header {{modifier_class}}">
+
+
+	<div class="rocksite-o-content-header__breadcrumbs">
+		{{> "breadcrumbs"}}
+	</div>
+
+	{{#if modifier_class}}
+
+	<div class="rocksite-o-content-header__lead">
+		<div class="rocksite-o-content-header__lead__header">
+			<div class="rocksite-o-content-header__lead__header__categories">
+				<a href="#" class="rocksite-a-chips-label">{{category_name}}</a>
+			</div>
+			<h2 class="rocksite-o-content-header__lead__header__title">{{title}}</h2>
+			<div class="rocksite-o-content-header__lead__header__meta">
+			<span class="rocksite-m-meta-label"><i class="la la-calendar"></i> <a href="#"
+																				  rel="bookmark">
+				<time class="entry-date published updated" datetime="2015-08-23T21:33:31+00:00">{{meta1}}</time>
+			</a></span> <span class="rocksite-m-meta-label">{{meta2}}:  <a
+					href="#" title="Posts by admin" rel="author">admin</a> </span>
+			</div>
+		</div>
+		<div class="rocksite-o-content-header__lead__thumbnail">
+			<img src="{{image}}" alt="Image">
+		</div>
+	</div>
+
+	{{else}}
+	<h1 class="rocksite-o-content-header__title">{{title}}</h1>
+
+	{{/if}}
+
+
+
+</div>

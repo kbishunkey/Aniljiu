@@ -1,0 +1,91 @@
+/*
+
+Force content rythm in the all gutenberg blocks in the editor
+
+*/
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+
+  font-family: font-family-css( secondary );
+
+
+}
+
+// Headings Sizes
+
+@for $i from 1 through 6 {
+
+  h#{ $i } {
+
+    font-size: editor-font-size( h#{ $i });
+
+  }
+
+
+}
+
+
+
+p,
+blockquote {
+
+  font-size: editor-font-size( medium );
+
+}
+
+// Utilities class in the editor
+
+
+
+  .alignwide,
+  .wp-block[data-align="wide"] {
+
+    max-width    :  $layout-width+ 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .alignwide,
+    .wp-block[data-align="wide"] {
+
+      max-width: 100%;
+
+    }
+
+
+  }
+
+  .alignfull,
+  .wp-block[data-align="full"] {
+
+    max-width: none;
+
+    .alignfull,
+    .wp-block[data-align="full"] {
+
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+
+  }
+
+
+
+// nested blocks
+
+.wp-block  {
+
+  .wp-block[data-align="full"] {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+}

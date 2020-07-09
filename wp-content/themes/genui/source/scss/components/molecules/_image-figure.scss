@@ -1,0 +1,101 @@
+/*
+Image - Figure
+
+
+Image component
+
+.-card - 1 column
+
+Markup: ../../../../styleguide/templates/molecules/image-figure.html
+
+
+Style guide: Molecules.image-figure
+
+Wrapper:
+<div style="width:400px">
+<wrapper-content/>
+</div>
+
+*/
+
+$class-name-image-figure: rocksite-m-image-figure;
+
+.#{$class-name-image-figure} {
+
+  @extend %#{$class-name-image-figure};
+
+  .#{$class-name-image-figure}__image {
+
+    @extend %#{$class-name-image-figure}__image;
+
+  }
+
+  .#{$class-name-image-figure}__caption {
+
+    @extend %#{$class-name-image-figure}__caption;
+
+  }
+
+  &.-card {
+
+    @extend %#{$class-name-image-figure}-card;
+
+    .#{$class-name-image-figure}__caption {
+
+      @extend %#{$class-name-image-figure}-card__caption;
+
+    }
+
+  }
+
+
+}
+
+%#{$class-name-image-figure} {
+
+  display: flex;
+  flex-direction: column;
+
+
+
+  &__image {
+
+    display: block;
+    width: 100%;
+    @include responsive-image;
+    margin: 0;
+
+  }
+
+  &__caption {
+
+
+    @include type-setting(x-small);
+    padding: 0.5rem 0;
+    width: 100%;
+
+  }
+
+  &-card {
+
+    position: relative;
+
+    &__caption {
+
+      @extend %#{$class-name-image-figure}__caption;
+      position: absolute;
+      bottom: 0;
+      padding: $layout-box-single-padding-small;
+      background: $global-overlay-color;
+      max-width: 100%;
+      max-height: 100%;
+      color: get-color-css(text)
+
+
+    }
+
+  }
+
+}
+
+

@@ -1,0 +1,297 @@
+/*
+List
+
+Default list
+
+.-horizontal - 1 column
+.-invert - invert version
+.-icon-pointer - 2 columns
+.-underlined - underlined list
+.-primary - primary version
+.-table - tabled version
+
+Markup: ../../../../styleguide/templates/atoms/content/list.html
+
+Wrapper:
+<div style="width:800px; background: #F3F3F3; padding: 20px">
+<wrapper-content/>
+</div>
+
+Style guide: Atoms.list
+
+
+*/
+
+$class-name-list: rocksite-a-list;
+
+.#{$class-name-list} {
+
+	@extend %#{$class-name-list};
+
+	.#{$class-name-list}__item {
+
+		@extend %#{$class-name-list}__item;
+
+		p{
+
+			margin: 0 5px 0 0;
+
+
+		}
+
+
+	}
+
+	&.-invert {
+
+		.#{$class-name-list}__item {
+
+			@extend %#{$class-name-list}-invert__item;
+
+
+		}
+
+	}
+
+
+
+	&.-icon-pointer {
+
+		@extend %#{$class-name-list}-icon-pointer;
+
+		.#{$class-name-list}__item {
+
+			@extend %#{$class-name-list}-icon-pointer__item;
+
+		}
+
+
+
+	}
+
+	&.-horizontal {
+
+		display: flex;
+		flex-wrap: wrap;
+
+		.#{$class-name-list}__item {
+
+			width: 45%;
+			margin-left: .5rem;
+
+		}
+
+	}
+
+	&.-underlined {
+
+		@extend %#{$class-name-list}-underlined;
+
+		.#{$class-name-list}__item {
+
+			@extend %#{$class-name-list}-underlined__item;
+
+		}
+
+	}
+
+	&.-primary {
+
+		.#{$class-name-list}__item {
+
+			@extend %#{$class-name-list}-primary__item;
+
+		}
+
+
+
+	}
+
+	&.-table {
+
+		@extend %#{$class-name-list}-table;
+
+		.#{$class-name-list}__item {
+
+			@extend %#{$class-name-list}-table__item;
+
+
+		}
+
+	}
+
+
+}
+
+
+%#{$class-name-list} {
+
+	margin: 1rem 0 1rem 4rem;
+
+	&__item {
+
+		margin-bottom: 0.5rem;
+		@include type-setting(medium);
+
+
+		ul {
+
+			margin: 1rem 0;
+
+		}
+
+
+	}
+
+	&-icon-pointer {
+
+		&__item {
+
+
+
+		}
+
+	}
+
+	&-horizontal {
+
+		&__item {
+
+			display: inline-block;
+			margin-right: .5rem;
+
+		}
+
+	}
+
+	&-primary {
+
+		&__item {
+
+			color: get-color-css(primary);
+
+		}
+
+	}
+
+	&-underlined {
+
+		margin: 0;
+
+		&__item {
+
+			border-bottom: 1px solid $layout-box-border-color;
+			padding: 0.5rem 0;
+			list-style: none;
+
+		}
+
+	}
+
+	&-invert {
+
+		&__item {
+
+			color: get-color-css(invert);
+
+
+		}
+
+	}
+
+	&-icon-pointer {
+
+		list-style: none;
+		margin-left: 2rem;
+
+		&__item {
+
+			padding: 0 0 0 2.5rem;
+			position: relative;
+			margin-bottom: 0.8rem;
+			@include type-setting(medium);
+
+
+			&:before {
+
+				content: '-';
+				display: inline-block;
+				position: absolute;
+				left: 0;
+				font-size: 2.1rem;
+
+				line-height: 1.2;
+
+
+			}
+
+			ul {
+
+				margin: 1rem 0 0 0;
+				list-style: circle inside;
+
+				li {
+
+					padding: 0;
+					@include type-setting(x-small);
+
+					&:before {
+
+						display: none;
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&-table {
+
+		display: flex;
+		list-style: none;
+		flex-wrap: wrap;
+
+		&__item {
+
+			width: calc(33% - #{$layout-box-gutter-small});
+			padding: $grid-gutter-width/2;
+			background: get-color-css(gray1);
+			margin: #{$layout-box-gutter-small};
+			font-size: font-size(x-small);
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			text-align: center;
+
+			&:nth-child(3n){
+
+				margin-right: 0;
+
+			}
+
+			&:nth-child(3n+1){
+
+				margin-left: 0;
+
+
+			}
+			&:first-child{
+
+				margin-left: 0;
+
+			}
+
+
+
+		}
+
+	}
+
+
+
+
+}

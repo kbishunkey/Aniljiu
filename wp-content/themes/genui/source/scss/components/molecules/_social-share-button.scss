@@ -1,0 +1,207 @@
+/*
+Social Share Button
+
+
+Button for sharing articles
+
+.-small - card stacked version
+.-email - card stacked version
+.-facebook - card stacked version
+.-twitter - card stacked version
+.-gplus - card stacked version
+.-pinterest - card stacked version
+.-instagram - card stacked version
+.-linkedin - card stacked version
+.-default - card stacked version
+
+Markup: ../../../../styleguide/templates/molecules/social-share-button.html
+
+
+Style guide: Molecules.social-share-button
+
+Wrapper:
+<div style="max-width:350px">
+<wrapper-content/>
+</div>
+
+*/
+
+$class-name-social-share-button: rocksite-m-social-share-button;
+
+
+.#{$class-name-social-share-button} {
+
+
+  @extend %#{$class-name-social-share-button};
+
+
+
+  &:hover {
+
+    @extend %#{$class-name-social-share-button}--hover;
+
+
+    .#{$class-name-social-share-button}__counter {
+
+
+
+    }
+
+  }
+
+  @each $service, $color in colors-social-buttons() {
+
+    &.-#{$service}  {
+
+
+
+
+      @include btn-animation($service);
+
+
+
+    }
+
+  }
+
+
+  .#{$class-name-social-share-button}__icon {
+
+    @extend %#{$class-name-social-share-button}__icon;
+
+  }
+
+  .#{$class-name-social-share-button}__text {
+
+    @extend %#{$class-name-social-share-button}__text;
+
+  }
+
+  .#{$class-name-social-share-button}__counter {
+
+    @extend %#{$class-name-social-share-button}__counter;
+
+  }
+
+  &.-small {
+
+    @extend %#{$class-name-social-share-button}-small;
+
+    .#{$class-name-social-share-button}__text {
+
+      @extend %#{$class-name-social-share-button}-small__text;
+
+    }
+
+
+  }
+
+
+
+}
+
+
+
+
+
+%#{$class-name-social-share-button} {
+
+
+  padding: $button-small-padding;
+  border: $button-default-border;
+  z-index: 0;
+  line-height: $button-default-line-height;
+  position: relative;
+  color: get-color-css(invert);
+  font-size: $button-font-size;
+  text-transform: uppercase;
+  margin-right: $button-margin-right;
+  margin-bottom: $button-margin-bottom;
+  @include btn-animation(email);
+
+
+  &--hover {
+
+
+
+    text-decoration: none;
+
+    &__counter {
+
+
+
+    }
+
+    &__icon {
+
+
+
+      svg {
+
+
+
+      }
+
+    }
+
+  }
+
+  &__text {
+
+    font-size: font-size(xx-small);
+    display: inline-block;
+    padding-bottom: 5px;
+
+
+  }
+
+  &__icon {
+
+    width: 2.5rem;
+    height: 2rem;
+    display: inline-block;
+
+
+
+    svg {
+
+      fill: get-color-css(invert);
+      width: 1.5rem;
+      height:  1.5rem;
+      transform: translateY(10%);
+
+    }
+
+
+  }
+
+  &__counter {
+
+
+    font-size: font-size(xx-small);
+    display: inline-block;
+    padding-left: 0.5rem;
+
+  }
+
+  &-small {
+
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+
+      display: none;
+
+    }
+
+  }
+
+}
+
+

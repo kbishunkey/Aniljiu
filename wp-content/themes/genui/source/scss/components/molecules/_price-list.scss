@@ -1,0 +1,186 @@
+/*
+Price List
+
+
+create clean and stylish online restaurant menus or other content elements
+
+Markup: ../../../../styleguide/templates/molecules/price-list.html
+
+
+Style guide: Molecules.price-list
+
+Wrapper:
+<div style="max-width:550px">
+<wrapper-content/>
+</div>
+
+*/
+
+$class-name-price-list: rocksite-m-price-list;
+
+.#{$class-name-price-list} {
+
+  @extend %#{$class-name-price-list};
+
+
+  .#{$class-name-price-list}__thumbnail {
+
+    @extend %#{$class-name-price-list}__thumbnail;
+
+  }
+
+  .#{$class-name-price-list}__content {
+
+    @extend %#{$class-name-price-list}__content;
+
+    .#{$class-name-price-list}__content__header {
+
+      @extend %#{$class-name-price-list}__content__header;
+
+
+
+      .#{$class-name-price-list}__content__header__title {
+
+        @extend %#{$class-name-price-list}__content__header__title;
+
+      }
+
+      .#{$class-name-price-list}__content__header__price-line {
+
+        @extend %#{$class-name-price-list}__content__header__price-line;
+
+      }
+
+      .#{$class-name-price-list}__content__header__price-wrapper {
+
+        @extend %#{$class-name-price-list}__content__header__price-wrapper;
+
+        .#{$class-name-price-list}__content__header__price-wrapper__ammount {
+          @extend %#{$class-name-price-list}__content__header__price-wrapper__ammount;
+        }
+
+        .#{$class-name-price-list}__content__header__price-wrapper__currency {
+          @extend %#{$class-name-price-list}__content__header__price-wrapper__currency;
+        }
+
+      }
+
+    }
+
+    .#{$class-name-price-list}__content__label{
+
+      @extend %#{$class-name-price-list}__content__label;
+
+    }
+
+    .#{$class-name-price-list}__content__description {
+      @extend %#{$class-name-price-list}__content__description;
+    }
+  }
+
+
+}
+
+%#{$class-name-price-list} {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: $layout-box-single-padding;
+
+  @include respond-to( medium ) {
+    padding: 0;
+  }
+
+  &__thumbnail {
+
+    width: 10rem;
+
+    img {
+
+      width: 100%;
+      height: auto;
+
+    }
+
+  }
+
+  &__content {
+
+    width: calc(100% - 10rem);
+    padding: 0 0 $layout-box-single-padding $layout-box-single-padding;
+
+    position: relative;
+
+    &__header {
+
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 1rem;
+
+
+
+      &__title {
+        @extend %#{$class-name-heading};
+        @include type-setting(h6);
+        max-width: 70%;
+
+
+      }
+
+      &__price-line {
+
+        height: 1px;
+        border-bottom: 1px dotted get-color-css(text-lighten);
+        flex-grow: 1;
+        margin: 0 1rem;
+
+      }
+
+      &__price-wrapper {
+
+
+
+        margin-left: auto;
+
+
+        &__currency {
+          @include type-setting(h6);
+          font-weight: normal;
+          font-family: font-family-css(primary);
+        }
+
+        &__ammount {
+          @include type-setting(h6);
+          font-weight: normal;
+          font-family: font-family-css(primary);
+        }
+
+      }
+
+    }
+
+    &__label {
+
+      @extend %#{$class-name-label};
+      background: get-color-css(secondary);
+      color: get-color-css(text-lighten);
+      margin-bottom: 1rem;
+
+    }
+
+
+    &__description {
+
+      @include type-setting(x-small);
+
+    }
+
+
+  }
+
+
+
+}
+
+

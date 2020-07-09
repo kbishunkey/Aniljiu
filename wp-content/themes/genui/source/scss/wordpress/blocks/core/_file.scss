@@ -1,0 +1,29 @@
+////
+/// File block.
+///
+/// @group  Blocks
+/// @author Justin Tadlock <justintadlock@gmail.com>
+/// @link   https://themehybrid.com/themes/mythic
+////
+
+.wp-block-file {
+	margin-bottom: 1.5em;
+
+	&.aligncenter {
+		text-align: center;
+	}
+
+	&.alignright {
+		text-align: right;
+	}
+
+	&__button {
+
+		@include button-label-core;
+		@include btn-specify(primary);
+		display: table;
+		margin: 1rem 0;
+
+	}
+}
+

@@ -1,0 +1,26 @@
+{
+  "accordion_content":[ {
+    "name": "Tab Name 1",
+    "link": "#",
+    "active_modificator": "-active",
+    "content_modificator": "-active ui-tabs-active",
+    "content": "Fusce sit amet accumsan ipsum, condimentum pulvinar lacus. Vestibulum ante tellus, feugiat sit amet ornare quis, venenatis quis turpis. Praesent id eros enim. Vestibulum quis purus nec lectus tristique rutrum."
+  },
+    {
+    "name": "Tab Name 2",
+    "link": "#",
+      "active_modificator": "",
+      "content_modificator": "u-hidden",
+    "content": "Phasellus fringilla finibus nibh, sit amet pharetra lorem lacinia at. Aenean vel nisl eget sapien pulvinar sollicitudin sit amet eu lacus. Maecenas accumsan finibus imperdiet. Praesent feugiat congue massa porttitor posuere."
+  },
+
+    {
+      "name": "Tab Name 3",
+      "link": "#",
+      "active_modificator": "",
+      "content_modificator": "u-hidden",
+      "content": "Quisque vitae metus eleifend, suscipit leo a, varius ligula. Mauris vehicula id ante a consequat. Vestibulum sed consectetur purus. Fusce accumsan at nisi nec faucibus. In sed tristique urna. Vestibulum egestas, erat quis dignissim rutrum, mauris dui facilisis metus, eget tincidunt tortor turpis vitae sapien. Vestibulum dignissim tincidunt porta. Praesent tellus nulla, ornare imperdiet mollis sed, egestas nec erat."
+    }
+]
+
+}

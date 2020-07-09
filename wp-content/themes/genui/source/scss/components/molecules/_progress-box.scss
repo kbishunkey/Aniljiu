@@ -1,0 +1,40 @@
+/**
+Progress Box
+
+Markup: ../../../../styleguide/templates/molecules/progress-box.html
+
+Wrapper:
+<div style="width:700px">
+<wrapper-content/>
+</div>
+
+Style guide: Molecules.progress-box
+
+*/
+
+$class-name-progress-box: rocksite-m-progress-box;
+
+.#{$class-name-progress-box} {
+
+	.#{$class-name-progress-box}__header {
+
+		display: flex;
+		font-size: font-size(h6);
+		font-weight: 600;
+		margin: 2rem 0;
+
+
+		.#{$class-name-progress-box}__header__title {
+
+
+
+		}
+
+		.#{$class-name-progress-box}__header__number {
+			margin-left: auto;
+			font-style: normal;
+		}
+	}
+
+
+}

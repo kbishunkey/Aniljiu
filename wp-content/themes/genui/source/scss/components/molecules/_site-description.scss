@@ -1,0 +1,69 @@
+/*
+Site Description
+
+Brand Logo
+
+-invert - inverted version
+
+Markup: ../../../../styleguide/templates/molecules/site-description.html
+
+Style guide: Molecules.site-description
+
+*/
+
+$class-name-site-description: rocksite-m-site-description;
+
+.#{$class-name-site-description} {
+
+
+
+	.#{$class-name-site-description}__title {
+
+		@extend %#{$class-name-heading};
+		text-transform: uppercase;
+		@include type-setting(h7);
+
+		@include respond-to(desktop) {
+
+			@include type-setting(h6);
+
+		}
+
+		a {
+
+			color: get-color-css(text);
+
+		}
+
+	}
+
+	.#{$class-name-site-description}__description {
+
+		font-size: font-size(xx-small);
+		color: get-color-css(primary);
+
+		@include respond-to(desktop) {
+
+			font-size: font-size(x-small);
+
+		}
+
+
+
+	}
+
+	&.-invert {
+
+		.#{$class-name-site-description}__title {
+			color: get-color-css(invert);
+		}
+
+		.#{$class-name-site-description}__description {
+			color: get-color-css(invert);
+		}
+
+	}
+
+
+}
+

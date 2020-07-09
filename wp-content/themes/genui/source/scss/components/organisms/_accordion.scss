@@ -1,0 +1,222 @@
+/*
+Accordion
+
+.-layout-horizontal-right - right tabs
+
+
+Markup: ../../../../styleguide/templates/organisms/accordion.html
+
+
+Style guide: Organisms.accordion
+
+Wrapper:
+<div style="width:900">
+<wrapper-content/>
+</div>
+
+
+*/
+
+
+$class-name-accordion: rocksite-o-accordion;
+
+.#{$class-name-accordion} {
+
+  @extend %#{$class-name-accordion};
+
+  .#{$class-name-accordion}__header-wrapper {
+
+    @extend %#{$class-name-accordion}__header-wrapper;
+
+    .#{$class-name-accordion}__header-wrapper__header {
+      @extend %#{$class-name-accordion}__header-wrapper__header;
+
+      .#{$class-name-accordion}__header-wrapper__header__link {
+
+        @extend %#{$class-name-accordion}__header-wrapper__header__link;
+
+
+        .#{$class-name-accordion}__header-wrapper__header__link__title {
+
+          @extend %#{$class-name-accordion}__header-wrapper__header__link__title;
+
+        }
+
+        .#{$class-name-accordion}__header-wrapper__header__link__icon {
+
+          @extend %#{$class-name-accordion}__header-wrapper__header__link__icon;
+
+
+
+
+          &.is-passive {
+
+            @extend %#{$class-name-accordion}__header-wrapper__header__link__icon-is-passive;
+
+          }
+
+        }
+
+
+      }
+
+    }
+
+    &.-active {
+
+      .#{$class-name-accordion}__header-wrapper__header {
+
+
+
+        .#{$class-name-accordion}__header-wrapper__header__link {
+
+          .#{$class-name-accordion}__header-wrapper__header__link__title {
+
+            @extend %#{$class-name-accordion}__header-wrapper-active__header__link__title;
+
+          }
+
+
+
+            .#{$class-name-accordion}__header-wrapper__header__link__icon {
+
+
+
+              &.is-active {
+
+                @extend %#{$class-name-accordion}__header-wrapper-active__header__link__icon-is-active;
+
+              }
+
+              &.is-passive {
+
+                @extend %#{$class-name-accordion}__header-wrapper-active__header__link__icon-is-passive;
+
+              }
+
+            }
+
+
+        }
+      }
+
+    }
+
+
+  }
+
+  .#{$class-name-accordion}__content {
+
+    @extend %#{$class-name-accordion}__content;
+
+
+
+
+
+  }
+
+
+}
+
+%#{$class-name-accordion} {
+
+  border-bottom: 1px solid get-color-css(gray1);
+
+  &__header-wrapper {
+
+    border: 1px solid get-color-css(gray1);
+    border-bottom-width: 0;
+
+    &:focus {
+      outline: none;
+      background: get-color-css(invert-dark);
+    }
+
+    &__header {
+
+      display: block;
+      padding: 2rem $layout-box-single-padding;
+
+
+      &__link {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+
+
+        &__title {
+          display: block;
+        }
+
+        &__icon {
+
+          margin-left: auto;
+
+
+          &-is-passive {
+
+            display: none;
+
+          }
+        }
+
+      }
+
+    }
+
+    &-active {
+
+      &__header {
+
+        &__link {
+
+          &__title {
+
+            @include type-setting(h6);
+            padding: 0.5rem 0;
+
+          }
+
+          &__icon {
+
+            &-is-active {
+
+              display: none;
+
+            }
+
+            &-is-passive {
+
+              display: block;
+
+            }
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  &__content {
+
+    border: 1px solid get-color-css(gray1);
+    border-top: none;
+    padding: 0 $layout-box-single-padding $layout-box-single-padding $layout-box-single-padding;
+    margin-bottom: 1.5rem;
+
+
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+  }
+
+
+
+}

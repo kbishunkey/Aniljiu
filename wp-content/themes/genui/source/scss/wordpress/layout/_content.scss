@@ -1,0 +1,9 @@
+.wp-caption {
+
+  max-width: 100%;
+
+  @include respond-to( medium ) {
+    max-width: none;
+  }
+
+}

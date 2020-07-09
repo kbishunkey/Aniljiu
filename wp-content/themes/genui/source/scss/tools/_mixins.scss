@@ -1,0 +1,381 @@
+////
+/// Custom mixins.
+///
+
+// menu hover dekorator
+
+@mixin menu-dekorator($color, $size) {
+
+  &:before {
+
+    content: '';
+    display: block;
+    background-color: $color;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    transition: $default-transition;
+
+  }
+
+  &:hover:before {
+
+    bottom: 0;
+    height: $size;
+
+  }
+}
+
+// menu caret
+
+@mixin menu-caret($color, $size) {
+
+  &:after {
+
+    display: inline-block;
+    position: absolute;
+    transform: translateY(-50%) rotate(45deg);
+    content: '';
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-left: $size;
+    border-right: $size solid get-color($color);
+    border-bottom: $size solid get-color($color);
+    right: 0.5rem;
+
+  }
+
+}
+
+// hover animation
+//TO DO finish animation
+
+@mixin hover-animation-1($background) {
+
+  position: relative;
+  z-index: 0;
+
+  &:before {
+
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: $hover-animation-transition-1;
+    z-index: -2;
+
+  }
+
+  &:hover:before {
+
+    background-color: $background;
+    width: 100%;
+    transition: $hover-animation-transition-1;
+
+  }
+}
+
+// reset link style in headres
+
+@mixin reset-link() {
+
+  color: inherit;
+
+  &:hover {
+
+    text-decoration: none;
+
+  }
+
+}
+
+@mixin overlay() {
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: $layout-box-padding;
+  background: get-color(primary, 0.5);
+
+}
+
+// button variant
+
+@mixin btn-specify($version) {
+
+  @if ($version !=ghost) {
+
+    color: get-btn-color-css($version);
+    padding: $button-default-padding;
+
+    @include btn-animation($version);
+
+
+  } @else {
+
+    // button ghost
+
+    border: 1px solid get-color-css(primary);
+    padding: $button-default-padding;
+
+    &:hover {
+
+      color: get-color-css(secondary);
+      border: 1px solid get-color-css(secondary);
+      text-decoration: none;
+
+    }
+
+  }
+
+}
+
+// button animation
+
+@mixin btn-animation($version) {
+  &:after,
+  &:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: $default-transition;
+
+  }
+  &:after {
+
+    background: get-color-css(invert);
+    z-index: -1;
+    width: 0;
+    opacity: 0.2;
+
+
+  }
+  &:before {
+    z-index: -2;
+    background: get-btn-background-css($version);
+  }
+
+  &:hover,
+  &:focus {
+    &:after {
+
+      width: 100%;
+      transition: $default-transition;
+
+    }
+
+  }
+}
+
+// form inputs
+
+@mixin form-input() {
+
+  display: inline-block;
+  padding: $input-padding-y $input-padding-x;
+  font-size: $font-size-base;
+  line-height: $input-line-height;
+  color: $input-color;
+  background-color: $input-bg;
+  background-clip: padding-box;
+  border-radius: $input-radius;
+
+  border: $input-border-width solid $input-border-color;
+  font-family: font-family-css(primary);
+  width: 100%;
+
+  &:focus {
+
+    outline: none;
+    border: $input-border-width solid $input-border-color-focus
+
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    border: $input-border-width solid $input-border-color;
+  }
+
+  &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+    color: get-color(gray3);
+
+  }
+
+}
+
+// Button Social Variants
+
+@mixin button-social-specify() {
+
+
+
+  @each $social in $button-social-variants {
+
+    &.-#{$social},
+    &[href*=#{$social}] {
+
+      color: get-color(invert);
+      background-color: get-social-button-variant(#{$social});
+
+      &:hover {
+        background-color: darken(get-social-button-variant(#{$social}), 4%);
+      }
+
+    }
+
+  }
+
+}
+
+// Stretching the container to the size of the parent
+
+@mixin strech-absolute-container() {
+
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+
+// Display overlay over the iimage
+
+@mixin image-overlay-gradient-background($background: '', $gradient: true, $opacity:false){
+
+  &:before {
+
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+
+    @if $gradient {
+      background-image: $background;
+    } @else {
+      background-color: $background
+    }
+
+  }
+
+}
+
+@mixin reset-outer-container-padding () {
+
+  margin-left: -$layout-grid-gutter/2;
+  margin-right: -$layout-grid-gutter/2;
+
+}
+
+
+// Media Query Mixin
+
+@mixin respond-to($breakpoint, $mobile-first: 1) {
+
+  @if ($mobile-first ==0) {
+    @media (max-width: #{break($breakpoint)}) {
+      @content;
+    }
+  } @else {
+
+    @media (min-width: #{break($breakpoint)}) {
+      @content;
+    }
+
+  }
+
+}
+
+@mixin responsive-image {
+
+  max-width: 100%;
+  height: auto !important;
+
+}
+
+@mixin extend-icon-settings {
+
+  font-family: font-family(icon);
+  font-weight: 900;
+}
+
+@mixin avatar-image {
+
+  border-radius: 50%;
+  display: block;
+
+}
+
+@mixin full-width-image {
+
+  width: 100%;
+  height: auto !important;
+
+}
+
+@mixin equal-height-image {
+
+  height: 100%!important;
+  display: block;
+  width: auto!important;
+
+}
+
+@mixin current-page-item {
+
+  background: get-color-css(primary);
+  border: 1px solid get-color-css(primary);
+  color: get-color-css(invert);
+  cursor: auto;
+
+
+}
+
+@mixin pagination-item {
+  padding: 0;
+  border-radius: $button-default-radius;
+  height: $pagination-btn-size;
+  width: $pagination-btn-size;
+  margin-left: $pagination-btn-space-between;
+  text-align: center;
+  display: inline-block;
+  line-height: $pagination-btn-line-height;
+}
+
+
+@mixin alignfull {
+
+  width: auto;
+  margin-left: -$grid-gutter-width/2;
+  margin-right: -$grid-gutter-width/2;
+
+
+
+  @media (min-width: #{break(medium)}) {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    width: 100vw;
+    max-width: 100vw;
+  }
+
+}
+

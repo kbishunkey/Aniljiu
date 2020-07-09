@@ -1,0 +1,92 @@
+/*
+Brand Colors
+
+Colors that are used in the theme.
+
+Colors:
+Primary: #1bb999 - main theme color
+Secondary: #2c3e51 - secondary theme color
+Success: #3adb76 - secondary theme color
+Warning: #de350b - Warning Theme Color
+Gray1: #f4f4f4 - secondary theme color
+Gray2: #dcdcdc - secondary theme color
+Gray3: #b0bec5 - secondary theme color
+Gray4: #eeeeee - secondary theme color
+Dark-gray1: #546e7a - secondary theme color
+Dark-gray2: #37474f - secondary Dark Grey theme color
+Text: #000000 - Theme text color
+Text-Lighten: #37474d - Lighter tex color
+Invert: #ffffff - Theme invert color
+Invert-darken: #fbfbfb - Darken invert color
+
+Style guide: 1 Global.colors
+
+*/
+
+
+
+
+@function colors-palette($opacity) {
+
+  @return (
+          primary: rgba(38, 205, 202, $opacity),
+          primary-darken: darken(rgb(38, 205, 202), 4%),
+          primary-lighten: lighten(rgb(38, 205, 202), 4%),
+          secondary: rgba(255, 230, 38, $opacity),
+          secondary-darken: darken(rgb(255, 230, 38), 4%),
+          secondary-lighten: lighten(rgb(255, 230, 38), 4%),
+          third: rgba(103, 58, 183, $opacity),
+          success: rgba(107, 239, 208, $opacity),
+          warning: rgba(222, 53, 11, $opacity),
+          alert: rgba(230, 39, 57, $opacity),
+          info: rgba(20, 113, 192, $opacity),
+          gray1: rgba(244, 244, 244, $opacity),
+          gray2: rgba(220, 220, 220, $opacity),
+          gray3: rgba(176, 190, 197, $opacity),
+          gray4: rgba(238, 238, 238, $opacity),
+          dark-gray1: rgba(84, 110, 122, $opacity),
+          dark-gray2: rgba(55, 71, 79, $opacity),
+          text: rgba(0, 0, 0, $opacity),
+          text-lighten: rgba(55, 71, 77, $opacity),
+          invert-dark: rgba(251, 251, 251, $opacity),
+          dark: rgba(251, 251, 251, $opacity),
+          invert: rgba(254, 254, 254, $opacity),
+          background: rgba(254, 254, 254, $opacity),
+          content: rgba(254, 254, 254, $opacity),
+          background-topbar: rgba(0, 0, 0, $opacity),
+          topbar: rgba(254, 254, 254, $opacity)
+
+  );
+}
+
+// Returns a single  color value by name.
+
+@function get-color( $name,  $opacity : 1) {
+
+  @return map-get(colors-palette($opacity), $name);
+}
+
+@function get-color-css( $name) {
+
+  @return var(--color-#{$name});
+
+}
+
+$colors: () !default;
+
+$colors: map-merge((
+        color-primary: get-color-css(primary),
+        color-secondary: get-color-css(secondary),
+        color-text: get-color-css(text),
+        color-text-lighten: get-color-css(text-lighten),
+        color-invert: get-color-css(invert),
+        color-gray-1: get-color-css(gray1),
+        color-gray-2: get-color-css(gray2),
+        color-gray-3: get-color-css(gray3),
+        color-gray-4: get-color-css(gray4),
+        color-dark-gray-1: get-color-css(dark-gray1),
+        color-dark-gray-2: get-color-css(dark-gray2),
+        color-warning: get-color-css(warning),
+        color-success: get-color-css(success),
+        color-third: get-color-css(third),
+), $colors);

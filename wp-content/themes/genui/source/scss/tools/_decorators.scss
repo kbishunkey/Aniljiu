@@ -1,0 +1,84 @@
+// Define content article rythm
+@mixin list-item-decorator {
+
+	padding: $item-list-padding;
+	border-bottom: $item-list-border-bottom;
+
+	&:first-child {
+
+		padding-top: 0;
+
+	}
+
+	&:last-child {
+
+		padding-bottom: 0;
+		border-bottom: none;
+
+	}
+
+}
+
+// menu hover dekorator
+
+@mixin menu-dekorator($color, $size){
+
+	&:before{
+
+		content: '';
+		display: block;
+		background-color: $color;
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		width: 100%;
+		height: 0;
+		transition: $default-transition;
+
+	}
+
+	&:hover:before{
+
+		bottom: 0;
+		height: $size;
+
+	}
+}
+
+// menu hover dekorator
+
+@mixin menu-dekorator-vertical($color, $size){
+
+	&:before{
+
+		content: '';
+		display: block;
+		background-color: $color;
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		width: 0;
+		height: 100%;
+		transition: $default-transition;
+
+	}
+
+	&:hover:before{
+
+		bottom: 0;
+		width: $size;
+
+	}
+}
+
+@mixin reset-decorator() {
+
+	&:before,
+	&:after{
+
+		display: none;
+
+	}
+
+}
+

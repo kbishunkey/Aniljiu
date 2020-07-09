@@ -1,0 +1,16 @@
+{
+
+  "image1": "../assets/images/portfolio-image1.jpg",
+  "image2": "../assets/images/portfolio-image2.jpg",
+  "image3": "../assets/images/portfolio-image3.jpg",
+  "image4": "../assets/images/portfolio-image4.jpg",
+  "title1": "Portfolio item 1",
+  "title2": "Portfolio item 2",
+  "title3": "Portfolio item 3",
+  "title4": "Portfolio item 4",
+  "description1": "Pellentesque a quam feugiat, facilisis",
+  "description2": "Donec ultricies nunc lacus, scelerisque",
+  "description3": "Proin imperdiet mauris urna, a rhoncus risus finibus.",
+  "description4": "Lorem ipsum dolor sit amet, consectetur adipiscing."
+
+}

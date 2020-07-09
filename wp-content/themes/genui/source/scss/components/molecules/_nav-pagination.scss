@@ -1,0 +1,164 @@
+/*
+Pagination - number
+
+Pointer navigation
+
+Markup: ../../../../styleguide/templates/molecules/pagination.html
+
+Wrapper:
+<div style="width:550px">
+<wrapper-content/>
+</div>
+
+Style guide: Molecules.pagination-number
+
+*/
+
+
+$class-name-nav-pagination: rocksite-m-pagination;
+$class-name-nav-pagination-prev-next: rocksite-m-pagination--prev-next;
+$class-name-nav-pagination-number: rocksite-m-pagination--number;
+$class-name-nav-pagination-post: rocksite-m-pagination--post;
+
+.#{$class-name-nav-pagination} {
+
+	@include list-core();
+	display: flex;
+	flex-wrap: wrap;
+	padding: 2rem 0;
+
+	.#{$class-name-nav-pagination}__item {
+
+		&:first-child {
+
+			padding-left: 0;
+
+		}
+
+		padding: 0.5rem;
+
+		a {
+
+			@include button-label-core;
+			@include btn-specify(ghost);
+			padding: $button-small-padding;
+
+		}
+
+		span {
+			@include button-label-core;
+			padding: $button-small-padding;
+			@include current-page-item;
+		}
+
+
+	}
+
+
+
+}
+
+
+
+
+/*
+Pagination - prev - next
+
+Prev next navigation
+
+Markup: ../../../../styleguide/templates/molecules/pagination-prev-next.html
+
+Wrapper:
+<div style="width:350px">
+<wrapper-content/>
+</div>
+
+Style guide: Molecules.pagination-prevnext
+
+*/
+
+.#{$class-name-nav-pagination-prev-next}  {
+
+	.#{$class-name-nav-pagination-prev-next}__item {
+
+
+		.#{$class-name-nav-pagination-prev-next}__item__link,
+		a{
+
+			position: relative;
+			padding: 1.2rem 1rem 0 5rem;
+			text-transform: uppercase;
+			color: get-color-css(dark-gray1);
+			font-size: font-size(x-small);
+
+
+			&:hover {
+
+				text-decoration: none;
+
+			}
+
+			.rocksite-a-button-icon {
+
+				position: absolute;
+				left: 0;
+				top: 0;
+
+			}
+
+		}
+
+		&:last-child {
+
+			.#{$class-name-nav-pagination-prev-next}__item__link,
+			a{
+
+				padding: 1.2rem 5rem 0 1rem;
+				font-size: font-size(x-small);
+
+				.rocksite-a-button-icon {
+
+					position: absolute;
+					left: auto;
+					right: 0;
+
+				}
+
+
+
+			}
+
+
+		}
+
+
+
+
+
+	}
+
+}
+
+.#{$class-name-nav-pagination-post} {
+
+	margin: 2rem 0;
+	display: flex;
+	align-items: center;
+
+	span, a {
+
+		@include button-label-core;
+		padding: 0 0.8rem;
+		margin: 0 2px;
+		line-height: 1.8;
+
+
+	}
+	span {
+		@include reset-button-hover;
+		@include current-page-item;
+
+	}
+
+}
+

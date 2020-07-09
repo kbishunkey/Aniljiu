@@ -1,0 +1,122 @@
+/*
+Brand Colors
+
+Colors that are used in the theme.
+
+Colors:
+Primary: #1bb999 - main theme color
+Secondary: #2c3e51 - secondary theme color
+Success: #3adb76 - secondary theme color
+Warning: #de350b - Warning Theme Color
+Gray1: #f4f4f4 - secondary theme color
+Gray2: #dcdcdc - secondary theme color
+Gray3: #b0bec5 - secondary theme color
+Gray4: #eeeeee - secondary theme color
+Dark-gray1: #546e7a - secondary theme color
+Dark-gray2: #37474f - secondary Dark Grey theme color
+Text: #000000 - Theme text color
+Text-Lighten: #37474d - Lighter tex color
+Invert: #ffffff - Theme invert color
+Invert-darken: #fbfbfb - Darken invert color
+
+Style guide: 1 Global.colors
+
+*/
+@-webkit-keyframes preloader-animation-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes preloader-animation-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+:root {
+  --color-primary: #26cdca;
+  --color-primary-darken: #23bcb9;
+  --color-primary-lighten: #2fd8d5;
+  --color-secondary: #ffe626;
+  --color-secondary-darken: #ffe412;
+  --color-secondary-lighten: #ffe83a;
+  --color-third: #673ab7;
+  --color-success: #6befd0;
+  --color-warning: #de350b;
+  --color-alert: #e62739;
+  --color-info: #1471c0;
+  --color-gray1: #f4f4f4;
+  --color-gray2: gainsboro;
+  --color-gray3: #b0bec5;
+  --color-gray4: #eeeeee;
+  --color-dark-gray1: #546e7a;
+  --color-dark-gray2: #37474f;
+  --color-text: black;
+  --color-text-lighten: #37474d;
+  --color-invert-dark: #fbfbfb;
+  --color-dark: #fbfbfb;
+  --color-invert: #fefefe;
+  --color-background: #fefefe;
+  --color-content: #fefefe;
+  --color-background-topbar: black;
+  --color-topbar: #fefefe;
+  --btn-bg-default: var(--color-default);
+  --btn-bg-secondary: var(--color-secondary);
+  --btn-bg-primary: var(--color-primary);
+  --btn-bg-success: var(--color-success);
+  --btn-bg-warning: var(--color-warning);
+  --btn-bg-danger: var(--color-danger);
+  --btn-bg-email: #f0ad4e;
+  --btn-bg-facebook: #1471c0;
+  --btn-bg-twitter: #00bff3;
+  --btn-bg-gplus: #68b807;
+  --btn-bg-pinterest: #bd081c;
+  --btn-bg-instagram: #D50060;
+  --btn-bg-linkedin: #1482bb;
+  --btn-bg-default: #ffe626;
+  --btn-color-default: var(--color-primary);
+  --btn-color-secondary: var(--color-text);
+  --btn-color-primary: var(--color-invert);
+  --btn-color-success: var(--color-invert);
+  --btn-color-warning: var(--color-invert);
+  --btn-color-danger: var(--color-invert);
+  --font-primary: Nunito, sans-serif;
+  --font-secondary: Poppins, sans-serif;
+  --font-icon: Line Awesome Free;
+  --font-third: system-ui;
+  --font-code: Source Code Pro, Monaco, Consolas, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+  --size-xx-large: 3rem;
+  --size-x-large: 2.5rem;
+  --size-large: 2rem;
+  --size-medium: 1.7rem;
+  --size-small: 1.5rem;
+  --size-x-small: 1.3rem;
+  --size-xx-small: 1rem;
+  --size-hero: 8rem;
+  --size-h1: 7rem;
+  --size-h2: 5.5rem;
+  --size-h3: 4.5rem;
+  --size-h4: 3.5rem;
+  --size-h5: 2.5rem;
+  --size-h6: 2rem;
+  --size-h7: 1.3rem;
+  --line-xx-large: 1.33;
+  --line-x-large: 1.8;
+  --line-large: 1.8;
+  --line-medium: 1.8;
+  --line-small: 1.33;
+  --line-x-small: 1.54;
+  --line-xx-small: 1.5;
+  --line-hero: 1.05;
+  --line-h1: 1.3;
+  --line-h2: 1.3;
+  --line-h3: 1.3;
+  --line-h4: 1.3;
+  --line-h5: 1.2;
+  --line-h6: 1.25;
+  --line-h7: 1.54; }

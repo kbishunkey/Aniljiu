@@ -1,0 +1,82 @@
+.#{$single-template-class-name} {
+  .woocommerce {
+
+    form {
+
+      .form-row {
+
+        .input-text {
+
+          @include form-input();
+
+        }
+
+        &.woocommerce-validated {
+
+          .select2-container,
+          .input-text {
+            border-color: get-color-css(primary);
+          }
+
+        }
+
+        &.woocommerce-invalid {
+
+          label {
+            color: get-color-css(alert);
+          }
+
+          .select2-container,
+          .input-text {
+            border-color: get-color-css(alert);
+          }
+
+        }
+
+      }
+
+      .select2-container {
+
+        @include form-input();
+        height: 4.2rem !important;
+        position: relative;
+
+        .select2-selection {
+          border: none !important;
+          outline: none;
+          height: 100%;
+
+          .select2-selection__rendered {
+            height: 100%;
+            line-height: 2;
+          }
+
+          .select2-selection__arrow {
+            height: 100%;
+          }
+        }
+
+        &--open {
+
+          .select2-dropdown--below {
+
+            margin-top: -0.5rem;
+            border: 2px solid get-color-css(gray2);
+
+          }
+
+        }
+
+      }
+
+      .woocommerce-form__label {
+
+        @include type-setting(small);
+        cursor: pointer;
+
+      }
+
+    }
+
+  }
+}

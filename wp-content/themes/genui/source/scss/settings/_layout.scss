@@ -1,0 +1,32 @@
+$layout-grid-gutter: 40px;
+$grid-gutter-width: $layout-grid-gutter;
+$layout-width: 1240px;
+$layout-content: ($layout-width -$layout-grid-gutter) *0.7;
+$layout-content-sidebar: $layout-width*0.3;
+$layout-narrow-width: 84rem;
+$layout-alignwide-width: 140rem;
+$layout-alignwide-narrow-width: 104rem;
+$layout-alignfull-width: 100vw;
+
+/// Returns an map of page breaks in name-value format.
+
+/// @return {map}  Map of page breaks.
+
+
+
+@function breaks() {
+
+  @return (
+          components-wide: 1680px, // pixels because of bootstrap integration
+          desktop: 1240px,
+          large: 1024px,
+          medium: 768px,
+          small: 340px
+  );
+
+}
+
+@function break( $name ) {
+
+  @return map-get(breaks(), $name);
+}

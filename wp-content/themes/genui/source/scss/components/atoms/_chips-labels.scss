@@ -1,0 +1,122 @@
+/*
+Chips Lables
+
+
+Labels for displaying info
+
+.-primary   - e-mail icon
+.-success   - Twitter
+.-warning   - Google plus
+.-danger   - linked IN
+.-meta-label - plain label displaying in meta area
+
+Markup: ../../../../styleguide/templates/atoms/chips-labels.html
+
+
+Style guide: Atoms.chips-labels
+
+*/
+
+$class-name-chips-label: rocksite-a-chips-label;
+
+.#{$class-name-chips-label} {
+
+	@extend %#{$class-name-chips-label};
+	margin: 0 1rem 1rem 0;
+
+	.fa {
+
+		color: get-color-css(dark-gray1);
+
+	}
+
+	a {
+		color: get-color-css(text);
+	}
+
+
+	&:hover {
+
+		text-decoration: none;
+		background: get-color-css(primary);
+
+	}
+
+
+	&.-primary {
+
+		background-color: get-color-css(primary);
+
+	}
+
+	&.-success {
+
+		background-color: get-color-css(success);
+
+	}
+
+	&.-warning {
+
+		background-color: get-color-css(warning);
+
+	}
+
+	&.-danger {
+
+		background-color: get-color-css(alert);
+
+	}
+
+	&.-info {
+
+		background-color: get-color-css(info);
+
+	}
+
+	&.-circle {
+
+		border-radius: 100%;
+
+	}
+
+	&.-small {
+		width: 2rem;
+		height: 2rem;
+		@include type-setting(xx-small);
+		text-align: center;
+		line-height: 1.2rem;
+	}
+
+	&.-time-label {
+		color: get-color-css(gray3);
+		@include type-setting(x-small);
+	}
+
+	&.-meta-label {
+
+		background: get-color-css(gray3);
+
+		&:hover {
+
+			background: get-color-css(dark-gray2);
+
+		}
+
+	}
+
+	// chips labels  group
+
+
+}
+%#{$class-name-chips-label} {
+
+	@include type-setting(x-small);
+	display: inline-block;
+	background-color: get-color-css(secondary);
+	padding: $label-color-padding;
+	color: get-color-css(text);
+	line-height: $label-color-line-height;
+	border-radius: $global-radius;
+}
+
+

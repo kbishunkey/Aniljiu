@@ -1,0 +1,12 @@
+
+html {
+	font-size: 10px;
+}
+
+.kss-container {
+	max-width: 100%;
+}
+
+.kss-nav__menu-link {
+	font-size: 1.6rem;
+}

@@ -1,0 +1,65 @@
+.wp-block-getwid-person {
+
+  .wp-block-getwid-person__image {
+
+    img {
+
+    }
+
+    + .wp-block-getwid-person__content-wrapper {
+
+    }
+  }
+
+  .wp-block-getwid-person__subtitle,
+  .wp-block-getwid-person__title,
+  .wp-block-getwid-person__content {
+
+  }
+
+  .wp-block-getwid-person__title {
+    @extend %#{$class-name-team-box}__item__title;
+  }
+
+  .wp-block-getwid-person__subtitle {
+
+    @extend %#{$class-name-team-box}__item__subtitle
+
+  }
+
+  .wp-block-getwid-person__content {
+
+    @extend %#{$class-name-team-box}__item__content;
+
+  }
+
+  .wp-block-getwid-social-links {
+
+    @extend %#{$class-name-team-box}__shares;
+
+    .wp-block-getwid-social-links__list {
+      margin: 0;
+
+    }
+
+
+    .wp-block-getwid-social-links__item {
+
+      .wp-block-getwid-social-links__link {
+
+        @extend %#{$class-name-button-social};
+
+        @include button-social-specify();
+
+      }
+
+    }
+
+
+
+  }
+
+  &.is-image-cropped {
+
+  }
+}

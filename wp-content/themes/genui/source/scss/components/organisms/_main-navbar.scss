@@ -1,0 +1,141 @@
+/*
+Main Navbar
+
+
+Section navbar
+
+Markup: ../../../../styleguide/templates/organisms/main-navbar.html
+
+Style guide: Organisms.main-navbar
+
+Wrapper:
+<div style="max-width:1200px;">
+<wrapper-content/>
+</div>
+
+*/
+
+
+
+$class-name-navbar: rocksite-o-navbar-main;
+
+.#{$class-name-navbar} {
+
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+
+
+	@include reset-outer-container-padding;
+
+	@include respond-to( small ) {
+
+		max-width: none;
+		margin: 0;
+
+	}
+
+	.#{$class-name-navbar}__header{
+
+		max-height: $navbar-main-height;
+		height: $navbar-main-height;
+		display: flex;
+		align-items: center;
+		width: 40%;
+
+
+
+		@include respond-to( medium ) {
+
+			width: $main-nav-header-width;
+			align-self: flex-start;
+
+		}
+
+
+		a{
+
+			display: block;
+
+			img{
+
+				display: block;
+
+			}
+
+		}
+
+	}
+
+	.#{$class-name-navbar}__toggle-menu{
+
+		height: $navbar-main-height;
+		order: 3;
+		width: 60%;
+
+
+		@include respond-to( medium ) {
+
+			width: auto;
+
+		}
+
+	}
+
+	.#{$class-name-navbar}__search-bar {
+
+
+		max-height: $navbar-main-height;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		padding-left: $layout-grid-gutter/2;
+		padding-right: $layout-grid-gutter/2;
+
+		@include respond-to( medium ) {
+
+			width: calc(100% - #{$main-nav-header-width});
+
+		}
+
+
+	}
+
+	.#{$class-name-navbar}__main-menu{
+
+		margin-left: auto;
+
+	}
+
+	.#{$class-name-navbar}__search-box{
+
+		width: calc(100% - #{$main-nav-header-width});
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: flex;
+		align-items: center;
+		height: $navbar-main-height;
+		background-color: $main-nav-bg-color;
+
+
+
+		.#{$class-name-navbar}__search-box__form{
+
+			margin-right: 0;
+			width: calc(100% - #{$main-nav-close-width});
+			height: $main-nav-search-height;
+
+
+		}
+
+	}
+
+	&.-fixed-header {
+
+
+
+	}
+
+}
+

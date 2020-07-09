@@ -1,0 +1,16 @@
+
+$input-padding-y: 2px;
+$input-padding-x: 1.5rem;
+$font-size-base: font-size(medium);
+$input-line-height: 2;
+$input-color: get-color(text);
+$form-label-color: get-color(dark-gray1);
+$input-bg: get-color(invert);
+$input-border-width: 2px;
+$input-border-color: get-color(gray2);
+$input-border-color-focus: get-color(secondary);
+$input-radius: 0.5rem;
+
+// specific forms
+
+$search-btn-small-width: 5rem;

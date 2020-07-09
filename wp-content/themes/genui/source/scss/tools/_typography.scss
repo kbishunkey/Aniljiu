@@ -1,0 +1,8 @@
+// Type scale conception https://scotch.io/tutorials/aesthetic-sass-3-typography-and-vertical-rhythm
+// returns font size and line height based on given level
+
+@mixin type-setting($level: medium) {
+  font-size: font-size($level);
+  line-height: line-height($level);
+
+}

@@ -1,0 +1,79 @@
+/*
+Countdown Info
+
+
+Labels for displaying countdown numbers with label
+
+
+
+
+Markup: ../../../../styleguide/templates/atoms/countdown-info.html
+
+
+Style guide: Atoms.countdown-info
+
+Wrapper:
+<div style="max-width:350px">
+<wrapper-content/>
+</div>
+
+*/
+
+$class-name-countdown-info: rocksite-m-countdown-info;
+
+.#{$class-name-countdown-info} {
+
+  @extend %#{$class-name-countdown-info};
+
+  .#{$class-name-countdown-info}__label {
+
+    @extend %#{$class-name-countdown-info}__label;
+
+  }
+
+
+  .#{$class-name-countdown-info}__number {
+
+    @extend %#{$class-name-countdown-info}__number;
+
+  }
+
+}
+
+%#{$class-name-countdown-info} {
+
+  font-family: font-family-css(secondary);
+  letter-spacing: normal;
+  text-align: center;
+  display: inline-block;
+  padding: 2rem;
+  min-width: 12rem;
+  background: get-color-css(gray1);
+
+  &__label {
+
+    display: block;
+    letter-spacing: 2px;
+    line-height: 1.2;
+
+
+  }
+
+  &__number {
+
+    display: block;
+    @include type-setting(h3);
+    font-weight: 600;
+    line-height: 1;
+
+  }
+
+}
+
+
+
+
+
+
+
+

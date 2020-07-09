@@ -1,0 +1,29 @@
+.wp-block-getwid-post-carousel {
+
+    .wp-block-getwid-post-carousel__post {
+
+        .wp-block-getwid-post-carousel__post-title {
+
+            @extend %#{$class-name-heading};
+            @include type-setting(h4);
+
+            @extend %#{$class-name-content}__header__title__link;
+
+        }
+
+        .wp-block-getwid-post-carousel__post-thumbnail {
+
+            margin-bottom: $layout-box-vertical-space;
+
+            img {
+
+            }
+        }
+
+        .wp-block-getwid-post-carousel__post-excerpt {
+
+            margin-top: $layout-box-vertical-space;
+
+        }
+    }
+}

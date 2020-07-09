@@ -1,0 +1,61 @@
+
+
+/*
+Search Box
+
+Classic search filed
+
+
+Markup: ../../../../styleguide/templates/molecules/search-box.html
+
+Wrapper:
+<div style="width:300px">
+<wrapper-content/>
+</div>
+
+Style guide: Molecules.search-box
+
+
+
+*/
+
+
+$class-name-input-connections: rocksite-m-input-connections;
+// specific forms
+
+.#{$class-name-input-connections} {
+
+	&__group {
+
+		position: relative;
+
+	}
+
+	// search form (widget etc)
+
+	&.-searchform {
+
+		.#{$class-name-input-connections}__group {
+
+			padding-right: $search-btn-small-width;
+
+			&__input {
+
+				padding-bottom: 1px;
+
+			}
+
+			&__btn {
+
+				position: absolute;
+				top: 0;
+				right: 0;
+
+
+			}
+
+		}
+
+	}
+
+}

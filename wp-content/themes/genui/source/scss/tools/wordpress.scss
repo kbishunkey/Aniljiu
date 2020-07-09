@@ -1,0 +1,22 @@
+@mixin reset-wordpress-align-styles {
+
+  .-sticky-article,
+  .alignwide,
+  .alignfull {
+
+    margin-left: 0!important;
+    margin-right: 0!important;
+    max-width: 100%!important;
+
+    &.wp-block-cover {
+
+      padding-left: 5rem;
+      padding-right: 5rem;
+
+
+
+    }
+
+  }
+
+}

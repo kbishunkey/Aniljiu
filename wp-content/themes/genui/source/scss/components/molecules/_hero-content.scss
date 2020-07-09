@@ -1,0 +1,73 @@
+/*
+Hero Content
+
+
+Short info box and icon
+
+Markup: ../../../../styleguide/templates/molecules/hero-content.html
+
+
+Style guide: Molecules.hero-content
+
+Wrapper:
+<div style="max-width:500px">
+<wrapper-content/>
+</div>
+
+*/
+
+$class-name-hero-content: rocksite-m-hero-content;
+
+.#{$class-name-hero-content} {
+
+  display: flex;
+  //padding: $layout-box-vertical-space/2 0 $layout-box-vertical-space/2 0;
+
+  flex-direction: column;
+  margin-bottom: $layout-box-vertical-space;
+
+  .#{$class-name-hero-content}__header {
+
+    font-family: font-family-css(secondary);
+
+    .#{$class-name-hero-content}__header__above_title {
+
+      font-size: font-size(medium);
+      display: block;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      color: get-color-css(primary);
+      font-weight: 600;
+
+
+
+    }
+
+    .#{$class-name-hero-content}__header__title {
+      @extend %#{$class-name-heading};
+      @extend %-hero;
+      margin-bottom: 3rem;
+      
+    }
+
+  }
+
+  .#{$class-name-hero-content}__content {
+
+    margin-bottom: 3rem;
+
+   p {
+     @extend %#{$class-name-text};
+     @include type-setting(large);
+     color: get-color(dark-gray1);
+   }
+
+  }
+
+  .#{$class-name-hero-content}__footer {
+
+  }
+
+
+
+}

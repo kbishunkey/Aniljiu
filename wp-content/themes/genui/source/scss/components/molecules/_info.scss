@@ -1,0 +1,120 @@
+/*
+Info Box
+
+
+Short info box and icon
+
+.-left-icon   - e-mail icon
+.-right-icon   - Twitter
+
+
+Markup: ../../../../styleguide/templates/molecules/info.html
+
+
+Style guide: Molecules.info
+
+Wrapper:
+<div style="max-width:450px">
+<wrapper-content/>
+</div>
+
+*/
+
+$class-name-info: rocksite-m-info;
+
+.#{$class-name-info} {
+
+  @extend %#{$class-name-info};
+
+  .#{$class-name-info}__icon {
+
+    @extend %#{$class-name-info}__icon;
+
+  }
+
+  .#{$class-name-info}__content {
+
+    @extend %#{$class-name-info}__content;
+
+    .#{$class-name-info}__content__title {
+
+      @extend %#{$class-name-info}__content__title;
+
+    }
+
+
+
+  }
+
+  &.-left-icon {
+
+    flex-direction: row;
+
+    .#{$class-name-info}__icon {
+
+        padding-right: $layout-box-horizontal-space;
+
+    }
+
+  }
+
+  &.-right-icon {
+
+
+    flex-direction: row-reverse;
+
+    .#{$class-name-info}__content {
+
+      text-align: right;
+
+    }
+
+    .#{$class-name-info}__icon {
+
+      padding-left: $layout-box-horizontal-space;
+
+
+    }
+
+  }
+
+}
+
+%#{$class-name-info} {
+
+  display: flex;
+  //padding: $layout-box-vertical-space/2 0 $layout-box-vertical-space/2 0;
+
+  flex-direction: column;
+  margin-bottom: $layout-box-vertical-space;
+
+}
+
+%#{$class-name-info}__content {
+
+  order: 2;
+  margin-bottom: 1.5rem;
+
+  p {
+
+    @extend %#{$class-name-text};
+    @include type-setting(medium);
+
+  }
+
+}
+
+
+%#{$class-name-info}__content__title {
+  order: 1;
+  margin-bottom: 1.5rem;
+  @extend %#{$class-name-heading};
+  @extend %-h5;
+}
+
+%#{$class-name-info}__icon {
+  order: 1;
+  margin-bottom: 1.5rem;
+  font-size: 5rem;
+}
+

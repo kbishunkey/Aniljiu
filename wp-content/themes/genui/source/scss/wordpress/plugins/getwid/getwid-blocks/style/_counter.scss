@@ -1,0 +1,43 @@
+.wp-block-getwid-counter {
+
+
+
+    .wp-block-getwid-counter__wrapper{
+
+        @extend %#{$class-name-counter-box}__content;
+
+        .wp-block-getwid-counter__number {
+
+            @extend %#{$class-name-counter-box}__content__counter;
+            order: 1;
+
+            // FIX: GETWID PROBLEM INVERT COLOR
+            &.has-color-invert-color {
+                + p {
+                    color: get-color-css(invert);
+                }
+            }
+
+        }
+
+        .wp-block-getwid-counter__prefix {
+
+            padding-bottom: 0;
+            @extend %#{$class-name-counter-box}__content__prefix;
+            order: 2;
+
+
+        }
+
+        .wp-block-getwid-counter__suffix {
+
+            @extend %#{$class-name-counter-box}__content__sufix;
+            order: 3;
+            padding: 0;
+
+        }
+
+    }
+
+}
+

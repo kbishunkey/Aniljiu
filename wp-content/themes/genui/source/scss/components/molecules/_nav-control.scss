@@ -1,0 +1,163 @@
+$class-name-nav-control: rocksite-m-control-nav;
+$class-name-nav-direction: rocksite-m-direction-nav;
+
+.#{$class-name-nav-control} {
+
+	@include list-core();
+
+	li {
+
+		text-indent: -3000px;
+		overflow: hidden;
+
+		a {
+
+			display: block;
+
+		}
+
+	}
+
+	// disable by flexy slider
+
+	.rocksite-m-disabled {
+
+		display: none;
+
+	}
+
+}
+
+/*
+Navigation - pointer control
+
+Pointer navigation
+
+Markup: ../../../../styleguide/templates/molecules/nav-control-pointer.html
+
+Wrapper:
+<div style="width:300px">
+<wrapper-content/>
+</div>
+
+Style guide: Molecules.navigation-pointer-control
+
+*/
+
+.#{$class-name-nav-control},
+%#{$class-name-nav-control}{
+
+
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+
+
+	li {
+
+      display: inline-block;
+      margin-right: 10px;
+      width: 2rem;
+
+		a,
+		button{
+
+			@extend %#{$class-name-nav-control}_pointer;
+
+			&:hover{
+
+				@extend %#{$class-name-nav-control}_pointer_active;
+
+			}
+
+
+
+		}
+
+		&.slick-active{
+
+			a,
+			button {
+
+				@extend %#{$class-name-nav-control}_pointer_active;
+
+			}
+
+
+
+		}
+
+		&:last-child{
+
+			margin-right: 0;
+
+		}
+
+	}
+
+}
+
+%#{$class-name-nav-control}_pointer {
+
+	width: 1.4rem;
+	height: 1.4rem;
+	padding: 0;
+	display: block;
+	background: get-color-css(primary);
+	color: get-color-css(primary);
+	cursor: pointer;
+	border-radius: 2rem;
+	font-size: 0;
+
+	&:before,
+	&:after {
+		display: none;
+	}
+
+}
+
+%#{$class-name-nav-control}_pointer_active {
+	background: get-color-css(secondary);
+	width: 2rem;
+}
+
+
+
+/*
+Navigation - arrows control
+
+Arrow navigation
+
+Markup: ../../../../styleguide/templates/molecules/nav-control-arrows.html
+
+Wrapper:
+<div style="width:300px">
+<wrapper-content/>
+</div>
+
+Style guide: Molecules.navigation-arrow-control
+
+*/
+
+.#{$class-name-nav-direction} {
+
+	width: 9rem;
+	height: 4.2rem;
+	display: flex;
+	@include list-core();
+
+	li {
+
+		&:last-child {
+
+			margin-left: auto;
+
+		}
+
+
+
+
+	}
+
+}

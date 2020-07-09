@@ -1,0 +1,172 @@
+/*
+Navigation - next post
+
+Navigation next post
+
+Markup: ../../../../styleguide/templates/organisms/nav-next-post.html
+
+Wrapper:
+<div style="width:800px">
+<wrapper-content/>
+</div>
+
+Styleguide: Organisms.Navigation.nav-next-post
+
+*/
+
+$class-name-nav-next-post: rocksite-m-nav-links;
+
+.#{$class-name-nav-next-post} {
+
+  @extend %#{$class-name-nav-next-post};
+
+  // disable by flexy slider
+
+  .#{$class-name-nav-next-post}__nav {
+
+    @extend %#{$class-name-nav-next-post}__nav;
+
+
+    .#{$class-name-nav-next-post}__nav__link {
+
+      @extend %#{$class-name-nav-next-post}__nav__link;
+
+
+      &:hover {
+
+        .rocksite-a-button-icon {
+
+          @extend %button-hover;
+
+        }
+
+        .#{$class-name-nav-next-post}__nav__link__title__text {
+
+          color: get-color-css(primary);
+
+        }
+      }
+
+
+
+      .#{$class-name-nav-next-post}__nav__link__title__text {
+
+        @extend  %#{$class-name-nav-next-post}__nav__link__title__text;
+
+      }
+
+      .#{$class-name-nav-next-post}__nav__link__meta-nav {
+
+        @extend %#{$class-name-nav-next-post}__nav__link__meta-nav;
+
+      }
+
+    }
+
+
+
+    &.-next-link {
+
+      .#{$class-name-nav-next-post}__nav__link {
+
+        @extend %#{$class-name-nav-next-post}__nav__link--next-link;
+
+      }
+
+    }
+
+  }
+
+}
+
+%#{$class-name-nav-next-post} {
+
+  display: flex;
+  width: 100%;
+  border-top: 1px solid get-color-css($global-border-color);
+  border-bottom: 1px solid get-color-css($global-border-color);
+  padding: 2rem 0;
+
+}
+
+%#{$class-name-nav-next-post}__nav {
+  min-height: 5rem;
+  width: 50%;
+}
+
+%#{$class-name-nav-next-post}__nav__link {
+
+  position: relative;
+  padding-left: 5.5rem;
+  padding-right: 1rem;
+  display: block;
+
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  .rocksite-a-button-icon {
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+  }
+
+}
+
+%#{$class-name-nav-next-post}__nav__link--next-link {
+
+  padding-left: 1rem;
+  padding-right: 5.5rem;
+  text-align: right;
+  align-self: flex-end;
+
+
+  .rocksite-a-button-icon {
+
+    right: 0;
+    left: auto;
+
+  }
+
+}
+
+%#{$class-name-nav-next-post}__nav__link__title__text {
+
+  display: block;
+  font-weight: bold;
+  color: get-color-css(text);
+
+}
+
+%#{$class-name-nav-next-post}__nav__link__meta-nav {
+
+  display: block;
+  text-transform: uppercase;
+  font-size: font-size(xx-small);
+  padding-bottom: 0.5rem;
+  color: get-color-css(dark-gray1);
+
+}
+
+
+
+/*
+Navigation - pointer control
+
+Pointer navigation
+
+Markup: ../../../../styleguide/templates/molecules/nav-control-pointer.html
+
+Wrapper:
+<div style="width:300px">
+<wrapper-content/>
+</div>
+
+Style guide: Molecules.navigation-pointer-control
+
+*/

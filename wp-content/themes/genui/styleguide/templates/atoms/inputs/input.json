@@ -1,0 +1,6 @@
+{
+  "type": "text",
+  "placeholder": "Search",
+  "id_for": "input_text",
+  "name": "search"
+}

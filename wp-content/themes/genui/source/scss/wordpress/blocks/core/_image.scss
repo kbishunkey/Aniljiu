@@ -1,0 +1,96 @@
+
+.wp-block-image {
+
+  @extend %#{$class-name-image-figure};
+  display: block;
+  margin-bottom: 0;
+
+
+  img {
+
+    display: block;
+    @include responsive-image;
+
+  }
+
+  figcaption,
+  .wp-caption-textrocksite{
+
+    @extend %#{$class-name-image-figure}__caption;
+
+  }
+
+  &.alignfull {
+
+    @extend %alignwide;
+
+    img {
+
+      @include full-width-image;
+
+    }
+
+  }
+
+  &.alignwide {
+
+
+
+  }
+
+  &.alignfull {
+
+    @extend %alignfull;
+
+  }
+
+  &.is-style-circle-mask {
+
+    img {
+
+      border-radius: 9999px;
+
+      @supports (mask-image: none) or (-webkit-mask-image: none) {
+        /* stylelint-disable */
+        mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');
+        /* stylelint-enable */
+        mask-mode: alpha;
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        mask-position: center;
+        border-radius: none;
+      }
+
+
+    }
+
+  }
+
+  /*
+  width:     fit-content;
+  max-width: 100%;
+
+  img {
+      max-width: 100%;
+  }
+
+  &.is-resized {
+      width: min-content;
+
+      // Emulate min-content for Edge and IE11
+      display: -ms-inline-grid;
+      -ms-grid-columns: min-content;
+
+      figcaption {
+          -ms-grid-row: 2;
+      }
+
+      img {
+          max-width: none;
+      }
+  }
+
+  figcaption {}
+
+  */
+}

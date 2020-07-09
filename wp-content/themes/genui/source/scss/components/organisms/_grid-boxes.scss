@@ -1,0 +1,90 @@
+/*
+
+Grid boxes
+
+.-columns-2  - 2 columns
+.-columns-3  - 3 columns
+
+Markup: ../../../../styleguide/templates/organisms/grid-boxes.html
+
+Wrapper:
+<div style="width:900px">
+<wrapper-content/>
+</div>
+
+Style guide: Organisms.grid-boxes
+
+*/
+
+$class-name-grid-boxes: rocksite-o-grid-boxes;
+
+.#{$class-name-grid-boxes} {
+  
+  width: 100%;
+
+
+  .#{$class-name-grid-boxes}__wrapper {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$layout-grid-gutter/2;
+    margin-right: -$layout-grid-gutter/2;
+
+    .#{$class-name-grid-boxes}__wrapper__item {
+
+      width: 25%;
+      padding: 0 $layout-grid-gutter/2 $layout-grid-gutter $layout-grid-gutter/2;
+
+      img {
+
+        @include responsive-image;
+
+      }
+
+    }
+  }
+
+  &.-columns-3 {
+
+    .#{$class-name-grid-boxes}__wrapper {
+
+      .#{$class-name-grid-boxes}__wrapper__item {
+
+
+        width: 100%;
+
+        @include respond-to(medium) {
+
+          width: 33%;
+
+        }
+
+      }
+
+    }
+
+  }
+
+  &.-columns-2 {
+
+    .#{$class-name-grid-boxes}__wrapper {
+
+      .#{$class-name-grid-boxes}__wrapper__item {
+
+        width: 100%;
+
+        @include respond-to(medium) {
+
+          width: 50%;
+
+        }
+
+
+      }
+
+    }
+
+  }
+
+}
+

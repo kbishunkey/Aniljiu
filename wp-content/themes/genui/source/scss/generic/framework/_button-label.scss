@@ -1,0 +1,40 @@
+// define button layout variants
+@mixin button-label-core {
+
+	text-transform: $button-text-transform;
+	position: relative;
+	color: get-btn-color(default);
+	border: $button-default-border;
+	z-index: 0;
+	font-size: $button-font-size;
+	line-height: $button-default-line-height;
+	overflow: hidden;
+	display: inline-block;
+	border-radius: $button-default-radius;
+
+
+	&:focus {
+		outline: none;
+	}
+
+	&:hover {
+
+		text-decoration: none;
+		cursor: pointer;
+
+	}
+
+
+
+}
+
+@mixin reset-button-hover {
+
+	&:before,
+	&:after {
+		display: none;
+	}
+
+}
+
+

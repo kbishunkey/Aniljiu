@@ -1,0 +1,15 @@
+
+.wp-block-spacer {
+
+  display: none;
+
+
+
+  @media ( min-width: #{break(large)}) {
+
+    display: block;
+
+  }
+
+
+}

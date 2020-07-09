@@ -1,0 +1,16 @@
+.#{$single-template-class-name} {
+  .woocommerce {
+
+    .single-product {
+
+      h2 {
+
+        @extend %-h4;
+
+      }
+
+    }
+
+
+  }
+}

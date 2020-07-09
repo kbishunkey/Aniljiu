@@ -1,0 +1,33 @@
+@mixin getwin-responsive-font-sizes($component_class) {
+
+  $sizes: 50, 60, 70, 80, 90, 110, 120;
+
+  @each $size in $sizes {
+
+    &.fs-tablet-#{$size} {
+
+      .#{$component_class} {
+
+        @media (max-width: #{break(medium)}) {
+          font-size: calc(#{$size}/100 * 100%) ;
+        }
+
+      }
+
+    }
+
+    &.fs-tablet-#{$size} {
+
+      .#{$component_class} {
+
+        @media (max-width: #{break(large)}) {
+          font-size: calc(#{$size}/100 * 100%) ;
+        }
+
+      }
+
+    }
+  }
+
+}
+

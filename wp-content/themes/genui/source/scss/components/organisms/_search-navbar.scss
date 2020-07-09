@@ -1,0 +1,27 @@
+/*
+
+Search Navbar
+
+Markup: ../../../../styleguide/templates/organisms/search-navbar.html
+
+Style guide: Organisms.search-navbar
+
+*/
+
+$class-name-search-navbar: rocksite-o-search-navbar;
+
+.#{$class-name-search-navbar} {
+
+   padding-left: 5rem;
+   position: relative;
+   width: 100%;
+
+   .#{$class-name-search-navbar}__close{
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+   }
+
+}

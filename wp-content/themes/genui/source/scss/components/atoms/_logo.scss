@@ -1,0 +1,36 @@
+/*
+Logo
+
+Brand Logo
+
+Markup: ../../../../styleguide/templates/atoms/logo.html
+
+Style guide: Atoms.logo
+
+*/
+
+.rocksite-a-logo {
+
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+
+
+
+	.rocksite-a-logo__link {
+
+		.rocksite-a-logo__link__image {
+
+			max-width: 100%;
+			height: auto;
+			max-height: 100%;
+			width: auto;
+
+		}
+
+	}
+
+
+}
+

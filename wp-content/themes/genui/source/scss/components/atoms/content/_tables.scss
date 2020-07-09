@@ -1,0 +1,41 @@
+@import  '../../../vendor/bootstrap/mixins/tables';
+@import  '../../../vendor/bootstrap/variables';
+@import  '../../../vendor/bootstrap/tables';
+
+/*
+Tables
+
+blocquote in the content
+
+.-striped - striped table
+.-bordered - borderd
+
+Markup: ../../../../styleguide/templates/atoms/content/tables.html
+
+Style guide: Atoms.tables
+
+*/
+
+$class-name-table: rocksite-a-table;
+
+.#{$class-name-table},
+%#{$class-name-table}{
+
+	@extend %table-bootstrap;
+
+	&.-striped {
+
+		@extend %table-bootstrap-striped;
+	}
+
+	&.-bordered {
+
+		@extend %table-bootstrap-bordered;
+
+	}
+
+}
+
+
+
+

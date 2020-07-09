@@ -1,0 +1,75 @@
+/*
+Meta Labels
+
+Labels for displaying meta
+
+.-small - plain label displaying in meta area
+
+
+Markup: ../../../../styleguide/templates/molecules/meta-labels.html
+
+Style guide: Molecules.meta-label
+
+*/
+
+$class-meta-label: rocksite-m-meta-label;
+
+.#{$class-meta-label} {
+
+  @include type-setting(x-small);
+  display: flex;
+  height: auto;
+  padding: 0.4rem 0;
+  color: get-color-css(gray3);
+  line-height: $label-color-line-height;
+  align-items: center;
+  margin-right: 1rem;
+
+
+  em {
+
+    font-style: normal;
+    margin-right: 0.4rem;
+
+  }
+
+  .fa,
+  .la{
+
+    color: get-color-css(dark-gray1);
+    font-size: 2rem;
+
+  }
+
+  &.-small {
+
+    @include type-setting(small-xx);
+
+  }
+
+  a {
+
+    @extend %#{$class-meta-label};
+
+
+  }
+
+  time {
+
+    display: inline!important;
+
+  }
+
+}
+
+%#{$class-meta-label} {
+  color: get-color-css(dark-gray2);
+  font-weight: 600;
+
+  &:hover {
+
+    color: get-color-css(dark-gray1);
+
+  }
+}
+

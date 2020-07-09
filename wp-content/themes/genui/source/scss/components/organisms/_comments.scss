@@ -1,0 +1,161 @@
+/*
+Comments
+
+
+Comments component
+
+Markup: ../../../../styleguide/templates/organisms/comments.html
+
+Style guide: Organisms.comments
+
+Wrapper:
+<div style="width:400">
+<wrapper-content/>
+</div>
+
+*/
+
+
+$class-name-comments-content: rocksite-o-comments;
+
+
+.#{$class-name-comments-content}  {
+
+	@include  box-core;
+	margin-top: 20px;
+
+
+
+
+	// Header/title for the comments section.
+	.#{$class-name-comments-content}__header {
+
+		@include type-setting(h5);
+		border-bottom: 1px solid get-color-css($global-border-color);
+		margin-bottom: 1.5rem;
+		padding-bottom: 1rem;
+
+	}
+
+	// Comments list wrapper.
+	.#{$class-name-comments-content}__list {
+
+		@include  list-core;
+
+
+		.children {
+
+			@include  list-core;
+			padding-left: 4rem;
+
+		}
+	}
+
+	.#{$class-name-comments-content}__content {
+
+		@include content-core;
+		position: relative;
+		margin-bottom: 2rem;
+		border-bottom: 1px solid get-color-css($global-border-color);
+		padding-bottom: 1rem;
+
+		p {
+
+			font-size: font-size(p-small);
+
+		}
+
+
+		.#{$class-name-comments-content}__content__header {
+
+			display: flex;
+			align-items: center;
+
+
+
+		}
+
+		.#{$class-name-comments-content}__content__header__avatar {
+
+			margin: 0 1.5rem 0 0;
+
+			img {
+
+				width: 4.4rem;
+				height: auto;
+
+			}
+
+		}
+
+		.#{$class-name-comments-content}__content__header__author {
+
+			margin: 0 1.5rem 0 0;
+			@extend %#{$class-name-heading};
+			@extend %-h6;
+			font-style: normal;
+
+		}
+
+		.#{$class-name-comments-content}__content__header__date {
+
+			margin-left: auto;
+			font-size: font-size(xx-small);
+
+			a {
+
+				color: get-color-css(dark-gray1);
+
+			}
+
+		}
+
+
+
+	}
+
+	.comment-content {
+
+		margin-left: 5.9rem;
+
+		p {
+
+			font-size: font-size(x-small);
+
+		}
+
+	}
+
+	.#{$class-name-comments-content}__content__replay {
+
+
+		display: flex;
+
+		.rocksite-a-button {
+
+			margin-left: auto;
+
+		}
+
+	}
+
+	.#{$class-name-comments-content}__content__edit {
+
+		position: absolute;
+		font-size: 10px;
+		top: 0;
+		right: 0;
+
+	}
+
+	.bypostauthor {
+
+		display: inline;
+
+	}
+
+
+
+
+
+}

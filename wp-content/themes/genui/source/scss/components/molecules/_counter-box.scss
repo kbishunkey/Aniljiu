@@ -1,0 +1,94 @@
+/*
+Counter Box
+
+Your standard button suitable for clicking.
+
+Markup: ../../../../styleguide/templates/molecules/counter-box.html
+
+Wrapper:
+<div style="text-align: center">
+<wrapper-content/>
+</div>
+
+Style guide: Molecules.counter-box
+
+
+
+*/
+
+$class-name-counter-box: rocksite-m-counter-box;
+
+.#{$class-name-counter-box} {
+
+  .#{$class-name-counter-box}__content {
+
+   @extend %#{$class-name-counter-box}__content;
+
+    .#{$class-name-counter-box}__content__counter {
+
+      @extend %#{$class-name-counter-box}__content__counter;
+
+    }
+
+    .#{$class-name-counter-box}__content__prefix {
+
+      @extend %#{$class-name-counter-box}__content__prefix;
+
+    }
+
+    .#{$class-name-counter-box}__content__sufix {
+
+      @extend %#{$class-name-counter-box}__content__sufix;
+
+    }
+
+  }
+}
+
+
+%#{$class-name-counter-box}__content {
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: $grid-gutter-width/2;
+  padding-bottom: 0;
+
+  * {
+
+    text-align: center;
+
+  }
+
+  @include respond-to( medium ) {
+    text-align: right;
+    padding: 0;
+
+    * {
+
+      text-align: right;
+
+    }
+  }
+
+}
+
+%#{$class-name-counter-box}__content__counter {
+
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: font-family-css(secondary);
+
+}
+
+%#{$class-name-counter-box}__content__prefix {
+
+  @extend %#{$class-name-heading};
+  @extend %-box-header-1;
+  margin: $layout-box-header-margin;
+
+}
+
+%#{$class-name-counter-box}__content__sufix {
+  color: get-color-css(dark-gray1)
+}

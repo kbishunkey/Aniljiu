@@ -1,0 +1,76 @@
+/**
+Extends Info Box
+ */
+
+.wp-block-getwid-icon-box {
+
+
+
+    .wp-block-getwid-icon-box__content {
+
+
+        h3,
+        h5,
+        h4,
+        h6{
+
+            margin: 0.5rem 0 1.3rem 0;
+
+        }
+
+    }
+
+    .wp-block-getwid-icon-box__icon-container {
+
+        margin-bottom: 1.5rem;
+
+        .wp-block-getwid-icon-box__icon-wrapper {
+
+            padding: 1rem;
+
+
+
+        }
+
+        i {
+
+            &:before {
+
+            }
+        }
+
+        a.wp-block-getwid-icon-box__icon-wrapper {
+
+
+
+        }
+
+        &.has-layout-framed {
+
+            .wp-block-getwid-icon-box__icon-wrapper {
+
+            }
+        }
+
+        &.has-layout-stacked {
+
+            .wp-block-getwid-icon-box__icon-wrapper {
+
+            }
+        }
+    }
+
+    &.has-icon-left {
+
+        .wp-block-getwid-icon-box__icon-container {
+
+        }
+    }
+
+    &.has-icon-right {
+
+        .wp-block-getwid-icon-box__icon-container {
+
+        }
+    }
+}

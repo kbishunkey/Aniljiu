@@ -1,0 +1,35 @@
+{
+
+  "source": [
+    "../source/scss/"
+
+  ],
+
+  "destination":  "toolkit/",
+  "builder"      : "../node_modules/kss-scheibo/kss_styleguide/scheibo-template/",
+
+  "nav-depth": 4,
+
+
+  "//": "The css and js paths are URLs relative to the generated style guide.",
+  "css": [
+
+    "https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap&subset=latin-ext",
+    "https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap&subset=latin-ext",
+    "../../assets/css/full/root-variables.css",
+    "../../assets/css/full/screen.css",
+    "../assets/styleguide.css",
+    "../../assets/vendors/line-awesome/css/line-awesome.min.css"
+
+  ],
+  "js": [
+    "../assets/jquery.js",
+    "../../assets/vendors/slick/slick.min.js",
+
+    "../../assets/vendors/prettyPhoto/js/jquery.prettyPhoto.js",
+    "../../assets/js/full/main.js"
+
+  ],
+
+  "custom"       : ["Colors", "Wrapper", "RequireJS", "BodyClass"]
+}

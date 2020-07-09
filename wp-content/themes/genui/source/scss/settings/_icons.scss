@@ -1,0 +1,19 @@
+
+// icons codes mapping
+
+@function icons-codes() {
+
+  @return (
+          close: '\f00d',
+          prev: '\f104',
+          next: '\f105',
+
+  )
+
+}
+
+// helper function returns icon
+
+@function get-icon($icon) {
+  @return map-get(icons-codes(), $icon);
+}

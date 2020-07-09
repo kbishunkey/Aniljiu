@@ -1,0 +1,11 @@
+// Define content article rythm
+@mixin box-core {
+
+	font-weight: 300;
+	background: get-color-css(invert);
+	padding: $layout-box-padding;
+	box-shadow: $layout-box-shadow;
+
+	@include box_content;
+
+}

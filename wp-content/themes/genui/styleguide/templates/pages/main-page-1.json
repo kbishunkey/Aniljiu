@@ -1,0 +1,562 @@
+{
+  "top_bar": [
+    {
+      "menu_labels": [
+        {
+          "name": "Contact Us",
+          "link": "#"
+        },
+        {
+          "name": "About Us",
+          "link": "#"
+        }
+      ],
+      "top_bar_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      "icons": [
+        {
+          "icon": "fab fa-linkedin-in"
+        },
+        {
+          "icon": "fa fa-envelope"
+        },
+        {
+          "icon": "fab fa-twitter"
+        },
+        {
+          "icon": "fab fa-facebook-f"
+        }
+      ]
+    }
+  ],
+  "main_navbar": [
+    {
+      "image": "../assets/images/logo.png",
+      "menu_labels": [
+        {
+          "name": "Home Page",
+          "link": "#"
+        },
+        {
+          "name": "About Us",
+          "link": "#"
+        },
+        {
+          "name": "Services",
+          "link": "#",
+          "additional_class": "-has-children",
+          "submenu": [
+            {
+              "name": "Submenu 1",
+              "link": "#"
+            },
+            {
+              "name": "Submenu 2",
+              "link": "#"
+            },
+            {
+              "name": "Submenu 3",
+              "link": "#"
+            }
+          ]
+        },
+        {
+          "name": "Our Offer",
+          "link": "#"
+        },
+        {
+          "name": "Contact Us",
+          "link": "#"
+        },
+        {
+          "icon": "fa fa-search",
+          "additional_class": "js-expand-search",
+          "link": "#"
+        }
+      ]
+    }
+  ],
+  "main_page_1_s3": [
+    {
+      "above_title": "Prus lobortis",
+      "text": "Ut ultrices diam quis purus lobortis, quis viverra mauris feugiat. Pellentesque nec nulla sagittis, dictum erat vitae, venenatis eros",
+      "title": "Pellentesque nec nulla sagittis",
+      "section_image": "../assets/images/pages/tablet-large.jpg",
+      "button_group": [
+        {
+          "text": "Read more",
+          "modifier_class": "-primary"
+        },
+        {
+          "text": "Contact Us",
+          "modifier_class": "-ghost"
+        }
+      ]
+    }
+  ],
+  "main_page_1_s4": [{
+    "section_header":[
+      {
+        "title": "Donec malesuada augue non erat dictum, vitae efficitur",
+        "subtitle": " Maecenas vulputate tortor sit amet egestas rhoncus",
+        "modifier_class": "u-align-center"
+      }
+
+    ],
+    "info_boxes": [
+      {
+        "icon": "la la-bullhorn",
+        "text": "Ut ultrices diam quis purus lobortis, quis viverra mauris feugiat. Pellentesque nec nulla sagittis, dictum erat vitae, venenatis eros",
+        "title": "Dictum erat vitae"
+      },
+      {
+        "icon": "la la-female",
+        "text": "Pellentesque nec nulla sagittis, dictum erat vitae, venenatis eros",
+        "title": "User Settings"
+      },
+      {
+        "icon": "la la-user-plus",
+        "text": "Nulla sagittis, ut ultrices diam quis purus lobortis, quis viverra mauris feugiat. Pellentesque nec nulla sagittis, dictum erat vitae, venenatis eros",
+        "title": "Viverra mauris feugiat"
+      },
+      {
+        "icon": "la la-hand-pointer-o",
+        "text": "Nulla sagittis, ut ultrices diam quis purus lobortis, quis viverra mauris feugiat. Pellentesque nec nulla sagittis, dictum erat vitae, venenatis eros",
+        "title": "Pellentesque nec nulla"
+      }
+    ]
+  }],
+  "main_page_1_s5": [{
+    "section_header":[
+      {
+        "title": "Latest News",
+        "subtitle": "Maecenas efficitur libero a augue maximus",
+        "modifier_class": "u-align-center"
+      }
+
+    ],
+    "card_boxes": [
+      {
+        "image": "../assets/images/pages/news1.jpg",
+        "meta1": "August 21",
+        "meta2": "Published by",
+        "title": "Duis vitae lobortis odio, sed convallis lacus",
+        "link": "#"
+      },
+      {
+        "image": "../assets/images/pages/news2.jpg",
+        "meta1": "August 21",
+        "meta2": "Published by",
+        "title": "Duis vitae lobortis odio, sed convallis lacus",
+        "link": "#"
+      },
+      {
+        "image": "../assets/images/pages/news3.jpg",
+        "meta1": "August 21",
+        "meta2": "Published by",
+        "title": "Duis vitae lobortis odio, sed convallis lacus",
+        "link": "#"
+      },
+      {
+        "image": "../assets/images/pages/news4.jpg",
+        "meta1": "August 21",
+        "meta2": "Published by",
+        "title": "Duis vitae lobortis odio, sed convallis lacus",
+        "link": "#"
+      }
+    ]
+  }],
+  "main_page_1_s6": [{
+    "section_header":[
+      {
+        "title": "Counter Box",
+        "subtitle": "This flexibility gives you the ultimate freedom",
+        "modifier_class": "u-align-center"
+      }
+
+    ],
+    "counter_boxes": [
+      {
+        "number": "1123",
+        "prefix": "Awards & Certyfications",
+        "sufix": "Changing the options for each once added"
+      },
+      {
+        "number": "100",
+        "prefix": "Different Layouts",
+        "sufix": "Different theme and content layouts for different app"
+      },
+      {
+        "number": "520",
+        "prefix": "PSDs Included",
+        "sufix": "Layered and organized"
+      },
+      {
+        "number": "30",
+        "prefix": "Color Management Sections",
+        "sufix": "Compatible color templates and advanced color management"
+      }
+
+    ]
+  }],
+  "main_page_1_s7": [{
+    "section_header":[
+      {
+        "title": "Our Team",
+        "subtitle": "Nunc sollicitudin vulputate mattis",
+        "modifier_class": "u-align-center"
+      }
+
+    ],
+    "team_boxes": [
+      {
+        "image": "../assets/images/person-men.jpg",
+        "icon": {
+          "-email": "fa fa-envelope",
+          "-twitter": "fab fa-twitter",
+          "-facebook": "fab fa-facebook-f",
+          "-gplus": "fab fa-google-plus-g",
+          "-linkedin":"fab fa-linkedin-in"
+        }
+      },
+      {
+        "image": "../assets/images/person-men.jpg",
+        "icon": {
+          "-email": "fa fa-envelope",
+          "-twitter": "fab fa-twitter",
+          "-facebook": "fab fa-facebook-f",
+          "-gplus": "fab fa-google-plus-g",
+          "-linkedin":"fab fa-linkedin-in"
+        }
+      },
+      {
+        "image": "../assets/images/person-men.jpg",
+        "icon": {
+          "-email": "fa fa-envelope",
+          "-twitter": "fab fa-twitter",
+          "-facebook": "fab fa-facebook-f",
+          "-gplus": "fab fa-google-plus-g",
+          "-linkedin":"fab fa-linkedin-in"
+        }
+      },
+      {
+        "image": "../assets/images/person-men.jpg",
+        "icon": {
+          "-email": "fa fa-envelope",
+          "-twitter": "fab fa-twitter",
+          "-facebook": "fab fa-facebook-f",
+          "-gplus": "fab fa-google-plus-g",
+          "-linkedin":"fab fa-linkedin-in"
+        }
+      }
+
+    ]
+  }],
+  "main_page_1_s8": [{
+    "section_header":[
+      {
+        "title": "Slider Sections",
+        "subtitle": "Different theme and content layouts for different app",
+        "modifier_class": "u-align-center"
+      }
+
+    ],
+    "sliders": [{
+
+      "banners" : [
+        {
+          "image": "../assets/images/pages/slider1.jpg",
+          "title": "Duis vitae lobortis odio, sed convallis lacus",
+          "link": "#",
+          "content": "Sed euismod blandit leo. Mauris malesuada mi id mi lacinia scelerisque. Vivamus nec nibh nec sem sagittis mollis et luctus neque. Morbi eget ligula euismod, auctor dui at, suscipit est. In a tristique leo, eu tristique augue. Quisque et placerat velit.",
+          "modifier_class": "-large-banner"
+        },
+        {
+          "image": "../assets/images/pages/slider2.jpg",
+          "title": "Vivamus nec nibh nec sem sagittis mollis et luctus neque.",
+          "link": "#",
+          "content": "Sed euismod blandit leo. Mauris malesuada mi id mi lacinia scelerisque. Vivamus nec nibh nec sem sagittis mollis et luctus neque. Morbi eget ligula euismod, auctor dui at, suscipit est. In a tristique leo, eu tristique augue. Quisque et placerat velit.",
+          "modifier_class": "-right-side-text"
+        },
+        {
+          "image": "../assets/images/pages/slider3.jpg",
+          "title": "Vivamus nec nibh nec sem sagittis mollis et luctus neque.",
+          "link": "#",
+          "content": "Sed euismod blandit leo. Mauris malesuada mi id mi lacinia scelerisque. Vivamus nec nibh nec sem sagittis mollis et luctus neque. Morbi eget ligula euismod, auctor dui at, suscipit est. In a tristique leo, eu tristique augue. Quisque et placerat velit.",
+          "modifier_class": "-large-banner"
+        }
+      ]
+
+    }
+
+    ]
+  }],
+  "main_page_1_s9": [{
+    "section_header":[
+      {
+        "above_title": "Short vertical",
+        "title": "Articles List",
+        "subtitle": " Maecenas vulputate tortor sit amet egestas rhoncus",
+        "modifier_class": "u-align-center"
+      }
+
+    ],
+    "content_boxes": [
+      {
+        "modifier_class": "-article-short-vertical",
+        "image": "../assets/images/large-thumbnail.jpeg",
+        "title": "Aliquam varius turpis vel scelerisque molestie Donec ac libero tellus.",
+        "text_entry": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo arcu eu ultrices pellentesque. Aliquam ultricies elit tempor molestie rutrum. Maecenas pharetra sem eu accumsan dignissim. Duis vel purus commodo, semper elit vel, porttitor sem."
+      },
+      {
+        "modifier_class": "-article-short-vertical",
+        "image": "../assets/images/large-thumbnail.jpeg",
+        "title": "Nunc sit amet ipsum vestibulum, posuere felis id, vulputate erat.",
+        "text_entry": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo arcu eu ultrices pellentesque. Aliquam ultricies elit tempor molestie rutrum. Maecenas pharetra sem eu accumsan dignissim. Duis vel purus commodo, semper elit vel, porttitor sem."
+      },
+      {
+        "modifier_class": "-article-short-vertical",
+        "image": "../assets/images/large-thumbnail.jpeg",
+        "title": "Consectetur adipiscing elit donec commodo arcu",
+        "text_entry": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo arcu eu ultrices pellentesque. Aliquam ultricies elit tempor molestie rutrum. Maecenas pharetra sem eu accumsan dignissim. Duis vel purus commodo, semper elit vel, porttitor sem."
+      }
+    ]
+  }],
+  "main_page_1_s10": [{
+    "section_header":[
+      {
+
+        "title": "Testimonials List",
+        "subtitle": "Tortor sit amet egestas rhoncus",
+        "modifier_class": "u-align-center"
+      }
+
+    ],
+    "testimonials_boxes": [
+      {
+        "image": "../assets/images/pages/testimonials/person1.jpg",
+        "name": "Ann Profeska",
+        "caption": "CEO Brand",
+        "text": "After trying a few other themes (where half of the promised features werent working), I have found the perfect theme for my portfolio website."
+      },
+      {
+        "image": "../assets/images/pages/testimonials/person2.jpg",
+        "name": "Ann Profeska",
+        "caption": "Author",
+        "text": "After trying a few other themes (where half of the promised features werent working)"
+      },
+      {
+        "image": "../assets/images/pages/testimonials/person3.jpg",
+        "name": "Cyndi Wallace",
+        "caption": "Author",
+        "text": "Lorem Ipsum Content I have found"
+      },
+      {
+        "image": "../assets/images/pages/testimonials/person4.jpg",
+        "name": "Peter Smooth",
+        "caption": "Webdeveloper",
+        "text": "After trying a few other themes (where half of the promised features werent working), I have found the perfect theme for my portfolio website."
+      }
+    ]
+  }],
+  "main_page_1_s11": [{
+    "section_header":[
+      {
+
+        "title": "Pricing boxes",
+        "subtitle": "I have found the perfect",
+        "modifier_class": "u-align-center"
+      }
+
+    ],
+    "pricing_boxes": [
+      {
+        "title": "Regular Version",
+        "currency": "$",
+        "amount": "120",
+        "period": " / monthly",
+        "feature1": "Up to 20 users",
+        "feature2": "50GB",
+        "feature3": "Statistics and tracking"
+      },
+      {
+        "title": "Regular Version",
+        "currency": "$",
+        "amount": "120",
+        "period": " / monthly",
+        "feature1": "Up to 20 users",
+        "feature2": "50GB",
+        "feature3": "Statistics and tracking"
+      },
+      {
+        "title": "Regular Version",
+        "currency": "$",
+        "amount": "120",
+        "period": " / monthly",
+        "feature1": "Up to 20 users",
+        "feature2": "50GB",
+        "feature3": "Statistics and tracking"
+      },
+      {
+        "title": "Regular Version",
+        "currency": "$",
+        "amount": "120",
+        "period": " / monthly",
+        "feature1": "Up to 20 users",
+        "feature2": "50GB",
+        "feature3": "Statistics and tracking"
+      }
+    ]
+  }],
+  "main_page_1_s12": [{
+    "section_header":[
+      {
+
+        "title": "Contact Form Section",
+        "subtitle": "I have found the perfect",
+        "modifier_class": "u-align-center"
+      }
+
+    ],
+    "forms": [
+      {
+        "input_lines": [
+          {
+            "id_for": "input_text",
+            "name": "your-name",
+            "label_text": "Your Name",
+            "type": "text"
+          },
+          {
+            "id_for": "input_surname",
+            "name": "your-surnname",
+            "label_text": "Your Surname",
+            "type": "text"
+          },
+          {
+            "id_for": "input_email",
+            "name": "your-surnname",
+            "label_text": "Your E-mail",
+            "type": "email"
+          }
+        ],
+        "textarea_lines": [
+          {
+            "id_for": "input_text",
+            "name": "your-message",
+            "label_text": "Your Message",
+            "type": "text"
+          }
+        ],
+
+        "button_line": [
+          {
+            "button_label": "Send Message"
+          }
+        ]
+      }
+    ]
+  }],
+  "footer_1": [{
+
+    "column1": [
+      {
+        "title_widget": "First Column",
+        "menu_labels": [
+          {
+            "name": "Home Page",
+            "link": "#"
+          },
+          {
+            "name": "About Us",
+            "link": "#"
+          },
+          {
+            "name": "Services",
+            "link": "#",
+            "additional_class": "-has-children"
+          },
+          {
+            "name": "Our Offer",
+            "link": "#"
+          },
+          {
+            "name": "Contact Us",
+            "link": "#"
+          }
+        ]
+      }],
+    "column2": [
+      {
+        "title_widget": "Second Column",
+        "menu_labels": [
+          {
+            "name": "Contact Me",
+            "link": "#"
+          },
+          {
+            "name": "About Me",
+            "link": "#"
+          },
+          {
+            "name": "Services",
+            "link": "#",
+            "additional_class": "-has-children"
+          }
+
+        ]
+      }],
+    "column3": [
+      {
+        "title_widget": "Third Column",
+        "menu_labels": [
+          {
+            "name": "Pages",
+            "link": "#"
+          },
+          {
+            "name": "Categories",
+            "link": "#"
+          },
+          {
+            "name": "Depth",
+            "link": "#"
+
+          },
+          {
+            "name": "Advanced",
+            "link": "#"
+
+          },
+          {
+            "name": "Menu Description",
+            "link": "#"
+
+          }
+
+        ]
+      }],
+    "column4": [
+      {
+        "title_widget": "Fourth Column",
+        "menu_labels": [
+          {
+            "name": "Contact Me",
+            "link": "#"
+          },
+          {
+            "name": "About Me",
+            "link": "#"
+          },
+          {
+            "name": "Home",
+            "link": "#"
+
+          }
+
+        ]
+      }]
+    }
+
+  ]
+}
+

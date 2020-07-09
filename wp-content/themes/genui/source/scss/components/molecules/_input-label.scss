@@ -1,0 +1,40 @@
+/*
+Input Label
+
+
+Labels for displaying info
+
+
+Markup: ../../../../styleguide/templates/molecules/input-label.html
+
+
+Style guide: Molecules.input-label
+
+Wrapper:
+<div style="max-width:350px">
+<wrapper-content/>
+</div>
+
+*/
+
+$class-name-label-input: rocksite-m-label-input;
+
+.#{$class-name-label-input} {
+
+  .#{$class-name-label-input}__label {
+
+    @extend %#{$class-name-label-input}__label;
+
+  }
+
+}
+
+
+%#{$class-name-label-input}__label {
+
+  padding: 0.2rem 0 0.2rem 0;
+  display: block;
+
+}
+
+

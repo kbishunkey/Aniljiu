@@ -1,0 +1,15 @@
+
+.wp-block-quote {
+
+  @extend %#{$class-name-blockquote};
+
+  &.is-style-large,
+  &.is-large {
+    p {
+
+      @include type-setting(xx-large);
+
+    }
+  }
+
+}

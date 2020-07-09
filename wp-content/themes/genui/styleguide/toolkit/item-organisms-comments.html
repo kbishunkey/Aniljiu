@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="kss-assets/prism.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap&subset=latin-ext"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap&subset=latin-ext"/>
+<link rel="stylesheet" href="../../assets/css/full/root-variables.css"/>
+<link rel="stylesheet" href="../../assets/css/full/screen.css"/>
+<link rel="stylesheet" href="../assets/styleguide.css"/>
+<link rel="stylesheet" href="../../assets/vendors/line-awesome/css/line-awesome.min.css"/>
+
+</head>
+<body class="kss-scheibo__body" id="kss-node" class="kss-fullscreen-mode">
+
+<header class="kss-header">
+  <h1 class="kss-doc-title">KSS Style Guide</h1>
+</header>
+<div class="kss-container">
+  <div class="kss-sidebar kss-style">
+    <div class="kss-search">
+      <input type="text" class="kss-search__input" id="kss-search__input" placeholder="Search">
+      <ul class="kss-search__list kss-nav__menu" id="kss-search__list">
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-1-global.html">
+              <span class="kss-nav__ref">1</span><span class="kss-nav__name">1 Global</span>
+          </a>
+           
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-1-global.html#kssref-1-global-colors" data-singlesectiontrigger="kssref-1-global-colors">
+                <span class="kss-nav__ref">1.1</span><span class="kss-nav__name">Brand Colors</span>
+                    <div class="kss-search__desc">
+                        <p>Colors that are used in the theme.</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-1-global.html#kssref-1-global-typography" data-singlesectiontrigger="kssref-1-global-typography">
+                <span class="kss-nav__ref">1.2</span><span class="kss-nav__name">Typography</span>
+            </a>
+          </li>
+           
+        </li>
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-atoms.html">
+              <span class="kss-nav__ref">2</span><span class="kss-nav__name">Atoms</span>
+          </a>
+           
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-blockquotes" data-singlesectiontrigger="kssref-atoms-blockquotes">
+                <span class="kss-nav__ref">2.1</span><span class="kss-nav__name">Blockquotes</span>
+                    <div class="kss-search__desc">
+                        <p>blocquote in the content</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-buttons" data-singlesectiontrigger="kssref-atoms-buttons">
+                <span class="kss-nav__ref">2.2</span><span class="kss-nav__name">Buttons</span>
+                    <div class="kss-search__desc">
+                        <p>4 types of default buttons atoms</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item is-grandchild">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-buttons-icon" data-singlesectiontrigger="kssref-atoms-buttons-icon">
+                <span class="kss-nav__ref">2.2.1</span><span class="kss-nav__name">Icon Button</span>
+                    <div class="kss-search__desc">
+                        <p>4 types of icon buttons</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item is-grandchild">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-buttons-social" data-singlesectiontrigger="kssref-atoms-buttons-social">
+                <span class="kss-nav__ref">2.2.2</span><span class="kss-nav__name">Social buttons</span>
+                    <div class="kss-search__desc">
+                        <p>Buttons for social media</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item is-grandchild">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-buttons-social-meta" data-singlesectiontrigger="kssref-atoms-buttons-social-meta">
+                <span class="kss-nav__ref">2.2.3</span><span class="kss-nav__name">Social meta buttons</span>
+                    <div class="kss-search__desc">
+                        <p>Social buttons + metadata</p>
+<p>.-invert  - inverted version</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-chips-labels" data-singlesectiontrigger="kssref-atoms-chips-labels">
+                <span class="kss-nav__ref">2.3</span><span class="kss-nav__name">Chips Lables</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-countdown-info" data-singlesectiontrigger="kssref-atoms-countdown-info">
+                <span class="kss-nav__ref">2.4</span><span class="kss-nav__name">Countdown Info</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying countdown numbers with label</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-footer-info" data-singlesectiontrigger="kssref-atoms-footer-info">
+                <span class="kss-nav__ref">2.5</span><span class="kss-nav__name">Footer Info</span>
+                    <div class="kss-search__desc">
+                        <p>Info in the footer</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-forms" data-singlesectiontrigger="kssref-atoms-forms">
+                <span class="kss-nav__ref">2.6</span><span class="kss-nav__name">Atoms.forms</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item is-grandchild">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-forms-button" data-singlesectiontrigger="kssref-atoms-forms-button">
+                <span class="kss-nav__ref">2.6.1</span><span class="kss-nav__name">Form button</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item is-grandchild">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-forms-input" data-singlesectiontrigger="kssref-atoms-forms-input">
+                <span class="kss-nav__ref">2.6.2</span><span class="kss-nav__name">Text Input</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item is-grandchild">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-forms-select" data-singlesectiontrigger="kssref-atoms-forms-select">
+                <span class="kss-nav__ref">2.6.3</span><span class="kss-nav__name">Form select</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item is-grandchild">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-forms-textarea" data-singlesectiontrigger="kssref-atoms-forms-textarea">
+                <span class="kss-nav__ref">2.6.4</span><span class="kss-nav__name">Textarea</span>
+                    <div class="kss-search__desc">
+                        <p>Textarea field</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-headings" data-singlesectiontrigger="kssref-atoms-headings">
+                <span class="kss-nav__ref">2.7</span><span class="kss-nav__name">Headings</span>
+                    <div class="kss-search__desc">
+                        <p>All types of headings</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-icons" data-singlesectiontrigger="kssref-atoms-icons">
+                <span class="kss-nav__ref">2.8</span><span class="kss-nav__name">Icons</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-labels" data-singlesectiontrigger="kssref-atoms-labels">
+                <span class="kss-nav__ref">2.9</span><span class="kss-nav__name">Lables</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-link" data-singlesectiontrigger="kssref-atoms-link">
+                <span class="kss-nav__ref">2.10</span><span class="kss-nav__name">Link</span>
+                    <div class="kss-search__desc">
+                        <p>general link</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-list" data-singlesectiontrigger="kssref-atoms-list">
+                <span class="kss-nav__ref">2.11</span><span class="kss-nav__name">List</span>
+                    <div class="kss-search__desc">
+                        <p>Default list</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-logo" data-singlesectiontrigger="kssref-atoms-logo">
+                <span class="kss-nav__ref">2.12</span><span class="kss-nav__name">Logo</span>
+                    <div class="kss-search__desc">
+                        <p>Brand Logo</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-progress" data-singlesectiontrigger="kssref-atoms-progress">
+                <span class="kss-nav__ref">2.13</span><span class="kss-nav__name">Progress Bar</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-tables" data-singlesectiontrigger="kssref-atoms-tables">
+                <span class="kss-nav__ref">2.14</span><span class="kss-nav__name">Tables</span>
+                    <div class="kss-search__desc">
+                        <p>blocquote in the content</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-text" data-singlesectiontrigger="kssref-atoms-text">
+                <span class="kss-nav__ref">2.15</span><span class="kss-nav__name">Text</span>
+                    <div class="kss-search__desc">
+                        <p>All types of text sizes</p>
+
+                    </div>
+            </a>
+          </li>
+           
+        </li>
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-molecules.html">
+              <span class="kss-nav__ref">3</span><span class="kss-nav__name">Molecules</span>
+          </a>
+           
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-accordion" data-singlesectiontrigger="kssref-molecules-accordion">
+                <span class="kss-nav__ref">3.1</span><span class="kss-nav__name">Accordion - FAQ</span>
+                    <div class="kss-search__desc">
+                        <p>Accordion component</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-bars" data-singlesectiontrigger="kssref-molecules-bars">
+                <span class="kss-nav__ref">3.2</span><span class="kss-nav__name">Bars</span>
+                    <div class="kss-search__desc">
+                        <p>Accordion component</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-breadcrumbs" data-singlesectiontrigger="kssref-molecules-breadcrumbs">
+                <span class="kss-nav__ref">3.3</span><span class="kss-nav__name">Navigation - breadcrumbs</span>
+                    <div class="kss-search__desc">
+                        <p>Breadcrums displays current user position on the page</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-card" data-singlesectiontrigger="kssref-molecules-card">
+                <span class="kss-nav__ref">3.4</span><span class="kss-nav__name">Card Box</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-checkbox-label" data-singlesectiontrigger="kssref-molecules-checkbox-label">
+                <span class="kss-nav__ref">3.5</span><span class="kss-nav__name">Radio Label</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-chips-list" data-singlesectiontrigger="kssref-molecules-chips-list">
+                <span class="kss-nav__ref">3.6</span><span class="kss-nav__name">Chips List</span>
+                    <div class="kss-search__desc">
+                        <p>Chips List with label</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-content-banner" data-singlesectiontrigger="kssref-molecules-content-banner">
+                <span class="kss-nav__ref">3.7</span><span class="kss-nav__name">Content Banner</span>
+                    <div class="kss-search__desc">
+                        <p>Content Image box linked to content</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-counter-box" data-singlesectiontrigger="kssref-molecules-counter-box">
+                <span class="kss-nav__ref">3.8</span><span class="kss-nav__name">Counter Box</span>
+                    <div class="kss-search__desc">
+                        <p>Your standard button suitable for clicking.</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-cover-header" data-singlesectiontrigger="kssref-molecules-cover-header">
+                <span class="kss-nav__ref">3.9</span><span class="kss-nav__name">Cover Header</span>
+                    <div class="kss-search__desc">
+                        <p>Cover image component</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-hero-content" data-singlesectiontrigger="kssref-molecules-hero-content">
+                <span class="kss-nav__ref">3.10</span><span class="kss-nav__name">Hero Content</span>
+                    <div class="kss-search__desc">
+                        <p>Short info box and icon</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-image-figure" data-singlesectiontrigger="kssref-molecules-image-figure">
+                <span class="kss-nav__ref">3.11</span><span class="kss-nav__name">Image - Figure</span>
+                    <div class="kss-search__desc">
+                        <p>Image component</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-info" data-singlesectiontrigger="kssref-molecules-info">
+                <span class="kss-nav__ref">3.12</span><span class="kss-nav__name">Info Box</span>
+                    <div class="kss-search__desc">
+                        <p>Short info box and icon</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-input-label" data-singlesectiontrigger="kssref-molecules-input-label">
+                <span class="kss-nav__ref">3.13</span><span class="kss-nav__name">Input Label</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-input-label" data-singlesectiontrigger="kssref-molecules-input-label">
+                <span class="kss-nav__ref">3.13</span><span class="kss-nav__name">Textarea Label</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-media" data-singlesectiontrigger="kssref-molecules-media">
+                <span class="kss-nav__ref">3.14</span><span class="kss-nav__name">Media Box</span>
+                    <div class="kss-search__desc">
+                        <p>Box for displaying smal image and some info: author info, comments</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-menu" data-singlesectiontrigger="kssref-molecules-menu">
+                <span class="kss-nav__ref">3.15</span><span class="kss-nav__name">Navigation menu</span>
+                    <div class="kss-search__desc">
+                        <p>Menu component for displaying</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-meta-label" data-singlesectiontrigger="kssref-molecules-meta-label">
+                <span class="kss-nav__ref">3.16</span><span class="kss-nav__name">Meta Labels</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying meta</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-navigation-arrow-control" data-singlesectiontrigger="kssref-molecules-navigation-arrow-control">
+                <span class="kss-nav__ref">3.17</span><span class="kss-nav__name">Navigation - arrows control</span>
+                    <div class="kss-search__desc">
+                        <p>Arrow navigation</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-navigation-pointer-control" data-singlesectiontrigger="kssref-molecules-navigation-pointer-control">
+                <span class="kss-nav__ref">3.18</span><span class="kss-nav__name">Navigation - pointer control</span>
+                    <div class="kss-search__desc">
+                        <p>Pointer navigation</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-navigation-pointer-control" data-singlesectiontrigger="kssref-molecules-navigation-pointer-control">
+                <span class="kss-nav__ref">3.18</span><span class="kss-nav__name">Navigation - pointer control</span>
+                    <div class="kss-search__desc">
+                        <p>Pointer navigation</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-pagination-number" data-singlesectiontrigger="kssref-molecules-pagination-number">
+                <span class="kss-nav__ref">3.19</span><span class="kss-nav__name">Pagination - number</span>
+                    <div class="kss-search__desc">
+                        <p>Pointer navigation</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-pagination-prevnext" data-singlesectiontrigger="kssref-molecules-pagination-prevnext">
+                <span class="kss-nav__ref">3.20</span><span class="kss-nav__name">Pagination - prev - next</span>
+                    <div class="kss-search__desc">
+                        <p>Prev next navigation</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-price-list" data-singlesectiontrigger="kssref-molecules-price-list">
+                <span class="kss-nav__ref">3.21</span><span class="kss-nav__name">Price List</span>
+                    <div class="kss-search__desc">
+                        <p>create clean and stylish online restaurant menus or other content elements</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-pricing" data-singlesectiontrigger="kssref-molecules-pricing">
+                <span class="kss-nav__ref">3.22</span><span class="kss-nav__name">Pricing Box</span>
+                    <div class="kss-search__desc">
+                        <p>Pricing box info box and icon</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-progress-box" data-singlesectiontrigger="kssref-molecules-progress-box">
+                <span class="kss-nav__ref">3.23</span><span class="kss-nav__name">Progress Box</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-radio-label" data-singlesectiontrigger="kssref-molecules-radio-label">
+                <span class="kss-nav__ref">3.24</span><span class="kss-nav__name">Radio Label</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-search-box" data-singlesectiontrigger="kssref-molecules-search-box">
+                <span class="kss-nav__ref">3.25</span><span class="kss-nav__name">Search Box</span>
+                    <div class="kss-search__desc">
+                        <p>Classic search filed</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-section-header" data-singlesectiontrigger="kssref-molecules-section-header">
+                <span class="kss-nav__ref">3.26</span><span class="kss-nav__name">Section Header</span>
+                    <div class="kss-search__desc">
+                        <p>Your standard button suitable for clicking.</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-select-label" data-singlesectiontrigger="kssref-molecules-select-label">
+                <span class="kss-nav__ref">3.27</span><span class="kss-nav__name">Select Label</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-site-description" data-singlesectiontrigger="kssref-molecules-site-description">
+                <span class="kss-nav__ref">3.28</span><span class="kss-nav__name">Site Description</span>
+                    <div class="kss-search__desc">
+                        <p>Brand Logo</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-social-share-button" data-singlesectiontrigger="kssref-molecules-social-share-button">
+                <span class="kss-nav__ref">3.29</span><span class="kss-nav__name">Social Share Button</span>
+                    <div class="kss-search__desc">
+                        <p>Button for sharing articles</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-team-box" data-singlesectiontrigger="kssref-molecules-team-box">
+                <span class="kss-nav__ref">3.30</span><span class="kss-nav__name">Team Box</span>
+                    <div class="kss-search__desc">
+                        <p>Dispaying teams member info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-testimonial" data-singlesectiontrigger="kssref-molecules-testimonial">
+                <span class="kss-nav__ref">3.31</span><span class="kss-nav__name">Testimonial</span>
+                    <div class="kss-search__desc">
+                        <p>Dispaying teams member info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-text-banner" data-singlesectiontrigger="kssref-molecules-text-banner">
+                <span class="kss-nav__ref">3.32</span><span class="kss-nav__name">Text Banner</span>
+                    <div class="kss-search__desc">
+                        <p>Banner</p>
+
+                    </div>
+            </a>
+          </li>
+           
+        </li>
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-organisms.html">
+              <span class="kss-nav__ref">4</span><span class="kss-nav__name">Organisms</span>
+          </a>
+           
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-accordion" data-singlesectiontrigger="kssref-organisms-accordion">
+                <span class="kss-nav__ref">4.1</span><span class="kss-nav__name">Accordion</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-article-header" data-singlesectiontrigger="kssref-organisms-article-header">
+                <span class="kss-nav__ref">4.2</span><span class="kss-nav__name">Article content header</span>
+                    <div class="kss-search__desc">
+                        <p>Header above the content</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-box-overall" data-singlesectiontrigger="kssref-organisms-box-overall">
+                <span class="kss-nav__ref">4.3</span><span class="kss-nav__name">Overall Box</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-comments" data-singlesectiontrigger="kssref-organisms-comments">
+                <span class="kss-nav__ref">4.4</span><span class="kss-nav__name">Comments</span>
+                    <div class="kss-search__desc">
+                        <p>Comments component</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-content" data-singlesectiontrigger="kssref-organisms-content">
+                <span class="kss-nav__ref">4.5</span><span class="kss-nav__name">Content - full</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-content-short" data-singlesectiontrigger="kssref-organisms-content-short">
+                <span class="kss-nav__ref">4.6</span><span class="kss-nav__name">Content - short</span>
+                    <div class="kss-search__desc">
+                        <p>Short version of the article</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-form" data-singlesectiontrigger="kssref-organisms-form">
+                <span class="kss-nav__ref">4.7</span><span class="kss-nav__name">Form</span>
+                    <div class="kss-search__desc">
+                        <p>Classic form</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-gallery" data-singlesectiontrigger="kssref-organisms-gallery">
+                <span class="kss-nav__ref">4.8</span><span class="kss-nav__name">Gallery Box - Native</span>
+                    <div class="kss-search__desc">
+                        <p>Native Gallery component</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-grid-boxes" data-singlesectiontrigger="kssref-organisms-grid-boxes">
+                <span class="kss-nav__ref">4.9</span><span class="kss-nav__name">Grid boxes</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-main-navbar" data-singlesectiontrigger="kssref-organisms-main-navbar">
+                <span class="kss-nav__ref">4.10</span><span class="kss-nav__name">Main Navbar</span>
+                    <div class="kss-search__desc">
+                        <p>Section navbar</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-navigation" data-singlesectiontrigger="kssref-organisms-navigation">
+                <span class="kss-nav__ref">4.11</span><span class="kss-nav__name">Organisms.Navigation</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item is-grandchild">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-navigation-nav-next-post" data-singlesectiontrigger="kssref-organisms-navigation-nav-next-post">
+                <span class="kss-nav__ref">4.11.1</span><span class="kss-nav__name">Navigation - next post</span>
+                    <div class="kss-search__desc">
+                        <p>Navigation next post</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-page-header" data-singlesectiontrigger="kssref-organisms-page-header">
+                <span class="kss-nav__ref">4.12</span><span class="kss-nav__name">Page content header</span>
+                    <div class="kss-search__desc">
+                        <p>Header above the page content</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-search-navbar" data-singlesectiontrigger="kssref-organisms-search-navbar">
+                <span class="kss-nav__ref">4.13</span><span class="kss-nav__name">Search Navbar</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-slider-banner" data-singlesectiontrigger="kssref-organisms-slider-banner">
+                <span class="kss-nav__ref">4.14</span><span class="kss-nav__name">Slider Banner</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-slider-box" data-singlesectiontrigger="kssref-organisms-slider-box">
+                <span class="kss-nav__ref">4.15</span><span class="kss-nav__name">Slider Box</span>
+                    <div class="kss-search__desc">
+                        <p>TO DO: change slider to more customizable</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-tabs" data-singlesectiontrigger="kssref-organisms-tabs">
+                <span class="kss-nav__ref">4.16</span><span class="kss-nav__name">Tabs</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-top-bar" data-singlesectiontrigger="kssref-organisms-top-bar">
+                <span class="kss-nav__ref">4.17</span><span class="kss-nav__name">Top Bar</span>
+                    <div class="kss-search__desc">
+                        <p>Section top bar</p>
+
+                    </div>
+            </a>
+          </li>
+           
+        </li>
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-templates.html">
+              <span class="kss-nav__ref">5</span><span class="kss-nav__name">Templates</span>
+          </a>
+           
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-templates.html#kssref-templates-section-default" data-singlesectiontrigger="kssref-templates-section-default">
+                <span class="kss-nav__ref">5.1</span><span class="kss-nav__name">Section Default</span>
+                    <div class="kss-search__desc">
+                        <p>Section component</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-templates.html#kssref-templates-section-top-bar" data-singlesectiontrigger="kssref-templates-section-top-bar">
+                <span class="kss-nav__ref">5.2</span><span class="kss-nav__name">Section Top Bar</span>
+                    <div class="kss-search__desc">
+                        <p>Section top bar</p>
+
+                    </div>
+            </a>
+          </li>
+           
+        </li>
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-widgets.html">
+              <span class="kss-nav__ref">6</span><span class="kss-nav__name">Widgets</span>
+          </a>
+           
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-widgets.html#kssref-widgets-menu-widget" data-singlesectiontrigger="kssref-widgets-menu-widget">
+                <span class="kss-nav__ref">6.1</span><span class="kss-nav__name">Menu Widget</span>
+                    <div class="kss-search__desc">
+                        <p>Menu Widget</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-widgets.html#kssref-widgets-search-widget" data-singlesectiontrigger="kssref-widgets-search-widget">
+                <span class="kss-nav__ref">6.2</span><span class="kss-nav__name">Search Widget</span>
+                    <div class="kss-search__desc">
+                        <p>Search Widget</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-widgets.html#kssref-widgets-text-widget" data-singlesectiontrigger="kssref-widgets-text-widget">
+                <span class="kss-nav__ref">6.3</span><span class="kss-nav__name">Text Widget</span>
+                    <div class="kss-search__desc">
+                        <p>Text Widget</p>
+
+                    </div>
+            </a>
+          </li>
+           
+        </li>
+      </ul>
+    </div>
+    <nav class="kss-nav" aria-label="Style Guide">
+      <ul class="kss-nav__menu">
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link" href="./">
+            <span class="kss-nav__ref">0</span><span class="kss-nav__name">Overview</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-1-global.html">
+            <span class="kss-nav__ref">1</span><span class="kss-nav__name">1 Global</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-atoms.html">
+            <span class="kss-nav__ref">2</span><span class="kss-nav__name">Atoms</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-molecules.html">
+            <span class="kss-nav__ref">3</span><span class="kss-nav__name">Molecules</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-organisms.html">
+            <span class="kss-nav__ref">4</span><span class="kss-nav__name">Organisms</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-templates.html">
+            <span class="kss-nav__ref">5</span><span class="kss-nav__name">Templates</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-widgets.html">
+            <span class="kss-nav__ref">6</span><span class="kss-nav__name">Widgets</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <main class="kss-main" aria-label="Content">
+    <article>
+
+      <div id="kssref-organisms-comments" class="kss-section kss-section--depth-2 is-fullscreen">
+        <div class="kss-style kss-style--header  ">
+          <a class="kss-title__permalink" href="#kssref-organisms-comments">
+            <h2 class="kss-title kss-title--level-2 kss-style ">
+                Comments
+            </h2>
+          </a>
+            <p class="kss-toolbar">
+              <a class="kss-toolbar__link kss-toolbar__link--guides" title="Toggle example guides" href="#kssref-organisms-comments" data-kss-guides="true">
+                <span class="kss-toolbar__tooltip">Toggle example guides</span>
+                <svg aria-hidden="true" class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path class="kss-toolbar__icon-fill" d="M5 35H10V44H5zM54 21H59V30H54zM54 35H59V44H54zM5 21H10V30H5zM5 0H10V15H5zM35 5H44V10H35zM20 5H29V10H20z"/><path class="kss-toolbar__icon-fill" d="M0 5H15V10H0zM54 0H59V15H54z"/><path class="kss-toolbar__icon-fill" d="M49 5H64V10H49zM54 49H59V64H54z"/><path class="kss-toolbar__icon-fill" d="M49 54H64V59H49zM5 49H10V64H5z"/><path class="kss-toolbar__icon-fill" d="M0 54H15V59H0zM35 54H44V59H35zM20 54H29V59H20z"/></svg>
+              </a>
+              <a class="kss-toolbar__link kss-toolbar__link--markup" title="Toggle HTML markup" href="#kssref-organisms-comments" data-kss-markup="true">
+                <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+                <svg aria-hidden="true" class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path class="kss-toolbar__icon-fill" d="M37.555 46.239l6.103 6.103 20.342-20.342-20.342-20.342-6.103 6.103 14.24 14.239-14.24 14.239zM26.445 17.761l-6.103-6.103-20.342 20.342 20.342 20.342 6.103-6.103-14.24-14.239 14.24-14.239z"/></svg>
+              </a>
+            </p>
+
+            <div class="kss-description">
+              <p>Comments component</p>
+
+            </div>
+
+
+        </div>
+
+          <div class="kss-modifier__wrapper">
+            <div class="kss-modifier__defaultheader kss-style">
+              <div class="kss-modifier__defaultinsertmarkuptext">
+                &lt;insert-markup&gt;organisms.comments-&lt;/insert-markup&gt;
+              </div>
+              <a title="open in a new window" class="" href="index-organisms-comments_default.html" target="_blank"><svg class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.016 3h6.984v6.984h-2.016v-3.563l-9.797 9.797-1.406-1.406 9.797-9.797h-3.563v-2.016zM18.984 18.984v-6.984h2.016v6.984c0 1.078-0.938 2.016-2.016 2.016h-13.969c-1.125 0-2.016-0.938-2.016-2.016v-13.969c0-1.078 0.891-2.016 2.016-2.016h6.984v2.016h-6.984v13.969h13.969z"/></svg></a>
+            </div>
+
+            <div class="kss-modifier__example ">
+<div style="width:400">
+                <div id="comments" class="rocksite-o-comments">
+
+
+
+
+
+
+	<h3 class="rocksite-o-comments__header">
+		19 comments	</h3>
+
+
+	<ol class="comment-list rocksite-o-comments__list">
+
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-60">
+			<article id="comment-60" class="rocksite-o-comments__content">
+				<header class="rocksite-o-comments__content__header">
+					<div class="rocksite-o-comments__content__header__avatar">
+						<img alt="" src="http://1.gravatar.com/avatar/75e48a7020624657e5da6033590030ee?s=44&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/75e48a7020624657e5da6033590030ee?s=88&amp;d=mm&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44">			</div>
+					<cite class="rocksite-o-comments__content__header__author">Anonymous User </cite><div class="rocksite-o-comments__content__header__date"><a href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-60"><time datetime="2013-03-11T23:45:54+00:00">March 11, 2013 at 11:45 pm</time></a></div>			<div class="rocksite-o-comments__content__edit"><a class="comment-edit-link" href="//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action=editcomment&amp;c=60">Edit</a></div>		</header>
+				<!-- .comment-meta -->
+
+
+				<section class="comment-content comment">
+					<p>This user it trying to be anonymous.</p>
+					<p>    They used a fake email, so there should be no <a href="https://gravatar.com//" title="Gravatar" rel="nofollow">Gravatar</a> associated with it.<br>
+						They did not speify a website, so there should be no link to it in the comment.</p>
+				</section>
+				<!-- .comment-content -->
+
+				<div class="reply rocksite-o-comments__content__replay">
+					<a rel="nofollow" class="comment-reply-link rocksite-a-button -primary -small" href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom=60#respond" onclick="return addComment.moveForm( &quot;comment-60&quot;, &quot;60&quot;, &quot;respond&quot;, &quot;1148&quot; )" aria-label="Reply to Anonymous User">Reply</a>		</div>
+				<!-- .reply -->
+			</article>
+			<!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-61">
+			<article id="comment-61" class="rocksite-o-comments__content">
+				<header class="rocksite-o-comments__content__header">
+					<div class="rocksite-o-comments__content__header__avatar">
+						<img alt="" src="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=44&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=88&amp;d=mm&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44">			</div>
+					<cite class="rocksite-o-comments__content__header__author"><a href="http://example.org/" rel="external nofollow" class="url">Jane Doe</a> </cite><div class="rocksite-o-comments__content__header__date"><a href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-61"><time datetime="2013-03-12T13:17:35+00:00">March 12, 2013 at 1:17 pm</time></a></div>			<div class="rocksite-o-comments__content__edit"><a class="comment-edit-link" href="//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action=editcomment&amp;c=61">Edit</a></div>		</header>
+				<!-- .comment-meta -->
+
+
+				<section class="comment-content comment">
+					<p>Comments? I love comments!</p>
+				</section>
+				<!-- .comment-content -->
+
+				<div class="reply rocksite-o-comments__content__replay">
+					<a rel="nofollow" class="comment-reply-link rocksite-a-button -primary -small" href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom=61#respond" onclick="return addComment.moveForm( &quot;comment-61&quot;, &quot;61&quot;, &quot;respond&quot;, &quot;1148&quot; )" aria-label="Reply to Jane Doe">Reply</a>		</div>
+				<!-- .reply -->
+			</article>
+			<!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-62">
+			<article id="comment-62" class="rocksite-o-comments__content">
+				<header class="rocksite-o-comments__content__header">
+					<div class="rocksite-o-comments__content__header__avatar">
+						<img alt="" src="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=44&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=88&amp;d=mm&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44">			</div>
+					<cite class="rocksite-o-comments__content__header__author"><a href="http://example.org" rel="external nofollow" class="url">John Doe</a> </cite><div class="rocksite-o-comments__content__header__date"><a href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-62"><time datetime="2013-03-14T07:53:26+00:00">March 14, 2013 at 7:53 am</time></a></div>			<div class="rocksite-o-comments__content__edit"><a class="comment-edit-link" href="//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action=editcomment&amp;c=62">Edit</a></div>		</header>
+				<!-- .comment-meta -->
+
+
+				<section class="comment-content comment">
+					<p>These tests are amazing!</p>
+				</section>
+				<!-- .comment-content -->
+
+				<div class="reply rocksite-o-comments__content__replay">
+					<a rel="nofollow" class="comment-reply-link rocksite-a-button -primary -small" href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom=62#respond" onclick="return addComment.moveForm( &quot;comment-62&quot;, &quot;62&quot;, &quot;respond&quot;, &quot;1148&quot; )" aria-label="Reply to John Doe">Reply</a>		</div>
+				<!-- .reply -->
+			</article>
+			<!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-63">
+			<article id="comment-63" class="rocksite-o-comments__content">
+				<header class="rocksite-o-comments__content__header">
+					<div class="rocksite-o-comments__content__header__avatar">
+						<img alt="" src="http://1.gravatar.com/avatar/4fdb3b572ac7dd8d7a58ba70317efa14?s=44&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/4fdb3b572ac7dd8d7a58ba70317efa14?s=88&amp;d=mm&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44">			</div>
+					<cite class="rocksite-o-comments__content__header__author"><a href="https://wpthemetestdata.wordpress.com/" rel="external nofollow" class="url">themedemos</a> </cite><div class="rocksite-o-comments__content__header__date"><a href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-63"><time datetime="2013-03-14T07:56:46+00:00">March 14, 2013 at 7:56 am</time></a></div>			<div class="rocksite-o-comments__content__edit"><a class="comment-edit-link" href="//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action=editcomment&amp;c=63">Edit</a></div>		</header>
+				<!-- .comment-meta -->
+
+
+				<section class="comment-content comment">
+					<p>Author Comment.</p>
+				</section>
+				<!-- .comment-content -->
+
+				<div class="reply rocksite-o-comments__content__replay">
+					<a rel="nofollow" class="comment-reply-link rocksite-a-button -primary -small" href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom=63#respond" onclick="return addComment.moveForm( &quot;comment-63&quot;, &quot;63&quot;, &quot;respond&quot;, &quot;1148&quot; )" aria-label="Reply to themedemos">Reply</a>		</div>
+				<!-- .reply -->
+			</article>
+			<!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-64">
+			<article id="comment-64" class="rocksite-o-comments__content">
+				<header class="rocksite-o-comments__content__header">
+					<div class="rocksite-o-comments__content__header__avatar">
+						<img alt="" src="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=44&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=88&amp;d=mm&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44">			</div>
+					<cite class="rocksite-o-comments__content__header__author"><a href="http://example.org/" rel="external nofollow" class="url">John Doe</a> </cite><div class="rocksite-o-comments__content__header__date"><a href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-64"><time datetime="2013-03-14T07:57:01+00:00">March 14, 2013 at 7:57 am</time></a></div>			<div class="rocksite-o-comments__content__edit"><a class="comment-edit-link" href="//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action=editcomment&amp;c=64">Edit</a></div>		</header>
+				<!-- .comment-meta -->
+
+
+				<section class="comment-content comment">
+					<p>Comment Depth 01</p>
+				</section>
+				<!-- .comment-content -->
+
+				<div class="reply rocksite-o-comments__content__replay">
+					<a rel="nofollow" class="comment-reply-link rocksite-a-button -primary -small" href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom=64#respond" onclick="return addComment.moveForm( &quot;comment-64&quot;, &quot;64&quot;, &quot;respond&quot;, &quot;1148&quot; )" aria-label="Reply to John Doe">Reply</a>		</div>
+				<!-- .reply -->
+			</article>
+			<!-- #comment-## -->
+			<ol class="children">
+				<li class="comment even depth-2" id="li-comment-65">
+					<article id="comment-65" class="rocksite-o-comments__content">
+						<header class="rocksite-o-comments__content__header">
+							<div class="rocksite-o-comments__content__header__avatar">
+								<img alt="" src="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=44&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=88&amp;d=mm&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44">			</div>
+							<cite class="rocksite-o-comments__content__header__author"><a href="http://example.org/" rel="external nofollow" class="url">Jane Bloggs</a> </cite><div class="rocksite-o-comments__content__header__date"><a href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-65"><time datetime="2013-03-14T08:01:21+00:00">March 14, 2013 at 8:01 am</time></a></div>			<div class="rocksite-o-comments__content__edit"><a class="comment-edit-link" href="//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action=editcomment&amp;c=65">Edit</a></div>		</header>
+						<!-- .comment-meta -->
+
+
+						<section class="comment-content comment">
+							<p>Comment Depth 02</p>
+						</section>
+						<!-- .comment-content -->
+
+						<div class="reply rocksite-o-comments__content__replay">
+							<a rel="nofollow" class="comment-reply-link rocksite-a-button -primary -small" href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom=65#respond" onclick="return addComment.moveForm( &quot;comment-65&quot;, &quot;65&quot;, &quot;respond&quot;, &quot;1148&quot; )" aria-label="Reply to Jane Bloggs">Reply</a>		</div>
+						<!-- .reply -->
+					</article>
+					<!-- #comment-## -->
+					<ol class="children">
+						<li class="comment odd alt depth-3" id="li-comment-66">
+							<article id="comment-66" class="rocksite-o-comments__content">
+								<header class="rocksite-o-comments__content__header">
+									<div class="rocksite-o-comments__content__header__avatar">
+										<img alt="" src="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=44&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=88&amp;d=mm&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44">			</div>
+									<cite class="rocksite-o-comments__content__header__author"><a href="http://example.org/" rel="external nofollow" class="url">Fred Bloggs</a> </cite><div class="rocksite-o-comments__content__header__date"><a href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-66"><time datetime="2013-03-14T08:02:06+00:00">March 14, 2013 at 8:02 am</time></a></div>			<div class="rocksite-o-comments__content__edit"><a class="comment-edit-link" href="//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action=editcomment&amp;c=66">Edit</a></div>		</header>
+								<!-- .comment-meta -->
+
+
+								<section class="comment-content comment">
+									<p>Comment Depth 03</p>
+								</section>
+								<!-- .comment-content -->
+
+								<div class="reply rocksite-o-comments__content__replay">
+									<a rel="nofollow" class="comment-reply-link rocksite-a-button -primary -small" href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom=66#respond" onclick="return addComment.moveForm( &quot;comment-66&quot;, &quot;66&quot;, &quot;respond&quot;, &quot;1148&quot; )" aria-label="Reply to Fred Bloggs">Reply</a>		</div>
+								<!-- .reply -->
+							</article>
+							<!-- #comment-## -->
+							<ol class="children">
+								<li class="comment even depth-4" id="li-comment-67">
+									<article id="comment-67" class="rocksite-o-comments__content">
+										<header class="rocksite-o-comments__content__header">
+											<div class="rocksite-o-comments__content__header__avatar">
+												<img alt="" src="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=44&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=88&amp;d=mm&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44">			</div>
+											<cite class="rocksite-o-comments__content__header__author"><a href="http://example.org/" rel="external nofollow" class="url">Fred Bloggs</a> </cite><div class="rocksite-o-comments__content__header__date"><a href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-67"><time datetime="2013-03-14T08:03:22+00:00">March 14, 2013 at 8:03 am</time></a></div>			<div class="rocksite-o-comments__content__edit"><a class="comment-edit-link" href="//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action=editcomment&amp;c=67">Edit</a></div>		</header>
+										<!-- .comment-meta -->
+
+
+										<section class="comment-content comment">
+											<p>Comment Depth 04</p>
+										</section>
+										<!-- .comment-content -->
+
+										<div class="reply rocksite-o-comments__content__replay">
+											<a rel="nofollow" class="comment-reply-link rocksite-a-button -primary -small" href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom=67#respond" onclick="return addComment.moveForm( &quot;comment-67&quot;, &quot;67&quot;, &quot;respond&quot;, &quot;1148&quot; )" aria-label="Reply to Fred Bloggs">Reply</a>		</div>
+										<!-- .reply -->
+									</article>
+									<!-- #comment-## -->
+									<ol class="children">
+										<li class="comment odd alt depth-5" id="li-comment-68">
+											<article id="comment-68" class="rocksite-o-comments__content">
+												<header class="rocksite-o-comments__content__header">
+													<div class="rocksite-o-comments__content__header__avatar">
+														<img alt="" src="http://1.gravatar.com/avatar/4fdb3b572ac7dd8d7a58ba70317efa14?s=44&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/4fdb3b572ac7dd8d7a58ba70317efa14?s=88&amp;d=mm&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44">			</div>
+													<cite class="rocksite-o-comments__content__header__author"><a href="https://wpthemetestdata.wordpress.com/" rel="external nofollow" class="url">themedemos</a> </cite><div class="rocksite-o-comments__content__header__date"><a href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-68"><time datetime="2013-03-14T08:10:29+00:00">March 14, 2013 at 8:10 am</time></a></div>			<div class="rocksite-o-comments__content__edit"><a class="comment-edit-link" href="//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action=editcomment&amp;c=68">Edit</a></div>		</header>
+												<!-- .comment-meta -->
+
+
+												<section class="comment-content comment">
+													<p>Comment Depth 05</p>
+													<p>Also an author comment.</p>
+												</section>
+												<!-- .comment-content -->
+
+												<div class="reply rocksite-o-comments__content__replay">
+												</div>
+												<!-- .reply -->
+											</article>
+											<!-- #comment-## -->
+										</li><!-- #comment-## -->
+										<li class="comment even depth-5" id="li-comment-69">
+											<article id="comment-69" class="rocksite-o-comments__content">
+												<header class="rocksite-o-comments__content__header">
+													<div class="rocksite-o-comments__content__header__avatar">
+														<img alt="" src="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=44&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=88&amp;d=mm&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44">			</div>
+													<cite class="rocksite-o-comments__content__header__author"><a href="http://example.org/" rel="external nofollow" class="url">Jane Bloggs</a> </cite><div class="rocksite-o-comments__content__header__date"><a href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-69"><time datetime="2013-03-14T08:12:16+00:00">March 14, 2013 at 8:12 am</time></a></div>			<div class="rocksite-o-comments__content__edit"><a class="comment-edit-link" href="//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action=editcomment&amp;c=69">Edit</a></div>		</header>
+												<!-- .comment-meta -->
+
+
+												<section class="comment-content comment">
+													<p>Comment Depth 06 has some more text than some of the other comments on this post.</p>
+												</section>
+												<!-- .comment-content -->
+
+												<div class="reply rocksite-o-comments__content__replay">
+												</div>
+												<!-- .reply -->
+											</article>
+											<!-- #comment-## -->
+										</li><!-- #comment-## -->
+										<li class="comment odd alt depth-5" id="li-comment-70">
+											<article id="comment-70" class="rocksite-o-comments__content">
+												<header class="rocksite-o-comments__content__header">
+													<div class="rocksite-o-comments__content__header__avatar">
+														<img alt="" src="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=44&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=88&amp;d=mm&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44">			</div>
+													<cite class="rocksite-o-comments__content__header__author"><a href="http://example.org/" rel="external nofollow" class="url">Joe Bloggs</a> </cite><div class="rocksite-o-comments__content__header__date"><a href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-70"><time datetime="2013-03-14T08:12:58+00:00">March 14, 2013 at 8:12 am</time></a></div>			<div class="rocksite-o-comments__content__edit"><a class="comment-edit-link" href="//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action=editcomment&amp;c=70">Edit</a></div>		</header>
+												<!-- .comment-meta -->
+
+
+												<section class="comment-content comment">
+													<p>Comment Depth 07 has a little bit.</p>
+												</section>
+												<!-- .comment-content -->
+
+												<div class="reply rocksite-o-comments__content__replay">
+												</div>
+												<!-- .reply -->
+											</article>
+											<!-- #comment-## -->
+										</li><!-- #comment-## -->
+										<li class="comment even depth-5" id="li-comment-71">
+											<article id="comment-71" class="rocksite-o-comments__content">
+												<header class="rocksite-o-comments__content__header">
+													<div class="rocksite-o-comments__content__header__avatar">
+														<img alt="" src="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=44&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=88&amp;d=mm&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44">			</div>
+													<cite class="rocksite-o-comments__content__header__author"><a href="http://example.org/" rel="external nofollow" class="url">Jane Bloggs</a> </cite><div class="rocksite-o-comments__content__header__date"><a href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-71"><time datetime="2013-03-14T08:13:42+00:00">March 14, 2013 at 8:13 am</time></a></div>			<div class="rocksite-o-comments__content__edit"><a class="comment-edit-link" href="//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action=editcomment&amp;c=71">Edit</a></div>		</header>
+												<!-- .comment-meta -->
+
+
+												<section class="comment-content comment">
+													<p>Comment Depth 08</p>
+												</section>
+												<!-- .comment-content -->
+
+												<div class="reply rocksite-o-comments__content__replay">
+												</div>
+												<!-- .reply -->
+											</article>
+											<!-- #comment-## -->
+										</li><!-- #comment-## -->
+										<li class="comment odd alt depth-5" id="li-comment-72">
+											<article id="comment-72" class="rocksite-o-comments__content">
+												<header class="rocksite-o-comments__content__header">
+													<div class="rocksite-o-comments__content__header__avatar">
+														<img alt="" src="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=44&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=88&amp;d=mm&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44">			</div>
+													<cite class="rocksite-o-comments__content__header__author"><a href="http://example.org/" rel="external nofollow" class="url">Joe Bloggs</a> </cite><div class="rocksite-o-comments__content__header__date"><a href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-72"><time datetime="2013-03-14T08:14:13+00:00">March 14, 2013 at 8:14 am</time></a></div>			<div class="rocksite-o-comments__content__edit"><a class="comment-edit-link" href="//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action=editcomment&amp;c=72">Edit</a></div>		</header>
+												<!-- .comment-meta -->
+
+
+												<section class="comment-content comment">
+													<p>Comment Depth 09 is way nested, but there are a lot of sites with very nested comments.</p>
+												</section>
+												<!-- .comment-content -->
+
+												<div class="reply rocksite-o-comments__content__replay">
+												</div>
+												<!-- .reply -->
+											</article>
+											<!-- #comment-## -->
+										</li><!-- #comment-## -->
+										<li class="comment even depth-5" id="li-comment-73">
+											<article id="comment-73" class="rocksite-o-comments__content">
+												<header class="rocksite-o-comments__content__header">
+													<div class="rocksite-o-comments__content__header__avatar">
+														<img alt="" src="http://1.gravatar.com/avatar/4fdb3b572ac7dd8d7a58ba70317efa14?s=44&amp;d=mm&amp;r=g" srcset="http://1.gravatar.com/avatar/4fdb3b572ac7dd8d7a58ba70317efa14?s=88&amp;d=mm&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44">			</div>
+													<cite class="rocksite-o-comments__content__header__author"><a href="https://wpthemetestdata.wordpress.com/" rel="external nofollow" class="url">themedemos</a> </cite><div class="rocksite-o-comments__content__header__date"><a href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-73"><time datetime="2013-03-14T08:14:47+00:00">March 14, 2013 at 8:14 am</time></a></div>			<div class="rocksite-o-comments__content__edit"><a class="comment-edit-link" href="//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action=editcomment&amp;c=73">Edit</a></div>		</header>
+												<!-- .comment-meta -->
+
+
+												<section class="comment-content comment">
+													<p>Comment Depth 10</p>
+													<p>Also an author comment.</p>
+												</section>
+												<!-- .comment-content -->
+
+												<div class="reply rocksite-o-comments__content__replay">
+												</div>
+												<!-- .reply -->
+											</article>
+											<!-- #comment-## -->
+										</li><!-- #comment-## -->
+									</ol><!-- .children -->
+								</li><!-- #comment-## -->
+							</ol><!-- .children -->
+						</li><!-- #comment-## -->
+					</ol><!-- .children -->
+				</li><!-- #comment-## -->
+			</ol><!-- .children -->
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="li-comment-74">
+			<article id="comment-74" class="rocksite-o-comments__content">
+				<header class="rocksite-o-comments__content__header">
+					<div class="rocksite-o-comments__content__header__avatar">
+						<img alt="" src="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=44&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=88&amp;d=mm&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44">			</div>
+					<cite class="rocksite-o-comments__content__header__author"><a href="http://example.org/" rel="external nofollow" class="url">Jane Doe</a> </cite><div class="rocksite-o-comments__content__header__date"><a href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-74"><time datetime="2013-03-14T09:56:43+00:00">March 14, 2013 at 9:56 am</time></a></div>			<div class="rocksite-o-comments__content__edit"><a class="comment-edit-link" href="//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action=editcomment&amp;c=74">Edit</a></div>		</header>
+				<!-- .comment-meta -->
+
+
+				<section class="comment-content comment">
+					<p>Image comment.<br>
+						<img src="https://wpthemetestdata.files.wordpress.com/2008/06/dsc20050102_192118_51.jpg?w=171&amp;h=128" alt="Albany wind-farm against the sunset, Western Australia"><br>
+						If the image imports…</p>
+				</section>
+				<!-- .comment-content -->
+
+				<div class="reply rocksite-o-comments__content__replay">
+					<a rel="nofollow" class="comment-reply-link rocksite-a-button -primary -small" href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom=74#respond" onclick="return addComment.moveForm( &quot;comment-74&quot;, &quot;74&quot;, &quot;respond&quot;, &quot;1148&quot; )" aria-label="Reply to Jane Doe">Reply</a>		</div>
+				<!-- .reply -->
+			</article>
+			<!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="li-comment-75">
+			<article id="comment-75" class="rocksite-o-comments__content">
+				<header class="rocksite-o-comments__content__header">
+					<div class="rocksite-o-comments__content__header__avatar">
+						<img alt="" src="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=44&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=88&amp;d=mm&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44">			</div>
+					<cite class="rocksite-o-comments__content__header__author"><a href="http://example.org/" rel="external nofollow" class="url">John Doe</a> </cite><div class="rocksite-o-comments__content__header__date"><a href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-75"><time datetime="2013-03-14T11:23:24+00:00">March 14, 2013 at 11:23 am</time></a></div>			<div class="rocksite-o-comments__content__edit"><a class="comment-edit-link" href="//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action=editcomment&amp;c=75">Edit</a></div>		</header>
+				<!-- .comment-meta -->
+
+
+				<section class="comment-content comment">
+					<p>We are totally going to blog about these tests!</p>
+				</section>
+				<!-- .comment-content -->
+
+				<div class="reply rocksite-o-comments__content__replay">
+					<a rel="nofollow" class="comment-reply-link rocksite-a-button -primary -small" href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom=75#respond" onclick="return addComment.moveForm( &quot;comment-75&quot;, &quot;75&quot;, &quot;respond&quot;, &quot;1148&quot; )" aria-label="Reply to John Doe">Reply</a>		</div>
+				<!-- .reply -->
+			</article>
+			<!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="li-comment-76">
+			<article id="comment-76" class="rocksite-o-comments__content">
+				<header class="rocksite-o-comments__content__header">
+					<div class="rocksite-o-comments__content__header__avatar">
+						<img alt="" src="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=44&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=88&amp;d=mm&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44">			</div>
+					<cite class="rocksite-o-comments__content__header__author"><a href="http://example.org/" rel="external nofollow" class="url">John Doe</a> </cite><div class="rocksite-o-comments__content__header__date"><a href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-76"><time datetime="2013-03-14T11:27:54+00:00">March 14, 2013 at 11:27 am</time></a></div>			<div class="rocksite-o-comments__content__edit"><a class="comment-edit-link" href="//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action=editcomment&amp;c=76">Edit</a></div>		</header>
+				<!-- .comment-meta -->
+
+
+				<section class="comment-content comment">
+					<p>We use these tests all the time! Killer stuff!</p>
+				</section>
+				<!-- .comment-content -->
+
+				<div class="reply rocksite-o-comments__content__replay">
+					<a rel="nofollow" class="comment-reply-link rocksite-a-button -primary -small" href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom=76#respond" onclick="return addComment.moveForm( &quot;comment-76&quot;, &quot;76&quot;, &quot;respond&quot;, &quot;1148&quot; )" aria-label="Reply to John Doe">Reply</a>		</div>
+				<!-- .reply -->
+			</article>
+			<!-- #comment-## -->
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="li-comment-77">
+			<article id="comment-77" class="rocksite-o-comments__content">
+				<header class="rocksite-o-comments__content__header">
+					<div class="rocksite-o-comments__content__header__avatar">
+						<img alt="" src="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=44&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s=88&amp;d=mm&amp;r=g 2x" class="avatar avatar-44 photo" height="44" width="44">			</div>
+					<cite class="rocksite-o-comments__content__header__author"><a href="http://example.org/" rel="external nofollow" class="url">Jane Doe</a> </cite><div class="rocksite-o-comments__content__header__date"><a href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-77"><time datetime="2013-03-14T11:30:33+00:00">March 14, 2013 at 11:30 am</time></a></div>			<div class="rocksite-o-comments__content__edit"><a class="comment-edit-link" href="//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action=editcomment&amp;c=77">Edit</a></div>		</header>
+				<!-- .comment-meta -->
+
+
+				<section class="comment-content comment">
+					<p>Thanks for all the comments, everyone!</p>
+				</section>
+				<!-- .comment-content -->
+
+				<div class="reply rocksite-o-comments__content__replay">
+					<a rel="nofollow" class="comment-reply-link rocksite-a-button -primary -small" href="//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom=77#respond" onclick="return addComment.moveForm( &quot;comment-77&quot;, &quot;77&quot;, &quot;respond&quot;, &quot;1148&quot; )" aria-label="Reply to Jane Doe">Reply</a>		</div>
+				<!-- .reply -->
+			</article>
+			<!-- #comment-## -->
+		</li><!-- #comment-## -->
+	</ol><!-- .comment-list -->
+
+
+
+
+	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/wordpress4.8/2012/01/03/template-comments/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="//127.0.0.1:3000/wordpress4.8/wp-comments-post.php" method="post" id="commentform" class="rocksite-o-comment-respond">
+		<p class="logged-in-as"><a href="//127.0.0.1:3000/wordpress4.8/wp-admin/profile.php" aria-label="Logged in as admin. Edit your profile.">Logged in as admin</a>. <a href="//127.0.0.1:3000/wordpress4.8/wp-login.php?action=logout&amp;redirect_to=http%3A%2F%2F127.0.0.1%2Fwordpress4.8%2F2012%2F01%2F03%2Ftemplate-comments%2F&amp;_wpnonce=bfd0162cdc">Log out?</a></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="form-submit"><input name="submit" type="submit" id="submit" class="btn btn-primary" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="1148" id="comment_post_ID">
+		<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+	</p><input type="hidden" id="_wp_unfiltered_html_comment_disabled" name="_wp_unfiltered_html_comment" value="13777c0f0a"><script>(function(){if(window===window.parent){document.getElementById('_wp_unfiltered_html_comment_disabled').name='_wp_unfiltered_html_comment';}})();</script>
+	</form>
+	</div><!-- #respond -->
+
+
+</div>
+
+
+</div>              <div class="kss-modifier__example-footer"></div>
+            </div>
+          </div>
+
+            <details class="kss-markup kss-style">
+              <summary>
+                  Markup: <code>..\..\styleguide\templates\organisms\comments.html</code>
+              </summary>
+              <pre><code class="lang-markup">&lt;div id&#x3D;&quot;comments&quot; class&#x3D;&quot;rocksite-o-comments&quot;&gt;
+
+
+
+
+
+
+	&lt;h3 class&#x3D;&quot;rocksite-o-comments__header&quot;&gt;
+		19 comments	&lt;/h3&gt;
+
+
+	&lt;ol class&#x3D;&quot;comment-list rocksite-o-comments__list&quot;&gt;
+
+		&lt;li class&#x3D;&quot;comment odd alt thread-odd thread-alt depth-1&quot; id&#x3D;&quot;li-comment-60&quot;&gt;
+			&lt;article id&#x3D;&quot;comment-60&quot; class&#x3D;&quot;rocksite-o-comments__content&quot;&gt;
+				&lt;header class&#x3D;&quot;rocksite-o-comments__content__header&quot;&gt;
+					&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__avatar&quot;&gt;
+						&lt;img alt&#x3D;&quot;&quot; src&#x3D;&quot;http://1.gravatar.com/avatar/75e48a7020624657e5da6033590030ee?s&#x3D;44&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g&quot; srcset&#x3D;&quot;http://1.gravatar.com/avatar/75e48a7020624657e5da6033590030ee?s&#x3D;88&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g 2x&quot; class&#x3D;&quot;avatar avatar-44 photo&quot; height&#x3D;&quot;44&quot; width&#x3D;&quot;44&quot;&gt;			&lt;/div&gt;
+					&lt;cite class&#x3D;&quot;rocksite-o-comments__content__header__author&quot;&gt;Anonymous User &lt;/cite&gt;&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__date&quot;&gt;&lt;a href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-60&quot;&gt;&lt;time datetime&#x3D;&quot;2013-03-11T23:45:54+00:00&quot;&gt;March 11, 2013 at 11:45 pm&lt;/time&gt;&lt;/a&gt;&lt;/div&gt;			&lt;div class&#x3D;&quot;rocksite-o-comments__content__edit&quot;&gt;&lt;a class&#x3D;&quot;comment-edit-link&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action&#x3D;editcomment&amp;amp;c&#x3D;60&quot;&gt;Edit&lt;/a&gt;&lt;/div&gt;		&lt;/header&gt;
+				&lt;!-- .comment-meta --&gt;
+
+
+				&lt;section class&#x3D;&quot;comment-content comment&quot;&gt;
+					&lt;p&gt;This user it trying to be anonymous.&lt;/p&gt;
+					&lt;p&gt;    They used a fake email, so there should be no &lt;a href&#x3D;&quot;https://gravatar.com//&quot; title&#x3D;&quot;Gravatar&quot; rel&#x3D;&quot;nofollow&quot;&gt;Gravatar&lt;/a&gt; associated with it.&lt;br&gt;
+						They did not speify a website, so there should be no link to it in the comment.&lt;/p&gt;
+				&lt;/section&gt;
+				&lt;!-- .comment-content --&gt;
+
+				&lt;div class&#x3D;&quot;reply rocksite-o-comments__content__replay&quot;&gt;
+					&lt;a rel&#x3D;&quot;nofollow&quot; class&#x3D;&quot;comment-reply-link rocksite-a-button -primary -small&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom&#x3D;60#respond&quot; onclick&#x3D;&quot;return addComment.moveForm( &amp;quot;comment-60&amp;quot;, &amp;quot;60&amp;quot;, &amp;quot;respond&amp;quot;, &amp;quot;1148&amp;quot; )&quot; aria-label&#x3D;&quot;Reply to Anonymous User&quot;&gt;Reply&lt;/a&gt;		&lt;/div&gt;
+				&lt;!-- .reply --&gt;
+			&lt;/article&gt;
+			&lt;!-- #comment-## --&gt;
+		&lt;/li&gt;&lt;!-- #comment-## --&gt;
+		&lt;li class&#x3D;&quot;comment even thread-even depth-1&quot; id&#x3D;&quot;li-comment-61&quot;&gt;
+			&lt;article id&#x3D;&quot;comment-61&quot; class&#x3D;&quot;rocksite-o-comments__content&quot;&gt;
+				&lt;header class&#x3D;&quot;rocksite-o-comments__content__header&quot;&gt;
+					&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__avatar&quot;&gt;
+						&lt;img alt&#x3D;&quot;&quot; src&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;44&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g&quot; srcset&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;88&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g 2x&quot; class&#x3D;&quot;avatar avatar-44 photo&quot; height&#x3D;&quot;44&quot; width&#x3D;&quot;44&quot;&gt;			&lt;/div&gt;
+					&lt;cite class&#x3D;&quot;rocksite-o-comments__content__header__author&quot;&gt;&lt;a href&#x3D;&quot;http://example.org/&quot; rel&#x3D;&quot;external nofollow&quot; class&#x3D;&quot;url&quot;&gt;Jane Doe&lt;/a&gt; &lt;/cite&gt;&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__date&quot;&gt;&lt;a href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-61&quot;&gt;&lt;time datetime&#x3D;&quot;2013-03-12T13:17:35+00:00&quot;&gt;March 12, 2013 at 1:17 pm&lt;/time&gt;&lt;/a&gt;&lt;/div&gt;			&lt;div class&#x3D;&quot;rocksite-o-comments__content__edit&quot;&gt;&lt;a class&#x3D;&quot;comment-edit-link&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action&#x3D;editcomment&amp;amp;c&#x3D;61&quot;&gt;Edit&lt;/a&gt;&lt;/div&gt;		&lt;/header&gt;
+				&lt;!-- .comment-meta --&gt;
+
+
+				&lt;section class&#x3D;&quot;comment-content comment&quot;&gt;
+					&lt;p&gt;Comments? I love comments!&lt;/p&gt;
+				&lt;/section&gt;
+				&lt;!-- .comment-content --&gt;
+
+				&lt;div class&#x3D;&quot;reply rocksite-o-comments__content__replay&quot;&gt;
+					&lt;a rel&#x3D;&quot;nofollow&quot; class&#x3D;&quot;comment-reply-link rocksite-a-button -primary -small&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom&#x3D;61#respond&quot; onclick&#x3D;&quot;return addComment.moveForm( &amp;quot;comment-61&amp;quot;, &amp;quot;61&amp;quot;, &amp;quot;respond&amp;quot;, &amp;quot;1148&amp;quot; )&quot; aria-label&#x3D;&quot;Reply to Jane Doe&quot;&gt;Reply&lt;/a&gt;		&lt;/div&gt;
+				&lt;!-- .reply --&gt;
+			&lt;/article&gt;
+			&lt;!-- #comment-## --&gt;
+		&lt;/li&gt;&lt;!-- #comment-## --&gt;
+		&lt;li class&#x3D;&quot;comment odd alt thread-odd thread-alt depth-1&quot; id&#x3D;&quot;li-comment-62&quot;&gt;
+			&lt;article id&#x3D;&quot;comment-62&quot; class&#x3D;&quot;rocksite-o-comments__content&quot;&gt;
+				&lt;header class&#x3D;&quot;rocksite-o-comments__content__header&quot;&gt;
+					&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__avatar&quot;&gt;
+						&lt;img alt&#x3D;&quot;&quot; src&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;44&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g&quot; srcset&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;88&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g 2x&quot; class&#x3D;&quot;avatar avatar-44 photo&quot; height&#x3D;&quot;44&quot; width&#x3D;&quot;44&quot;&gt;			&lt;/div&gt;
+					&lt;cite class&#x3D;&quot;rocksite-o-comments__content__header__author&quot;&gt;&lt;a href&#x3D;&quot;http://example.org&quot; rel&#x3D;&quot;external nofollow&quot; class&#x3D;&quot;url&quot;&gt;John Doe&lt;/a&gt; &lt;/cite&gt;&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__date&quot;&gt;&lt;a href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-62&quot;&gt;&lt;time datetime&#x3D;&quot;2013-03-14T07:53:26+00:00&quot;&gt;March 14, 2013 at 7:53 am&lt;/time&gt;&lt;/a&gt;&lt;/div&gt;			&lt;div class&#x3D;&quot;rocksite-o-comments__content__edit&quot;&gt;&lt;a class&#x3D;&quot;comment-edit-link&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action&#x3D;editcomment&amp;amp;c&#x3D;62&quot;&gt;Edit&lt;/a&gt;&lt;/div&gt;		&lt;/header&gt;
+				&lt;!-- .comment-meta --&gt;
+
+
+				&lt;section class&#x3D;&quot;comment-content comment&quot;&gt;
+					&lt;p&gt;These tests are amazing!&lt;/p&gt;
+				&lt;/section&gt;
+				&lt;!-- .comment-content --&gt;
+
+				&lt;div class&#x3D;&quot;reply rocksite-o-comments__content__replay&quot;&gt;
+					&lt;a rel&#x3D;&quot;nofollow&quot; class&#x3D;&quot;comment-reply-link rocksite-a-button -primary -small&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom&#x3D;62#respond&quot; onclick&#x3D;&quot;return addComment.moveForm( &amp;quot;comment-62&amp;quot;, &amp;quot;62&amp;quot;, &amp;quot;respond&amp;quot;, &amp;quot;1148&amp;quot; )&quot; aria-label&#x3D;&quot;Reply to John Doe&quot;&gt;Reply&lt;/a&gt;		&lt;/div&gt;
+				&lt;!-- .reply --&gt;
+			&lt;/article&gt;
+			&lt;!-- #comment-## --&gt;
+		&lt;/li&gt;&lt;!-- #comment-## --&gt;
+		&lt;li class&#x3D;&quot;comment even thread-even depth-1&quot; id&#x3D;&quot;li-comment-63&quot;&gt;
+			&lt;article id&#x3D;&quot;comment-63&quot; class&#x3D;&quot;rocksite-o-comments__content&quot;&gt;
+				&lt;header class&#x3D;&quot;rocksite-o-comments__content__header&quot;&gt;
+					&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__avatar&quot;&gt;
+						&lt;img alt&#x3D;&quot;&quot; src&#x3D;&quot;http://1.gravatar.com/avatar/4fdb3b572ac7dd8d7a58ba70317efa14?s&#x3D;44&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g&quot; srcset&#x3D;&quot;http://1.gravatar.com/avatar/4fdb3b572ac7dd8d7a58ba70317efa14?s&#x3D;88&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g 2x&quot; class&#x3D;&quot;avatar avatar-44 photo&quot; height&#x3D;&quot;44&quot; width&#x3D;&quot;44&quot;&gt;			&lt;/div&gt;
+					&lt;cite class&#x3D;&quot;rocksite-o-comments__content__header__author&quot;&gt;&lt;a href&#x3D;&quot;https://wpthemetestdata.wordpress.com/&quot; rel&#x3D;&quot;external nofollow&quot; class&#x3D;&quot;url&quot;&gt;themedemos&lt;/a&gt; &lt;/cite&gt;&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__date&quot;&gt;&lt;a href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-63&quot;&gt;&lt;time datetime&#x3D;&quot;2013-03-14T07:56:46+00:00&quot;&gt;March 14, 2013 at 7:56 am&lt;/time&gt;&lt;/a&gt;&lt;/div&gt;			&lt;div class&#x3D;&quot;rocksite-o-comments__content__edit&quot;&gt;&lt;a class&#x3D;&quot;comment-edit-link&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action&#x3D;editcomment&amp;amp;c&#x3D;63&quot;&gt;Edit&lt;/a&gt;&lt;/div&gt;		&lt;/header&gt;
+				&lt;!-- .comment-meta --&gt;
+
+
+				&lt;section class&#x3D;&quot;comment-content comment&quot;&gt;
+					&lt;p&gt;Author Comment.&lt;/p&gt;
+				&lt;/section&gt;
+				&lt;!-- .comment-content --&gt;
+
+				&lt;div class&#x3D;&quot;reply rocksite-o-comments__content__replay&quot;&gt;
+					&lt;a rel&#x3D;&quot;nofollow&quot; class&#x3D;&quot;comment-reply-link rocksite-a-button -primary -small&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom&#x3D;63#respond&quot; onclick&#x3D;&quot;return addComment.moveForm( &amp;quot;comment-63&amp;quot;, &amp;quot;63&amp;quot;, &amp;quot;respond&amp;quot;, &amp;quot;1148&amp;quot; )&quot; aria-label&#x3D;&quot;Reply to themedemos&quot;&gt;Reply&lt;/a&gt;		&lt;/div&gt;
+				&lt;!-- .reply --&gt;
+			&lt;/article&gt;
+			&lt;!-- #comment-## --&gt;
+		&lt;/li&gt;&lt;!-- #comment-## --&gt;
+		&lt;li class&#x3D;&quot;comment odd alt thread-odd thread-alt depth-1&quot; id&#x3D;&quot;li-comment-64&quot;&gt;
+			&lt;article id&#x3D;&quot;comment-64&quot; class&#x3D;&quot;rocksite-o-comments__content&quot;&gt;
+				&lt;header class&#x3D;&quot;rocksite-o-comments__content__header&quot;&gt;
+					&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__avatar&quot;&gt;
+						&lt;img alt&#x3D;&quot;&quot; src&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;44&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g&quot; srcset&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;88&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g 2x&quot; class&#x3D;&quot;avatar avatar-44 photo&quot; height&#x3D;&quot;44&quot; width&#x3D;&quot;44&quot;&gt;			&lt;/div&gt;
+					&lt;cite class&#x3D;&quot;rocksite-o-comments__content__header__author&quot;&gt;&lt;a href&#x3D;&quot;http://example.org/&quot; rel&#x3D;&quot;external nofollow&quot; class&#x3D;&quot;url&quot;&gt;John Doe&lt;/a&gt; &lt;/cite&gt;&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__date&quot;&gt;&lt;a href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-64&quot;&gt;&lt;time datetime&#x3D;&quot;2013-03-14T07:57:01+00:00&quot;&gt;March 14, 2013 at 7:57 am&lt;/time&gt;&lt;/a&gt;&lt;/div&gt;			&lt;div class&#x3D;&quot;rocksite-o-comments__content__edit&quot;&gt;&lt;a class&#x3D;&quot;comment-edit-link&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action&#x3D;editcomment&amp;amp;c&#x3D;64&quot;&gt;Edit&lt;/a&gt;&lt;/div&gt;		&lt;/header&gt;
+				&lt;!-- .comment-meta --&gt;
+
+
+				&lt;section class&#x3D;&quot;comment-content comment&quot;&gt;
+					&lt;p&gt;Comment Depth 01&lt;/p&gt;
+				&lt;/section&gt;
+				&lt;!-- .comment-content --&gt;
+
+				&lt;div class&#x3D;&quot;reply rocksite-o-comments__content__replay&quot;&gt;
+					&lt;a rel&#x3D;&quot;nofollow&quot; class&#x3D;&quot;comment-reply-link rocksite-a-button -primary -small&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom&#x3D;64#respond&quot; onclick&#x3D;&quot;return addComment.moveForm( &amp;quot;comment-64&amp;quot;, &amp;quot;64&amp;quot;, &amp;quot;respond&amp;quot;, &amp;quot;1148&amp;quot; )&quot; aria-label&#x3D;&quot;Reply to John Doe&quot;&gt;Reply&lt;/a&gt;		&lt;/div&gt;
+				&lt;!-- .reply --&gt;
+			&lt;/article&gt;
+			&lt;!-- #comment-## --&gt;
+			&lt;ol class&#x3D;&quot;children&quot;&gt;
+				&lt;li class&#x3D;&quot;comment even depth-2&quot; id&#x3D;&quot;li-comment-65&quot;&gt;
+					&lt;article id&#x3D;&quot;comment-65&quot; class&#x3D;&quot;rocksite-o-comments__content&quot;&gt;
+						&lt;header class&#x3D;&quot;rocksite-o-comments__content__header&quot;&gt;
+							&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__avatar&quot;&gt;
+								&lt;img alt&#x3D;&quot;&quot; src&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;44&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g&quot; srcset&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;88&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g 2x&quot; class&#x3D;&quot;avatar avatar-44 photo&quot; height&#x3D;&quot;44&quot; width&#x3D;&quot;44&quot;&gt;			&lt;/div&gt;
+							&lt;cite class&#x3D;&quot;rocksite-o-comments__content__header__author&quot;&gt;&lt;a href&#x3D;&quot;http://example.org/&quot; rel&#x3D;&quot;external nofollow&quot; class&#x3D;&quot;url&quot;&gt;Jane Bloggs&lt;/a&gt; &lt;/cite&gt;&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__date&quot;&gt;&lt;a href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-65&quot;&gt;&lt;time datetime&#x3D;&quot;2013-03-14T08:01:21+00:00&quot;&gt;March 14, 2013 at 8:01 am&lt;/time&gt;&lt;/a&gt;&lt;/div&gt;			&lt;div class&#x3D;&quot;rocksite-o-comments__content__edit&quot;&gt;&lt;a class&#x3D;&quot;comment-edit-link&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action&#x3D;editcomment&amp;amp;c&#x3D;65&quot;&gt;Edit&lt;/a&gt;&lt;/div&gt;		&lt;/header&gt;
+						&lt;!-- .comment-meta --&gt;
+
+
+						&lt;section class&#x3D;&quot;comment-content comment&quot;&gt;
+							&lt;p&gt;Comment Depth 02&lt;/p&gt;
+						&lt;/section&gt;
+						&lt;!-- .comment-content --&gt;
+
+						&lt;div class&#x3D;&quot;reply rocksite-o-comments__content__replay&quot;&gt;
+							&lt;a rel&#x3D;&quot;nofollow&quot; class&#x3D;&quot;comment-reply-link rocksite-a-button -primary -small&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom&#x3D;65#respond&quot; onclick&#x3D;&quot;return addComment.moveForm( &amp;quot;comment-65&amp;quot;, &amp;quot;65&amp;quot;, &amp;quot;respond&amp;quot;, &amp;quot;1148&amp;quot; )&quot; aria-label&#x3D;&quot;Reply to Jane Bloggs&quot;&gt;Reply&lt;/a&gt;		&lt;/div&gt;
+						&lt;!-- .reply --&gt;
+					&lt;/article&gt;
+					&lt;!-- #comment-## --&gt;
+					&lt;ol class&#x3D;&quot;children&quot;&gt;
+						&lt;li class&#x3D;&quot;comment odd alt depth-3&quot; id&#x3D;&quot;li-comment-66&quot;&gt;
+							&lt;article id&#x3D;&quot;comment-66&quot; class&#x3D;&quot;rocksite-o-comments__content&quot;&gt;
+								&lt;header class&#x3D;&quot;rocksite-o-comments__content__header&quot;&gt;
+									&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__avatar&quot;&gt;
+										&lt;img alt&#x3D;&quot;&quot; src&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;44&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g&quot; srcset&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;88&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g 2x&quot; class&#x3D;&quot;avatar avatar-44 photo&quot; height&#x3D;&quot;44&quot; width&#x3D;&quot;44&quot;&gt;			&lt;/div&gt;
+									&lt;cite class&#x3D;&quot;rocksite-o-comments__content__header__author&quot;&gt;&lt;a href&#x3D;&quot;http://example.org/&quot; rel&#x3D;&quot;external nofollow&quot; class&#x3D;&quot;url&quot;&gt;Fred Bloggs&lt;/a&gt; &lt;/cite&gt;&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__date&quot;&gt;&lt;a href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-66&quot;&gt;&lt;time datetime&#x3D;&quot;2013-03-14T08:02:06+00:00&quot;&gt;March 14, 2013 at 8:02 am&lt;/time&gt;&lt;/a&gt;&lt;/div&gt;			&lt;div class&#x3D;&quot;rocksite-o-comments__content__edit&quot;&gt;&lt;a class&#x3D;&quot;comment-edit-link&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action&#x3D;editcomment&amp;amp;c&#x3D;66&quot;&gt;Edit&lt;/a&gt;&lt;/div&gt;		&lt;/header&gt;
+								&lt;!-- .comment-meta --&gt;
+
+
+								&lt;section class&#x3D;&quot;comment-content comment&quot;&gt;
+									&lt;p&gt;Comment Depth 03&lt;/p&gt;
+								&lt;/section&gt;
+								&lt;!-- .comment-content --&gt;
+
+								&lt;div class&#x3D;&quot;reply rocksite-o-comments__content__replay&quot;&gt;
+									&lt;a rel&#x3D;&quot;nofollow&quot; class&#x3D;&quot;comment-reply-link rocksite-a-button -primary -small&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom&#x3D;66#respond&quot; onclick&#x3D;&quot;return addComment.moveForm( &amp;quot;comment-66&amp;quot;, &amp;quot;66&amp;quot;, &amp;quot;respond&amp;quot;, &amp;quot;1148&amp;quot; )&quot; aria-label&#x3D;&quot;Reply to Fred Bloggs&quot;&gt;Reply&lt;/a&gt;		&lt;/div&gt;
+								&lt;!-- .reply --&gt;
+							&lt;/article&gt;
+							&lt;!-- #comment-## --&gt;
+							&lt;ol class&#x3D;&quot;children&quot;&gt;
+								&lt;li class&#x3D;&quot;comment even depth-4&quot; id&#x3D;&quot;li-comment-67&quot;&gt;
+									&lt;article id&#x3D;&quot;comment-67&quot; class&#x3D;&quot;rocksite-o-comments__content&quot;&gt;
+										&lt;header class&#x3D;&quot;rocksite-o-comments__content__header&quot;&gt;
+											&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__avatar&quot;&gt;
+												&lt;img alt&#x3D;&quot;&quot; src&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;44&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g&quot; srcset&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;88&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g 2x&quot; class&#x3D;&quot;avatar avatar-44 photo&quot; height&#x3D;&quot;44&quot; width&#x3D;&quot;44&quot;&gt;			&lt;/div&gt;
+											&lt;cite class&#x3D;&quot;rocksite-o-comments__content__header__author&quot;&gt;&lt;a href&#x3D;&quot;http://example.org/&quot; rel&#x3D;&quot;external nofollow&quot; class&#x3D;&quot;url&quot;&gt;Fred Bloggs&lt;/a&gt; &lt;/cite&gt;&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__date&quot;&gt;&lt;a href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-67&quot;&gt;&lt;time datetime&#x3D;&quot;2013-03-14T08:03:22+00:00&quot;&gt;March 14, 2013 at 8:03 am&lt;/time&gt;&lt;/a&gt;&lt;/div&gt;			&lt;div class&#x3D;&quot;rocksite-o-comments__content__edit&quot;&gt;&lt;a class&#x3D;&quot;comment-edit-link&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action&#x3D;editcomment&amp;amp;c&#x3D;67&quot;&gt;Edit&lt;/a&gt;&lt;/div&gt;		&lt;/header&gt;
+										&lt;!-- .comment-meta --&gt;
+
+
+										&lt;section class&#x3D;&quot;comment-content comment&quot;&gt;
+											&lt;p&gt;Comment Depth 04&lt;/p&gt;
+										&lt;/section&gt;
+										&lt;!-- .comment-content --&gt;
+
+										&lt;div class&#x3D;&quot;reply rocksite-o-comments__content__replay&quot;&gt;
+											&lt;a rel&#x3D;&quot;nofollow&quot; class&#x3D;&quot;comment-reply-link rocksite-a-button -primary -small&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom&#x3D;67#respond&quot; onclick&#x3D;&quot;return addComment.moveForm( &amp;quot;comment-67&amp;quot;, &amp;quot;67&amp;quot;, &amp;quot;respond&amp;quot;, &amp;quot;1148&amp;quot; )&quot; aria-label&#x3D;&quot;Reply to Fred Bloggs&quot;&gt;Reply&lt;/a&gt;		&lt;/div&gt;
+										&lt;!-- .reply --&gt;
+									&lt;/article&gt;
+									&lt;!-- #comment-## --&gt;
+									&lt;ol class&#x3D;&quot;children&quot;&gt;
+										&lt;li class&#x3D;&quot;comment odd alt depth-5&quot; id&#x3D;&quot;li-comment-68&quot;&gt;
+											&lt;article id&#x3D;&quot;comment-68&quot; class&#x3D;&quot;rocksite-o-comments__content&quot;&gt;
+												&lt;header class&#x3D;&quot;rocksite-o-comments__content__header&quot;&gt;
+													&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__avatar&quot;&gt;
+														&lt;img alt&#x3D;&quot;&quot; src&#x3D;&quot;http://1.gravatar.com/avatar/4fdb3b572ac7dd8d7a58ba70317efa14?s&#x3D;44&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g&quot; srcset&#x3D;&quot;http://1.gravatar.com/avatar/4fdb3b572ac7dd8d7a58ba70317efa14?s&#x3D;88&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g 2x&quot; class&#x3D;&quot;avatar avatar-44 photo&quot; height&#x3D;&quot;44&quot; width&#x3D;&quot;44&quot;&gt;			&lt;/div&gt;
+													&lt;cite class&#x3D;&quot;rocksite-o-comments__content__header__author&quot;&gt;&lt;a href&#x3D;&quot;https://wpthemetestdata.wordpress.com/&quot; rel&#x3D;&quot;external nofollow&quot; class&#x3D;&quot;url&quot;&gt;themedemos&lt;/a&gt; &lt;/cite&gt;&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__date&quot;&gt;&lt;a href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-68&quot;&gt;&lt;time datetime&#x3D;&quot;2013-03-14T08:10:29+00:00&quot;&gt;March 14, 2013 at 8:10 am&lt;/time&gt;&lt;/a&gt;&lt;/div&gt;			&lt;div class&#x3D;&quot;rocksite-o-comments__content__edit&quot;&gt;&lt;a class&#x3D;&quot;comment-edit-link&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action&#x3D;editcomment&amp;amp;c&#x3D;68&quot;&gt;Edit&lt;/a&gt;&lt;/div&gt;		&lt;/header&gt;
+												&lt;!-- .comment-meta --&gt;
+
+
+												&lt;section class&#x3D;&quot;comment-content comment&quot;&gt;
+													&lt;p&gt;Comment Depth 05&lt;/p&gt;
+													&lt;p&gt;Also an author comment.&lt;/p&gt;
+												&lt;/section&gt;
+												&lt;!-- .comment-content --&gt;
+
+												&lt;div class&#x3D;&quot;reply rocksite-o-comments__content__replay&quot;&gt;
+												&lt;/div&gt;
+												&lt;!-- .reply --&gt;
+											&lt;/article&gt;
+											&lt;!-- #comment-## --&gt;
+										&lt;/li&gt;&lt;!-- #comment-## --&gt;
+										&lt;li class&#x3D;&quot;comment even depth-5&quot; id&#x3D;&quot;li-comment-69&quot;&gt;
+											&lt;article id&#x3D;&quot;comment-69&quot; class&#x3D;&quot;rocksite-o-comments__content&quot;&gt;
+												&lt;header class&#x3D;&quot;rocksite-o-comments__content__header&quot;&gt;
+													&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__avatar&quot;&gt;
+														&lt;img alt&#x3D;&quot;&quot; src&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;44&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g&quot; srcset&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;88&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g 2x&quot; class&#x3D;&quot;avatar avatar-44 photo&quot; height&#x3D;&quot;44&quot; width&#x3D;&quot;44&quot;&gt;			&lt;/div&gt;
+													&lt;cite class&#x3D;&quot;rocksite-o-comments__content__header__author&quot;&gt;&lt;a href&#x3D;&quot;http://example.org/&quot; rel&#x3D;&quot;external nofollow&quot; class&#x3D;&quot;url&quot;&gt;Jane Bloggs&lt;/a&gt; &lt;/cite&gt;&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__date&quot;&gt;&lt;a href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-69&quot;&gt;&lt;time datetime&#x3D;&quot;2013-03-14T08:12:16+00:00&quot;&gt;March 14, 2013 at 8:12 am&lt;/time&gt;&lt;/a&gt;&lt;/div&gt;			&lt;div class&#x3D;&quot;rocksite-o-comments__content__edit&quot;&gt;&lt;a class&#x3D;&quot;comment-edit-link&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action&#x3D;editcomment&amp;amp;c&#x3D;69&quot;&gt;Edit&lt;/a&gt;&lt;/div&gt;		&lt;/header&gt;
+												&lt;!-- .comment-meta --&gt;
+
+
+												&lt;section class&#x3D;&quot;comment-content comment&quot;&gt;
+													&lt;p&gt;Comment Depth 06 has some more text than some of the other comments on this post.&lt;/p&gt;
+												&lt;/section&gt;
+												&lt;!-- .comment-content --&gt;
+
+												&lt;div class&#x3D;&quot;reply rocksite-o-comments__content__replay&quot;&gt;
+												&lt;/div&gt;
+												&lt;!-- .reply --&gt;
+											&lt;/article&gt;
+											&lt;!-- #comment-## --&gt;
+										&lt;/li&gt;&lt;!-- #comment-## --&gt;
+										&lt;li class&#x3D;&quot;comment odd alt depth-5&quot; id&#x3D;&quot;li-comment-70&quot;&gt;
+											&lt;article id&#x3D;&quot;comment-70&quot; class&#x3D;&quot;rocksite-o-comments__content&quot;&gt;
+												&lt;header class&#x3D;&quot;rocksite-o-comments__content__header&quot;&gt;
+													&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__avatar&quot;&gt;
+														&lt;img alt&#x3D;&quot;&quot; src&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;44&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g&quot; srcset&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;88&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g 2x&quot; class&#x3D;&quot;avatar avatar-44 photo&quot; height&#x3D;&quot;44&quot; width&#x3D;&quot;44&quot;&gt;			&lt;/div&gt;
+													&lt;cite class&#x3D;&quot;rocksite-o-comments__content__header__author&quot;&gt;&lt;a href&#x3D;&quot;http://example.org/&quot; rel&#x3D;&quot;external nofollow&quot; class&#x3D;&quot;url&quot;&gt;Joe Bloggs&lt;/a&gt; &lt;/cite&gt;&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__date&quot;&gt;&lt;a href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-70&quot;&gt;&lt;time datetime&#x3D;&quot;2013-03-14T08:12:58+00:00&quot;&gt;March 14, 2013 at 8:12 am&lt;/time&gt;&lt;/a&gt;&lt;/div&gt;			&lt;div class&#x3D;&quot;rocksite-o-comments__content__edit&quot;&gt;&lt;a class&#x3D;&quot;comment-edit-link&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action&#x3D;editcomment&amp;amp;c&#x3D;70&quot;&gt;Edit&lt;/a&gt;&lt;/div&gt;		&lt;/header&gt;
+												&lt;!-- .comment-meta --&gt;
+
+
+												&lt;section class&#x3D;&quot;comment-content comment&quot;&gt;
+													&lt;p&gt;Comment Depth 07 has a little bit.&lt;/p&gt;
+												&lt;/section&gt;
+												&lt;!-- .comment-content --&gt;
+
+												&lt;div class&#x3D;&quot;reply rocksite-o-comments__content__replay&quot;&gt;
+												&lt;/div&gt;
+												&lt;!-- .reply --&gt;
+											&lt;/article&gt;
+											&lt;!-- #comment-## --&gt;
+										&lt;/li&gt;&lt;!-- #comment-## --&gt;
+										&lt;li class&#x3D;&quot;comment even depth-5&quot; id&#x3D;&quot;li-comment-71&quot;&gt;
+											&lt;article id&#x3D;&quot;comment-71&quot; class&#x3D;&quot;rocksite-o-comments__content&quot;&gt;
+												&lt;header class&#x3D;&quot;rocksite-o-comments__content__header&quot;&gt;
+													&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__avatar&quot;&gt;
+														&lt;img alt&#x3D;&quot;&quot; src&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;44&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g&quot; srcset&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;88&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g 2x&quot; class&#x3D;&quot;avatar avatar-44 photo&quot; height&#x3D;&quot;44&quot; width&#x3D;&quot;44&quot;&gt;			&lt;/div&gt;
+													&lt;cite class&#x3D;&quot;rocksite-o-comments__content__header__author&quot;&gt;&lt;a href&#x3D;&quot;http://example.org/&quot; rel&#x3D;&quot;external nofollow&quot; class&#x3D;&quot;url&quot;&gt;Jane Bloggs&lt;/a&gt; &lt;/cite&gt;&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__date&quot;&gt;&lt;a href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-71&quot;&gt;&lt;time datetime&#x3D;&quot;2013-03-14T08:13:42+00:00&quot;&gt;March 14, 2013 at 8:13 am&lt;/time&gt;&lt;/a&gt;&lt;/div&gt;			&lt;div class&#x3D;&quot;rocksite-o-comments__content__edit&quot;&gt;&lt;a class&#x3D;&quot;comment-edit-link&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action&#x3D;editcomment&amp;amp;c&#x3D;71&quot;&gt;Edit&lt;/a&gt;&lt;/div&gt;		&lt;/header&gt;
+												&lt;!-- .comment-meta --&gt;
+
+
+												&lt;section class&#x3D;&quot;comment-content comment&quot;&gt;
+													&lt;p&gt;Comment Depth 08&lt;/p&gt;
+												&lt;/section&gt;
+												&lt;!-- .comment-content --&gt;
+
+												&lt;div class&#x3D;&quot;reply rocksite-o-comments__content__replay&quot;&gt;
+												&lt;/div&gt;
+												&lt;!-- .reply --&gt;
+											&lt;/article&gt;
+											&lt;!-- #comment-## --&gt;
+										&lt;/li&gt;&lt;!-- #comment-## --&gt;
+										&lt;li class&#x3D;&quot;comment odd alt depth-5&quot; id&#x3D;&quot;li-comment-72&quot;&gt;
+											&lt;article id&#x3D;&quot;comment-72&quot; class&#x3D;&quot;rocksite-o-comments__content&quot;&gt;
+												&lt;header class&#x3D;&quot;rocksite-o-comments__content__header&quot;&gt;
+													&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__avatar&quot;&gt;
+														&lt;img alt&#x3D;&quot;&quot; src&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;44&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g&quot; srcset&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;88&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g 2x&quot; class&#x3D;&quot;avatar avatar-44 photo&quot; height&#x3D;&quot;44&quot; width&#x3D;&quot;44&quot;&gt;			&lt;/div&gt;
+													&lt;cite class&#x3D;&quot;rocksite-o-comments__content__header__author&quot;&gt;&lt;a href&#x3D;&quot;http://example.org/&quot; rel&#x3D;&quot;external nofollow&quot; class&#x3D;&quot;url&quot;&gt;Joe Bloggs&lt;/a&gt; &lt;/cite&gt;&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__date&quot;&gt;&lt;a href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-72&quot;&gt;&lt;time datetime&#x3D;&quot;2013-03-14T08:14:13+00:00&quot;&gt;March 14, 2013 at 8:14 am&lt;/time&gt;&lt;/a&gt;&lt;/div&gt;			&lt;div class&#x3D;&quot;rocksite-o-comments__content__edit&quot;&gt;&lt;a class&#x3D;&quot;comment-edit-link&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action&#x3D;editcomment&amp;amp;c&#x3D;72&quot;&gt;Edit&lt;/a&gt;&lt;/div&gt;		&lt;/header&gt;
+												&lt;!-- .comment-meta --&gt;
+
+
+												&lt;section class&#x3D;&quot;comment-content comment&quot;&gt;
+													&lt;p&gt;Comment Depth 09 is way nested, but there are a lot of sites with very nested comments.&lt;/p&gt;
+												&lt;/section&gt;
+												&lt;!-- .comment-content --&gt;
+
+												&lt;div class&#x3D;&quot;reply rocksite-o-comments__content__replay&quot;&gt;
+												&lt;/div&gt;
+												&lt;!-- .reply --&gt;
+											&lt;/article&gt;
+											&lt;!-- #comment-## --&gt;
+										&lt;/li&gt;&lt;!-- #comment-## --&gt;
+										&lt;li class&#x3D;&quot;comment even depth-5&quot; id&#x3D;&quot;li-comment-73&quot;&gt;
+											&lt;article id&#x3D;&quot;comment-73&quot; class&#x3D;&quot;rocksite-o-comments__content&quot;&gt;
+												&lt;header class&#x3D;&quot;rocksite-o-comments__content__header&quot;&gt;
+													&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__avatar&quot;&gt;
+														&lt;img alt&#x3D;&quot;&quot; src&#x3D;&quot;http://1.gravatar.com/avatar/4fdb3b572ac7dd8d7a58ba70317efa14?s&#x3D;44&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g&quot; srcset&#x3D;&quot;http://1.gravatar.com/avatar/4fdb3b572ac7dd8d7a58ba70317efa14?s&#x3D;88&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g 2x&quot; class&#x3D;&quot;avatar avatar-44 photo&quot; height&#x3D;&quot;44&quot; width&#x3D;&quot;44&quot;&gt;			&lt;/div&gt;
+													&lt;cite class&#x3D;&quot;rocksite-o-comments__content__header__author&quot;&gt;&lt;a href&#x3D;&quot;https://wpthemetestdata.wordpress.com/&quot; rel&#x3D;&quot;external nofollow&quot; class&#x3D;&quot;url&quot;&gt;themedemos&lt;/a&gt; &lt;/cite&gt;&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__date&quot;&gt;&lt;a href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-73&quot;&gt;&lt;time datetime&#x3D;&quot;2013-03-14T08:14:47+00:00&quot;&gt;March 14, 2013 at 8:14 am&lt;/time&gt;&lt;/a&gt;&lt;/div&gt;			&lt;div class&#x3D;&quot;rocksite-o-comments__content__edit&quot;&gt;&lt;a class&#x3D;&quot;comment-edit-link&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action&#x3D;editcomment&amp;amp;c&#x3D;73&quot;&gt;Edit&lt;/a&gt;&lt;/div&gt;		&lt;/header&gt;
+												&lt;!-- .comment-meta --&gt;
+
+
+												&lt;section class&#x3D;&quot;comment-content comment&quot;&gt;
+													&lt;p&gt;Comment Depth 10&lt;/p&gt;
+													&lt;p&gt;Also an author comment.&lt;/p&gt;
+												&lt;/section&gt;
+												&lt;!-- .comment-content --&gt;
+
+												&lt;div class&#x3D;&quot;reply rocksite-o-comments__content__replay&quot;&gt;
+												&lt;/div&gt;
+												&lt;!-- .reply --&gt;
+											&lt;/article&gt;
+											&lt;!-- #comment-## --&gt;
+										&lt;/li&gt;&lt;!-- #comment-## --&gt;
+									&lt;/ol&gt;&lt;!-- .children --&gt;
+								&lt;/li&gt;&lt;!-- #comment-## --&gt;
+							&lt;/ol&gt;&lt;!-- .children --&gt;
+						&lt;/li&gt;&lt;!-- #comment-## --&gt;
+					&lt;/ol&gt;&lt;!-- .children --&gt;
+				&lt;/li&gt;&lt;!-- #comment-## --&gt;
+			&lt;/ol&gt;&lt;!-- .children --&gt;
+		&lt;/li&gt;&lt;!-- #comment-## --&gt;
+		&lt;li class&#x3D;&quot;comment odd alt thread-even depth-1&quot; id&#x3D;&quot;li-comment-74&quot;&gt;
+			&lt;article id&#x3D;&quot;comment-74&quot; class&#x3D;&quot;rocksite-o-comments__content&quot;&gt;
+				&lt;header class&#x3D;&quot;rocksite-o-comments__content__header&quot;&gt;
+					&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__avatar&quot;&gt;
+						&lt;img alt&#x3D;&quot;&quot; src&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;44&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g&quot; srcset&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;88&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g 2x&quot; class&#x3D;&quot;avatar avatar-44 photo&quot; height&#x3D;&quot;44&quot; width&#x3D;&quot;44&quot;&gt;			&lt;/div&gt;
+					&lt;cite class&#x3D;&quot;rocksite-o-comments__content__header__author&quot;&gt;&lt;a href&#x3D;&quot;http://example.org/&quot; rel&#x3D;&quot;external nofollow&quot; class&#x3D;&quot;url&quot;&gt;Jane Doe&lt;/a&gt; &lt;/cite&gt;&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__date&quot;&gt;&lt;a href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-74&quot;&gt;&lt;time datetime&#x3D;&quot;2013-03-14T09:56:43+00:00&quot;&gt;March 14, 2013 at 9:56 am&lt;/time&gt;&lt;/a&gt;&lt;/div&gt;			&lt;div class&#x3D;&quot;rocksite-o-comments__content__edit&quot;&gt;&lt;a class&#x3D;&quot;comment-edit-link&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action&#x3D;editcomment&amp;amp;c&#x3D;74&quot;&gt;Edit&lt;/a&gt;&lt;/div&gt;		&lt;/header&gt;
+				&lt;!-- .comment-meta --&gt;
+
+
+				&lt;section class&#x3D;&quot;comment-content comment&quot;&gt;
+					&lt;p&gt;Image comment.&lt;br&gt;
+						&lt;img src&#x3D;&quot;https://wpthemetestdata.files.wordpress.com/2008/06/dsc20050102_192118_51.jpg?w&#x3D;171&amp;amp;h&#x3D;128&quot; alt&#x3D;&quot;Albany wind-farm against the sunset, Western Australia&quot;&gt;&lt;br&gt;
+						If the image imports…&lt;/p&gt;
+				&lt;/section&gt;
+				&lt;!-- .comment-content --&gt;
+
+				&lt;div class&#x3D;&quot;reply rocksite-o-comments__content__replay&quot;&gt;
+					&lt;a rel&#x3D;&quot;nofollow&quot; class&#x3D;&quot;comment-reply-link rocksite-a-button -primary -small&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom&#x3D;74#respond&quot; onclick&#x3D;&quot;return addComment.moveForm( &amp;quot;comment-74&amp;quot;, &amp;quot;74&amp;quot;, &amp;quot;respond&amp;quot;, &amp;quot;1148&amp;quot; )&quot; aria-label&#x3D;&quot;Reply to Jane Doe&quot;&gt;Reply&lt;/a&gt;		&lt;/div&gt;
+				&lt;!-- .reply --&gt;
+			&lt;/article&gt;
+			&lt;!-- #comment-## --&gt;
+		&lt;/li&gt;&lt;!-- #comment-## --&gt;
+		&lt;li class&#x3D;&quot;comment even thread-odd thread-alt depth-1&quot; id&#x3D;&quot;li-comment-75&quot;&gt;
+			&lt;article id&#x3D;&quot;comment-75&quot; class&#x3D;&quot;rocksite-o-comments__content&quot;&gt;
+				&lt;header class&#x3D;&quot;rocksite-o-comments__content__header&quot;&gt;
+					&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__avatar&quot;&gt;
+						&lt;img alt&#x3D;&quot;&quot; src&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;44&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g&quot; srcset&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;88&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g 2x&quot; class&#x3D;&quot;avatar avatar-44 photo&quot; height&#x3D;&quot;44&quot; width&#x3D;&quot;44&quot;&gt;			&lt;/div&gt;
+					&lt;cite class&#x3D;&quot;rocksite-o-comments__content__header__author&quot;&gt;&lt;a href&#x3D;&quot;http://example.org/&quot; rel&#x3D;&quot;external nofollow&quot; class&#x3D;&quot;url&quot;&gt;John Doe&lt;/a&gt; &lt;/cite&gt;&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__date&quot;&gt;&lt;a href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-75&quot;&gt;&lt;time datetime&#x3D;&quot;2013-03-14T11:23:24+00:00&quot;&gt;March 14, 2013 at 11:23 am&lt;/time&gt;&lt;/a&gt;&lt;/div&gt;			&lt;div class&#x3D;&quot;rocksite-o-comments__content__edit&quot;&gt;&lt;a class&#x3D;&quot;comment-edit-link&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action&#x3D;editcomment&amp;amp;c&#x3D;75&quot;&gt;Edit&lt;/a&gt;&lt;/div&gt;		&lt;/header&gt;
+				&lt;!-- .comment-meta --&gt;
+
+
+				&lt;section class&#x3D;&quot;comment-content comment&quot;&gt;
+					&lt;p&gt;We are totally going to blog about these tests!&lt;/p&gt;
+				&lt;/section&gt;
+				&lt;!-- .comment-content --&gt;
+
+				&lt;div class&#x3D;&quot;reply rocksite-o-comments__content__replay&quot;&gt;
+					&lt;a rel&#x3D;&quot;nofollow&quot; class&#x3D;&quot;comment-reply-link rocksite-a-button -primary -small&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom&#x3D;75#respond&quot; onclick&#x3D;&quot;return addComment.moveForm( &amp;quot;comment-75&amp;quot;, &amp;quot;75&amp;quot;, &amp;quot;respond&amp;quot;, &amp;quot;1148&amp;quot; )&quot; aria-label&#x3D;&quot;Reply to John Doe&quot;&gt;Reply&lt;/a&gt;		&lt;/div&gt;
+				&lt;!-- .reply --&gt;
+			&lt;/article&gt;
+			&lt;!-- #comment-## --&gt;
+		&lt;/li&gt;&lt;!-- #comment-## --&gt;
+		&lt;li class&#x3D;&quot;comment odd alt thread-even depth-1&quot; id&#x3D;&quot;li-comment-76&quot;&gt;
+			&lt;article id&#x3D;&quot;comment-76&quot; class&#x3D;&quot;rocksite-o-comments__content&quot;&gt;
+				&lt;header class&#x3D;&quot;rocksite-o-comments__content__header&quot;&gt;
+					&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__avatar&quot;&gt;
+						&lt;img alt&#x3D;&quot;&quot; src&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;44&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g&quot; srcset&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;88&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g 2x&quot; class&#x3D;&quot;avatar avatar-44 photo&quot; height&#x3D;&quot;44&quot; width&#x3D;&quot;44&quot;&gt;			&lt;/div&gt;
+					&lt;cite class&#x3D;&quot;rocksite-o-comments__content__header__author&quot;&gt;&lt;a href&#x3D;&quot;http://example.org/&quot; rel&#x3D;&quot;external nofollow&quot; class&#x3D;&quot;url&quot;&gt;John Doe&lt;/a&gt; &lt;/cite&gt;&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__date&quot;&gt;&lt;a href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-76&quot;&gt;&lt;time datetime&#x3D;&quot;2013-03-14T11:27:54+00:00&quot;&gt;March 14, 2013 at 11:27 am&lt;/time&gt;&lt;/a&gt;&lt;/div&gt;			&lt;div class&#x3D;&quot;rocksite-o-comments__content__edit&quot;&gt;&lt;a class&#x3D;&quot;comment-edit-link&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action&#x3D;editcomment&amp;amp;c&#x3D;76&quot;&gt;Edit&lt;/a&gt;&lt;/div&gt;		&lt;/header&gt;
+				&lt;!-- .comment-meta --&gt;
+
+
+				&lt;section class&#x3D;&quot;comment-content comment&quot;&gt;
+					&lt;p&gt;We use these tests all the time! Killer stuff!&lt;/p&gt;
+				&lt;/section&gt;
+				&lt;!-- .comment-content --&gt;
+
+				&lt;div class&#x3D;&quot;reply rocksite-o-comments__content__replay&quot;&gt;
+					&lt;a rel&#x3D;&quot;nofollow&quot; class&#x3D;&quot;comment-reply-link rocksite-a-button -primary -small&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom&#x3D;76#respond&quot; onclick&#x3D;&quot;return addComment.moveForm( &amp;quot;comment-76&amp;quot;, &amp;quot;76&amp;quot;, &amp;quot;respond&amp;quot;, &amp;quot;1148&amp;quot; )&quot; aria-label&#x3D;&quot;Reply to John Doe&quot;&gt;Reply&lt;/a&gt;		&lt;/div&gt;
+				&lt;!-- .reply --&gt;
+			&lt;/article&gt;
+			&lt;!-- #comment-## --&gt;
+		&lt;/li&gt;&lt;!-- #comment-## --&gt;
+		&lt;li class&#x3D;&quot;comment even thread-odd thread-alt depth-1&quot; id&#x3D;&quot;li-comment-77&quot;&gt;
+			&lt;article id&#x3D;&quot;comment-77&quot; class&#x3D;&quot;rocksite-o-comments__content&quot;&gt;
+				&lt;header class&#x3D;&quot;rocksite-o-comments__content__header&quot;&gt;
+					&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__avatar&quot;&gt;
+						&lt;img alt&#x3D;&quot;&quot; src&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;44&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g&quot; srcset&#x3D;&quot;http://0.gravatar.com/avatar/f72c502e0d657f363b5f2dc79dd8ceea?s&#x3D;88&amp;amp;d&#x3D;mm&amp;amp;r&#x3D;g 2x&quot; class&#x3D;&quot;avatar avatar-44 photo&quot; height&#x3D;&quot;44&quot; width&#x3D;&quot;44&quot;&gt;			&lt;/div&gt;
+					&lt;cite class&#x3D;&quot;rocksite-o-comments__content__header__author&quot;&gt;&lt;a href&#x3D;&quot;http://example.org/&quot; rel&#x3D;&quot;external nofollow&quot; class&#x3D;&quot;url&quot;&gt;Jane Doe&lt;/a&gt; &lt;/cite&gt;&lt;div class&#x3D;&quot;rocksite-o-comments__content__header__date&quot;&gt;&lt;a href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/#comment-77&quot;&gt;&lt;time datetime&#x3D;&quot;2013-03-14T11:30:33+00:00&quot;&gt;March 14, 2013 at 11:30 am&lt;/time&gt;&lt;/a&gt;&lt;/div&gt;			&lt;div class&#x3D;&quot;rocksite-o-comments__content__edit&quot;&gt;&lt;a class&#x3D;&quot;comment-edit-link&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/wp-admin/comment.php?action&#x3D;editcomment&amp;amp;c&#x3D;77&quot;&gt;Edit&lt;/a&gt;&lt;/div&gt;		&lt;/header&gt;
+				&lt;!-- .comment-meta --&gt;
+
+
+				&lt;section class&#x3D;&quot;comment-content comment&quot;&gt;
+					&lt;p&gt;Thanks for all the comments, everyone!&lt;/p&gt;
+				&lt;/section&gt;
+				&lt;!-- .comment-content --&gt;
+
+				&lt;div class&#x3D;&quot;reply rocksite-o-comments__content__replay&quot;&gt;
+					&lt;a rel&#x3D;&quot;nofollow&quot; class&#x3D;&quot;comment-reply-link rocksite-a-button -primary -small&quot; href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/2012/01/03/template-comments/?replytocom&#x3D;77#respond&quot; onclick&#x3D;&quot;return addComment.moveForm( &amp;quot;comment-77&amp;quot;, &amp;quot;77&amp;quot;, &amp;quot;respond&amp;quot;, &amp;quot;1148&amp;quot; )&quot; aria-label&#x3D;&quot;Reply to Jane Doe&quot;&gt;Reply&lt;/a&gt;		&lt;/div&gt;
+				&lt;!-- .reply --&gt;
+			&lt;/article&gt;
+			&lt;!-- #comment-## --&gt;
+		&lt;/li&gt;&lt;!-- #comment-## --&gt;
+	&lt;/ol&gt;&lt;!-- .comment-list --&gt;
+
+
+
+
+	&lt;div id&#x3D;&quot;respond&quot; class&#x3D;&quot;comment-respond&quot;&gt;
+		&lt;h3 id&#x3D;&quot;reply-title&quot; class&#x3D;&quot;comment-reply-title&quot;&gt;Leave a Reply &lt;small&gt;&lt;a rel&#x3D;&quot;nofollow&quot; id&#x3D;&quot;cancel-comment-reply-link&quot; href&#x3D;&quot;/wordpress4.8/2012/01/03/template-comments/#respond&quot; style&#x3D;&quot;display:none;&quot;&gt;Cancel reply&lt;/a&gt;&lt;/small&gt;&lt;/h3&gt;			&lt;form action&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/wp-comments-post.php&quot; method&#x3D;&quot;post&quot; id&#x3D;&quot;commentform&quot; class&#x3D;&quot;rocksite-o-comment-respond&quot;&gt;
+		&lt;p class&#x3D;&quot;logged-in-as&quot;&gt;&lt;a href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/wp-admin/profile.php&quot; aria-label&#x3D;&quot;Logged in as admin. Edit your profile.&quot;&gt;Logged in as admin&lt;/a&gt;. &lt;a href&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/wp-login.php?action&#x3D;logout&amp;amp;redirect_to&#x3D;http%3A%2F%2F127.0.0.1%2Fwordpress4.8%2F2012%2F01%2F03%2Ftemplate-comments%2F&amp;amp;_wpnonce&#x3D;bfd0162cdc&quot;&gt;Log out?&lt;/a&gt;&lt;/p&gt;&lt;p class&#x3D;&quot;comment-form-comment&quot;&gt;&lt;label for&#x3D;&quot;comment&quot;&gt;Comment&lt;/label&gt; &lt;textarea id&#x3D;&quot;comment&quot; name&#x3D;&quot;comment&quot; cols&#x3D;&quot;45&quot; rows&#x3D;&quot;8&quot; maxlength&#x3D;&quot;65525&quot; required&#x3D;&quot;required&quot;&gt;&lt;/textarea&gt;&lt;/p&gt;&lt;p class&#x3D;&quot;form-submit&quot;&gt;&lt;input name&#x3D;&quot;submit&quot; type&#x3D;&quot;submit&quot; id&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-primary&quot; value&#x3D;&quot;Post Comment&quot;&gt; &lt;input type&#x3D;&quot;hidden&quot; name&#x3D;&quot;comment_post_ID&quot; value&#x3D;&quot;1148&quot; id&#x3D;&quot;comment_post_ID&quot;&gt;
+		&lt;input type&#x3D;&quot;hidden&quot; name&#x3D;&quot;comment_parent&quot; id&#x3D;&quot;comment_parent&quot; value&#x3D;&quot;0&quot;&gt;
+	&lt;/p&gt;&lt;input type&#x3D;&quot;hidden&quot; id&#x3D;&quot;_wp_unfiltered_html_comment_disabled&quot; name&#x3D;&quot;_wp_unfiltered_html_comment&quot; value&#x3D;&quot;13777c0f0a&quot;&gt;&lt;script&gt;(function(){if(window&#x3D;&#x3D;&#x3D;window.parent){document.getElementById(&#x27;_wp_unfiltered_html_comment_disabled&#x27;).name&#x3D;&#x27;_wp_unfiltered_html_comment&#x27;;}})();&lt;/script&gt;
+	&lt;/form&gt;
+	&lt;/div&gt;&lt;!-- #respond --&gt;
+
+
+&lt;/div&gt;
+</code></pre>
+            </details>
+
+            <div class="kss-source kss-style">
+              Source: <code>../source/scss/components/organisms/_comments.scss</code>, line 1
+            </div>
+
+      </div>
+  </article>
+  </main>
+</div>
+
+
+<!-- SCRIPTS -->
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/kss-fullscreen.js"></script>
+<script src="kss-assets/kss-singlesection.js"></script>
+<script src="kss-assets/kss-guides.js"></script>
+<script src="kss-assets/search.js"></script>
+<script src="kss-assets/kss-markup.js"></script>
+<script src="kss-assets/prismjs.js"></script>
+<script>
+  var kssSingleSection = new KssSingleSection();
+  var kssFullScreen = new KssFullScreen({
+    idPrefix: 'kss-fullscreen-',
+    bodyClass: 'kss-fullscreen-mode',
+    elementClass: 'is-fullscreen'
+  });
+  var kssGuides = new KssGuides({
+    bodyClass: 'kss-guides-mode'
+  });
+  var kssMarkup = new KssMarkup({
+    bodyClass: 'kss-markup-mode',
+    detailsClass: 'kss-markup'
+  });
+</script>
+<script src="../assets/jquery.js"></script>
+<script src="../../assets/vendors/slick/slick.min.js"></script>
+<script src="../../assets/vendors/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+<script src="../../assets/js/full/main.js"></script>
+
+</body>
+</html>

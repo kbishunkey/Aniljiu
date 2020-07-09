@@ -1,0 +1,377 @@
+/*
+Buttons
+
+4 types of default buttons atoms
+
+.-primary   - default button
+.-secondary   - secondary button
+.-success   - Success button
+.-warning   - Warning button
+.-ghost   - Ghost version button
+
+Markup: ../../../../styleguide/templates/atoms/buttons.html
+
+Style guide: Atoms.buttons
+
+*/
+
+$class-name-button: rocksite-a-button;
+
+
+.#{$class-name-button} {
+
+	@include button-label-core;
+
+
+
+	i {
+
+		font-size: 1.5rem;
+		display: inline-block;
+		padding-left: 0.5rem;
+
+	}
+
+	&:hover {
+
+		color: get-color-css(secondary);
+
+	}
+
+	&.-primary {
+
+		border: $button-primary-border;
+		@include btn-specify(primary);
+
+	}
+
+	&.-secondary {
+
+		border: $button-secondary-border;
+		@include btn-specify(secondary);
+
+	}
+
+	&.-success {
+
+		border: $button-success-border;
+		@include btn-specify(success)
+
+	}
+
+	&.-warning {
+
+		border: $button-warning-border;
+		@include btn-specify(warning)
+
+	}
+
+	&.-danger {
+
+		border: $button-danger-border;
+		@include btn-specify(danger)
+
+	}
+
+
+
+	&.-small {
+
+		@include type-setting(xx-small);
+		padding: $button-small-padding;
+
+	}
+
+
+
+	&.-ghost {
+
+		@include btn-specify(ghost);
+
+
+	}
+
+	&.-icon-link {
+
+		color: get-color(text);
+		border: none;
+		padding: 0;
+
+		&:hover {
+
+			text-decoration: none;
+			color: lighten(get-color(text), 4%)
+
+		}
+
+		&:before,
+		&:after {
+
+			display: none;
+
+		}
+
+	}
+
+	+ .#{$class-name-button} {
+
+		margin-left: 1.5rem;
+
+
+	}
+
+}
+
+
+
+/*
+Icon Button
+
+4 types of icon buttons
+
+.-primary   - default button
+.-secondary - secondary version
+.-warning   - Success button
+.-danger - Danger button
+.-transparent - transparent version
+.-invert - inverted version
+.-primary.-small   - small primary
+
+
+Markup: ../../../../styleguide/templates/atoms/buttons-icon.html
+
+
+Style guide: Atoms.buttons.icon
+
+
+*/
+
+$class-name-button-icon: rocksite-a-button-icon;
+
+
+.#{$class-name-button-icon} {
+
+
+	@extend %#{$class-name-button-icon};
+
+	&:hover,
+	&:focus {
+
+		@extend %button-hover;
+
+	}
+
+	span {
+		display: none;
+	}
+
+
+	&.-primary {
+
+		@extend %-primary-button-icon;
+
+	}
+
+	&.-secondary {
+
+		@include btn-specify(secondary);
+		padding: 0;
+	}
+
+	&.-warning {
+
+
+		@include btn-specify(warning);
+		padding: 0;
+	}
+
+	&.-danger {
+
+		@include btn-specify(danger);
+		padding: 0;
+	}
+
+	&.-small {
+
+		@extend %-small-button-icon;
+
+	}
+
+
+	&.-transparent {
+
+		background: none;
+
+		&:hover {
+
+			background: none;
+			color: get-color(secondary)
+
+		}
+
+	}
+
+	&.-invert {
+
+		color: get-color(invert);
+
+	}
+
+	&.-meta-data {
+
+		span {
+
+			display: inline-block;
+
+		}
+
+	}
+
+	+.#{$class-name-button-icon} {
+
+		margin-left: 0.5rem;
+
+	}
+
+
+}
+
+%#{$class-name-button-icon}{
+
+	@include button-label-core;
+	width: $button-circle-width;
+	height: $button-circle-height;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	font-size: 2.1rem;
+	color: get-color(text);
+	background: get-color(gray1);
+
+}
+
+%button-hover{
+	text-decoration: none;
+	background: get-color(secondary)
+}
+
+%-small-button-icon{
+
+	width: 3.2rem;
+	height: 3.2rem;
+	font-size: font-size(x-small)
+}
+
+%-primary-button-icon {
+	@include btn-specify(primary);
+	padding: 0;
+}
+
+/*
+Social buttons
+
+Buttons for social media
+
+.-invert   - inverted version
+.-email   - e-mail icon
+.-twitter   - Twitter
+.-facebook   - Facebook
+.-gplus   - Google plus
+.-linkedin   - linked IN
+.-default - default version
+
+
+Markup: ../../../../styleguide/templates/atoms/buttons-social.html
+
+
+Style guide: Atoms.buttons.social
+
+*/
+
+$class-name-button-social: rocksite-a-button-social;
+
+.#{$class-name-button-social} {
+
+	@extend %#{$class-name-button-social};
+
+	&.-invert {
+
+		@extend %#{$class-name-button-social}--invert
+
+	}
+
+
+
+}
+
+%#{$class-name-button-social} {
+
+	@include button-label-core;
+
+	width: $button-social-size;
+	height: $button-social-size;
+	border: none;
+	border-radius: $button-social-radius;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: font-size(small);
+	color: get-color(text);
+
+	&.-invert {
+
+		color: get-color(invert);
+
+	}
+
+	@include button-social-specify();
+
+	&:hover {
+		background-color: get-color(dark, 10%);
+	}
+
+}
+
+%#{$class-name-button-social}--invert {
+	color: get-color(invert);
+}
+
+
+
+/*
+Social meta buttons
+
+Social buttons + metadata
+
+.-invert  - inverted version
+
+
+
+Markup: ../../../../styleguide/templates/atoms/buttons-social-meta.html
+
+
+Style guide: Atoms.buttons.social-meta
+
+*/
+
+$class-name-button-social-meta: rocksite-a-button-social-meta;
+
+.#{$class-name-button-social-meta} {
+
+	&:hover {
+		color: get-color(gray3);
+		text-decoration: none;
+
+	}
+
+	span {
+		color: get-color(gray3);
+		font-size: font-size(x-small)
+	}
+
+
+
+}

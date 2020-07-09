@@ -1,0 +1,182 @@
+.rocksite-s-content {
+
+  .wedocs-shortcode-wrap {
+
+    ul.wedocs-docs-list {
+
+      &.col-2 {
+
+        max-width: 100%;
+
+      }
+
+      li.wedocs-docs-single {
+
+        h3 {
+
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+
+        }
+
+        border: 1px solid get-color-css(gray4);
+        box-shadow: none;
+
+        .inside {
+
+        }
+
+        .wedocs-doc-link {
+
+          border-top: 1px solid get-color-css(gray4);
+          background-color: get-color-css(gray1);
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .wedocs-single-wrap {
+    .wedocs-sidebar {
+
+      background: get-color-css(gray1);
+      width: 30%;
+
+      .widget-title {
+        font-family: font-family-css(secondary);
+        @include type-setting(h5);
+        padding: 1rem 2rem;
+        border-bottom: 1px solid get-color-css(gray4)
+      }
+
+      .doc-nav-list {
+
+        li {
+
+          a {
+
+            display: flex;
+            align-items: center;
+            color: get-color-css(text);
+
+            &:hover {
+
+              color: get-color-css(primary);
+
+            }
+
+            &:before {
+
+              display: inline-block;
+              background: get-color-css(invert);
+              font-size: 1.2rem;
+              padding: 5px;
+              border-radius: 2rem;
+              width: 2.3rem;
+              height: 2.3rem;
+              text-align: center;
+              color: get-color-css(dark-gray1);
+              box-shadow: 0 2px 4px 0 get-color(gray2, 0.5);
+
+            }
+
+          }
+
+        }
+
+      }
+
+      ul.doc-nav-list {
+
+        > li {
+
+          &.current_page_parent,
+          &.current_page_item,
+          &.current_page_ancestor {
+
+            a {
+
+              color: get-color-css(primary);
+              background: none;
+              border-radius: 0;
+              &:before {
+                color: get-color-css(text)
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+    .wedocs-single-content {
+
+      padding-left: 0;
+
+      @media (min-width: #{break(medium)}) {
+
+        padding-left: 4rem;
+
+      }
+
+      .wedocs-feedback-wrap {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+
+        @media (min-width: #{break(medium)}) {
+
+          padding-left: 4rem;
+          flex-direction: row;
+
+        }
+
+        .wedocs-tip {
+
+          &.positive,
+          &.negative{
+
+            @include button-label-core;
+            @include btn-specify(primary);
+
+          }
+
+          &.negative{
+            @include btn-specify(warning);
+          }
+
+        }
+
+
+
+      }
+
+    }
+  }
+
+  .wedocs-print-article {
+
+    @extend %#{$class-name-button-icon};
+    @include btn-specify(secondary);
+    width: 4.2rem;
+    height: 4.2rem;
+    padding:0;
+    color: get-color-css(text);
+
+    i {
+      color: get-color-css(text);
+    }
+
+  }
+
+}
+

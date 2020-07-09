@@ -1,0 +1,3602 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>KSS Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="kss-assets/prism.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap&subset=latin-ext"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap&subset=latin-ext"/>
+<link rel="stylesheet" href="../../assets/css/full/root-variables.css"/>
+<link rel="stylesheet" href="../../assets/css/full/screen.css"/>
+<link rel="stylesheet" href="../assets/styleguide.css"/>
+<link rel="stylesheet" href="../../assets/vendors/line-awesome/css/line-awesome.min.css"/>
+
+</head>
+<body class="kss-scheibo__body" id="kss-node" class="kss-fullscreen-mode">
+
+<header class="kss-header">
+  <h1 class="kss-doc-title">KSS Style Guide</h1>
+</header>
+<div class="kss-container">
+  <div class="kss-sidebar kss-style">
+    <div class="kss-search">
+      <input type="text" class="kss-search__input" id="kss-search__input" placeholder="Search">
+      <ul class="kss-search__list kss-nav__menu" id="kss-search__list">
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-1-global.html">
+              <span class="kss-nav__ref">1</span><span class="kss-nav__name">1 Global</span>
+          </a>
+           
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-1-global.html#kssref-1-global-colors" data-singlesectiontrigger="kssref-1-global-colors">
+                <span class="kss-nav__ref">1.1</span><span class="kss-nav__name">Brand Colors</span>
+                    <div class="kss-search__desc">
+                        <p>Colors that are used in the theme.</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-1-global.html#kssref-1-global-typography" data-singlesectiontrigger="kssref-1-global-typography">
+                <span class="kss-nav__ref">1.2</span><span class="kss-nav__name">Typography</span>
+            </a>
+          </li>
+           
+        </li>
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-atoms.html">
+              <span class="kss-nav__ref">2</span><span class="kss-nav__name">Atoms</span>
+          </a>
+           
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-blockquotes" data-singlesectiontrigger="kssref-atoms-blockquotes">
+                <span class="kss-nav__ref">2.1</span><span class="kss-nav__name">Blockquotes</span>
+                    <div class="kss-search__desc">
+                        <p>blocquote in the content</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-buttons" data-singlesectiontrigger="kssref-atoms-buttons">
+                <span class="kss-nav__ref">2.2</span><span class="kss-nav__name">Buttons</span>
+                    <div class="kss-search__desc">
+                        <p>4 types of default buttons atoms</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item is-grandchild">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-buttons-icon" data-singlesectiontrigger="kssref-atoms-buttons-icon">
+                <span class="kss-nav__ref">2.2.1</span><span class="kss-nav__name">Icon Button</span>
+                    <div class="kss-search__desc">
+                        <p>4 types of icon buttons</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item is-grandchild">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-buttons-social" data-singlesectiontrigger="kssref-atoms-buttons-social">
+                <span class="kss-nav__ref">2.2.2</span><span class="kss-nav__name">Social buttons</span>
+                    <div class="kss-search__desc">
+                        <p>Buttons for social media</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item is-grandchild">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-buttons-social-meta" data-singlesectiontrigger="kssref-atoms-buttons-social-meta">
+                <span class="kss-nav__ref">2.2.3</span><span class="kss-nav__name">Social meta buttons</span>
+                    <div class="kss-search__desc">
+                        <p>Social buttons + metadata</p>
+<p>.-invert  - inverted version</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-chips-labels" data-singlesectiontrigger="kssref-atoms-chips-labels">
+                <span class="kss-nav__ref">2.3</span><span class="kss-nav__name">Chips Lables</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-footer-info" data-singlesectiontrigger="kssref-atoms-footer-info">
+                <span class="kss-nav__ref">2.4</span><span class="kss-nav__name">Footer Info</span>
+                    <div class="kss-search__desc">
+                        <p>Info in the footer</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-forms" data-singlesectiontrigger="kssref-atoms-forms">
+                <span class="kss-nav__ref">2.5</span><span class="kss-nav__name">Atoms.forms</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item is-grandchild">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-forms-button" data-singlesectiontrigger="kssref-atoms-forms-button">
+                <span class="kss-nav__ref">2.5.1</span><span class="kss-nav__name">Form button</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item is-grandchild">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-forms-input" data-singlesectiontrigger="kssref-atoms-forms-input">
+                <span class="kss-nav__ref">2.5.2</span><span class="kss-nav__name">Text Input</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item is-grandchild">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-forms-select" data-singlesectiontrigger="kssref-atoms-forms-select">
+                <span class="kss-nav__ref">2.5.3</span><span class="kss-nav__name">Form select</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item is-grandchild">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-forms-textarea" data-singlesectiontrigger="kssref-atoms-forms-textarea">
+                <span class="kss-nav__ref">2.5.4</span><span class="kss-nav__name">Textarea</span>
+                    <div class="kss-search__desc">
+                        <p>Textarea field</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-headings" data-singlesectiontrigger="kssref-atoms-headings">
+                <span class="kss-nav__ref">2.6</span><span class="kss-nav__name">Headings</span>
+                    <div class="kss-search__desc">
+                        <p>All types of headings</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-icons" data-singlesectiontrigger="kssref-atoms-icons">
+                <span class="kss-nav__ref">2.7</span><span class="kss-nav__name">Icons</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-labels" data-singlesectiontrigger="kssref-atoms-labels">
+                <span class="kss-nav__ref">2.8</span><span class="kss-nav__name">Lables</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-link" data-singlesectiontrigger="kssref-atoms-link">
+                <span class="kss-nav__ref">2.9</span><span class="kss-nav__name">Link</span>
+                    <div class="kss-search__desc">
+                        <p>general link</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-list" data-singlesectiontrigger="kssref-atoms-list">
+                <span class="kss-nav__ref">2.10</span><span class="kss-nav__name">List</span>
+                    <div class="kss-search__desc">
+                        <p>Default list</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-logo" data-singlesectiontrigger="kssref-atoms-logo">
+                <span class="kss-nav__ref">2.11</span><span class="kss-nav__name">Logo</span>
+                    <div class="kss-search__desc">
+                        <p>Brand Logo</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-progress" data-singlesectiontrigger="kssref-atoms-progress">
+                <span class="kss-nav__ref">2.12</span><span class="kss-nav__name">Progress Bar</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-tables" data-singlesectiontrigger="kssref-atoms-tables">
+                <span class="kss-nav__ref">2.13</span><span class="kss-nav__name">Tables</span>
+                    <div class="kss-search__desc">
+                        <p>blocquote in the content</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-atoms.html#kssref-atoms-text" data-singlesectiontrigger="kssref-atoms-text">
+                <span class="kss-nav__ref">2.14</span><span class="kss-nav__name">Text</span>
+                    <div class="kss-search__desc">
+                        <p>All types of text sizes</p>
+
+                    </div>
+            </a>
+          </li>
+           
+        </li>
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-molecules.html">
+              <span class="kss-nav__ref">3</span><span class="kss-nav__name">Molecules</span>
+          </a>
+           
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-accordion" data-singlesectiontrigger="kssref-molecules-accordion">
+                <span class="kss-nav__ref">3.1</span><span class="kss-nav__name">Accordion - FAQ</span>
+                    <div class="kss-search__desc">
+                        <p>Accordion component</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-bars" data-singlesectiontrigger="kssref-molecules-bars">
+                <span class="kss-nav__ref">3.2</span><span class="kss-nav__name">Bars</span>
+                    <div class="kss-search__desc">
+                        <p>Accordion component</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-breadcrumbs" data-singlesectiontrigger="kssref-molecules-breadcrumbs">
+                <span class="kss-nav__ref">3.3</span><span class="kss-nav__name">Navigation - breadcrumbs</span>
+                    <div class="kss-search__desc">
+                        <p>Breadcrums displays current user position on the page</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-card" data-singlesectiontrigger="kssref-molecules-card">
+                <span class="kss-nav__ref">3.4</span><span class="kss-nav__name">Card Box</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-checkbox-label" data-singlesectiontrigger="kssref-molecules-checkbox-label">
+                <span class="kss-nav__ref">3.5</span><span class="kss-nav__name">Radio Label</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-chips-list" data-singlesectiontrigger="kssref-molecules-chips-list">
+                <span class="kss-nav__ref">3.6</span><span class="kss-nav__name">Chips List</span>
+                    <div class="kss-search__desc">
+                        <p>Chips List with label</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-content-banner" data-singlesectiontrigger="kssref-molecules-content-banner">
+                <span class="kss-nav__ref">3.7</span><span class="kss-nav__name">Content Banner</span>
+                    <div class="kss-search__desc">
+                        <p>Content Image box linked to content</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-counter-box" data-singlesectiontrigger="kssref-molecules-counter-box">
+                <span class="kss-nav__ref">3.8</span><span class="kss-nav__name">Counter Box</span>
+                    <div class="kss-search__desc">
+                        <p>Your standard button suitable for clicking.</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-cover-header" data-singlesectiontrigger="kssref-molecules-cover-header">
+                <span class="kss-nav__ref">3.9</span><span class="kss-nav__name">Cover Header</span>
+                    <div class="kss-search__desc">
+                        <p>Cover image component</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-hero-content" data-singlesectiontrigger="kssref-molecules-hero-content">
+                <span class="kss-nav__ref">3.10</span><span class="kss-nav__name">Hero Content</span>
+                    <div class="kss-search__desc">
+                        <p>Short info box and icon</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-image-figure" data-singlesectiontrigger="kssref-molecules-image-figure">
+                <span class="kss-nav__ref">3.11</span><span class="kss-nav__name">Image - Figure</span>
+                    <div class="kss-search__desc">
+                        <p>Image component</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-info" data-singlesectiontrigger="kssref-molecules-info">
+                <span class="kss-nav__ref">3.12</span><span class="kss-nav__name">Info Box</span>
+                    <div class="kss-search__desc">
+                        <p>Short info box and icon</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-input-label" data-singlesectiontrigger="kssref-molecules-input-label">
+                <span class="kss-nav__ref">3.13</span><span class="kss-nav__name">Input Label</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-input-label" data-singlesectiontrigger="kssref-molecules-input-label">
+                <span class="kss-nav__ref">3.13</span><span class="kss-nav__name">Textarea Label</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-media" data-singlesectiontrigger="kssref-molecules-media">
+                <span class="kss-nav__ref">3.14</span><span class="kss-nav__name">Media Box</span>
+                    <div class="kss-search__desc">
+                        <p>Box for displaying smal image and some info: author info, comments</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-menu" data-singlesectiontrigger="kssref-molecules-menu">
+                <span class="kss-nav__ref">3.15</span><span class="kss-nav__name">Navigation menu</span>
+                    <div class="kss-search__desc">
+                        <p>Menu component for displaying</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-meta-label" data-singlesectiontrigger="kssref-molecules-meta-label">
+                <span class="kss-nav__ref">3.16</span><span class="kss-nav__name">Meta Labels</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying meta</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-navigation-arrow-control" data-singlesectiontrigger="kssref-molecules-navigation-arrow-control">
+                <span class="kss-nav__ref">3.17</span><span class="kss-nav__name">Navigation - arrows control</span>
+                    <div class="kss-search__desc">
+                        <p>Arrow navigation</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-navigation-pointer-control" data-singlesectiontrigger="kssref-molecules-navigation-pointer-control">
+                <span class="kss-nav__ref">3.18</span><span class="kss-nav__name">Navigation - pointer control</span>
+                    <div class="kss-search__desc">
+                        <p>Pointer navigation</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-navigation-pointer-control" data-singlesectiontrigger="kssref-molecules-navigation-pointer-control">
+                <span class="kss-nav__ref">3.18</span><span class="kss-nav__name">Navigation - pointer control</span>
+                    <div class="kss-search__desc">
+                        <p>Pointer navigation</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-pagination-number" data-singlesectiontrigger="kssref-molecules-pagination-number">
+                <span class="kss-nav__ref">3.19</span><span class="kss-nav__name">Pagination - number</span>
+                    <div class="kss-search__desc">
+                        <p>Pointer navigation</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-pagination-prevnext" data-singlesectiontrigger="kssref-molecules-pagination-prevnext">
+                <span class="kss-nav__ref">3.20</span><span class="kss-nav__name">Pagination - prev - next</span>
+                    <div class="kss-search__desc">
+                        <p>Prev next navigation</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-price-list" data-singlesectiontrigger="kssref-molecules-price-list">
+                <span class="kss-nav__ref">3.21</span><span class="kss-nav__name">Price List</span>
+                    <div class="kss-search__desc">
+                        <p>create clean and stylish online restaurant menus or other content elements</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-pricing" data-singlesectiontrigger="kssref-molecules-pricing">
+                <span class="kss-nav__ref">3.22</span><span class="kss-nav__name">Pricing Box</span>
+                    <div class="kss-search__desc">
+                        <p>Pricing box info box and icon</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-progress-box" data-singlesectiontrigger="kssref-molecules-progress-box">
+                <span class="kss-nav__ref">3.23</span><span class="kss-nav__name">Progress Box</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-radio-label" data-singlesectiontrigger="kssref-molecules-radio-label">
+                <span class="kss-nav__ref">3.24</span><span class="kss-nav__name">Radio Label</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-search-box" data-singlesectiontrigger="kssref-molecules-search-box">
+                <span class="kss-nav__ref">3.25</span><span class="kss-nav__name">Search Box</span>
+                    <div class="kss-search__desc">
+                        <p>Classic search filed</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-section-header" data-singlesectiontrigger="kssref-molecules-section-header">
+                <span class="kss-nav__ref">3.26</span><span class="kss-nav__name">Section Header</span>
+                    <div class="kss-search__desc">
+                        <p>Your standard button suitable for clicking.</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-select-label" data-singlesectiontrigger="kssref-molecules-select-label">
+                <span class="kss-nav__ref">3.27</span><span class="kss-nav__name">Select Label</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-site-description" data-singlesectiontrigger="kssref-molecules-site-description">
+                <span class="kss-nav__ref">3.28</span><span class="kss-nav__name">Site Description</span>
+                    <div class="kss-search__desc">
+                        <p>Brand Logo</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-social-share-button" data-singlesectiontrigger="kssref-molecules-social-share-button">
+                <span class="kss-nav__ref">3.29</span><span class="kss-nav__name">Social Share Button</span>
+                    <div class="kss-search__desc">
+                        <p>Button for sharing articles</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-team-box" data-singlesectiontrigger="kssref-molecules-team-box">
+                <span class="kss-nav__ref">3.30</span><span class="kss-nav__name">Team Box</span>
+                    <div class="kss-search__desc">
+                        <p>Dispaying teams member info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-testimonial" data-singlesectiontrigger="kssref-molecules-testimonial">
+                <span class="kss-nav__ref">3.31</span><span class="kss-nav__name">Testimonial</span>
+                    <div class="kss-search__desc">
+                        <p>Dispaying teams member info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-molecules.html#kssref-molecules-text-banner" data-singlesectiontrigger="kssref-molecules-text-banner">
+                <span class="kss-nav__ref">3.32</span><span class="kss-nav__name">Text Banner</span>
+                    <div class="kss-search__desc">
+                        <p>Banner</p>
+
+                    </div>
+            </a>
+          </li>
+           
+        </li>
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-organisms.html">
+              <span class="kss-nav__ref">4</span><span class="kss-nav__name">Organisms</span>
+          </a>
+           
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-accordion" data-singlesectiontrigger="kssref-organisms-accordion">
+                <span class="kss-nav__ref">4.1</span><span class="kss-nav__name">Accordion</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-article-header" data-singlesectiontrigger="kssref-organisms-article-header">
+                <span class="kss-nav__ref">4.2</span><span class="kss-nav__name">Article content header</span>
+                    <div class="kss-search__desc">
+                        <p>Header above the content</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-box-overall" data-singlesectiontrigger="kssref-organisms-box-overall">
+                <span class="kss-nav__ref">4.3</span><span class="kss-nav__name">Overall Box</span>
+                    <div class="kss-search__desc">
+                        <p>Labels for displaying info</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-comments" data-singlesectiontrigger="kssref-organisms-comments">
+                <span class="kss-nav__ref">4.4</span><span class="kss-nav__name">Comments</span>
+                    <div class="kss-search__desc">
+                        <p>Comments component</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-content" data-singlesectiontrigger="kssref-organisms-content">
+                <span class="kss-nav__ref">4.5</span><span class="kss-nav__name">Content - full</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-content-short" data-singlesectiontrigger="kssref-organisms-content-short">
+                <span class="kss-nav__ref">4.6</span><span class="kss-nav__name">Content - short</span>
+                    <div class="kss-search__desc">
+                        <p>Short version of the article</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-form" data-singlesectiontrigger="kssref-organisms-form">
+                <span class="kss-nav__ref">4.7</span><span class="kss-nav__name">Form</span>
+                    <div class="kss-search__desc">
+                        <p>Classic form</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-gallery" data-singlesectiontrigger="kssref-organisms-gallery">
+                <span class="kss-nav__ref">4.8</span><span class="kss-nav__name">Gallery Box - Native</span>
+                    <div class="kss-search__desc">
+                        <p>Native Gallery component</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-grid-boxes" data-singlesectiontrigger="kssref-organisms-grid-boxes">
+                <span class="kss-nav__ref">4.9</span><span class="kss-nav__name">Grid boxes</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-main-navbar" data-singlesectiontrigger="kssref-organisms-main-navbar">
+                <span class="kss-nav__ref">4.10</span><span class="kss-nav__name">Main Navbar</span>
+                    <div class="kss-search__desc">
+                        <p>Section navbar</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-navigation" data-singlesectiontrigger="kssref-organisms-navigation">
+                <span class="kss-nav__ref">4.11</span><span class="kss-nav__name">Organisms.Navigation</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item is-grandchild">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-navigation-nav-next-post" data-singlesectiontrigger="kssref-organisms-navigation-nav-next-post">
+                <span class="kss-nav__ref">4.11.1</span><span class="kss-nav__name">Navigation - next post</span>
+                    <div class="kss-search__desc">
+                        <p>Navigation next post</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-page-header" data-singlesectiontrigger="kssref-organisms-page-header">
+                <span class="kss-nav__ref">4.12</span><span class="kss-nav__name">Page content header</span>
+                    <div class="kss-search__desc">
+                        <p>Header above the page content</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-search-navbar" data-singlesectiontrigger="kssref-organisms-search-navbar">
+                <span class="kss-nav__ref">4.13</span><span class="kss-nav__name">Search Navbar</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-slider-banner" data-singlesectiontrigger="kssref-organisms-slider-banner">
+                <span class="kss-nav__ref">4.14</span><span class="kss-nav__name">Slider Banner</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-slider-box" data-singlesectiontrigger="kssref-organisms-slider-box">
+                <span class="kss-nav__ref">4.15</span><span class="kss-nav__name">Slider Box</span>
+                    <div class="kss-search__desc">
+                        <p>TO DO: change slider to more customizable</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-tabs" data-singlesectiontrigger="kssref-organisms-tabs">
+                <span class="kss-nav__ref">4.16</span><span class="kss-nav__name">Tabs</span>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-organisms.html#kssref-organisms-top-bar" data-singlesectiontrigger="kssref-organisms-top-bar">
+                <span class="kss-nav__ref">4.17</span><span class="kss-nav__name">Top Bar</span>
+                    <div class="kss-search__desc">
+                        <p>Section top bar</p>
+
+                    </div>
+            </a>
+          </li>
+           
+        </li>
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-pages.html">
+              <span class="kss-nav__ref">5</span><span class="kss-nav__name">Pages</span>
+          </a>
+           
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-pages.html#kssref-pages-main-page-1" data-singlesectiontrigger="kssref-pages-main-page-1">
+                <span class="kss-nav__ref">5.1</span><span class="kss-nav__name">Main Page 1</span>
+                    <div class="kss-search__desc">
+                        <p>Section top bar</p>
+
+                    </div>
+            </a>
+          </li>
+           
+        </li>
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-templates.html">
+              <span class="kss-nav__ref">6</span><span class="kss-nav__name">Templates</span>
+          </a>
+           
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-templates.html#kssref-templates-section-default" data-singlesectiontrigger="kssref-templates-section-default">
+                <span class="kss-nav__ref">6.1</span><span class="kss-nav__name">Section Default</span>
+                    <div class="kss-search__desc">
+                        <p>Section component</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-templates.html#kssref-templates-section-top-bar" data-singlesectiontrigger="kssref-templates-section-top-bar">
+                <span class="kss-nav__ref">6.2</span><span class="kss-nav__name">Section Top Bar</span>
+                    <div class="kss-search__desc">
+                        <p>Section top bar</p>
+
+                    </div>
+            </a>
+          </li>
+           
+        </li>
+        <li class="kss-search__item kss-nav__menu-item">
+          <a class="kss-search__link kss-nav__menu-link  has-children" href="section-widgets.html">
+              <span class="kss-nav__ref">7</span><span class="kss-nav__name">Widgets</span>
+          </a>
+           
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-widgets.html#kssref-widgets-menu-widget" data-singlesectiontrigger="kssref-widgets-menu-widget">
+                <span class="kss-nav__ref">7.1</span><span class="kss-nav__name">Menu Widget</span>
+                    <div class="kss-search__desc">
+                        <p>Menu Widget</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-widgets.html#kssref-widgets-search-widget" data-singlesectiontrigger="kssref-widgets-search-widget">
+                <span class="kss-nav__ref">7.2</span><span class="kss-nav__name">Search Widget</span>
+                    <div class="kss-search__desc">
+                        <p>Search Widget</p>
+
+                    </div>
+            </a>
+          </li>
+          
+          <li class="kss-search__item kss-nav__menu-item ">
+            <a class="kss-search__link kss-nav__menu-link" href="section-widgets.html#kssref-widgets-text-widget" data-singlesectiontrigger="kssref-widgets-text-widget">
+                <span class="kss-nav__ref">7.3</span><span class="kss-nav__name">Text Widget</span>
+                    <div class="kss-search__desc">
+                        <p>Text Widget</p>
+
+                    </div>
+            </a>
+          </li>
+           
+        </li>
+      </ul>
+    </div>
+    <nav class="kss-nav" aria-label="Style Guide">
+      <ul class="kss-nav__menu">
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link" href="./">
+            <span class="kss-nav__ref">0</span><span class="kss-nav__name">Overview</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-1-global.html">
+            <span class="kss-nav__ref">1</span><span class="kss-nav__name">1 Global</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-atoms.html">
+            <span class="kss-nav__ref">2</span><span class="kss-nav__name">Atoms</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-molecules.html">
+            <span class="kss-nav__ref">3</span><span class="kss-nav__name">Molecules</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-organisms.html">
+            <span class="kss-nav__ref">4</span><span class="kss-nav__name">Organisms</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-pages.html">
+            <span class="kss-nav__ref">5</span><span class="kss-nav__name">Pages</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-templates.html">
+            <span class="kss-nav__ref">6</span><span class="kss-nav__name">Templates</span>
+          </a>
+        </li>
+        <li class="kss-nav__menu-item">
+          <a class="kss-nav__menu-link " href="section-widgets.html">
+            <span class="kss-nav__ref">7</span><span class="kss-nav__name">Widgets</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <main class="kss-main" aria-label="Content">
+    <article>
+
+      <div id="kssref-pages-main-page-1" class="kss-section kss-section--depth-2 is-fullscreen">
+        <div class="kss-style kss-style--header  ">
+          <a class="kss-title__permalink" href="#kssref-pages-main-page-1">
+            <h2 class="kss-title kss-title--level-2 kss-style ">
+                Main Page 1
+            </h2>
+          </a>
+            <p class="kss-toolbar">
+              <a class="kss-toolbar__link kss-toolbar__link--guides" title="Toggle example guides" href="#kssref-pages-main-page-1" data-kss-guides="true">
+                <span class="kss-toolbar__tooltip">Toggle example guides</span>
+                <svg aria-hidden="true" class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path class="kss-toolbar__icon-fill" d="M5 35H10V44H5zM54 21H59V30H54zM54 35H59V44H54zM5 21H10V30H5zM5 0H10V15H5zM35 5H44V10H35zM20 5H29V10H20z"/><path class="kss-toolbar__icon-fill" d="M0 5H15V10H0zM54 0H59V15H54z"/><path class="kss-toolbar__icon-fill" d="M49 5H64V10H49zM54 49H59V64H54z"/><path class="kss-toolbar__icon-fill" d="M49 54H64V59H49zM5 49H10V64H5z"/><path class="kss-toolbar__icon-fill" d="M0 54H15V59H0zM35 54H44V59H35zM20 54H29V59H20z"/></svg>
+              </a>
+              <a class="kss-toolbar__link kss-toolbar__link--markup" title="Toggle HTML markup" href="#kssref-pages-main-page-1" data-kss-markup="true">
+                <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+                <svg aria-hidden="true" class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path class="kss-toolbar__icon-fill" d="M37.555 46.239l6.103 6.103 20.342-20.342-20.342-20.342-6.103 6.103 14.24 14.239-14.24 14.239zM26.445 17.761l-6.103-6.103-20.342 20.342 20.342 20.342 6.103-6.103-14.24-14.239 14.24-14.239z"/></svg>
+              </a>
+            </p>
+
+            <div class="kss-description">
+              <p>Section top bar</p>
+
+            </div>
+
+
+        </div>
+
+          <div class="kss-modifier__wrapper">
+            <div class="kss-modifier__defaultheader kss-style">
+              <div class="kss-modifier__defaultinsertmarkuptext">
+                &lt;insert-markup&gt;pages.main.page.1-&lt;/insert-markup&gt;
+              </div>
+              <a title="open in a new window" class="" href="index-pages-main-page-1_default.html" target="_blank"><svg class="kss-toolbar__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.016 3h6.984v6.984h-2.016v-3.563l-9.797 9.797-1.406-1.406 9.797-9.797h-3.563v-2.016zM18.984 18.984v-6.984h2.016v6.984c0 1.078-0.938 2.016-2.016 2.016h-13.969c-1.125 0-2.016-0.938-2.016-2.016v-13.969c0-1.078 0.891-2.016 2.016-2.016h6.984v2.016h-6.984v13.969h13.969z"/></svg></a>
+            </div>
+
+            <div class="kss-modifier__example ">
+                <body class="rocksite-p-main-page-1">
+
+<div class="rocksite-s-top-bar rocksite-p-main-page-1-s1">
+
+    <div class="container">
+        <div class="rocksite-o-top-bar ">
+            <div class="rocksite-o-top-bar__language_menu">
+            </div>
+            <div class="rocksite-o-top-bar__nav_menu">
+        
+                <ul class="rocksite-m-nav-menu -horizontal -invert -classic-item rocksite-m-nav-menu">
+                
+                
+                    <li class="rocksite-m-nav-menu__item  "><a
+                            href="#" class="rocksite-m-nav-menu__link">Contact Us</a>
+                
+                    </li>
+                
+                    <li class="rocksite-m-nav-menu__item  "><a
+                            href="#" class="rocksite-m-nav-menu__link">About Us</a>
+                
+                    </li>
+                
+                
+                </ul>
+        
+            </div>
+            <div class="rocksite-o-top-bar__info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </div>
+            <div class="rocksite-o-top-bar__social-menu">
+                    <a href="#" class="rocksite-a-button-icon -transparent -invert -small"><i class="fab fa-linkedin-in"></i>	<span>214 K</span>
+                    </a>
+                    
+                    
+                    <a href="#" class="rocksite-a-button-icon -transparent -invert -small"><i class="fa fa-envelope"></i>	<span>214 K</span>
+                    </a>
+                    
+                    
+                    <a href="#" class="rocksite-a-button-icon -transparent -invert -small"><i class="fab fa-twitter"></i>	<span>214 K</span>
+                    </a>
+                    
+                    
+                    <a href="#" class="rocksite-a-button-icon -transparent -invert -small"><i class="fab fa-facebook-f"></i>	<span>214 K</span>
+                    </a>
+                    
+                    
+            </div>
+        </div>
+        
+        
+        
+        
+        
+    </div>
+
+</div>
+
+
+<header class="rocksite-s-main-header -border-bottom rocksite-p-main-page-1-s2">
+    <div class="container">
+        <div class="rocksite-o-navbar-main u-fill-overlay js-menu-to-resize ">
+            <div class="rocksite-o-navbar-main__header">
+                <h4 class="rocksite-a-logo" itemprop="headline">
+                    <a href="#" title="" rel="home" class="rocksite-a-logo__link">
+                        <img src="../assets/images/logo.png" alt="" class="rocksite-a-logo__link__image">
+                    </a>
+                </h4>
+                
+            </div>
+        
+        
+            <ul class="rocksite-m-nav-menu -dropdown-menu">
+            
+            
+                <li class="rocksite-m-nav-menu__item  "><a
+                        href="#" class="rocksite-m-nav-menu__link">Home Page</a>
+            
+                </li>
+            
+                <li class="rocksite-m-nav-menu__item  "><a
+                        href="#" class="rocksite-m-nav-menu__link">About Us</a>
+            
+                </li>
+            
+                <li class="rocksite-m-nav-menu__item -has-children "><a
+                        href="#" class="rocksite-m-nav-menu__link">Services</a>
+            
+            
+                <ul class="rocksite-m-nav-menu__sub-nav">
+            
+            
+                <li class="rocksite-m-nav-menu__sub-nav__item"><a
+                        href="#" class="rocksite-m-nav-menu__sub-nav__link">Submenu 1</a></li>
+            
+                <li class="rocksite-m-nav-menu__sub-nav__item"><a
+                        href="#" class="rocksite-m-nav-menu__sub-nav__link">Submenu 2</a></li>
+            
+                <li class="rocksite-m-nav-menu__sub-nav__item"><a
+                        href="#" class="rocksite-m-nav-menu__sub-nav__link">Submenu 3</a></li>
+                </ul>
+                </li>
+            
+                <li class="rocksite-m-nav-menu__item  "><a
+                        href="#" class="rocksite-m-nav-menu__link">Our Offer</a>
+            
+                </li>
+            
+                <li class="rocksite-m-nav-menu__item  "><a
+                        href="#" class="rocksite-m-nav-menu__link">Contact Us</a>
+            
+                </li>
+            
+                <li class="rocksite-m-nav-menu__item js-expand-search -icon-item"><a
+                        href="#" class="rocksite-m-nav-menu__link"><i class="fa fa-search"></i></a>
+            
+                </li>
+            
+            
+            </ul>
+        
+            <div class="rocksite-o-navbar-main__search-bar js-search-box-to-expand  u-hidden u-fill-overlay__inner -right">
+                <div class="rocksite-o-search-navbar">
+                	<a href="#" class="rocksite-a-button-icon rocksite-o-search-navbar__close -transparent js-close-search"><i class="la la-close"></i>	<span>214 K</span>
+                	</a>
+                	
+                	
+                	<form role="search" method="get" id="searchform-content"
+                	      class="rocksite-m-input-connections -searchform rocksite-o-search-navbar__search-box" action="//127.0.0.1:3000/wordpress4.8/">
+                	
+                	
+                	    <div class="rocksite-m-input-connections__group">
+                	        <input type="text" value="" name="s" class="rocksite-m-input-connections__group__input" placeholder="Search">
+                	
+                	        <span class="rocksite-m-input-connections__group__btn">
+                	    <button class="rocksite-a-button-icon -secondary">
+                			<i class="la la-search"></i>
+                		</button>
+                	
+                	    </span>
+                	    </div>
+                	
+                	</form>
+                </div>
+            </div>
+        
+        
+        
+        </div>
+        
+        
+        
+        
+        
+    </div>
+</header>
+
+
+
+<section class="rocksite-s-default rocksite-p-main-page-1-s3" style="background-color:#f8f8f8">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="rocksite-m-hero-content ">
+                    <header class="rocksite-m-hero-content__header">
+                        <span class="rocksite-m-hero-content__header__above_title">Prus lobortis</span>
+                        <h2 class="rocksite-m-hero-content__header__title">Pellentesque nec nulla sagittis</h2>
+                    </header>
+                    <div class="rocksite-m-hero-content__content">
+                
+                		<p>Ut ultrices diam quis purus lobortis, quis viverra mauris feugiat. Pellentesque nec nulla sagittis, dictum erat vitae, venenatis eros</p>
+                
+                	</div>
+                    <div class="rocksite-m-hero-content__footer">
+                
+                            <a href="#" class="rocksite-a-button -primary">
+                            	Read more
+                            </a>
+                            
+                            
+                
+                
+                            <a href="#" class="rocksite-a-button -ghost">
+                            	Contact Us
+                            </a>
+                            
+                            
+                
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="../assets/images/pages/tablet-large.jpg" alt="large-image"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="rocksite-s-default rocksite-p-main-page-1-s4">
+
+    <div class="container">
+
+        <header class="rocksite-o-section-header u-align-center">
+        	
+        	<h2 class="rocksite-o-section-header__title">Donec malesuada augue non erat dictum, vitae efficitur</h2>
+        	<p class="rocksite-o-section-header__subtitle"> Maecenas vulputate tortor sit amet egestas rhoncus</p>
+        </header>
+
+        <div class="row">
+
+            <div class="col-sm-3">
+                <div class="rocksite-m-info ">
+                	<div class="rocksite-m-info__content">
+                
+                		<h3 class="rocksite-m-info__content__title">Dictum erat vitae</h3>
+                
+                		<p>Ut ultrices diam quis purus lobortis, quis viverra mauris feugiat. Pellentesque nec nulla sagittis, dictum erat vitae, venenatis eros</p>
+                
+                	</div>
+                    <div class="rocksite-m-info__icon">
+                	    <span class="rocksite-a-icon -large"><i class="la la-bullhorn"></i></span>
+                	    
+                	    
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="rocksite-m-info ">
+                	<div class="rocksite-m-info__content">
+                
+                		<h3 class="rocksite-m-info__content__title">User Settings</h3>
+                
+                		<p>Pellentesque nec nulla sagittis, dictum erat vitae, venenatis eros</p>
+                
+                	</div>
+                    <div class="rocksite-m-info__icon">
+                	    <span class="rocksite-a-icon -large"><i class="la la-female"></i></span>
+                	    
+                	    
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="rocksite-m-info ">
+                	<div class="rocksite-m-info__content">
+                
+                		<h3 class="rocksite-m-info__content__title">Viverra mauris feugiat</h3>
+                
+                		<p>Nulla sagittis, ut ultrices diam quis purus lobortis, quis viverra mauris feugiat. Pellentesque nec nulla sagittis, dictum erat vitae, venenatis eros</p>
+                
+                	</div>
+                    <div class="rocksite-m-info__icon">
+                	    <span class="rocksite-a-icon -large"><i class="la la-user-plus"></i></span>
+                	    
+                	    
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="rocksite-m-info ">
+                	<div class="rocksite-m-info__content">
+                
+                		<h3 class="rocksite-m-info__content__title">Pellentesque nec nulla</h3>
+                
+                		<p>Nulla sagittis, ut ultrices diam quis purus lobortis, quis viverra mauris feugiat. Pellentesque nec nulla sagittis, dictum erat vitae, venenatis eros</p>
+                
+                	</div>
+                    <div class="rocksite-m-info__icon">
+                	    <span class="rocksite-a-icon -large"><i class="la la-hand-pointer-o"></i></span>
+                	    
+                	    
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="rocksite-s-default rocksite-p-main-page-1-s5">
+
+    <div class="container">
+
+        <header class="rocksite-o-section-header u-align-center">
+        	
+        	<h2 class="rocksite-o-section-header__title">Latest News</h2>
+        	<p class="rocksite-o-section-header__subtitle">Maecenas efficitur libero a augue maximus</p>
+        </header>
+
+        <div class="row">
+
+            <div class="col-sm-3">
+                <div class="rocksite-m-card ">
+                
+                
+                	<div class="rocksite-m-card__content">
+                
+                		<h5 class="rocksite-m-card__content__title"><a href="#">Duis vitae lobortis odio, sed convallis lacus</a></h5>
+                
+                		<div class="rocksite-m-card__content__meta">
+                			<span class="rocksite-m-meta-label"><i class="la la-calendar"></i> <a href="#"
+                																												rel="bookmark">
+                				<time class="entry-date published updated" datetime="2015-08-23T21:33:31+00:00">August 21</time>
+                			</a></span> <span class="rocksite-m-meta-label">Published by:  <a
+                			href="#" title="Posts by admin" rel="author">admin</a> </span>
+                		</div>
+                        <div class="rocksite-m-card__content__button">
+                        <a href="#" class="rocksite-a-button-icon "><i class="la la-arrow-right"></i>	<span>214 K</span>
+                        </a>
+                        
+                        
+                        </div>
+                	</div>
+                	<div class="rocksite-m-card__thumbnail">
+                
+                		<a href="#" class="rocksite-m-card__thumbnail__link"><img src="../assets/images/pages/news1.jpg" alt="Image"></a>
+                
+                	</div>
+                
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="rocksite-m-card ">
+                
+                
+                	<div class="rocksite-m-card__content">
+                
+                		<h5 class="rocksite-m-card__content__title"><a href="#">Duis vitae lobortis odio, sed convallis lacus</a></h5>
+                
+                		<div class="rocksite-m-card__content__meta">
+                			<span class="rocksite-m-meta-label"><i class="la la-calendar"></i> <a href="#"
+                																												rel="bookmark">
+                				<time class="entry-date published updated" datetime="2015-08-23T21:33:31+00:00">August 21</time>
+                			</a></span> <span class="rocksite-m-meta-label">Published by:  <a
+                			href="#" title="Posts by admin" rel="author">admin</a> </span>
+                		</div>
+                        <div class="rocksite-m-card__content__button">
+                        <a href="#" class="rocksite-a-button-icon "><i class="la la-arrow-right"></i>	<span>214 K</span>
+                        </a>
+                        
+                        
+                        </div>
+                	</div>
+                	<div class="rocksite-m-card__thumbnail">
+                
+                		<a href="#" class="rocksite-m-card__thumbnail__link"><img src="../assets/images/pages/news2.jpg" alt="Image"></a>
+                
+                	</div>
+                
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="rocksite-m-card ">
+                
+                
+                	<div class="rocksite-m-card__content">
+                
+                		<h5 class="rocksite-m-card__content__title"><a href="#">Duis vitae lobortis odio, sed convallis lacus</a></h5>
+                
+                		<div class="rocksite-m-card__content__meta">
+                			<span class="rocksite-m-meta-label"><i class="la la-calendar"></i> <a href="#"
+                																												rel="bookmark">
+                				<time class="entry-date published updated" datetime="2015-08-23T21:33:31+00:00">August 21</time>
+                			</a></span> <span class="rocksite-m-meta-label">Published by:  <a
+                			href="#" title="Posts by admin" rel="author">admin</a> </span>
+                		</div>
+                        <div class="rocksite-m-card__content__button">
+                        <a href="#" class="rocksite-a-button-icon "><i class="la la-arrow-right"></i>	<span>214 K</span>
+                        </a>
+                        
+                        
+                        </div>
+                	</div>
+                	<div class="rocksite-m-card__thumbnail">
+                
+                		<a href="#" class="rocksite-m-card__thumbnail__link"><img src="../assets/images/pages/news3.jpg" alt="Image"></a>
+                
+                	</div>
+                
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="rocksite-m-card ">
+                
+                
+                	<div class="rocksite-m-card__content">
+                
+                		<h5 class="rocksite-m-card__content__title"><a href="#">Duis vitae lobortis odio, sed convallis lacus</a></h5>
+                
+                		<div class="rocksite-m-card__content__meta">
+                			<span class="rocksite-m-meta-label"><i class="la la-calendar"></i> <a href="#"
+                																												rel="bookmark">
+                				<time class="entry-date published updated" datetime="2015-08-23T21:33:31+00:00">August 21</time>
+                			</a></span> <span class="rocksite-m-meta-label">Published by:  <a
+                			href="#" title="Posts by admin" rel="author">admin</a> </span>
+                		</div>
+                        <div class="rocksite-m-card__content__button">
+                        <a href="#" class="rocksite-a-button-icon "><i class="la la-arrow-right"></i>	<span>214 K</span>
+                        </a>
+                        
+                        
+                        </div>
+                	</div>
+                	<div class="rocksite-m-card__thumbnail">
+                
+                		<a href="#" class="rocksite-m-card__thumbnail__link"><img src="../assets/images/pages/news4.jpg" alt="Image"></a>
+                
+                	</div>
+                
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="rocksite-s-default rocksite-p-main-page-1-s6">
+
+    <div class="container">
+
+        <header class="rocksite-o-section-header u-align-center">
+        	
+        	<h2 class="rocksite-o-section-header__title">Counter Box</h2>
+        	<p class="rocksite-o-section-header__subtitle">This flexibility gives you the ultimate freedom</p>
+        </header>
+
+        <div class="row">
+
+            <div class="col-sm-3">
+                <div class="rocksite-m-counter-box">
+                	<div class="rocksite-m-counter-box__content">
+                		<span class="rocksite-m-counter-box__content__counter">1123</span>
+                		<p class="rocksite-m-counter-box__content__prefix">Awards &amp; Certyfications</p>
+                		<p class="rocksite-m-counter-box__content__sufix">Changing the options for each once added</p>
+                	</div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="rocksite-m-counter-box">
+                	<div class="rocksite-m-counter-box__content">
+                		<span class="rocksite-m-counter-box__content__counter">100</span>
+                		<p class="rocksite-m-counter-box__content__prefix">Different Layouts</p>
+                		<p class="rocksite-m-counter-box__content__sufix">Different theme and content layouts for different app</p>
+                	</div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="rocksite-m-counter-box">
+                	<div class="rocksite-m-counter-box__content">
+                		<span class="rocksite-m-counter-box__content__counter">520</span>
+                		<p class="rocksite-m-counter-box__content__prefix">PSDs Included</p>
+                		<p class="rocksite-m-counter-box__content__sufix">Layered and organized</p>
+                	</div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="rocksite-m-counter-box">
+                	<div class="rocksite-m-counter-box__content">
+                		<span class="rocksite-m-counter-box__content__counter">30</span>
+                		<p class="rocksite-m-counter-box__content__prefix">Color Management Sections</p>
+                		<p class="rocksite-m-counter-box__content__sufix">Compatible color templates and advanced color management</p>
+                	</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="rocksite-s-default rocksite-p-main-page-1-s7">
+
+    <div class="container">
+
+        <header class="rocksite-o-section-header u-align-center">
+        	
+        	<h2 class="rocksite-o-section-header__title">Our Team</h2>
+        	<p class="rocksite-o-section-header__subtitle">Nunc sollicitudin vulputate mattis</p>
+        </header>
+
+        <div class="row">
+
+            <div class="col-sm-3">
+                <div class="rocksite-m-team ">
+                
+                	<div class="rocksite-m-team__image">
+                		<img  src="../assets/images/person-men.jpg" class="img-responsive" alt="">
+                	</div>
+                	<div class="rocksite-m-team__item">
+                	<h4 class="rocksite-m-team__item__title">Jonathan Test</h4>
+                		<p class="rocksite-m-team__item__subtitle">Author</p>
+                		<p class="rocksite-m-team__item__content">Wnde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                
+                	</div>
+                	<ul class="rocksite-m-team__shares rocksite-m-nav-menu -horizontal -icons">
+                		<li class="rocksite-m-nav-menu__item"><a href="#" class="rocksite-a-button-social -email">
+                		<i class="fa fa-envelope"></i>
+                </a>
+                
+                
+                </li>
+                		<li class="rocksite-m-nav-menu__item"><a href="#" class="rocksite-a-button-social -twitter">
+                		<i class="fab fa-twitter"></i>
+                </a>
+                
+                
+                </li>
+                		<li class="rocksite-m-nav-menu__item"><a href="#" class="rocksite-a-button-social -facebook">
+                		<i class="fab fa-facebook-f"></i>
+                </a>
+                
+                
+                </li>
+                		<li class="rocksite-m-nav-menu__item"><a href="#" class="rocksite-a-button-social -gplus">
+                		<i class="fab fa-google-plus-g"></i>
+                </a>
+                
+                
+                </li>
+                	</ul>
+                
+                </div>
+                
+                
+            </div>
+            <div class="col-sm-3">
+                <div class="rocksite-m-team ">
+                
+                	<div class="rocksite-m-team__image">
+                		<img  src="../assets/images/person-men.jpg" class="img-responsive" alt="">
+                	</div>
+                	<div class="rocksite-m-team__item">
+                	<h4 class="rocksite-m-team__item__title">Jonathan Test</h4>
+                		<p class="rocksite-m-team__item__subtitle">Author</p>
+                		<p class="rocksite-m-team__item__content">Wnde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                
+                	</div>
+                	<ul class="rocksite-m-team__shares rocksite-m-nav-menu -horizontal -icons">
+                		<li class="rocksite-m-nav-menu__item"><a href="#" class="rocksite-a-button-social -email">
+                		<i class="fa fa-envelope"></i>
+                </a>
+                
+                
+                </li>
+                		<li class="rocksite-m-nav-menu__item"><a href="#" class="rocksite-a-button-social -twitter">
+                		<i class="fab fa-twitter"></i>
+                </a>
+                
+                
+                </li>
+                		<li class="rocksite-m-nav-menu__item"><a href="#" class="rocksite-a-button-social -facebook">
+                		<i class="fab fa-facebook-f"></i>
+                </a>
+                
+                
+                </li>
+                		<li class="rocksite-m-nav-menu__item"><a href="#" class="rocksite-a-button-social -gplus">
+                		<i class="fab fa-google-plus-g"></i>
+                </a>
+                
+                
+                </li>
+                	</ul>
+                
+                </div>
+                
+                
+            </div>
+            <div class="col-sm-3">
+                <div class="rocksite-m-team ">
+                
+                	<div class="rocksite-m-team__image">
+                		<img  src="../assets/images/person-men.jpg" class="img-responsive" alt="">
+                	</div>
+                	<div class="rocksite-m-team__item">
+                	<h4 class="rocksite-m-team__item__title">Jonathan Test</h4>
+                		<p class="rocksite-m-team__item__subtitle">Author</p>
+                		<p class="rocksite-m-team__item__content">Wnde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                
+                	</div>
+                	<ul class="rocksite-m-team__shares rocksite-m-nav-menu -horizontal -icons">
+                		<li class="rocksite-m-nav-menu__item"><a href="#" class="rocksite-a-button-social -email">
+                		<i class="fa fa-envelope"></i>
+                </a>
+                
+                
+                </li>
+                		<li class="rocksite-m-nav-menu__item"><a href="#" class="rocksite-a-button-social -twitter">
+                		<i class="fab fa-twitter"></i>
+                </a>
+                
+                
+                </li>
+                		<li class="rocksite-m-nav-menu__item"><a href="#" class="rocksite-a-button-social -facebook">
+                		<i class="fab fa-facebook-f"></i>
+                </a>
+                
+                
+                </li>
+                		<li class="rocksite-m-nav-menu__item"><a href="#" class="rocksite-a-button-social -gplus">
+                		<i class="fab fa-google-plus-g"></i>
+                </a>
+                
+                
+                </li>
+                	</ul>
+                
+                </div>
+                
+                
+            </div>
+            <div class="col-sm-3">
+                <div class="rocksite-m-team ">
+                
+                	<div class="rocksite-m-team__image">
+                		<img  src="../assets/images/person-men.jpg" class="img-responsive" alt="">
+                	</div>
+                	<div class="rocksite-m-team__item">
+                	<h4 class="rocksite-m-team__item__title">Jonathan Test</h4>
+                		<p class="rocksite-m-team__item__subtitle">Author</p>
+                		<p class="rocksite-m-team__item__content">Wnde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                
+                	</div>
+                	<ul class="rocksite-m-team__shares rocksite-m-nav-menu -horizontal -icons">
+                		<li class="rocksite-m-nav-menu__item"><a href="#" class="rocksite-a-button-social -email">
+                		<i class="fa fa-envelope"></i>
+                </a>
+                
+                
+                </li>
+                		<li class="rocksite-m-nav-menu__item"><a href="#" class="rocksite-a-button-social -twitter">
+                		<i class="fab fa-twitter"></i>
+                </a>
+                
+                
+                </li>
+                		<li class="rocksite-m-nav-menu__item"><a href="#" class="rocksite-a-button-social -facebook">
+                		<i class="fab fa-facebook-f"></i>
+                </a>
+                
+                
+                </li>
+                		<li class="rocksite-m-nav-menu__item"><a href="#" class="rocksite-a-button-social -gplus">
+                		<i class="fab fa-google-plus-g"></i>
+                </a>
+                
+                
+                </li>
+                	</ul>
+                
+                </div>
+                
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="rocksite-s-default rocksite-p-main-page-1-s8">
+
+    <div class="container">
+
+        <header class="rocksite-o-section-header u-align-center">
+        	
+        	<h2 class="rocksite-o-section-header__title">Slider Sections</h2>
+        	<p class="rocksite-o-section-header__subtitle">Different theme and content layouts for different app</p>
+        </header>
+
+
+
+        <div class="rocksite-o-slider-box">
+        	<div class="rocksite-o-slider-box__list js-slider">
+        		<div class="rocksite-o-slider-box__list__item">
+        			<div class="rocksite-m-content-banner -large-banner">
+        			
+        			    <div class="rocksite-m-content-banner__image">
+        			        <img src="../assets/images/pages/slider1.jpg" alt="Test Image"/>
+        			    </div>
+        			
+        			    <div class="rocksite-m-content-banner__wrapper">
+        			
+        			        <div class="rocksite-m-content-banner__wrapper__item">
+        			
+        			            <h5 class="rocksite-m-content-banner__wrapper__item__title"><a href="#">Duis vitae lobortis odio, sed convallis lacus</a></h5>
+        			
+        			            <div class="rocksite-m-content-banner__wrapper__item__content">
+        			                <p>Sed euismod blandit leo. Mauris malesuada mi id mi lacinia scelerisque. Vivamus nec nibh nec sem sagittis mollis et luctus neque. Morbi eget ligula euismod, auctor dui at, suscipit est. In a tristique leo, eu tristique augue. Quisque et placerat velit.</p>
+        			            </div>
+        			        </div>
+        			    </div>
+        			
+        			
+        			
+        			</div>
+        		</div>
+        		<div class="rocksite-o-slider-box__list__item">
+        			<div class="rocksite-m-content-banner -right-side-text">
+        			
+        			    <div class="rocksite-m-content-banner__image">
+        			        <img src="../assets/images/pages/slider2.jpg" alt="Test Image"/>
+        			    </div>
+        			
+        			    <div class="rocksite-m-content-banner__wrapper">
+        			
+        			        <div class="rocksite-m-content-banner__wrapper__item">
+        			
+        			            <h5 class="rocksite-m-content-banner__wrapper__item__title"><a href="#">Vivamus nec nibh nec sem sagittis mollis et luctus neque.</a></h5>
+        			
+        			            <div class="rocksite-m-content-banner__wrapper__item__content">
+        			                <p>Sed euismod blandit leo. Mauris malesuada mi id mi lacinia scelerisque. Vivamus nec nibh nec sem sagittis mollis et luctus neque. Morbi eget ligula euismod, auctor dui at, suscipit est. In a tristique leo, eu tristique augue. Quisque et placerat velit.</p>
+        			            </div>
+        			        </div>
+        			    </div>
+        			
+        			
+        			
+        			</div>
+        		</div>
+        		<div class="rocksite-o-slider-box__list__item">
+        			<div class="rocksite-m-content-banner -large-banner">
+        			
+        			    <div class="rocksite-m-content-banner__image">
+        			        <img src="../assets/images/pages/slider3.jpg" alt="Test Image"/>
+        			    </div>
+        			
+        			    <div class="rocksite-m-content-banner__wrapper">
+        			
+        			        <div class="rocksite-m-content-banner__wrapper__item">
+        			
+        			            <h5 class="rocksite-m-content-banner__wrapper__item__title"><a href="#">Vivamus nec nibh nec sem sagittis mollis et luctus neque.</a></h5>
+        			
+        			            <div class="rocksite-m-content-banner__wrapper__item__content">
+        			                <p>Sed euismod blandit leo. Mauris malesuada mi id mi lacinia scelerisque. Vivamus nec nibh nec sem sagittis mollis et luctus neque. Morbi eget ligula euismod, auctor dui at, suscipit est. In a tristique leo, eu tristique augue. Quisque et placerat velit.</p>
+        			            </div>
+        			        </div>
+        			    </div>
+        			
+        			
+        			
+        			</div>
+        		</div>
+        
+        	</div>
+        </div>
+
+
+
+    </div>
+
+</section>
+
+<section class="rocksite-s-default rocksite-p-main-page-1-s9">
+
+    <div class="container">
+
+        <header class="rocksite-o-section-header u-align-center">
+        	
+        	<h2 class="rocksite-o-section-header__title">Articles List</h2>
+        	<p class="rocksite-o-section-header__subtitle"> Maecenas vulputate tortor sit amet egestas rhoncus</p>
+        </header>
+
+
+        <article class="rocksite-o-content -article-short-vertical">
+        
+        
+            <header class="rocksite-o-content__header">
+        
+        
+        
+        
+                <h3 class="rocksite-o-content__header__title">
+                    <a href=""
+                       title="Permalink Aliquam varius turpis vel scelerisque molestie Donec ac libero tellus."
+                       rel="bookmark">Aliquam varius turpis vel scelerisque molestie Donec ac libero tellus.</a>
+                </h3>
+        
+        
+        
+        
+            </header>
+        
+            <div class="rocksite-o-content__thumbnail">
+                <div class="rocksite-m-thumbnail">
+        
+                    <img width="1000" height="520" src="../assets/images/large-thumbnail.jpeg" alt="">
+        
+                </div>
+            </div>
+        
+            <div class="rocksite-o-content__entry entry-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo arcu eu ultrices pellentesque. Aliquam ultricies elit tempor molestie rutrum. Maecenas pharetra sem eu accumsan dignissim. Duis vel purus commodo, semper elit vel, porttitor sem.</p>
+                <div class="rocksite-o-content__entry__more">
+        
+                    <a href="#" class="rocksite-a-button -article-short-vertical">
+                    	Continue reading
+                    	<i class="la la-arrow-right"></i>
+                    </a>
+                    
+                    
+        
+                </div>
+            </div>
+        
+        
+        </article>
+
+
+        <article class="rocksite-o-content -article-short-vertical">
+        
+        
+            <header class="rocksite-o-content__header">
+        
+        
+        
+        
+                <h3 class="rocksite-o-content__header__title">
+                    <a href=""
+                       title="Permalink Nunc sit amet ipsum vestibulum, posuere felis id, vulputate erat."
+                       rel="bookmark">Nunc sit amet ipsum vestibulum, posuere felis id, vulputate erat.</a>
+                </h3>
+        
+        
+        
+        
+            </header>
+        
+            <div class="rocksite-o-content__thumbnail">
+                <div class="rocksite-m-thumbnail">
+        
+                    <img width="1000" height="520" src="../assets/images/large-thumbnail.jpeg" alt="">
+        
+                </div>
+            </div>
+        
+            <div class="rocksite-o-content__entry entry-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo arcu eu ultrices pellentesque. Aliquam ultricies elit tempor molestie rutrum. Maecenas pharetra sem eu accumsan dignissim. Duis vel purus commodo, semper elit vel, porttitor sem.</p>
+                <div class="rocksite-o-content__entry__more">
+        
+                    <a href="#" class="rocksite-a-button -article-short-vertical">
+                    	Continue reading
+                    	<i class="la la-arrow-right"></i>
+                    </a>
+                    
+                    
+        
+                </div>
+            </div>
+        
+        
+        </article>
+
+
+        <article class="rocksite-o-content -article-short-vertical">
+        
+        
+            <header class="rocksite-o-content__header">
+        
+        
+        
+        
+                <h3 class="rocksite-o-content__header__title">
+                    <a href=""
+                       title="Permalink Consectetur adipiscing elit donec commodo arcu"
+                       rel="bookmark">Consectetur adipiscing elit donec commodo arcu</a>
+                </h3>
+        
+        
+        
+        
+            </header>
+        
+            <div class="rocksite-o-content__thumbnail">
+                <div class="rocksite-m-thumbnail">
+        
+                    <img width="1000" height="520" src="../assets/images/large-thumbnail.jpeg" alt="">
+        
+                </div>
+            </div>
+        
+            <div class="rocksite-o-content__entry entry-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo arcu eu ultrices pellentesque. Aliquam ultricies elit tempor molestie rutrum. Maecenas pharetra sem eu accumsan dignissim. Duis vel purus commodo, semper elit vel, porttitor sem.</p>
+                <div class="rocksite-o-content__entry__more">
+        
+                    <a href="#" class="rocksite-a-button -article-short-vertical">
+                    	Continue reading
+                    	<i class="la la-arrow-right"></i>
+                    </a>
+                    
+                    
+        
+                </div>
+            </div>
+        
+        
+        </article>
+
+
+    </div>
+
+</section>
+<section class="rocksite-s-default rocksite-p-main-page-1-s10">
+
+    <div class="container">
+
+        <header class="rocksite-o-section-header u-align-center">
+        	
+        	<h2 class="rocksite-o-section-header__title">Testimonials List</h2>
+        	<p class="rocksite-o-section-header__subtitle">Tortor sit amet egestas rhoncus</p>
+        </header>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="rocksite-m-testimonial ">
+                
+                    <div class="rocksite-m-testimonial__content">
+                        <p>After trying a few other themes (where half of the promised features werent working), I have found the perfect theme for my portfolio website.</p>
+                    </div>
+                    <footer class="rocksite-m-testimonial__footer">
+                        <div class="rocksite-m-testimonial__footer__image">
+                            <img src="../assets/images/pages/testimonials/person1.jpg" />
+                        </div>
+                        <div class="rocksite-m-testimonial__footer__content">
+                            <h5 class="rocksite-m-testimonial__footer__content__title">
+                                Ann Profeska</h5>
+                            <span class="rocksite-m-testimonial__footer__content__subtitle">CEO Brand</span>
+                        </div>
+                
+                    </footer>
+                </div>            </div>
+            <div class="col-sm-3">
+                <div class="rocksite-m-testimonial ">
+                
+                    <div class="rocksite-m-testimonial__content">
+                        <p>After trying a few other themes (where half of the promised features werent working)</p>
+                    </div>
+                    <footer class="rocksite-m-testimonial__footer">
+                        <div class="rocksite-m-testimonial__footer__image">
+                            <img src="../assets/images/pages/testimonials/person2.jpg" />
+                        </div>
+                        <div class="rocksite-m-testimonial__footer__content">
+                            <h5 class="rocksite-m-testimonial__footer__content__title">
+                                Ann Profeska</h5>
+                            <span class="rocksite-m-testimonial__footer__content__subtitle">Author</span>
+                        </div>
+                
+                    </footer>
+                </div>            </div>
+            <div class="col-sm-3">
+                <div class="rocksite-m-testimonial ">
+                
+                    <div class="rocksite-m-testimonial__content">
+                        <p>Lorem Ipsum Content I have found</p>
+                    </div>
+                    <footer class="rocksite-m-testimonial__footer">
+                        <div class="rocksite-m-testimonial__footer__image">
+                            <img src="../assets/images/pages/testimonials/person3.jpg" />
+                        </div>
+                        <div class="rocksite-m-testimonial__footer__content">
+                            <h5 class="rocksite-m-testimonial__footer__content__title">
+                                Cyndi Wallace</h5>
+                            <span class="rocksite-m-testimonial__footer__content__subtitle">Author</span>
+                        </div>
+                
+                    </footer>
+                </div>            </div>
+            <div class="col-sm-3">
+                <div class="rocksite-m-testimonial ">
+                
+                    <div class="rocksite-m-testimonial__content">
+                        <p>After trying a few other themes (where half of the promised features werent working), I have found the perfect theme for my portfolio website.</p>
+                    </div>
+                    <footer class="rocksite-m-testimonial__footer">
+                        <div class="rocksite-m-testimonial__footer__image">
+                            <img src="../assets/images/pages/testimonials/person4.jpg" />
+                        </div>
+                        <div class="rocksite-m-testimonial__footer__content">
+                            <h5 class="rocksite-m-testimonial__footer__content__title">
+                                Peter Smooth</h5>
+                            <span class="rocksite-m-testimonial__footer__content__subtitle">Webdeveloper</span>
+                        </div>
+                
+                    </footer>
+                </div>            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="rocksite-s-default rocksite-p-main-page-1-s11">
+
+    <div class="container">
+
+        <header class="rocksite-o-section-header u-align-center">
+        	
+        	<h2 class="rocksite-o-section-header__title">Pricing boxes</h2>
+        	<p class="rocksite-o-section-header__subtitle">I have found the perfect</p>
+        </header>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="rocksite-m-pricing-box ">
+                	<h4 class="rocksite-m-pricing-box__title">
+                		Regular Version
+                	</h4>
+                	<div class="rocksite-m-pricing-box__price">
+                		<span class="rocksite-m-pricing-box__price__currency">$</span><span class="rocksite-m-pricing-box__price__amount">120</span>
+                		<span class="rocksite-m-pricing-box__price__period"> / monthly</span>
+                	</div>
+                	<ul class="rocksite-m-pricing-box__features">
+                		<li>Up to 20 users</li>
+                		<li>50GB</li>
+                		<li>Statistics and tracking</li>
+                	</ul>
+                    <div class="rocksite-m-pricing-box__footer">
+                	    <a href="#" class="rocksite-a-button -primary">
+                	    	Click me
+                	    </a>
+                	    
+                	    
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="rocksite-m-pricing-box ">
+                	<h4 class="rocksite-m-pricing-box__title">
+                		Regular Version
+                	</h4>
+                	<div class="rocksite-m-pricing-box__price">
+                		<span class="rocksite-m-pricing-box__price__currency">$</span><span class="rocksite-m-pricing-box__price__amount">120</span>
+                		<span class="rocksite-m-pricing-box__price__period"> / monthly</span>
+                	</div>
+                	<ul class="rocksite-m-pricing-box__features">
+                		<li>Up to 20 users</li>
+                		<li>50GB</li>
+                		<li>Statistics and tracking</li>
+                	</ul>
+                    <div class="rocksite-m-pricing-box__footer">
+                	    <a href="#" class="rocksite-a-button -primary">
+                	    	Click me
+                	    </a>
+                	    
+                	    
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="rocksite-m-pricing-box ">
+                	<h4 class="rocksite-m-pricing-box__title">
+                		Regular Version
+                	</h4>
+                	<div class="rocksite-m-pricing-box__price">
+                		<span class="rocksite-m-pricing-box__price__currency">$</span><span class="rocksite-m-pricing-box__price__amount">120</span>
+                		<span class="rocksite-m-pricing-box__price__period"> / monthly</span>
+                	</div>
+                	<ul class="rocksite-m-pricing-box__features">
+                		<li>Up to 20 users</li>
+                		<li>50GB</li>
+                		<li>Statistics and tracking</li>
+                	</ul>
+                    <div class="rocksite-m-pricing-box__footer">
+                	    <a href="#" class="rocksite-a-button -primary">
+                	    	Click me
+                	    </a>
+                	    
+                	    
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="rocksite-m-pricing-box ">
+                	<h4 class="rocksite-m-pricing-box__title">
+                		Regular Version
+                	</h4>
+                	<div class="rocksite-m-pricing-box__price">
+                		<span class="rocksite-m-pricing-box__price__currency">$</span><span class="rocksite-m-pricing-box__price__amount">120</span>
+                		<span class="rocksite-m-pricing-box__price__period"> / monthly</span>
+                	</div>
+                	<ul class="rocksite-m-pricing-box__features">
+                		<li>Up to 20 users</li>
+                		<li>50GB</li>
+                		<li>Statistics and tracking</li>
+                	</ul>
+                    <div class="rocksite-m-pricing-box__footer">
+                	    <a href="#" class="rocksite-a-button -primary">
+                	    	Click me
+                	    </a>
+                	    
+                	    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="rocksite-s-default rocksite-p-main-page-1-s12">
+
+    <div class="container">
+
+        <header class="rocksite-o-section-header u-align-center">
+        	
+        	<h2 class="rocksite-o-section-header__title">Contact Form Section</h2>
+        	<p class="rocksite-o-section-header__subtitle">I have found the perfect</p>
+        </header>
+        <div class="row">
+
+            <div class="col-sm-6">
+                <form action="/wordpress4.8/forms/#wpcf7-f1885-p1886-o1" method="post" class="rocksite-o-form wpcf7-form">
+                		<div class="rocksite-o-form__line">
+                			<div class="rocksite-m-label-input ">
+                			
+                			
+                				<label for="input_text" class="rocksite-m-label-input__label">Your Name</label>
+                				<input type="text" value="" id="input_text" name="your-name" placeholder="" class="rocksite-a-input rocksite-m-label-input__input">
+                			
+                			</div>
+                		</div>
+                		<div class="rocksite-o-form__line">
+                			<div class="rocksite-m-label-input ">
+                			
+                			
+                				<label for="input_surname" class="rocksite-m-label-input__label">Your Surname</label>
+                				<input type="text" value="" id="input_surname" name="your-surnname" placeholder="" class="rocksite-a-input rocksite-m-label-input__input">
+                			
+                			</div>
+                		</div>
+                		<div class="rocksite-o-form__line">
+                			<div class="rocksite-m-label-input ">
+                			
+                			
+                				<label for="input_email" class="rocksite-m-label-input__label">Your E-mail</label>
+                				<input type="email" value="" id="input_email" name="your-surnname" placeholder="" class="rocksite-a-input rocksite-m-label-input__input">
+                			
+                			</div>
+                		</div>
+                
+                	<div class="rocksite-o-form__line">
+                		<div class="rocksite-m-label-textarea ">
+                		
+                		
+                			<label for="input_text" class="rocksite-m-label-textarea__label">Your Message</label>
+                			<textarea class="rocksite-a-textarea rocksite-m-label-textarea__textarea" id="input_text" name="your-message" rows="" placeholder="" aria-invalid="false"></textarea>
+                		
+                		</div>
+                	</div>
+                
+                
+                
+                
+                
+                
+                
+                		<div class="rocksite-o-form__btn-line -btn-right">
+                				<button class="rocksite-a-input-button " type="submit">Send Message</button>
+                		</div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<section class="rocksite-s-footer rocksite-p-main-page-1-footer-1">
+
+    <div class="container">
+
+
+        <div class="row">
+
+            <div class="col-lg-3">
+                <div id="nav_menu-1" class="rocksite-o-widget -widget_nav_menu  -dark -footer">
+                	<header class="rocksite-o-widget__header"><h3 class="rocksite-o-widget__header__title">First Column</h3></header>
+                	<div class="menu-menu-sidebar-page-container">
+                		<ul class="rocksite-m-nav-menu  -dark -footer">
+                		
+                		
+                		    <li class="rocksite-m-nav-menu__item  "><a
+                		            href="#" class="rocksite-m-nav-menu__link">Home Page</a>
+                		
+                		    </li>
+                		
+                		    <li class="rocksite-m-nav-menu__item  "><a
+                		            href="#" class="rocksite-m-nav-menu__link">About Us</a>
+                		
+                		    </li>
+                		
+                		    <li class="rocksite-m-nav-menu__item -has-children "><a
+                		            href="#" class="rocksite-m-nav-menu__link">Services</a>
+                		
+                		    </li>
+                		
+                		    <li class="rocksite-m-nav-menu__item  "><a
+                		            href="#" class="rocksite-m-nav-menu__link">Our Offer</a>
+                		
+                		    </li>
+                		
+                		    <li class="rocksite-m-nav-menu__item  "><a
+                		            href="#" class="rocksite-m-nav-menu__link">Contact Us</a>
+                		
+                		    </li>
+                		
+                		
+                		</ul>
+                	</div>
+                </div>
+
+            </div>
+            <div class="col-lg-3">
+                <div id="nav_menu-1" class="rocksite-o-widget -widget_nav_menu  -dark -footer">
+                	<header class="rocksite-o-widget__header"><h3 class="rocksite-o-widget__header__title">Second Column</h3></header>
+                	<div class="menu-menu-sidebar-page-container">
+                		<ul class="rocksite-m-nav-menu  -dark -footer">
+                		
+                		
+                		    <li class="rocksite-m-nav-menu__item  "><a
+                		            href="#" class="rocksite-m-nav-menu__link">Contact Me</a>
+                		
+                		    </li>
+                		
+                		    <li class="rocksite-m-nav-menu__item  "><a
+                		            href="#" class="rocksite-m-nav-menu__link">About Me</a>
+                		
+                		    </li>
+                		
+                		    <li class="rocksite-m-nav-menu__item -has-children "><a
+                		            href="#" class="rocksite-m-nav-menu__link">Services</a>
+                		
+                		    </li>
+                		
+                		
+                		</ul>
+                	</div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-3">
+                <div id="nav_menu-1" class="rocksite-o-widget -widget_nav_menu  -dark -footer">
+                	<header class="rocksite-o-widget__header"><h3 class="rocksite-o-widget__header__title">Third Column</h3></header>
+                	<div class="menu-menu-sidebar-page-container">
+                		<ul class="rocksite-m-nav-menu  -dark -footer">
+                		
+                		
+                		    <li class="rocksite-m-nav-menu__item  "><a
+                		            href="#" class="rocksite-m-nav-menu__link">Pages</a>
+                		
+                		    </li>
+                		
+                		    <li class="rocksite-m-nav-menu__item  "><a
+                		            href="#" class="rocksite-m-nav-menu__link">Categories</a>
+                		
+                		    </li>
+                		
+                		    <li class="rocksite-m-nav-menu__item  "><a
+                		            href="#" class="rocksite-m-nav-menu__link">Depth</a>
+                		
+                		    </li>
+                		
+                		    <li class="rocksite-m-nav-menu__item  "><a
+                		            href="#" class="rocksite-m-nav-menu__link">Advanced</a>
+                		
+                		    </li>
+                		
+                		    <li class="rocksite-m-nav-menu__item  "><a
+                		            href="#" class="rocksite-m-nav-menu__link">Menu Description</a>
+                		
+                		    </li>
+                		
+                		
+                		</ul>
+                	</div>
+                </div>
+
+            </div>
+            <div class="col-lg-3">
+                <div id="nav_menu-1" class="rocksite-o-widget -widget_nav_menu  -dark -footer">
+                	<header class="rocksite-o-widget__header"><h3 class="rocksite-o-widget__header__title">Fourth Column</h3></header>
+                	<div class="menu-menu-sidebar-page-container">
+                		<ul class="rocksite-m-nav-menu  -dark -footer">
+                		
+                		
+                		    <li class="rocksite-m-nav-menu__item  "><a
+                		            href="#" class="rocksite-m-nav-menu__link">Contact Me</a>
+                		
+                		    </li>
+                		
+                		    <li class="rocksite-m-nav-menu__item  "><a
+                		            href="#" class="rocksite-m-nav-menu__link">About Me</a>
+                		
+                		    </li>
+                		
+                		    <li class="rocksite-m-nav-menu__item  "><a
+                		            href="#" class="rocksite-m-nav-menu__link">Home</a>
+                		
+                		    </li>
+                		
+                		
+                		</ul>
+                	</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+</body>
+
+              <div class="kss-modifier__example-footer"></div>
+            </div>
+          </div>
+
+            <details class="kss-markup kss-style">
+              <summary>
+                  Markup: <code>..\..\styleguide\templates\pages\main-page-1.html</code>
+              </summary>
+              <pre><code class="lang-markup">&lt;body class&#x3D;&quot;rocksite-p-main-page-1&quot;&gt;
+
+&lt;div class&#x3D;&quot;rocksite-s-top-bar rocksite-p-main-page-1-s1&quot;&gt;
+
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+        &lt;div class&#x3D;&quot;rocksite-o-top-bar &quot;&gt;
+            &lt;div class&#x3D;&quot;rocksite-o-top-bar__language_menu&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;rocksite-o-top-bar__nav_menu&quot;&gt;
+        
+                &lt;ul class&#x3D;&quot;rocksite-m-nav-menu -horizontal -invert -classic-item rocksite-m-nav-menu&quot;&gt;
+                
+                
+                    &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item  &quot;&gt;&lt;a
+                            href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;Contact Us&lt;/a&gt;
+                
+                    &lt;/li&gt;
+                
+                    &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item  &quot;&gt;&lt;a
+                            href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;About Us&lt;/a&gt;
+                
+                    &lt;/li&gt;
+                
+                
+                &lt;/ul&gt;
+        
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;rocksite-o-top-bar__info&quot;&gt;
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;rocksite-o-top-bar__social-menu&quot;&gt;
+                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-icon -transparent -invert -small&quot;&gt;&lt;i class&#x3D;&quot;fab fa-linkedin-in&quot;&gt;&lt;/i&gt;	&lt;span&gt;214 K&lt;/span&gt;
+                    &lt;/a&gt;
+                    
+                    
+                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-icon -transparent -invert -small&quot;&gt;&lt;i class&#x3D;&quot;fa fa-envelope&quot;&gt;&lt;/i&gt;	&lt;span&gt;214 K&lt;/span&gt;
+                    &lt;/a&gt;
+                    
+                    
+                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-icon -transparent -invert -small&quot;&gt;&lt;i class&#x3D;&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;	&lt;span&gt;214 K&lt;/span&gt;
+                    &lt;/a&gt;
+                    
+                    
+                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-icon -transparent -invert -small&quot;&gt;&lt;i class&#x3D;&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;	&lt;span&gt;214 K&lt;/span&gt;
+                    &lt;/a&gt;
+                    
+                    
+            &lt;/div&gt;
+        &lt;/div&gt;
+        
+        
+        
+        
+        
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+
+&lt;header class&#x3D;&quot;rocksite-s-main-header -border-bottom rocksite-p-main-page-1-s2&quot;&gt;
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+        &lt;div class&#x3D;&quot;rocksite-o-navbar-main u-fill-overlay js-menu-to-resize &quot;&gt;
+            &lt;div class&#x3D;&quot;rocksite-o-navbar-main__header&quot;&gt;
+                &lt;h4 class&#x3D;&quot;rocksite-a-logo&quot; itemprop&#x3D;&quot;headline&quot;&gt;
+                    &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;&quot; rel&#x3D;&quot;home&quot; class&#x3D;&quot;rocksite-a-logo__link&quot;&gt;
+                        &lt;img src&#x3D;&quot;../assets/images/logo.png&quot; alt&#x3D;&quot;&quot; class&#x3D;&quot;rocksite-a-logo__link__image&quot;&gt;
+                    &lt;/a&gt;
+                &lt;/h4&gt;
+                
+            &lt;/div&gt;
+        
+        
+            &lt;ul class&#x3D;&quot;rocksite-m-nav-menu -dropdown-menu&quot;&gt;
+            
+            
+                &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item  &quot;&gt;&lt;a
+                        href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;Home Page&lt;/a&gt;
+            
+                &lt;/li&gt;
+            
+                &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item  &quot;&gt;&lt;a
+                        href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;About Us&lt;/a&gt;
+            
+                &lt;/li&gt;
+            
+                &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item -has-children &quot;&gt;&lt;a
+                        href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;Services&lt;/a&gt;
+            
+            
+                &lt;ul class&#x3D;&quot;rocksite-m-nav-menu__sub-nav&quot;&gt;
+            
+            
+                &lt;li class&#x3D;&quot;rocksite-m-nav-menu__sub-nav__item&quot;&gt;&lt;a
+                        href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__sub-nav__link&quot;&gt;Submenu 1&lt;/a&gt;&lt;/li&gt;
+            
+                &lt;li class&#x3D;&quot;rocksite-m-nav-menu__sub-nav__item&quot;&gt;&lt;a
+                        href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__sub-nav__link&quot;&gt;Submenu 2&lt;/a&gt;&lt;/li&gt;
+            
+                &lt;li class&#x3D;&quot;rocksite-m-nav-menu__sub-nav__item&quot;&gt;&lt;a
+                        href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__sub-nav__link&quot;&gt;Submenu 3&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;/li&gt;
+            
+                &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item  &quot;&gt;&lt;a
+                        href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;Our Offer&lt;/a&gt;
+            
+                &lt;/li&gt;
+            
+                &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item  &quot;&gt;&lt;a
+                        href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;Contact Us&lt;/a&gt;
+            
+                &lt;/li&gt;
+            
+                &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item js-expand-search -icon-item&quot;&gt;&lt;a
+                        href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;&lt;i class&#x3D;&quot;fa fa-search&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            
+                &lt;/li&gt;
+            
+            
+            &lt;/ul&gt;
+        
+            &lt;div class&#x3D;&quot;rocksite-o-navbar-main__search-bar js-search-box-to-expand  u-hidden u-fill-overlay__inner -right&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-o-search-navbar&quot;&gt;
+                	&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-icon rocksite-o-search-navbar__close -transparent js-close-search&quot;&gt;&lt;i class&#x3D;&quot;la la-close&quot;&gt;&lt;/i&gt;	&lt;span&gt;214 K&lt;/span&gt;
+                	&lt;/a&gt;
+                	
+                	
+                	&lt;form role&#x3D;&quot;search&quot; method&#x3D;&quot;get&quot; id&#x3D;&quot;searchform-content&quot;
+                	      class&#x3D;&quot;rocksite-m-input-connections -searchform rocksite-o-search-navbar__search-box&quot; action&#x3D;&quot;//127.0.0.1:3000/wordpress4.8/&quot;&gt;
+                	
+                	
+                	    &lt;div class&#x3D;&quot;rocksite-m-input-connections__group&quot;&gt;
+                	        &lt;input type&#x3D;&quot;text&quot; value&#x3D;&quot;&quot; name&#x3D;&quot;s&quot; class&#x3D;&quot;rocksite-m-input-connections__group__input&quot; placeholder&#x3D;&quot;Search&quot;&gt;
+                	
+                	        &lt;span class&#x3D;&quot;rocksite-m-input-connections__group__btn&quot;&gt;
+                	    &lt;button class&#x3D;&quot;rocksite-a-button-icon -secondary&quot;&gt;
+                			&lt;i class&#x3D;&quot;la la-search&quot;&gt;&lt;/i&gt;
+                		&lt;/button&gt;
+                	
+                	    &lt;/span&gt;
+                	    &lt;/div&gt;
+                	
+                	&lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        
+        
+        
+        &lt;/div&gt;
+        
+        
+        
+        
+        
+    &lt;/div&gt;
+&lt;/header&gt;
+
+
+
+&lt;section class&#x3D;&quot;rocksite-s-default rocksite-p-main-page-1-s3&quot; style&#x3D;&quot;background-color:#f8f8f8&quot;&gt;
+
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-hero-content &quot;&gt;
+                    &lt;header class&#x3D;&quot;rocksite-m-hero-content__header&quot;&gt;
+                        &lt;span class&#x3D;&quot;rocksite-m-hero-content__header__above_title&quot;&gt;Prus lobortis&lt;/span&gt;
+                        &lt;h2 class&#x3D;&quot;rocksite-m-hero-content__header__title&quot;&gt;Pellentesque nec nulla sagittis&lt;/h2&gt;
+                    &lt;/header&gt;
+                    &lt;div class&#x3D;&quot;rocksite-m-hero-content__content&quot;&gt;
+                
+                		&lt;p&gt;Ut ultrices diam quis purus lobortis, quis viverra mauris feugiat. Pellentesque nec nulla sagittis, dictum erat vitae, venenatis eros&lt;/p&gt;
+                
+                	&lt;/div&gt;
+                    &lt;div class&#x3D;&quot;rocksite-m-hero-content__footer&quot;&gt;
+                
+                            &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button -primary&quot;&gt;
+                            	Read more
+                            &lt;/a&gt;
+                            
+                            
+                
+                
+                            &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button -ghost&quot;&gt;
+                            	Contact Us
+                            &lt;/a&gt;
+                            
+                            
+                
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                &lt;img src&#x3D;&quot;../assets/images/pages/tablet-large.jpg&quot; alt&#x3D;&quot;large-image&quot;/&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+
+&lt;section class&#x3D;&quot;rocksite-s-default rocksite-p-main-page-1-s4&quot;&gt;
+
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+
+        &lt;header class&#x3D;&quot;rocksite-o-section-header u-align-center&quot;&gt;
+        	
+        	&lt;h2 class&#x3D;&quot;rocksite-o-section-header__title&quot;&gt;Donec malesuada augue non erat dictum, vitae efficitur&lt;/h2&gt;
+        	&lt;p class&#x3D;&quot;rocksite-o-section-header__subtitle&quot;&gt; Maecenas vulputate tortor sit amet egestas rhoncus&lt;/p&gt;
+        &lt;/header&gt;
+
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-info &quot;&gt;
+                	&lt;div class&#x3D;&quot;rocksite-m-info__content&quot;&gt;
+                
+                		&lt;h3 class&#x3D;&quot;rocksite-m-info__content__title&quot;&gt;Dictum erat vitae&lt;/h3&gt;
+                
+                		&lt;p&gt;Ut ultrices diam quis purus lobortis, quis viverra mauris feugiat. Pellentesque nec nulla sagittis, dictum erat vitae, venenatis eros&lt;/p&gt;
+                
+                	&lt;/div&gt;
+                    &lt;div class&#x3D;&quot;rocksite-m-info__icon&quot;&gt;
+                	    &lt;span class&#x3D;&quot;rocksite-a-icon -large&quot;&gt;&lt;i class&#x3D;&quot;la la-bullhorn&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                	    
+                	    
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-info &quot;&gt;
+                	&lt;div class&#x3D;&quot;rocksite-m-info__content&quot;&gt;
+                
+                		&lt;h3 class&#x3D;&quot;rocksite-m-info__content__title&quot;&gt;User Settings&lt;/h3&gt;
+                
+                		&lt;p&gt;Pellentesque nec nulla sagittis, dictum erat vitae, venenatis eros&lt;/p&gt;
+                
+                	&lt;/div&gt;
+                    &lt;div class&#x3D;&quot;rocksite-m-info__icon&quot;&gt;
+                	    &lt;span class&#x3D;&quot;rocksite-a-icon -large&quot;&gt;&lt;i class&#x3D;&quot;la la-female&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                	    
+                	    
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-info &quot;&gt;
+                	&lt;div class&#x3D;&quot;rocksite-m-info__content&quot;&gt;
+                
+                		&lt;h3 class&#x3D;&quot;rocksite-m-info__content__title&quot;&gt;Viverra mauris feugiat&lt;/h3&gt;
+                
+                		&lt;p&gt;Nulla sagittis, ut ultrices diam quis purus lobortis, quis viverra mauris feugiat. Pellentesque nec nulla sagittis, dictum erat vitae, venenatis eros&lt;/p&gt;
+                
+                	&lt;/div&gt;
+                    &lt;div class&#x3D;&quot;rocksite-m-info__icon&quot;&gt;
+                	    &lt;span class&#x3D;&quot;rocksite-a-icon -large&quot;&gt;&lt;i class&#x3D;&quot;la la-user-plus&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                	    
+                	    
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-info &quot;&gt;
+                	&lt;div class&#x3D;&quot;rocksite-m-info__content&quot;&gt;
+                
+                		&lt;h3 class&#x3D;&quot;rocksite-m-info__content__title&quot;&gt;Pellentesque nec nulla&lt;/h3&gt;
+                
+                		&lt;p&gt;Nulla sagittis, ut ultrices diam quis purus lobortis, quis viverra mauris feugiat. Pellentesque nec nulla sagittis, dictum erat vitae, venenatis eros&lt;/p&gt;
+                
+                	&lt;/div&gt;
+                    &lt;div class&#x3D;&quot;rocksite-m-info__icon&quot;&gt;
+                	    &lt;span class&#x3D;&quot;rocksite-a-icon -large&quot;&gt;&lt;i class&#x3D;&quot;la la-hand-pointer-o&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                	    
+                	    
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section class&#x3D;&quot;rocksite-s-default rocksite-p-main-page-1-s5&quot;&gt;
+
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+
+        &lt;header class&#x3D;&quot;rocksite-o-section-header u-align-center&quot;&gt;
+        	
+        	&lt;h2 class&#x3D;&quot;rocksite-o-section-header__title&quot;&gt;Latest News&lt;/h2&gt;
+        	&lt;p class&#x3D;&quot;rocksite-o-section-header__subtitle&quot;&gt;Maecenas efficitur libero a augue maximus&lt;/p&gt;
+        &lt;/header&gt;
+
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-card &quot;&gt;
+                
+                
+                	&lt;div class&#x3D;&quot;rocksite-m-card__content&quot;&gt;
+                
+                		&lt;h5 class&#x3D;&quot;rocksite-m-card__content__title&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Duis vitae lobortis odio, sed convallis lacus&lt;/a&gt;&lt;/h5&gt;
+                
+                		&lt;div class&#x3D;&quot;rocksite-m-card__content__meta&quot;&gt;
+                			&lt;span class&#x3D;&quot;rocksite-m-meta-label&quot;&gt;&lt;i class&#x3D;&quot;la la-calendar&quot;&gt;&lt;/i&gt; &lt;a href&#x3D;&quot;#&quot;
+                																												rel&#x3D;&quot;bookmark&quot;&gt;
+                				&lt;time class&#x3D;&quot;entry-date published updated&quot; datetime&#x3D;&quot;2015-08-23T21:33:31+00:00&quot;&gt;August 21&lt;/time&gt;
+                			&lt;/a&gt;&lt;/span&gt; &lt;span class&#x3D;&quot;rocksite-m-meta-label&quot;&gt;Published by:  &lt;a
+                			href&#x3D;&quot;#&quot; title&#x3D;&quot;Posts by admin&quot; rel&#x3D;&quot;author&quot;&gt;admin&lt;/a&gt; &lt;/span&gt;
+                		&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;rocksite-m-card__content__button&quot;&gt;
+                        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-icon &quot;&gt;&lt;i class&#x3D;&quot;la la-arrow-right&quot;&gt;&lt;/i&gt;	&lt;span&gt;214 K&lt;/span&gt;
+                        &lt;/a&gt;
+                        
+                        
+                        &lt;/div&gt;
+                	&lt;/div&gt;
+                	&lt;div class&#x3D;&quot;rocksite-m-card__thumbnail&quot;&gt;
+                
+                		&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-card__thumbnail__link&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/pages/news1.jpg&quot; alt&#x3D;&quot;Image&quot;&gt;&lt;/a&gt;
+                
+                	&lt;/div&gt;
+                
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-card &quot;&gt;
+                
+                
+                	&lt;div class&#x3D;&quot;rocksite-m-card__content&quot;&gt;
+                
+                		&lt;h5 class&#x3D;&quot;rocksite-m-card__content__title&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Duis vitae lobortis odio, sed convallis lacus&lt;/a&gt;&lt;/h5&gt;
+                
+                		&lt;div class&#x3D;&quot;rocksite-m-card__content__meta&quot;&gt;
+                			&lt;span class&#x3D;&quot;rocksite-m-meta-label&quot;&gt;&lt;i class&#x3D;&quot;la la-calendar&quot;&gt;&lt;/i&gt; &lt;a href&#x3D;&quot;#&quot;
+                																												rel&#x3D;&quot;bookmark&quot;&gt;
+                				&lt;time class&#x3D;&quot;entry-date published updated&quot; datetime&#x3D;&quot;2015-08-23T21:33:31+00:00&quot;&gt;August 21&lt;/time&gt;
+                			&lt;/a&gt;&lt;/span&gt; &lt;span class&#x3D;&quot;rocksite-m-meta-label&quot;&gt;Published by:  &lt;a
+                			href&#x3D;&quot;#&quot; title&#x3D;&quot;Posts by admin&quot; rel&#x3D;&quot;author&quot;&gt;admin&lt;/a&gt; &lt;/span&gt;
+                		&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;rocksite-m-card__content__button&quot;&gt;
+                        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-icon &quot;&gt;&lt;i class&#x3D;&quot;la la-arrow-right&quot;&gt;&lt;/i&gt;	&lt;span&gt;214 K&lt;/span&gt;
+                        &lt;/a&gt;
+                        
+                        
+                        &lt;/div&gt;
+                	&lt;/div&gt;
+                	&lt;div class&#x3D;&quot;rocksite-m-card__thumbnail&quot;&gt;
+                
+                		&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-card__thumbnail__link&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/pages/news2.jpg&quot; alt&#x3D;&quot;Image&quot;&gt;&lt;/a&gt;
+                
+                	&lt;/div&gt;
+                
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-card &quot;&gt;
+                
+                
+                	&lt;div class&#x3D;&quot;rocksite-m-card__content&quot;&gt;
+                
+                		&lt;h5 class&#x3D;&quot;rocksite-m-card__content__title&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Duis vitae lobortis odio, sed convallis lacus&lt;/a&gt;&lt;/h5&gt;
+                
+                		&lt;div class&#x3D;&quot;rocksite-m-card__content__meta&quot;&gt;
+                			&lt;span class&#x3D;&quot;rocksite-m-meta-label&quot;&gt;&lt;i class&#x3D;&quot;la la-calendar&quot;&gt;&lt;/i&gt; &lt;a href&#x3D;&quot;#&quot;
+                																												rel&#x3D;&quot;bookmark&quot;&gt;
+                				&lt;time class&#x3D;&quot;entry-date published updated&quot; datetime&#x3D;&quot;2015-08-23T21:33:31+00:00&quot;&gt;August 21&lt;/time&gt;
+                			&lt;/a&gt;&lt;/span&gt; &lt;span class&#x3D;&quot;rocksite-m-meta-label&quot;&gt;Published by:  &lt;a
+                			href&#x3D;&quot;#&quot; title&#x3D;&quot;Posts by admin&quot; rel&#x3D;&quot;author&quot;&gt;admin&lt;/a&gt; &lt;/span&gt;
+                		&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;rocksite-m-card__content__button&quot;&gt;
+                        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-icon &quot;&gt;&lt;i class&#x3D;&quot;la la-arrow-right&quot;&gt;&lt;/i&gt;	&lt;span&gt;214 K&lt;/span&gt;
+                        &lt;/a&gt;
+                        
+                        
+                        &lt;/div&gt;
+                	&lt;/div&gt;
+                	&lt;div class&#x3D;&quot;rocksite-m-card__thumbnail&quot;&gt;
+                
+                		&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-card__thumbnail__link&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/pages/news3.jpg&quot; alt&#x3D;&quot;Image&quot;&gt;&lt;/a&gt;
+                
+                	&lt;/div&gt;
+                
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-card &quot;&gt;
+                
+                
+                	&lt;div class&#x3D;&quot;rocksite-m-card__content&quot;&gt;
+                
+                		&lt;h5 class&#x3D;&quot;rocksite-m-card__content__title&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Duis vitae lobortis odio, sed convallis lacus&lt;/a&gt;&lt;/h5&gt;
+                
+                		&lt;div class&#x3D;&quot;rocksite-m-card__content__meta&quot;&gt;
+                			&lt;span class&#x3D;&quot;rocksite-m-meta-label&quot;&gt;&lt;i class&#x3D;&quot;la la-calendar&quot;&gt;&lt;/i&gt; &lt;a href&#x3D;&quot;#&quot;
+                																												rel&#x3D;&quot;bookmark&quot;&gt;
+                				&lt;time class&#x3D;&quot;entry-date published updated&quot; datetime&#x3D;&quot;2015-08-23T21:33:31+00:00&quot;&gt;August 21&lt;/time&gt;
+                			&lt;/a&gt;&lt;/span&gt; &lt;span class&#x3D;&quot;rocksite-m-meta-label&quot;&gt;Published by:  &lt;a
+                			href&#x3D;&quot;#&quot; title&#x3D;&quot;Posts by admin&quot; rel&#x3D;&quot;author&quot;&gt;admin&lt;/a&gt; &lt;/span&gt;
+                		&lt;/div&gt;
+                        &lt;div class&#x3D;&quot;rocksite-m-card__content__button&quot;&gt;
+                        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-icon &quot;&gt;&lt;i class&#x3D;&quot;la la-arrow-right&quot;&gt;&lt;/i&gt;	&lt;span&gt;214 K&lt;/span&gt;
+                        &lt;/a&gt;
+                        
+                        
+                        &lt;/div&gt;
+                	&lt;/div&gt;
+                	&lt;div class&#x3D;&quot;rocksite-m-card__thumbnail&quot;&gt;
+                
+                		&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-card__thumbnail__link&quot;&gt;&lt;img src&#x3D;&quot;../assets/images/pages/news4.jpg&quot; alt&#x3D;&quot;Image&quot;&gt;&lt;/a&gt;
+                
+                	&lt;/div&gt;
+                
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section class&#x3D;&quot;rocksite-s-default rocksite-p-main-page-1-s6&quot;&gt;
+
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+
+        &lt;header class&#x3D;&quot;rocksite-o-section-header u-align-center&quot;&gt;
+        	
+        	&lt;h2 class&#x3D;&quot;rocksite-o-section-header__title&quot;&gt;Counter Box&lt;/h2&gt;
+        	&lt;p class&#x3D;&quot;rocksite-o-section-header__subtitle&quot;&gt;This flexibility gives you the ultimate freedom&lt;/p&gt;
+        &lt;/header&gt;
+
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-counter-box&quot;&gt;
+                	&lt;div class&#x3D;&quot;rocksite-m-counter-box__content&quot;&gt;
+                		&lt;span class&#x3D;&quot;rocksite-m-counter-box__content__counter&quot;&gt;1123&lt;/span&gt;
+                		&lt;p class&#x3D;&quot;rocksite-m-counter-box__content__prefix&quot;&gt;Awards &amp;amp; Certyfications&lt;/p&gt;
+                		&lt;p class&#x3D;&quot;rocksite-m-counter-box__content__sufix&quot;&gt;Changing the options for each once added&lt;/p&gt;
+                	&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-counter-box&quot;&gt;
+                	&lt;div class&#x3D;&quot;rocksite-m-counter-box__content&quot;&gt;
+                		&lt;span class&#x3D;&quot;rocksite-m-counter-box__content__counter&quot;&gt;100&lt;/span&gt;
+                		&lt;p class&#x3D;&quot;rocksite-m-counter-box__content__prefix&quot;&gt;Different Layouts&lt;/p&gt;
+                		&lt;p class&#x3D;&quot;rocksite-m-counter-box__content__sufix&quot;&gt;Different theme and content layouts for different app&lt;/p&gt;
+                	&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-counter-box&quot;&gt;
+                	&lt;div class&#x3D;&quot;rocksite-m-counter-box__content&quot;&gt;
+                		&lt;span class&#x3D;&quot;rocksite-m-counter-box__content__counter&quot;&gt;520&lt;/span&gt;
+                		&lt;p class&#x3D;&quot;rocksite-m-counter-box__content__prefix&quot;&gt;PSDs Included&lt;/p&gt;
+                		&lt;p class&#x3D;&quot;rocksite-m-counter-box__content__sufix&quot;&gt;Layered and organized&lt;/p&gt;
+                	&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-counter-box&quot;&gt;
+                	&lt;div class&#x3D;&quot;rocksite-m-counter-box__content&quot;&gt;
+                		&lt;span class&#x3D;&quot;rocksite-m-counter-box__content__counter&quot;&gt;30&lt;/span&gt;
+                		&lt;p class&#x3D;&quot;rocksite-m-counter-box__content__prefix&quot;&gt;Color Management Sections&lt;/p&gt;
+                		&lt;p class&#x3D;&quot;rocksite-m-counter-box__content__sufix&quot;&gt;Compatible color templates and advanced color management&lt;/p&gt;
+                	&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section class&#x3D;&quot;rocksite-s-default rocksite-p-main-page-1-s7&quot;&gt;
+
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+
+        &lt;header class&#x3D;&quot;rocksite-o-section-header u-align-center&quot;&gt;
+        	
+        	&lt;h2 class&#x3D;&quot;rocksite-o-section-header__title&quot;&gt;Our Team&lt;/h2&gt;
+        	&lt;p class&#x3D;&quot;rocksite-o-section-header__subtitle&quot;&gt;Nunc sollicitudin vulputate mattis&lt;/p&gt;
+        &lt;/header&gt;
+
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-team &quot;&gt;
+                
+                	&lt;div class&#x3D;&quot;rocksite-m-team__image&quot;&gt;
+                		&lt;img  src&#x3D;&quot;../assets/images/person-men.jpg&quot; class&#x3D;&quot;img-responsive&quot; alt&#x3D;&quot;&quot;&gt;
+                	&lt;/div&gt;
+                	&lt;div class&#x3D;&quot;rocksite-m-team__item&quot;&gt;
+                	&lt;h4 class&#x3D;&quot;rocksite-m-team__item__title&quot;&gt;Jonathan Test&lt;/h4&gt;
+                		&lt;p class&#x3D;&quot;rocksite-m-team__item__subtitle&quot;&gt;Author&lt;/p&gt;
+                		&lt;p class&#x3D;&quot;rocksite-m-team__item__content&quot;&gt;Wnde omnis iste natus error sit voluptatem accusantium doloremque laudantium&lt;/p&gt;
+                
+                	&lt;/div&gt;
+                	&lt;ul class&#x3D;&quot;rocksite-m-team__shares rocksite-m-nav-menu -horizontal -icons&quot;&gt;
+                		&lt;li class&#x3D;&quot;rocksite-m-nav-menu__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-social -email&quot;&gt;
+                		&lt;i class&#x3D;&quot;fa fa-envelope&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+                
+                
+                &lt;/li&gt;
+                		&lt;li class&#x3D;&quot;rocksite-m-nav-menu__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-social -twitter&quot;&gt;
+                		&lt;i class&#x3D;&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+                
+                
+                &lt;/li&gt;
+                		&lt;li class&#x3D;&quot;rocksite-m-nav-menu__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-social -facebook&quot;&gt;
+                		&lt;i class&#x3D;&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+                
+                
+                &lt;/li&gt;
+                		&lt;li class&#x3D;&quot;rocksite-m-nav-menu__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-social -gplus&quot;&gt;
+                		&lt;i class&#x3D;&quot;fab fa-google-plus-g&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+                
+                
+                &lt;/li&gt;
+                	&lt;/ul&gt;
+                
+                &lt;/div&gt;
+                
+                
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-team &quot;&gt;
+                
+                	&lt;div class&#x3D;&quot;rocksite-m-team__image&quot;&gt;
+                		&lt;img  src&#x3D;&quot;../assets/images/person-men.jpg&quot; class&#x3D;&quot;img-responsive&quot; alt&#x3D;&quot;&quot;&gt;
+                	&lt;/div&gt;
+                	&lt;div class&#x3D;&quot;rocksite-m-team__item&quot;&gt;
+                	&lt;h4 class&#x3D;&quot;rocksite-m-team__item__title&quot;&gt;Jonathan Test&lt;/h4&gt;
+                		&lt;p class&#x3D;&quot;rocksite-m-team__item__subtitle&quot;&gt;Author&lt;/p&gt;
+                		&lt;p class&#x3D;&quot;rocksite-m-team__item__content&quot;&gt;Wnde omnis iste natus error sit voluptatem accusantium doloremque laudantium&lt;/p&gt;
+                
+                	&lt;/div&gt;
+                	&lt;ul class&#x3D;&quot;rocksite-m-team__shares rocksite-m-nav-menu -horizontal -icons&quot;&gt;
+                		&lt;li class&#x3D;&quot;rocksite-m-nav-menu__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-social -email&quot;&gt;
+                		&lt;i class&#x3D;&quot;fa fa-envelope&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+                
+                
+                &lt;/li&gt;
+                		&lt;li class&#x3D;&quot;rocksite-m-nav-menu__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-social -twitter&quot;&gt;
+                		&lt;i class&#x3D;&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+                
+                
+                &lt;/li&gt;
+                		&lt;li class&#x3D;&quot;rocksite-m-nav-menu__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-social -facebook&quot;&gt;
+                		&lt;i class&#x3D;&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+                
+                
+                &lt;/li&gt;
+                		&lt;li class&#x3D;&quot;rocksite-m-nav-menu__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-social -gplus&quot;&gt;
+                		&lt;i class&#x3D;&quot;fab fa-google-plus-g&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+                
+                
+                &lt;/li&gt;
+                	&lt;/ul&gt;
+                
+                &lt;/div&gt;
+                
+                
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-team &quot;&gt;
+                
+                	&lt;div class&#x3D;&quot;rocksite-m-team__image&quot;&gt;
+                		&lt;img  src&#x3D;&quot;../assets/images/person-men.jpg&quot; class&#x3D;&quot;img-responsive&quot; alt&#x3D;&quot;&quot;&gt;
+                	&lt;/div&gt;
+                	&lt;div class&#x3D;&quot;rocksite-m-team__item&quot;&gt;
+                	&lt;h4 class&#x3D;&quot;rocksite-m-team__item__title&quot;&gt;Jonathan Test&lt;/h4&gt;
+                		&lt;p class&#x3D;&quot;rocksite-m-team__item__subtitle&quot;&gt;Author&lt;/p&gt;
+                		&lt;p class&#x3D;&quot;rocksite-m-team__item__content&quot;&gt;Wnde omnis iste natus error sit voluptatem accusantium doloremque laudantium&lt;/p&gt;
+                
+                	&lt;/div&gt;
+                	&lt;ul class&#x3D;&quot;rocksite-m-team__shares rocksite-m-nav-menu -horizontal -icons&quot;&gt;
+                		&lt;li class&#x3D;&quot;rocksite-m-nav-menu__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-social -email&quot;&gt;
+                		&lt;i class&#x3D;&quot;fa fa-envelope&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+                
+                
+                &lt;/li&gt;
+                		&lt;li class&#x3D;&quot;rocksite-m-nav-menu__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-social -twitter&quot;&gt;
+                		&lt;i class&#x3D;&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+                
+                
+                &lt;/li&gt;
+                		&lt;li class&#x3D;&quot;rocksite-m-nav-menu__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-social -facebook&quot;&gt;
+                		&lt;i class&#x3D;&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+                
+                
+                &lt;/li&gt;
+                		&lt;li class&#x3D;&quot;rocksite-m-nav-menu__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-social -gplus&quot;&gt;
+                		&lt;i class&#x3D;&quot;fab fa-google-plus-g&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+                
+                
+                &lt;/li&gt;
+                	&lt;/ul&gt;
+                
+                &lt;/div&gt;
+                
+                
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-team &quot;&gt;
+                
+                	&lt;div class&#x3D;&quot;rocksite-m-team__image&quot;&gt;
+                		&lt;img  src&#x3D;&quot;../assets/images/person-men.jpg&quot; class&#x3D;&quot;img-responsive&quot; alt&#x3D;&quot;&quot;&gt;
+                	&lt;/div&gt;
+                	&lt;div class&#x3D;&quot;rocksite-m-team__item&quot;&gt;
+                	&lt;h4 class&#x3D;&quot;rocksite-m-team__item__title&quot;&gt;Jonathan Test&lt;/h4&gt;
+                		&lt;p class&#x3D;&quot;rocksite-m-team__item__subtitle&quot;&gt;Author&lt;/p&gt;
+                		&lt;p class&#x3D;&quot;rocksite-m-team__item__content&quot;&gt;Wnde omnis iste natus error sit voluptatem accusantium doloremque laudantium&lt;/p&gt;
+                
+                	&lt;/div&gt;
+                	&lt;ul class&#x3D;&quot;rocksite-m-team__shares rocksite-m-nav-menu -horizontal -icons&quot;&gt;
+                		&lt;li class&#x3D;&quot;rocksite-m-nav-menu__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-social -email&quot;&gt;
+                		&lt;i class&#x3D;&quot;fa fa-envelope&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+                
+                
+                &lt;/li&gt;
+                		&lt;li class&#x3D;&quot;rocksite-m-nav-menu__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-social -twitter&quot;&gt;
+                		&lt;i class&#x3D;&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+                
+                
+                &lt;/li&gt;
+                		&lt;li class&#x3D;&quot;rocksite-m-nav-menu__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-social -facebook&quot;&gt;
+                		&lt;i class&#x3D;&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+                
+                
+                &lt;/li&gt;
+                		&lt;li class&#x3D;&quot;rocksite-m-nav-menu__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button-social -gplus&quot;&gt;
+                		&lt;i class&#x3D;&quot;fab fa-google-plus-g&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+                
+                
+                &lt;/li&gt;
+                	&lt;/ul&gt;
+                
+                &lt;/div&gt;
+                
+                
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section class&#x3D;&quot;rocksite-s-default rocksite-p-main-page-1-s8&quot;&gt;
+
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+
+        &lt;header class&#x3D;&quot;rocksite-o-section-header u-align-center&quot;&gt;
+        	
+        	&lt;h2 class&#x3D;&quot;rocksite-o-section-header__title&quot;&gt;Slider Sections&lt;/h2&gt;
+        	&lt;p class&#x3D;&quot;rocksite-o-section-header__subtitle&quot;&gt;Different theme and content layouts for different app&lt;/p&gt;
+        &lt;/header&gt;
+
+
+
+        &lt;div class&#x3D;&quot;rocksite-o-slider-box&quot;&gt;
+        	&lt;div class&#x3D;&quot;rocksite-o-slider-box__list js-slider&quot;&gt;
+        		&lt;div class&#x3D;&quot;rocksite-o-slider-box__list__item&quot;&gt;
+        			&lt;div class&#x3D;&quot;rocksite-m-content-banner -large-banner&quot;&gt;
+        			
+        			    &lt;div class&#x3D;&quot;rocksite-m-content-banner__image&quot;&gt;
+        			        &lt;img src&#x3D;&quot;../assets/images/pages/slider1.jpg&quot; alt&#x3D;&quot;Test Image&quot;/&gt;
+        			    &lt;/div&gt;
+        			
+        			    &lt;div class&#x3D;&quot;rocksite-m-content-banner__wrapper&quot;&gt;
+        			
+        			        &lt;div class&#x3D;&quot;rocksite-m-content-banner__wrapper__item&quot;&gt;
+        			
+        			            &lt;h5 class&#x3D;&quot;rocksite-m-content-banner__wrapper__item__title&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Duis vitae lobortis odio, sed convallis lacus&lt;/a&gt;&lt;/h5&gt;
+        			
+        			            &lt;div class&#x3D;&quot;rocksite-m-content-banner__wrapper__item__content&quot;&gt;
+        			                &lt;p&gt;Sed euismod blandit leo. Mauris malesuada mi id mi lacinia scelerisque. Vivamus nec nibh nec sem sagittis mollis et luctus neque. Morbi eget ligula euismod, auctor dui at, suscipit est. In a tristique leo, eu tristique augue. Quisque et placerat velit.&lt;/p&gt;
+        			            &lt;/div&gt;
+        			        &lt;/div&gt;
+        			    &lt;/div&gt;
+        			
+        			
+        			
+        			&lt;/div&gt;
+        		&lt;/div&gt;
+        		&lt;div class&#x3D;&quot;rocksite-o-slider-box__list__item&quot;&gt;
+        			&lt;div class&#x3D;&quot;rocksite-m-content-banner -right-side-text&quot;&gt;
+        			
+        			    &lt;div class&#x3D;&quot;rocksite-m-content-banner__image&quot;&gt;
+        			        &lt;img src&#x3D;&quot;../assets/images/pages/slider2.jpg&quot; alt&#x3D;&quot;Test Image&quot;/&gt;
+        			    &lt;/div&gt;
+        			
+        			    &lt;div class&#x3D;&quot;rocksite-m-content-banner__wrapper&quot;&gt;
+        			
+        			        &lt;div class&#x3D;&quot;rocksite-m-content-banner__wrapper__item&quot;&gt;
+        			
+        			            &lt;h5 class&#x3D;&quot;rocksite-m-content-banner__wrapper__item__title&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Vivamus nec nibh nec sem sagittis mollis et luctus neque.&lt;/a&gt;&lt;/h5&gt;
+        			
+        			            &lt;div class&#x3D;&quot;rocksite-m-content-banner__wrapper__item__content&quot;&gt;
+        			                &lt;p&gt;Sed euismod blandit leo. Mauris malesuada mi id mi lacinia scelerisque. Vivamus nec nibh nec sem sagittis mollis et luctus neque. Morbi eget ligula euismod, auctor dui at, suscipit est. In a tristique leo, eu tristique augue. Quisque et placerat velit.&lt;/p&gt;
+        			            &lt;/div&gt;
+        			        &lt;/div&gt;
+        			    &lt;/div&gt;
+        			
+        			
+        			
+        			&lt;/div&gt;
+        		&lt;/div&gt;
+        		&lt;div class&#x3D;&quot;rocksite-o-slider-box__list__item&quot;&gt;
+        			&lt;div class&#x3D;&quot;rocksite-m-content-banner -large-banner&quot;&gt;
+        			
+        			    &lt;div class&#x3D;&quot;rocksite-m-content-banner__image&quot;&gt;
+        			        &lt;img src&#x3D;&quot;../assets/images/pages/slider3.jpg&quot; alt&#x3D;&quot;Test Image&quot;/&gt;
+        			    &lt;/div&gt;
+        			
+        			    &lt;div class&#x3D;&quot;rocksite-m-content-banner__wrapper&quot;&gt;
+        			
+        			        &lt;div class&#x3D;&quot;rocksite-m-content-banner__wrapper__item&quot;&gt;
+        			
+        			            &lt;h5 class&#x3D;&quot;rocksite-m-content-banner__wrapper__item__title&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Vivamus nec nibh nec sem sagittis mollis et luctus neque.&lt;/a&gt;&lt;/h5&gt;
+        			
+        			            &lt;div class&#x3D;&quot;rocksite-m-content-banner__wrapper__item__content&quot;&gt;
+        			                &lt;p&gt;Sed euismod blandit leo. Mauris malesuada mi id mi lacinia scelerisque. Vivamus nec nibh nec sem sagittis mollis et luctus neque. Morbi eget ligula euismod, auctor dui at, suscipit est. In a tristique leo, eu tristique augue. Quisque et placerat velit.&lt;/p&gt;
+        			            &lt;/div&gt;
+        			        &lt;/div&gt;
+        			    &lt;/div&gt;
+        			
+        			
+        			
+        			&lt;/div&gt;
+        		&lt;/div&gt;
+        
+        	&lt;/div&gt;
+        &lt;/div&gt;
+
+
+
+    &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section class&#x3D;&quot;rocksite-s-default rocksite-p-main-page-1-s9&quot;&gt;
+
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+
+        &lt;header class&#x3D;&quot;rocksite-o-section-header u-align-center&quot;&gt;
+        	
+        	&lt;h2 class&#x3D;&quot;rocksite-o-section-header__title&quot;&gt;Articles List&lt;/h2&gt;
+        	&lt;p class&#x3D;&quot;rocksite-o-section-header__subtitle&quot;&gt; Maecenas vulputate tortor sit amet egestas rhoncus&lt;/p&gt;
+        &lt;/header&gt;
+
+
+        &lt;article class&#x3D;&quot;rocksite-o-content -article-short-vertical&quot;&gt;
+        
+        
+            &lt;header class&#x3D;&quot;rocksite-o-content__header&quot;&gt;
+        
+        
+        
+        
+                &lt;h3 class&#x3D;&quot;rocksite-o-content__header__title&quot;&gt;
+                    &lt;a href&#x3D;&quot;&quot;
+                       title&#x3D;&quot;Permalink Aliquam varius turpis vel scelerisque molestie Donec ac libero tellus.&quot;
+                       rel&#x3D;&quot;bookmark&quot;&gt;Aliquam varius turpis vel scelerisque molestie Donec ac libero tellus.&lt;/a&gt;
+                &lt;/h3&gt;
+        
+        
+        
+        
+            &lt;/header&gt;
+        
+            &lt;div class&#x3D;&quot;rocksite-o-content__thumbnail&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-thumbnail&quot;&gt;
+        
+                    &lt;img width&#x3D;&quot;1000&quot; height&#x3D;&quot;520&quot; src&#x3D;&quot;../assets/images/large-thumbnail.jpeg&quot; alt&#x3D;&quot;&quot;&gt;
+        
+                &lt;/div&gt;
+            &lt;/div&gt;
+        
+            &lt;div class&#x3D;&quot;rocksite-o-content__entry entry-content&quot;&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo arcu eu ultrices pellentesque. Aliquam ultricies elit tempor molestie rutrum. Maecenas pharetra sem eu accumsan dignissim. Duis vel purus commodo, semper elit vel, porttitor sem.&lt;/p&gt;
+                &lt;div class&#x3D;&quot;rocksite-o-content__entry__more&quot;&gt;
+        
+                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button -article-short-vertical&quot;&gt;
+                    	Continue reading
+                    	&lt;i class&#x3D;&quot;la la-arrow-right&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                    
+                    
+        
+                &lt;/div&gt;
+            &lt;/div&gt;
+        
+        
+        &lt;/article&gt;
+
+
+        &lt;article class&#x3D;&quot;rocksite-o-content -article-short-vertical&quot;&gt;
+        
+        
+            &lt;header class&#x3D;&quot;rocksite-o-content__header&quot;&gt;
+        
+        
+        
+        
+                &lt;h3 class&#x3D;&quot;rocksite-o-content__header__title&quot;&gt;
+                    &lt;a href&#x3D;&quot;&quot;
+                       title&#x3D;&quot;Permalink Nunc sit amet ipsum vestibulum, posuere felis id, vulputate erat.&quot;
+                       rel&#x3D;&quot;bookmark&quot;&gt;Nunc sit amet ipsum vestibulum, posuere felis id, vulputate erat.&lt;/a&gt;
+                &lt;/h3&gt;
+        
+        
+        
+        
+            &lt;/header&gt;
+        
+            &lt;div class&#x3D;&quot;rocksite-o-content__thumbnail&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-thumbnail&quot;&gt;
+        
+                    &lt;img width&#x3D;&quot;1000&quot; height&#x3D;&quot;520&quot; src&#x3D;&quot;../assets/images/large-thumbnail.jpeg&quot; alt&#x3D;&quot;&quot;&gt;
+        
+                &lt;/div&gt;
+            &lt;/div&gt;
+        
+            &lt;div class&#x3D;&quot;rocksite-o-content__entry entry-content&quot;&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo arcu eu ultrices pellentesque. Aliquam ultricies elit tempor molestie rutrum. Maecenas pharetra sem eu accumsan dignissim. Duis vel purus commodo, semper elit vel, porttitor sem.&lt;/p&gt;
+                &lt;div class&#x3D;&quot;rocksite-o-content__entry__more&quot;&gt;
+        
+                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button -article-short-vertical&quot;&gt;
+                    	Continue reading
+                    	&lt;i class&#x3D;&quot;la la-arrow-right&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                    
+                    
+        
+                &lt;/div&gt;
+            &lt;/div&gt;
+        
+        
+        &lt;/article&gt;
+
+
+        &lt;article class&#x3D;&quot;rocksite-o-content -article-short-vertical&quot;&gt;
+        
+        
+            &lt;header class&#x3D;&quot;rocksite-o-content__header&quot;&gt;
+        
+        
+        
+        
+                &lt;h3 class&#x3D;&quot;rocksite-o-content__header__title&quot;&gt;
+                    &lt;a href&#x3D;&quot;&quot;
+                       title&#x3D;&quot;Permalink Consectetur adipiscing elit donec commodo arcu&quot;
+                       rel&#x3D;&quot;bookmark&quot;&gt;Consectetur adipiscing elit donec commodo arcu&lt;/a&gt;
+                &lt;/h3&gt;
+        
+        
+        
+        
+            &lt;/header&gt;
+        
+            &lt;div class&#x3D;&quot;rocksite-o-content__thumbnail&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-thumbnail&quot;&gt;
+        
+                    &lt;img width&#x3D;&quot;1000&quot; height&#x3D;&quot;520&quot; src&#x3D;&quot;../assets/images/large-thumbnail.jpeg&quot; alt&#x3D;&quot;&quot;&gt;
+        
+                &lt;/div&gt;
+            &lt;/div&gt;
+        
+            &lt;div class&#x3D;&quot;rocksite-o-content__entry entry-content&quot;&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo arcu eu ultrices pellentesque. Aliquam ultricies elit tempor molestie rutrum. Maecenas pharetra sem eu accumsan dignissim. Duis vel purus commodo, semper elit vel, porttitor sem.&lt;/p&gt;
+                &lt;div class&#x3D;&quot;rocksite-o-content__entry__more&quot;&gt;
+        
+                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button -article-short-vertical&quot;&gt;
+                    	Continue reading
+                    	&lt;i class&#x3D;&quot;la la-arrow-right&quot;&gt;&lt;/i&gt;
+                    &lt;/a&gt;
+                    
+                    
+        
+                &lt;/div&gt;
+            &lt;/div&gt;
+        
+        
+        &lt;/article&gt;
+
+
+    &lt;/div&gt;
+
+&lt;/section&gt;
+&lt;section class&#x3D;&quot;rocksite-s-default rocksite-p-main-page-1-s10&quot;&gt;
+
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+
+        &lt;header class&#x3D;&quot;rocksite-o-section-header u-align-center&quot;&gt;
+        	
+        	&lt;h2 class&#x3D;&quot;rocksite-o-section-header__title&quot;&gt;Testimonials List&lt;/h2&gt;
+        	&lt;p class&#x3D;&quot;rocksite-o-section-header__subtitle&quot;&gt;Tortor sit amet egestas rhoncus&lt;/p&gt;
+        &lt;/header&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-testimonial &quot;&gt;
+                
+                    &lt;div class&#x3D;&quot;rocksite-m-testimonial__content&quot;&gt;
+                        &lt;p&gt;After trying a few other themes (where half of the promised features werent working), I have found the perfect theme for my portfolio website.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;footer class&#x3D;&quot;rocksite-m-testimonial__footer&quot;&gt;
+                        &lt;div class&#x3D;&quot;rocksite-m-testimonial__footer__image&quot;&gt;
+                            &lt;img src&#x3D;&quot;../assets/images/pages/testimonials/person1.jpg&quot; /&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;rocksite-m-testimonial__footer__content&quot;&gt;
+                            &lt;h5 class&#x3D;&quot;rocksite-m-testimonial__footer__content__title&quot;&gt;
+                                Ann Profeska&lt;/h5&gt;
+                            &lt;span class&#x3D;&quot;rocksite-m-testimonial__footer__content__subtitle&quot;&gt;CEO Brand&lt;/span&gt;
+                        &lt;/div&gt;
+                
+                    &lt;/footer&gt;
+                &lt;/div&gt;            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-testimonial &quot;&gt;
+                
+                    &lt;div class&#x3D;&quot;rocksite-m-testimonial__content&quot;&gt;
+                        &lt;p&gt;After trying a few other themes (where half of the promised features werent working)&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;footer class&#x3D;&quot;rocksite-m-testimonial__footer&quot;&gt;
+                        &lt;div class&#x3D;&quot;rocksite-m-testimonial__footer__image&quot;&gt;
+                            &lt;img src&#x3D;&quot;../assets/images/pages/testimonials/person2.jpg&quot; /&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;rocksite-m-testimonial__footer__content&quot;&gt;
+                            &lt;h5 class&#x3D;&quot;rocksite-m-testimonial__footer__content__title&quot;&gt;
+                                Ann Profeska&lt;/h5&gt;
+                            &lt;span class&#x3D;&quot;rocksite-m-testimonial__footer__content__subtitle&quot;&gt;Author&lt;/span&gt;
+                        &lt;/div&gt;
+                
+                    &lt;/footer&gt;
+                &lt;/div&gt;            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-testimonial &quot;&gt;
+                
+                    &lt;div class&#x3D;&quot;rocksite-m-testimonial__content&quot;&gt;
+                        &lt;p&gt;Lorem Ipsum Content I have found&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;footer class&#x3D;&quot;rocksite-m-testimonial__footer&quot;&gt;
+                        &lt;div class&#x3D;&quot;rocksite-m-testimonial__footer__image&quot;&gt;
+                            &lt;img src&#x3D;&quot;../assets/images/pages/testimonials/person3.jpg&quot; /&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;rocksite-m-testimonial__footer__content&quot;&gt;
+                            &lt;h5 class&#x3D;&quot;rocksite-m-testimonial__footer__content__title&quot;&gt;
+                                Cyndi Wallace&lt;/h5&gt;
+                            &lt;span class&#x3D;&quot;rocksite-m-testimonial__footer__content__subtitle&quot;&gt;Author&lt;/span&gt;
+                        &lt;/div&gt;
+                
+                    &lt;/footer&gt;
+                &lt;/div&gt;            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-testimonial &quot;&gt;
+                
+                    &lt;div class&#x3D;&quot;rocksite-m-testimonial__content&quot;&gt;
+                        &lt;p&gt;After trying a few other themes (where half of the promised features werent working), I have found the perfect theme for my portfolio website.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;footer class&#x3D;&quot;rocksite-m-testimonial__footer&quot;&gt;
+                        &lt;div class&#x3D;&quot;rocksite-m-testimonial__footer__image&quot;&gt;
+                            &lt;img src&#x3D;&quot;../assets/images/pages/testimonials/person4.jpg&quot; /&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;rocksite-m-testimonial__footer__content&quot;&gt;
+                            &lt;h5 class&#x3D;&quot;rocksite-m-testimonial__footer__content__title&quot;&gt;
+                                Peter Smooth&lt;/h5&gt;
+                            &lt;span class&#x3D;&quot;rocksite-m-testimonial__footer__content__subtitle&quot;&gt;Webdeveloper&lt;/span&gt;
+                        &lt;/div&gt;
+                
+                    &lt;/footer&gt;
+                &lt;/div&gt;            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section class&#x3D;&quot;rocksite-s-default rocksite-p-main-page-1-s11&quot;&gt;
+
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+
+        &lt;header class&#x3D;&quot;rocksite-o-section-header u-align-center&quot;&gt;
+        	
+        	&lt;h2 class&#x3D;&quot;rocksite-o-section-header__title&quot;&gt;Pricing boxes&lt;/h2&gt;
+        	&lt;p class&#x3D;&quot;rocksite-o-section-header__subtitle&quot;&gt;I have found the perfect&lt;/p&gt;
+        &lt;/header&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-pricing-box &quot;&gt;
+                	&lt;h4 class&#x3D;&quot;rocksite-m-pricing-box__title&quot;&gt;
+                		Regular Version
+                	&lt;/h4&gt;
+                	&lt;div class&#x3D;&quot;rocksite-m-pricing-box__price&quot;&gt;
+                		&lt;span class&#x3D;&quot;rocksite-m-pricing-box__price__currency&quot;&gt;$&lt;/span&gt;&lt;span class&#x3D;&quot;rocksite-m-pricing-box__price__amount&quot;&gt;120&lt;/span&gt;
+                		&lt;span class&#x3D;&quot;rocksite-m-pricing-box__price__period&quot;&gt; / monthly&lt;/span&gt;
+                	&lt;/div&gt;
+                	&lt;ul class&#x3D;&quot;rocksite-m-pricing-box__features&quot;&gt;
+                		&lt;li&gt;Up to 20 users&lt;/li&gt;
+                		&lt;li&gt;50GB&lt;/li&gt;
+                		&lt;li&gt;Statistics and tracking&lt;/li&gt;
+                	&lt;/ul&gt;
+                    &lt;div class&#x3D;&quot;rocksite-m-pricing-box__footer&quot;&gt;
+                	    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button -primary&quot;&gt;
+                	    	Click me
+                	    &lt;/a&gt;
+                	    
+                	    
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-pricing-box &quot;&gt;
+                	&lt;h4 class&#x3D;&quot;rocksite-m-pricing-box__title&quot;&gt;
+                		Regular Version
+                	&lt;/h4&gt;
+                	&lt;div class&#x3D;&quot;rocksite-m-pricing-box__price&quot;&gt;
+                		&lt;span class&#x3D;&quot;rocksite-m-pricing-box__price__currency&quot;&gt;$&lt;/span&gt;&lt;span class&#x3D;&quot;rocksite-m-pricing-box__price__amount&quot;&gt;120&lt;/span&gt;
+                		&lt;span class&#x3D;&quot;rocksite-m-pricing-box__price__period&quot;&gt; / monthly&lt;/span&gt;
+                	&lt;/div&gt;
+                	&lt;ul class&#x3D;&quot;rocksite-m-pricing-box__features&quot;&gt;
+                		&lt;li&gt;Up to 20 users&lt;/li&gt;
+                		&lt;li&gt;50GB&lt;/li&gt;
+                		&lt;li&gt;Statistics and tracking&lt;/li&gt;
+                	&lt;/ul&gt;
+                    &lt;div class&#x3D;&quot;rocksite-m-pricing-box__footer&quot;&gt;
+                	    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button -primary&quot;&gt;
+                	    	Click me
+                	    &lt;/a&gt;
+                	    
+                	    
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-pricing-box &quot;&gt;
+                	&lt;h4 class&#x3D;&quot;rocksite-m-pricing-box__title&quot;&gt;
+                		Regular Version
+                	&lt;/h4&gt;
+                	&lt;div class&#x3D;&quot;rocksite-m-pricing-box__price&quot;&gt;
+                		&lt;span class&#x3D;&quot;rocksite-m-pricing-box__price__currency&quot;&gt;$&lt;/span&gt;&lt;span class&#x3D;&quot;rocksite-m-pricing-box__price__amount&quot;&gt;120&lt;/span&gt;
+                		&lt;span class&#x3D;&quot;rocksite-m-pricing-box__price__period&quot;&gt; / monthly&lt;/span&gt;
+                	&lt;/div&gt;
+                	&lt;ul class&#x3D;&quot;rocksite-m-pricing-box__features&quot;&gt;
+                		&lt;li&gt;Up to 20 users&lt;/li&gt;
+                		&lt;li&gt;50GB&lt;/li&gt;
+                		&lt;li&gt;Statistics and tracking&lt;/li&gt;
+                	&lt;/ul&gt;
+                    &lt;div class&#x3D;&quot;rocksite-m-pricing-box__footer&quot;&gt;
+                	    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button -primary&quot;&gt;
+                	    	Click me
+                	    &lt;/a&gt;
+                	    
+                	    
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-sm-3&quot;&gt;
+                &lt;div class&#x3D;&quot;rocksite-m-pricing-box &quot;&gt;
+                	&lt;h4 class&#x3D;&quot;rocksite-m-pricing-box__title&quot;&gt;
+                		Regular Version
+                	&lt;/h4&gt;
+                	&lt;div class&#x3D;&quot;rocksite-m-pricing-box__price&quot;&gt;
+                		&lt;span class&#x3D;&quot;rocksite-m-pricing-box__price__currency&quot;&gt;$&lt;/span&gt;&lt;span class&#x3D;&quot;rocksite-m-pricing-box__price__amount&quot;&gt;120&lt;/span&gt;
+                		&lt;span class&#x3D;&quot;rocksite-m-pricing-box__price__period&quot;&gt; / monthly&lt;/span&gt;
+                	&lt;/div&gt;
+                	&lt;ul class&#x3D;&quot;rocksite-m-pricing-box__features&quot;&gt;
+                		&lt;li&gt;Up to 20 users&lt;/li&gt;
+                		&lt;li&gt;50GB&lt;/li&gt;
+                		&lt;li&gt;Statistics and tracking&lt;/li&gt;
+                	&lt;/ul&gt;
+                    &lt;div class&#x3D;&quot;rocksite-m-pricing-box__footer&quot;&gt;
+                	    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-a-button -primary&quot;&gt;
+                	    	Click me
+                	    &lt;/a&gt;
+                	    
+                	    
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section class&#x3D;&quot;rocksite-s-default rocksite-p-main-page-1-s12&quot;&gt;
+
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+
+        &lt;header class&#x3D;&quot;rocksite-o-section-header u-align-center&quot;&gt;
+        	
+        	&lt;h2 class&#x3D;&quot;rocksite-o-section-header__title&quot;&gt;Contact Form Section&lt;/h2&gt;
+        	&lt;p class&#x3D;&quot;rocksite-o-section-header__subtitle&quot;&gt;I have found the perfect&lt;/p&gt;
+        &lt;/header&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+
+            &lt;div class&#x3D;&quot;col-sm-6&quot;&gt;
+                &lt;form action&#x3D;&quot;/wordpress4.8/forms/#wpcf7-f1885-p1886-o1&quot; method&#x3D;&quot;post&quot; class&#x3D;&quot;rocksite-o-form wpcf7-form&quot;&gt;
+                		&lt;div class&#x3D;&quot;rocksite-o-form__line&quot;&gt;
+                			&lt;div class&#x3D;&quot;rocksite-m-label-input &quot;&gt;
+                			
+                			
+                				&lt;label for&#x3D;&quot;input_text&quot; class&#x3D;&quot;rocksite-m-label-input__label&quot;&gt;Your Name&lt;/label&gt;
+                				&lt;input type&#x3D;&quot;text&quot; value&#x3D;&quot;&quot; id&#x3D;&quot;input_text&quot; name&#x3D;&quot;your-name&quot; placeholder&#x3D;&quot;&quot; class&#x3D;&quot;rocksite-a-input rocksite-m-label-input__input&quot;&gt;
+                			
+                			&lt;/div&gt;
+                		&lt;/div&gt;
+                		&lt;div class&#x3D;&quot;rocksite-o-form__line&quot;&gt;
+                			&lt;div class&#x3D;&quot;rocksite-m-label-input &quot;&gt;
+                			
+                			
+                				&lt;label for&#x3D;&quot;input_surname&quot; class&#x3D;&quot;rocksite-m-label-input__label&quot;&gt;Your Surname&lt;/label&gt;
+                				&lt;input type&#x3D;&quot;text&quot; value&#x3D;&quot;&quot; id&#x3D;&quot;input_surname&quot; name&#x3D;&quot;your-surnname&quot; placeholder&#x3D;&quot;&quot; class&#x3D;&quot;rocksite-a-input rocksite-m-label-input__input&quot;&gt;
+                			
+                			&lt;/div&gt;
+                		&lt;/div&gt;
+                		&lt;div class&#x3D;&quot;rocksite-o-form__line&quot;&gt;
+                			&lt;div class&#x3D;&quot;rocksite-m-label-input &quot;&gt;
+                			
+                			
+                				&lt;label for&#x3D;&quot;input_email&quot; class&#x3D;&quot;rocksite-m-label-input__label&quot;&gt;Your E-mail&lt;/label&gt;
+                				&lt;input type&#x3D;&quot;email&quot; value&#x3D;&quot;&quot; id&#x3D;&quot;input_email&quot; name&#x3D;&quot;your-surnname&quot; placeholder&#x3D;&quot;&quot; class&#x3D;&quot;rocksite-a-input rocksite-m-label-input__input&quot;&gt;
+                			
+                			&lt;/div&gt;
+                		&lt;/div&gt;
+                
+                	&lt;div class&#x3D;&quot;rocksite-o-form__line&quot;&gt;
+                		&lt;div class&#x3D;&quot;rocksite-m-label-textarea &quot;&gt;
+                		
+                		
+                			&lt;label for&#x3D;&quot;input_text&quot; class&#x3D;&quot;rocksite-m-label-textarea__label&quot;&gt;Your Message&lt;/label&gt;
+                			&lt;textarea class&#x3D;&quot;rocksite-a-textarea rocksite-m-label-textarea__textarea&quot; id&#x3D;&quot;input_text&quot; name&#x3D;&quot;your-message&quot; rows&#x3D;&quot;&quot; placeholder&#x3D;&quot;&quot; aria-invalid&#x3D;&quot;false&quot;&gt;&lt;/textarea&gt;
+                		
+                		&lt;/div&gt;
+                	&lt;/div&gt;
+                
+                
+                
+                
+                
+                
+                
+                		&lt;div class&#x3D;&quot;rocksite-o-form__btn-line -btn-right&quot;&gt;
+                				&lt;button class&#x3D;&quot;rocksite-a-input-button &quot; type&#x3D;&quot;submit&quot;&gt;Send Message&lt;/button&gt;
+                		&lt;/div&gt;
+                &lt;/form&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;section class&#x3D;&quot;rocksite-s-footer rocksite-p-main-page-1-footer-1&quot;&gt;
+
+    &lt;div class&#x3D;&quot;container&quot;&gt;
+
+
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+
+            &lt;div class&#x3D;&quot;col-lg-3&quot;&gt;
+                &lt;div id&#x3D;&quot;nav_menu-1&quot; class&#x3D;&quot;rocksite-o-widget -widget_nav_menu  -dark -footer&quot;&gt;
+                	&lt;header class&#x3D;&quot;rocksite-o-widget__header&quot;&gt;&lt;h3 class&#x3D;&quot;rocksite-o-widget__header__title&quot;&gt;First Column&lt;/h3&gt;&lt;/header&gt;
+                	&lt;div class&#x3D;&quot;menu-menu-sidebar-page-container&quot;&gt;
+                		&lt;ul class&#x3D;&quot;rocksite-m-nav-menu  -dark -footer&quot;&gt;
+                		
+                		
+                		    &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item  &quot;&gt;&lt;a
+                		            href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;Home Page&lt;/a&gt;
+                		
+                		    &lt;/li&gt;
+                		
+                		    &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item  &quot;&gt;&lt;a
+                		            href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;About Us&lt;/a&gt;
+                		
+                		    &lt;/li&gt;
+                		
+                		    &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item -has-children &quot;&gt;&lt;a
+                		            href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;Services&lt;/a&gt;
+                		
+                		    &lt;/li&gt;
+                		
+                		    &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item  &quot;&gt;&lt;a
+                		            href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;Our Offer&lt;/a&gt;
+                		
+                		    &lt;/li&gt;
+                		
+                		    &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item  &quot;&gt;&lt;a
+                		            href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;Contact Us&lt;/a&gt;
+                		
+                		    &lt;/li&gt;
+                		
+                		
+                		&lt;/ul&gt;
+                	&lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-lg-3&quot;&gt;
+                &lt;div id&#x3D;&quot;nav_menu-1&quot; class&#x3D;&quot;rocksite-o-widget -widget_nav_menu  -dark -footer&quot;&gt;
+                	&lt;header class&#x3D;&quot;rocksite-o-widget__header&quot;&gt;&lt;h3 class&#x3D;&quot;rocksite-o-widget__header__title&quot;&gt;Second Column&lt;/h3&gt;&lt;/header&gt;
+                	&lt;div class&#x3D;&quot;menu-menu-sidebar-page-container&quot;&gt;
+                		&lt;ul class&#x3D;&quot;rocksite-m-nav-menu  -dark -footer&quot;&gt;
+                		
+                		
+                		    &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item  &quot;&gt;&lt;a
+                		            href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;Contact Me&lt;/a&gt;
+                		
+                		    &lt;/li&gt;
+                		
+                		    &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item  &quot;&gt;&lt;a
+                		            href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;About Me&lt;/a&gt;
+                		
+                		    &lt;/li&gt;
+                		
+                		    &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item -has-children &quot;&gt;&lt;a
+                		            href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;Services&lt;/a&gt;
+                		
+                		    &lt;/li&gt;
+                		
+                		
+                		&lt;/ul&gt;
+                	&lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;col-lg-3&quot;&gt;
+                &lt;div id&#x3D;&quot;nav_menu-1&quot; class&#x3D;&quot;rocksite-o-widget -widget_nav_menu  -dark -footer&quot;&gt;
+                	&lt;header class&#x3D;&quot;rocksite-o-widget__header&quot;&gt;&lt;h3 class&#x3D;&quot;rocksite-o-widget__header__title&quot;&gt;Third Column&lt;/h3&gt;&lt;/header&gt;
+                	&lt;div class&#x3D;&quot;menu-menu-sidebar-page-container&quot;&gt;
+                		&lt;ul class&#x3D;&quot;rocksite-m-nav-menu  -dark -footer&quot;&gt;
+                		
+                		
+                		    &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item  &quot;&gt;&lt;a
+                		            href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;Pages&lt;/a&gt;
+                		
+                		    &lt;/li&gt;
+                		
+                		    &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item  &quot;&gt;&lt;a
+                		            href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;Categories&lt;/a&gt;
+                		
+                		    &lt;/li&gt;
+                		
+                		    &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item  &quot;&gt;&lt;a
+                		            href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;Depth&lt;/a&gt;
+                		
+                		    &lt;/li&gt;
+                		
+                		    &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item  &quot;&gt;&lt;a
+                		            href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;Advanced&lt;/a&gt;
+                		
+                		    &lt;/li&gt;
+                		
+                		    &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item  &quot;&gt;&lt;a
+                		            href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;Menu Description&lt;/a&gt;
+                		
+                		    &lt;/li&gt;
+                		
+                		
+                		&lt;/ul&gt;
+                	&lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-lg-3&quot;&gt;
+                &lt;div id&#x3D;&quot;nav_menu-1&quot; class&#x3D;&quot;rocksite-o-widget -widget_nav_menu  -dark -footer&quot;&gt;
+                	&lt;header class&#x3D;&quot;rocksite-o-widget__header&quot;&gt;&lt;h3 class&#x3D;&quot;rocksite-o-widget__header__title&quot;&gt;Fourth Column&lt;/h3&gt;&lt;/header&gt;
+                	&lt;div class&#x3D;&quot;menu-menu-sidebar-page-container&quot;&gt;
+                		&lt;ul class&#x3D;&quot;rocksite-m-nav-menu  -dark -footer&quot;&gt;
+                		
+                		
+                		    &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item  &quot;&gt;&lt;a
+                		            href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;Contact Me&lt;/a&gt;
+                		
+                		    &lt;/li&gt;
+                		
+                		    &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item  &quot;&gt;&lt;a
+                		            href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;About Me&lt;/a&gt;
+                		
+                		    &lt;/li&gt;
+                		
+                		    &lt;li class&#x3D;&quot;rocksite-m-nav-menu__item  &quot;&gt;&lt;a
+                		            href&#x3D;&quot;#&quot; class&#x3D;&quot;rocksite-m-nav-menu__link&quot;&gt;Home&lt;/a&gt;
+                		
+                		    &lt;/li&gt;
+                		
+                		
+                		&lt;/ul&gt;
+                	&lt;/div&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/section&gt;
+
+&lt;/body&gt;
+</code></pre>
+            </details>
+
+            <div class="kss-source kss-style">
+              Source: <code>../source/scss/components/pages/_main-page-1.scss</code>, line 1
+            </div>
+
+      </div>
+  </article>
+  </main>
+</div>
+
+
+<!-- SCRIPTS -->
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/kss-fullscreen.js"></script>
+<script src="kss-assets/kss-singlesection.js"></script>
+<script src="kss-assets/kss-guides.js"></script>
+<script src="kss-assets/search.js"></script>
+<script src="kss-assets/kss-markup.js"></script>
+<script src="kss-assets/prismjs.js"></script>
+<script>
+  var kssSingleSection = new KssSingleSection();
+  var kssFullScreen = new KssFullScreen({
+    idPrefix: 'kss-fullscreen-',
+    bodyClass: 'kss-fullscreen-mode',
+    elementClass: 'is-fullscreen'
+  });
+  var kssGuides = new KssGuides({
+    bodyClass: 'kss-guides-mode'
+  });
+  var kssMarkup = new KssMarkup({
+    bodyClass: 'kss-markup-mode',
+    detailsClass: 'kss-markup'
+  });
+</script>
+<script src="../assets/jquery.js"></script>
+<script src="../../assets/vendors/slick/slick.min.js"></script>
+<script src="../../assets/vendors/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+<script src="../../assets/js/full/main.js"></script>
+
+</body>
+</html>

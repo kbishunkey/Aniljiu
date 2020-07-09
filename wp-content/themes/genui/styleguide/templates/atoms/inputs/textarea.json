@@ -1,0 +1,6 @@
+{
+  "placeholder": "Your Message",
+  "id_for": "input_text",
+  "name": "message",
+  "rows": "4"
+}

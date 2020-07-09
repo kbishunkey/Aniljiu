@@ -1,0 +1,413 @@
+/*
+Tabs
+
+.-layout-horizontal-right - right tabs
+.-layout-horizontal-center - center tabs
+.-layout-vertical-left - vertical left
+.-layout-vertical-right - vertical right
+
+
+Markup: ../../../../styleguide/templates/organisms/tabs.html
+
+
+Style guide: Organisms.tabs
+
+Wrapper:
+<div style="width:900">
+<wrapper-content/>
+</div>
+
+
+*/
+
+
+$class-name-tabs: rocksite-o-tabs;
+
+.#{$class-name-tabs} {
+
+	@extend %#{$class-name-tabs};
+
+	.#{$class-name-tabs}__navigation{
+
+		@extend %#{$class-name-tabs}__navigation;
+
+		.#{$class-name-tabs}__navigation__item{
+
+			@extend %#{$class-name-tabs}__navigation__item;
+
+			.#{$class-name-tabs}__navigation__item__wrapper{
+				@extend %#{$class-name-tabs}__navigation__item__wrapper;
+			}
+
+			&.-active {
+
+				.#{$class-name-tabs}__navigation__item__wrapper{
+					@extend %#{$class-name-tabs}__navigation__item-active__wrapper;
+
+					.#{$class-name-tabs}__navigation__item__wrapper__link {
+						@extend %#{$class-name-tabs}__navigation__item-active__wrapper__link;
+					}
+				}
+
+			}
+
+			.#{$class-name-tabs}__navigation__item__wrapper{
+
+				@extend %#{$class-name-tabs}__navigation__item__wrapper;
+
+				.#{$class-name-tabs}__navigation__item__wrapper__link{
+
+					@extend %#{$class-name-tabs}__navigation__item__wrapper__link;
+
+					.#{$class-name-tabs}__navigation__item__wrapper__link__title{
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.#{$class-name-tabs}__content{
+
+	}
+
+	&.-layout-horizontal-right {
+
+		.#{$class-name-tabs}__navigation{
+
+			@extend %#{$class-name-tabs}-layout-horizontal-right__navigation;
+		}
+
+
+	}
+
+	&.-layout-horizontal-center {
+
+		.#{$class-name-tabs}__navigation{
+
+			@extend %#{$class-name-tabs}-layout-horizontal-center__navigation;
+		}
+
+	}
+
+	&.-layout-vertical-left {
+
+		@extend %#{$class-name-tabs}-layout-vertical-left;
+
+		.#{$class-name-tabs}__content{
+			@extend %#{$class-name-tabs}-layout-vertical-left__content;
+		}
+
+		.#{$class-name-tabs}__navigation{
+
+			@extend %#{$class-name-tabs}-layout-vertical-left__navigation;
+
+			.#{$class-name-tabs}__navigation__item{
+
+				@extend %#{$class-name-tabs}-layout-vertical-left__navigation__item;
+
+				.#{$class-name-tabs}__navigation__item__wrapper{
+					@extend %#{$class-name-tabs}-layout-vertical-left__navigation__item__wrapper;
+				}
+
+				&.-active {
+
+
+
+					.#{$class-name-tabs}__navigation__item__wrapper{
+
+						@extend %#{$class-name-tabs}-layout-vertical-left__navigation__item-active__wrapper;
+
+					}
+
+				}
+
+
+
+			}
+		}
+
+	}
+
+	&.-layout-vertical-right {
+
+		@extend %#{$class-name-tabs}-layout-vertical-right;
+
+		.#{$class-name-tabs}__navigation{
+
+			@extend %#{$class-name-tabs}-layout-vertical-right__navigation;
+
+			.#{$class-name-tabs}__navigation__item{
+
+				@extend %#{$class-name-tabs}-layout-vertical-right__navigation__item;
+
+				.#{$class-name-tabs}__navigation__item__wrapper{
+					@extend %#{$class-name-tabs}-layout-vertical-right__navigation__item__wrapper;
+				}
+
+				&.-active {
+
+
+
+					.#{$class-name-tabs}__navigation__item__wrapper{
+
+						@extend %#{$class-name-tabs}-layout-vertical-right__navigation__item-active__wrapper;
+
+					}
+
+				}
+
+				.#{$class-name-tabs}__navigation__item__wrapper{
+
+					@extend %#{$class-name-tabs}__navigation__item__wrapper;
+
+					.#{$class-name-tabs}__navigation__item__wrapper__link{
+
+						@extend %#{$class-name-tabs}__navigation__item__wrapper__link;
+
+						.#{$class-name-tabs}__navigation__item__wrapper__link__title{
+
+						}
+
+					}
+
+				}
+
+			}
+		}
+
+		.#{$class-name-tabs}__content{
+			@extend %#{$class-name-tabs}-layout-vertical-right__content;
+		}
+	}
+
+
+
+
+}
+
+%#{$class-name-tabs} {
+
+	display: flex;
+	flex-direction: column;
+
+	&__navigation{
+
+		@include list-core();
+		display: flex;
+		flex-direction: row;
+		margin-bottom: $layout-box-vertical-space;
+
+
+		&__item {
+
+			margin: 0;
+
+			&__wrapper {
+				@include type-setting(x-small);
+
+				@media (min-width: #{break(medium)}) {
+					@include type-setting(small);
+				}
+			}
+
+
+			&-active {
+
+				&__wrapper {
+
+					border-bottom: $layout-box-border-decorator;
+
+
+					&:hover {
+						border-bottom: $layout-box-border-decorator;
+					}
+
+					&__link {
+						color: get-color-css(primary);
+					}
+
+				}
+
+			}
+
+
+
+
+			&__wrapper {
+
+				margin: 0;
+				padding: 0;
+				display: block;
+				border-bottom: 4px solid transparent;
+
+				&:hover {
+					background: get-color-css(invert-dark);
+					border-bottom-color: get-color-css(invert-dark);
+
+				}
+
+
+
+				&__link {
+
+					padding: 1.5rem 2rem;
+					color: get-color-css(text-lighten);
+					display: block;
+
+
+					&__title {
+
+						color: get-color-css(text-lighten);
+
+					}
+
+
+
+				}
+
+
+			}
+
+		}
+
+
+
+	}
+
+	&__content{
+
+		padding: 0;
+
+	}
+
+	&-layout-horizontal-right {
+
+		&__navigation{
+			justify-content: flex-end;
+		}
+
+
+
+	}
+
+	&-layout-horizontal-center {
+
+		&__navigation{
+			justify-content: center;
+		}
+
+
+
+	}
+
+	&-layout-vertical-left {
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		&__navigation{
+			flex-direction: column;
+			margin-right: $layout-box-vertical-space;
+			margin-bottom: 0;
+			min-width: 12rem;
+
+			&__item {
+
+				margin: 0;
+
+				&__wrapper {
+					border-bottom: none;
+					border-right: 0.4rem solid transparent;
+
+					&:hover {
+						border-right: $layout-box-border-decorator;
+						border-bottom: none;
+					}
+				}
+
+
+				&-active {
+
+					&__wrapper {
+
+						border-right: $layout-box-border-decorator;
+						border-bottom: none;
+
+						&:hover {
+							border-right: $layout-box-border-decorator;
+							border-bottom: none;
+						}
+					}
+
+
+				}
+
+			}
+		}
+
+
+		&__content{
+			flex: 1 1 0%;
+		}
+	}
+
+	&-layout-vertical-right {
+
+		flex-direction: row-reverse;
+		flex-wrap: wrap;
+		margin-left: $layout-box-vertical-space;
+		margin-bottom: 0;
+
+		&__navigation{
+			flex-direction: column;
+			min-width: 12rem;
+			margin-left: $layout-box-vertical-space;
+			margin-bottom: 0;
+
+			&__item {
+
+				margin: 0;
+
+				&__wrapper {
+					border-bottom: none;
+					border-left: 0.4rem solid transparent;
+
+					&:hover {
+						border-left: $layout-box-border-decorator;
+						border-bottom: none;
+					}
+				}
+
+
+				&-active {
+
+					&__wrapper {
+
+						border-left: $layout-box-border-decorator;
+						border-bottom: none;
+
+						&:hover {
+							border-left: $layout-box-border-decorator;
+							border-bottom: none;
+						}
+					}
+
+
+				}
+
+			}
+		}
+
+
+		&__content{
+			flex: 1 1 0%;
+		}
+
+	}
+
+
+}

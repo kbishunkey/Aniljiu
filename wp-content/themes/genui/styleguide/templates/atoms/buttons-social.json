@@ -1,0 +1,10 @@
+{
+  "icon": {
+    "-default":"fab fa-linkedin-in",
+    "-email": "fa fa-envelope",
+    "-twitter": "fab fa-twitter",
+    "-facebook": "fab fa-facebook-f",
+    "-gplus": "fab fa-google-plus-g",
+    "-linkedin":"fab fa-linkedin-in"
+  }
+}

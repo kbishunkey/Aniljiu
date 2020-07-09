@@ -1,0 +1,116 @@
+/*
+Lables
+
+
+Labels for displaying info
+
+.-primary   - e-mail icon
+.-success   - Twitter
+.-small   - Twitter
+.-tiny - tiny version
+.-warning   - Google plus
+.-danger   - linked IN
+.-meta-label - plain label displaying in meta area
+
+Markup: ../../../../styleguide/templates/atoms/labels.html
+
+
+Style guide: Atoms.labels
+
+*/
+
+$class-name-label: rocksite-a-label;
+
+.#{$class-name-label} {
+
+	@extend %#{$class-name-label};
+
+	.fa {
+
+		color: get-color-css(dark-gray1);
+
+	}
+
+
+
+
+
+	&.-primary {
+
+		background: get-color-css(primary);
+
+	}
+
+	&.-success {
+
+		background: get-color-css(success);
+
+	}
+
+	&.-warning {
+
+		background: get-color-css(warning);
+
+	}
+
+	&.-danger {
+
+		background: get-color-css(alert);
+
+	}
+
+	&.-info {
+
+		background: get-color-css(info);
+
+	}
+
+	&.-circle {
+
+		border-radius: 100%;
+
+	}
+
+	&.-small,
+	&.-tiny{
+		width: 2rem;
+		height: 2rem;
+		@include type-setting(xx-small);
+		text-align: center;
+		line-height: 1.5rem;
+		padding: 0.4rem 0.2rem;
+	}
+
+	&.-tiny {
+		width: 1.4rem;
+		height: 1.4rem;
+		line-height: 1rem;
+		border-radius: 4rem;
+		padding: 0.2rem;
+	}
+
+	&.-time-label {
+		color: get-color-css(gray3);
+		@include type-setting(x-small);
+	}
+
+	&.-meta-label {
+
+		color: get-color-css(dark-gray1);
+		background: none;
+	}
+
+}
+
+%#{$class-name-label}  {
+
+	@include type-setting(x-small);
+	display: inline-block;
+	height: auto;
+	background-color: get-color-css(info);
+	padding: $label-color-padding;
+	color: get-color-css(invert);
+	line-height: $label-color-line-height;
+
+}
+

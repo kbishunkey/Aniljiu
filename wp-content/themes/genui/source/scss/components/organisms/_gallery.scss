@@ -1,0 +1,207 @@
+/*
+Gallery Box - Native
+
+
+Native Gallery component
+
+.-large - 1 column
+.-cropped - cropped version
+.-columns-2 - 2 columns
+.-columns-3 - right content version of media
+.-columns-4 - 4 columns
+.-columns-5 - 5 columns
+.-columns-6 - 6 columns
+.-columns-7 - 7 columns
+.-columns-8 - 8 columns
+.-columns-9 - 9 columns
+
+
+Markup: ../../../../styleguide/templates/organisms/gallery.html
+
+
+Style guide: Organisms.gallery
+
+Wrapper:
+<div style="width:900">
+<wrapper-content/>
+</div>
+
+
+*/
+
+@import '../molecules/card.scss';
+
+$class-name-gallery: rocksite-o-gallery;
+
+.#{$class-name-gallery} {
+
+	@extend %#{$class-name-gallery};
+
+	.gallery-item,
+	.#{$class-name-gallery}__item{
+
+
+		@extend %#{$class-name-gallery}__item;
+
+		.gallery-icon,
+		.#{$class-name-gallery}__item__icon{
+
+
+			@extend %#{$class-name-gallery}__item__icon;
+
+		}
+
+
+	}
+
+
+
+
+
+	&.-large {
+
+		@extend %#{$class-name-gallery}-large;
+
+		.#{$class-name-gallery}__item{
+
+			@extend %#{$class-name-gallery}-large__item;
+
+		}
+
+	}
+
+
+	@for $i from 2 through 9 {
+
+		&.-columns-#{ $i }
+		{
+			.gallery-item,
+			.#{$class-name-gallery}__item {
+
+				@extend %#{$class-name-gallery}-columns-#{ $i }__item;
+
+			}
+		}
+	}
+
+	&.-cropped {
+
+		.#{$class-name-gallery}__item{
+
+			@extend %#{$class-name-gallery}-cropped__item;
+
+		}
+
+	}
+
+
+}
+
+%#{$class-name-gallery} {
+
+	display: flex;
+	margin:0 -$gallery-gutter 0 -$gallery-gutter;
+	clear: both;
+	padding: 1.5rem 0;
+	flex-wrap: wrap;
+	list-style: none;
+
+
+	&__item {
+
+		margin: $gallery-gutter;
+		flex: 1 0 calc(11.111% - #{$gallery-gutter *2});
+
+		&__icon {
+
+			img {
+
+				@extend %#{$class-name-image-figure}__image;
+
+			}
+
+
+			a {
+
+				&:hover {
+
+					img {
+
+						opacity: 0.8;
+
+					}
+
+				}
+
+
+			}
+
+		}
+
+
+
+	}
+
+	&-large {
+
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 0;
+
+		&__item {
+
+			width: 100%;
+			flex: 1 0  100%;
+			margin: 0 0 4rem 0
+
+		}
+
+	}
+
+	@for $i from 2 through 9 {
+
+		&-columns-#{ $i }
+		{
+			&__item {
+				margin: $gallery-gutter;
+				flex: 1 0 calc(100%  - #{$gallery-gutter *2});
+
+				@include respond-to( medium ) {
+
+					flex: 1 0 calc(100% / #{ $i } - #{$gallery-gutter *2});
+				}
+
+			}
+		}
+	}
+
+	&-cropped {
+
+		&__item {
+
+			display: flex;
+
+			a,
+			img {
+				// IE11 doesn't support object-fit, so just make sure images aren't skewed.
+				// The following rules are for all browsers.
+				width: 100%;
+
+				// IE11 doesn't read rules inside this query. They are applied only to modern browsers.
+				@supports (position: sticky) {
+					height: 100%!important;
+					flex: 1;
+					object-fit: cover;
+
+				}
+			}
+
+		}
+
+
+	}
+
+
+
+
+}

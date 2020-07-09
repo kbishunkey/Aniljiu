@@ -1,0 +1,252 @@
+$class-name-widget: rocksite-o-widget;
+
+.#{$class-name-widget} {
+
+	background: $layout-box-background;
+	margin: $layout-box-margin;
+	@include type-setting(small);
+
+	img {
+
+		@include responsive-image();
+
+	}
+	p, ul, li {
+		@include type-setting(small);
+	}
+
+	.#{$class-name-widget}__header {
+
+		padding: 0 0 1.1rem;
+		margin-bottom: $layout-box-vertical-space;
+		border-bottom: 3px solid get-color-css(primary);
+
+		.#{$class-name-widget}__header__title {
+
+			@include type-setting(h6);
+			text-transform: uppercase;
+			font-family: font-family-css(secondary);
+			font-weight: 400;
+
+		}
+
+
+
+	}
+
+	// footer widgets
+
+	&.-footer {
+
+
+
+		margin-bottom: 6rem;
+
+		.#{$class-meta-label} {
+
+			opacity: 0.8;
+
+		}
+
+		.#{$class-name-widget}__header {
+
+			border-bottom: none;
+			padding: 0;
+			margin-bottom: 1.5rem;
+
+			.#{$class-name-widget}__header__title {
+
+				@include type-setting(h6);
+				text-transform: none;
+				color: get-color-css(invert);
+
+			}
+
+			+ ul {
+
+				padding: 0;
+
+			}
+
+
+
+		}
+
+
+
+	}
+
+	&.-dark {
+
+
+		background: none;
+
+		*,
+		div,
+		p,
+		h5,
+		h4{
+
+			color: get-color-css(invert);
+
+			a {
+
+				color: get-color-css(invert);
+
+				&:hover {
+
+					color: get-color-css(secondary);
+
+				}
+
+			}
+
+		}
+
+		.#{$class-name-widget}__header {
+
+			&__title {
+
+				color: get-color-css(primary)
+
+			}
+
+			+ ul {
+
+				li {
+
+
+
+				}
+
+			}
+
+			+ div {
+
+				padding: 0;
+				background: none;
+
+			}
+
+		}
+	}
+
+
+	// latest articles
+
+	&.-rocksite-last-articles-widget {
+
+		&.-dark {
+
+			.#{$class-name-card} {
+
+				.#{$class-name-card}__content__title {
+
+					a {
+
+						color: get-color-css(invert);
+
+						&:hover {
+
+							color: get-color-css(secondary);
+
+						}
+
+					}
+
+				}
+
+				.#{$class-name-button} {
+
+					&.-icon-link {
+
+						color: get-color-css(invert);
+
+					}
+
+				}
+
+
+
+			}
+
+		}
+	}
+
+
+}
+
+// Specific widgets
+/*
+Search Widget
+
+Search Widget
+
+.-footer   - footer version
+.-dark - dark version
+
+
+Markup: ../../../../styleguide/templates/organisms/widgets/search-widget.html
+
+Wrapper:
+<div style="width:350px; background: #2c3e51">
+<wrapper-content/>
+</div>
+
+Style guide: Widgets.search-widget
+
+*/
+
+
+.#{$class-name-widget} {
+
+
+	&.-widget_search {
+
+		padding: $layout-grid-gutter/2 0;
+
+	}
+
+
+}
+
+// Specific widgets
+/*
+Text Widget
+
+Text Widget
+
+.-footer   - footer version
+.-dark - dark version
+
+
+Markup: ../../../../styleguide/templates/organisms/widgets/text-widget.html
+
+Wrapper:
+<div style="width:350px; background: #2c3e51">
+<wrapper-content/>
+</div>
+
+
+Style guide: Widgets.text-widget
+
+*/
+
+
+.#{$class-name-widget} {
+
+
+	&.-widget_text {
+
+		.textwidget {
+
+			@include box-content;
+
+		}
+
+	}
+
+
+}
+
+

@@ -1,0 +1,147 @@
+/*
+Pricing Box
+
+
+Pricing box info box and icon
+
+Markup: ../../../../styleguide/templates/molecules/pricing.html
+
+
+Style guide: Molecules.pricing
+
+Wrapper:
+<div style="max-width:350px">
+<wrapper-content/>
+</div>
+
+*/
+
+$class-name-pricing-box: rocksite-m-pricing-box;
+
+.#{$class-name-pricing-box} {
+
+  @extend %#{$class-name-pricing-box};
+
+  .#{$class-name-pricing-box}__title {
+
+    @extend %#{$class-name-pricing-box}__title
+
+  }
+
+  .#{$class-name-pricing-box}__price {
+
+    @extend %#{$class-name-pricing-box}__price;
+
+    .#{$class-name-pricing-box}__price__currency {
+
+      @extend %#{$class-name-pricing-box}__currency;
+
+    }
+
+    .#{$class-name-pricing-box}__price__amount {
+
+      @extend %#{$class-name-pricing-box}__amount;
+
+    }
+
+    .#{$class-name-pricing-box}__price__period {
+
+      @extend %#{$class-name-pricing-box}__period
+
+
+    }
+
+  }
+
+  .#{$class-name-pricing-box}__features {
+
+
+    @extend %#{$class-name-pricing-box}__features
+
+  }
+
+
+  .#{$class-name-pricing-box}__footer {
+
+    @extend %#{$class-name-pricing-box}__footer
+
+  }
+
+}
+
+%#{$class-name-pricing-box}{
+  padding: $layout-box-single-padding;
+}
+
+
+
+%#{$class-name-pricing-box}__title {
+
+  @extend %#{$class-name-heading};
+  @extend %-h6;
+  color: get-color-css(primary);
+  margin-top: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+
+}
+
+
+%#{$class-name-pricing-box}__price {
+
+  padding-bottom: 3rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid $layout-box-border-color;
+  @extend %#{$class-name-heading};
+  @extend %-h3;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+
+}
+
+%#{$class-name-pricing-box}__currency {
+
+  font-size: font-size(h5);
+
+
+
+}
+
+%#{$class-name-pricing-box}__amount {
+  font-size: inherit;
+  line-height: 0.8;
+  padding: 0 0.5rem 0 0.2rem;
+  font-weight: 700;
+}
+
+%#{$class-name-pricing-box}__period {
+
+  font-size: font-size(medium);
+  color: get-color-css(dark-gray1);
+
+}
+
+%#{$class-name-pricing-box}__features {
+
+  @include list-core();
+  margin-bottom: 4rem;
+
+
+  li {
+
+    margin-bottom: 0.5rem;
+    text-align: center;
+
+  }
+
+}
+
+%#{$class-name-pricing-box}__footer {
+
+  display: flex;
+  justify-content: center;
+
+}

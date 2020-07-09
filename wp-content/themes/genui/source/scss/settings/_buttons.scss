@@ -1,0 +1,119 @@
+//default buttons
+$button-default-padding: 0.8rem 3.6rem;
+$button-small-padding: 0.4rem 1.1rem;
+$button-default-line-height: 1.47;
+$button-font-size: medium;
+$button-default-border: none;
+$button-default-radius: 5rem;
+$button-text-transform: uppercase;
+$button-margin-right: 0.5rem;
+$button-margin-bottom: 0.5rem;
+$button-primary-border: none;
+$button-secondary-border: none;
+$button-success-border: none;
+$button-warning-border: none;
+$button-danger-border: none;
+
+// circle button
+
+$button-circle-width: 4.2rem;
+$button-circle-height: 4.2rem;
+
+$button-close-big-width: 4rem;
+$button-close-big-height: 4rem;
+
+// social buttons
+$button-social-variants: default email facebook twitter linkedin gplus instagram;
+$button-social-size: 3rem;
+$button-social-radius: 100%;
+
+// button backgrounds
+
+@function buttons-background-variants() {
+
+  @return (
+          default: get-color(invert),
+          secondary: get-color(secondary),
+          primary: get-color(primary),
+          success: get-color(success),
+          warning: get-color(warning),
+          danger: get-color(alert),
+  );
+}
+
+@function get-btn-background-css( $name) {
+
+  @return var(--btn-bg-#{$name});
+
+}
+
+@function get-btn-background( $name ) {
+
+  @return map-get(buttons-background-variants(), $name);
+}
+
+// button colors
+
+@function buttons-color-variants() {
+
+  @return (
+          default: get-color(primary),
+          secondary: get-color(text),
+          primary: get-color(invert),
+          success: get-color(invert),
+          warning: get-color(invert),
+          danger: get-color(invert),
+  );
+}
+
+// buttons css variables colors
+
+@function buttons-color-variants-css() {
+
+  @return (
+          default: get-color-css(primary),
+          secondary: get-color-css(text),
+          primary: get-color-css(invert),
+          success: get-color-css(invert),
+          warning: get-color-css(invert),
+          danger: get-color-css(invert),
+  );
+}
+
+
+@function get-btn-color( $name ) {
+
+  @return map-get(buttons-color-variants(), $name);
+
+}
+
+@function get-btn-color-css( $name) {
+
+  @return var(--btn-color-#{$name});
+
+}
+
+// social buttons
+
+@function colors-social-buttons() {
+
+  @return (
+          email: #f0ad4e,
+          facebook: #1471c0,
+          twitter: #00bff3,
+          gplus: #68b807,
+          pinterest: #bd081c,
+          instagram: #D50060,
+          linkedin: #1482bb,
+          default: get-color(secondary)
+  );
+}
+
+// Returns a single  color value by name.
+
+@function get-social-button-variant( $name ) {
+
+  @return map-get(colors-social-buttons(), $name)
+
+}
+

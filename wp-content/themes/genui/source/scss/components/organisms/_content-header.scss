@@ -1,0 +1,252 @@
+/*
+
+Article content header
+
+Header above the content
+
+.-article-lead - big article lead
+
+Markup: ../../../../styleguide/templates/organisms/article-header.html
+
+Wrapper:
+<div style="width:1000px; background: #f4f4f4; padding: 20px">
+<wrapper-content/>
+</div>
+
+Style guide: Organisms.article-header
+
+*/
+
+$class-name-content-header: rocksite-o-content-header;
+
+// Content Header Component
+
+.#{$class-name-content-header} {
+
+  display: flex;
+  flex-flow: row wrap;
+
+  // Breadrumbs
+  .#{$class-name-content-header}__breadcrumbs {
+
+    width: 100%;
+    align-self: flex-start;
+    padding: 0 0 2rem 0;
+
+  }
+
+  //title
+
+  .#{$class-name-content-header}__title {
+
+    width: 100%;
+    align-self: baseline;
+    font-family: $content-header-title-font;
+    font-weight: 300;
+    font-size: $content-header-title-font-size;
+    margin-bottom: 3rem;
+
+    small {
+
+      font-size: 65%;
+      display: block;
+
+    }
+
+  }
+
+  &.-middle-height {
+
+    height: $content-header-middle-height;
+
+  }
+
+  &.-simple {
+
+    height: auto;
+    margin-bottom: $layout-box-vertical-space;
+
+  }
+
+  &.-article-lead {
+
+    height: auto;
+
+    .#{$class-name-content-header}__lead {
+
+      @extend %#{$class-name-media};
+      flex-wrap: wrap;
+      width: 100%;
+
+      .#{$class-name-content-header}__lead__header {
+
+        @extend %#{$class-name-media}__content;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: $layout-box-single-padding-large 0;
+        width: 100%;
+        flex-wrap: nowrap;
+
+        @include respond-to( medium ) {
+
+          padding-right: $grid-gutter-width;
+          width: 50%;
+
+        }
+
+        .#{$class-name-content-header}__lead__header__title {
+
+          @extend %#{$class-name-media}__content__title;
+
+          @include type-setting(h3);
+
+          @include respond-to( medium ) {
+
+            @include type-setting(h2);
+
+          }
+
+
+
+        }
+
+        .#{$class-name-content-header}__lead__header__meta {
+
+          @extend %#{$class-name-content}__header__meta;
+
+          margin-top: $content-header-margin-bottom-medium;
+
+        }
+
+        .#{$class-name-content-header}__lead__header__categories {
+
+          margin: 0 0 $content-header-margin-bottom-medium 0;
+
+        }
+
+      }
+
+      .#{$class-name-content-header}__lead__thumbnail {
+
+        @include alignfull;
+
+        @include respond-to( medium ) {
+
+          width: 50%;
+
+          margin-left: 0;
+
+
+        }
+
+        img {
+
+          display: block;
+          @include responsive-image();
+          width: 100%;
+
+        }
+
+      }
+
+    }
+
+
+
+    &.-no-image {
+
+      .#{$class-name-content-header}__lead {
+
+        display: flex;
+        justify-content: center;
+
+        .#{$class-name-content-header}__lead__header {
+
+          width: 100%;
+
+          @include respond-to( medium ) {
+
+            width: 70%;
+
+          }
+
+
+
+          .#{$class-name-content-header}__lead__header__title {
+
+          }
+        }
+
+
+      }
+
+      &.-sidebar {
+
+        .#{$class-name-content-header}__lead__header {
+
+          width: 100%;
+
+
+        }
+
+      }
+
+    }
+
+  }
+
+  &.-page-lead {
+
+
+
+  }
+
+}
+
+
+/*
+
+Page content header
+
+Header above the page content
+
+
+Markup: ../../../../styleguide/templates/organisms/page-header.html
+
+Wrapper:
+<div style="width:1400px; background: #f4f4f4; padding: 20px">
+<wrapper-content/>
+</div>
+
+Style guide: Organisms.page-header
+
+*/
+
+$class-name-page-header: rocksite-o-page-header;
+
+.#{$class-name-page-header} {
+
+  position: relative;
+
+
+  .#{$class-name-page-header}__breadcrumbs {
+
+    position: absolute;
+    top: $grid-gutter-width/2;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+  }
+
+  .#{$class-name-page-header}__cover-header {
+
+
+    position: relative;
+    z-index: 1;
+
+  }
+
+}

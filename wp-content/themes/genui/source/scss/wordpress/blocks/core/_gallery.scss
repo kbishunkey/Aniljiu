@@ -1,0 +1,93 @@
+
+.wp-block-gallery {
+
+  @extend %#{$class-name-gallery};
+  margin-top: $content-content-block-vertical-space;
+  margin-bottom: $content-content-block-vertical-space;
+  margin-left: 0;
+  margin-right: 0;
+
+
+  // support wordpress 5.3
+
+  .blocks-gallery-grid {
+
+    @extend %#{$class-name-gallery};
+
+  }
+
+  @for $i from 2 through 9 {
+
+    &.columns-#{ $i } {
+      .blocks-gallery-item {
+
+          @extend %#{$class-name-gallery}-columns-#{ $i }__item;
+
+
+      }
+    }
+  }
+
+  .blocks-gallery-item {
+
+    figure {
+
+      @extend %#{$class-name-image-figure}-card;
+
+      img {
+
+        @extend %#{$class-name-image-figure}__image;
+
+      }
+
+      figcaption {
+
+        @extend %#{$class-name-image-figure}-card__caption;
+        overflow: auto;
+
+
+      }
+
+    }
+
+  }
+
+  &.alignwide {
+
+    @extend %alignwide;
+
+  }
+
+  &.alignfull {
+
+    @extend %alignfull;
+
+  }
+
+  // Cropped
+  &.is-cropped .blocks-gallery-image,
+  &.is-cropped .blocks-gallery-item {
+
+    @extend %#{$class-name-gallery}-cropped__item;
+
+  }
+
+}
+
+// 1 column.
+.columns-1 .blocks-gallery-item {
+  width: calc(100% / 1 - 16px);
+}
+
+// 3-8 columns on larger screens.
+
+
+  @for $i from 3 through 8 {
+
+    .columns-#{ $i } .blocks-gallery-item {
+
+      width: calc(100% / #{ $i } - 16px);
+
+    }
+  }
+

@@ -1,0 +1,22 @@
+{
+  "title": "Donec malesuada augue non erat dictum, vitae efficitur",
+  "subtitle": " Maecenas vulputate tortor sit amet egestas rhoncus",
+
+  "infoboxes": [
+    {
+      "icon": "la la-user-plus",
+      "text": "Ut ultrices diam quis purus lobortis, quis viverra mauris feugiat. Pellentesque nec nulla sagittis, dictum erat vitae, venenatis eros",
+      "title": "User Settings 1"
+    },
+    {
+      "icon": "la la-user-plus",
+      "text": "Ut ultrices diam quis purus lobortis, quis viverra mauris feugiat. Pellentesque nec nulla sagittis, dictum erat vitae, venenatis eros",
+      "title": "User Settings 2"
+    },
+    {
+      "icon": "la la-user-plus",
+      "text": "Ut ultrices diam quis purus lobortis, quis viverra mauris feugiat. Pellentesque nec nulla sagittis, dictum erat vitae, venenatis eros",
+      "title": "User Settings 3"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+.wp-block-getwid-template-post-featured-background-image {
+
+  border-bottom: 4px solid get-color-css(primary);
+
+  .wp-block-getwid-template-post-featured-background-image__image {
+    @extend %#{$class-name-card}-card-stack__content;
+
+  }
+
+  .wp-block-getwid-template-post-featured-background-image__foreground {
+    z-index: 2;
+
+  }
+
+  .wp-block-getwid-template-post-featured-background-image__content {
+
+    z-index: 3;
+
+
+    .wp-block-getwid-template-post-title {
+      @extend %#{$class-name-card}-card-stack__content__title;
+    }
+  }
+
+}

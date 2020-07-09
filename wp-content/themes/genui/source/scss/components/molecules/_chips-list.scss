@@ -1,0 +1,37 @@
+/*
+Chips List
+
+Chips List with label
+
+Markup: ../../../../styleguide/templates/molecules/chips-list.html
+
+Wrapper:
+<div style="text-align: center">
+<wrapper-content/>
+</div>
+
+Style guide: Molecules.chips-list
+
+
+*/
+
+$class-name-chips-list: rocksite-m-chips-list;
+
+.#{$class-name-chips-list} {
+
+  .#{$class-name-chips-list}__label {
+
+    font-size: font-size(x-small);
+    padding-right: $item-group-space;
+    display: inline-block;
+
+  }
+
+  .#{$class-name-chips-list}__item {
+
+
+
+  }
+
+
+}

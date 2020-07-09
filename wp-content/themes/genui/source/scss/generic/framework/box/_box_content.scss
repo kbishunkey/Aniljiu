@@ -1,0 +1,35 @@
+// Define content article rythm
+@mixin box-content {
+
+
+
+	h4 {
+
+		@include type-setting(h4);
+		font-weight: 600;
+		margin-bottom: 2rem;
+
+
+		a{
+
+			@include reset-link();
+
+		}
+
+
+	}
+
+	p {
+
+		@include type-setting(p);
+		margin-bottom: 1.25rem;
+
+	}
+
+	h5 {
+
+		@include type-setting(h5)
+
+	}
+
+}

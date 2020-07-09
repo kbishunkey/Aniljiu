@@ -1,0 +1,70 @@
+/*
+Icons
+
+Labels for displaying info
+
+.-large   - e-mail icon
+
+
+Markup: ../../../../styleguide/templates/atoms/icon.html
+
+
+Style guide: Atoms.icons
+
+*/
+
+$class-name-icon: rocksite-a-icon;
+
+.#{$class-name-icon} {
+
+
+	@extend %#{$class-name-icon};
+
+
+	&.-large {
+
+		@extend %#{$class-name-icon}--large;
+
+	}
+
+
+}
+
+%#{$class-name-icon} {
+
+	width: 2rem;
+	text-align: center;
+	display: flex;
+	align-items: center;
+
+	&:hover {
+
+		text-decoration: none;
+
+	}
+
+
+	span,
+	i{
+
+		color: get-color-css(secondary);
+		font-size: 2rem;
+
+	}
+
+}
+
+%#{$class-name-icon}--large {
+
+	width: 5.3rem;
+
+	span,
+	i {
+
+		font-size: 5.3rem;
+
+	}
+
+
+}
+

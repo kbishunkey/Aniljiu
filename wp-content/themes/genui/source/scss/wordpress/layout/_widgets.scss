@@ -1,0 +1,202 @@
+.rocksite-o-widget {
+
+
+
+  &.calendar_wrap {
+
+    table {
+
+      @extend %#{$class-name-table};
+
+      td {
+
+      }
+    }
+
+  }
+
+  &.-widget_archive {
+
+    ul {
+
+      @extend %#{$class-name-list}-table;
+
+      li {
+
+        @extend %#{$class-name-list}-table__item;
+
+      }
+
+    }
+
+  }
+
+  &.-widget_categories,
+  &.-widget_pages {
+
+    ul {
+
+      @extend %#{$class-name-list}-icon-pointer;
+
+      li {
+
+        @extend %#{$class-name-list}-icon-pointer__item;
+
+      }
+
+    }
+
+  }
+
+  /*
+  Menu Widget
+
+  Menu Widget
+
+  .-footer   - footer version
+  .-dark - dark version
+  .-dark.-footer - dark version
+
+
+  Markup: ../../../../styleguide/templates/organisms/widgets/menu-widget.html
+
+  Wrapper:
+  <div style="width:350px; background: #2c3e51">
+  <wrapper-content/>
+  </div>
+
+
+  Style guide: Widgets.menu-widget
+
+  */
+
+  &.-widget_nav_menu {
+
+    .#{$class-name-widget}__header {
+
+      + div {
+
+        padding: 0;
+
+      }
+
+    }
+
+    &:not(.-footer) {
+
+      .menu {
+
+        > li {
+
+          @extend %#{$class-name-nav-menu}-underlined__item--first-level;
+
+        }
+
+      }
+    }
+
+    &.-footer {
+
+      .rocksite-m-nav-menu {
+
+        > .rocksite-m-nav-menu__item {
+          @extend %#{$class-name-nav-menu}-invert__item;
+
+          .rocksite-m-nav-menu__link {
+
+            font-size: 1.5rem;
+
+          }
+
+        }
+
+        .rocksite-m-nav-menu__sub-nav {
+
+          .rocksite-m-nav-menu__sub-nav__item {
+
+            @extend %#{$class-name-nav-menu}-invert__item;
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  // Comments
+
+  &.-widget_recent_comments,
+  &.-widget_recent_entries {
+
+    ul {
+
+      @extend %#{$class-name-list}-underlined;
+
+      li {
+
+        @extend %#{$class-name-list}-underlined__item;
+        @include type-setting(x-small);
+
+        .comment-author-link {
+
+          color: get-color-css(dark-gray1);
+          @include type-setting(x-small);
+          a {
+            @include type-setting(x-small);
+          }
+
+        }
+
+        a {
+          @include type-setting(medium);
+        }
+
+      }
+
+    }
+
+  }
+
+  // Meta
+
+  &.-widget_meta {
+
+    ul {
+
+      @extend %#{$class-name-nav-menu}-underlined;
+
+      > li {
+
+        @extend %#{$class-name-nav-menu}-underlined__item--first-level;
+
+      }
+
+    }
+
+  }
+
+  // video
+
+  &.-widget_media_video {
+
+    button {
+
+      border-radius: 0;
+
+      &:before,
+      &:after {
+
+        display: none;
+
+      }
+
+    }
+
+  }
+
+
+
+}

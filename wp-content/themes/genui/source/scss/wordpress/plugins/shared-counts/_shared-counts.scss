@@ -1,0 +1,96 @@
+/* Classic Style
+----------------------------------------------------------------------------- */
+
+.shared-counts-wrap.style-classic {
+
+  padding: 4rem 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+
+  &.before_content {
+
+    padding: 0 0 4rem 0;
+
+  }
+
+  .shared-counts-button {
+
+
+    @extend %#{$class-name-social-share-button};
+
+    &:hover {
+
+      @extend %#{$class-name-social-share-button}--hover;
+
+      .shared-counts-icon {
+
+
+
+      }
+
+      .shared-counts-count {
+
+
+
+      }
+
+
+    }
+
+    .shared-counts-icon {
+
+      @extend %#{$class-name-social-share-button}__icon;
+
+    }
+
+    .shared-counts-label {
+      @extend %#{$class-name-social-share-button}__text;
+    }
+
+    .shared-counts-count {
+
+      @extend %#{$class-name-social-share-button}__counter;
+
+
+
+    }
+
+    /**
+    Buttons variants
+    */
+
+    //facebook
+
+    &.facebook_shares,
+    &.facebook_likes,
+    &.facebook{
+
+      @include btn-animation(facebook);
+
+    }
+
+    &.linkedin {
+
+      @include btn-animation(linkedin);
+
+    }
+
+    &.pinterest {
+
+
+      @include btn-animation(pinterest);
+
+
+
+    }
+
+    &.twitter {
+
+      @include btn-animation(twitter);
+
+    }
+
+  }
+}

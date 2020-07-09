@@ -1,0 +1,6 @@
+{
+  "id_for": "input_text",
+  "name": "your-name",
+  "label_text": "Your Name",
+  "type": "text"
+}

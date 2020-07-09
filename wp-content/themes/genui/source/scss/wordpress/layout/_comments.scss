@@ -1,0 +1,9 @@
+.comment-reply-title {
+  @extend %#{$class-name-heading};
+  @extend %-h4;
+}
+.comment-notes {
+
+  @include type-setting(x-small);
+
+}

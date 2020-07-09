@@ -1,0 +1,163 @@
+/*
+Media Box
+
+
+Box for displaying smal image and some info: author info, comments
+
+.-small-header - smaller version of header
+
+
+Markup: ../../../../styleguide/templates/molecules/media.html
+
+
+Style guide: Molecules.media
+
+Wrapper:
+<div style="max-width:550px">
+<wrapper-content/>
+</div>
+
+*/
+
+$class-name-media: rocksite-m-media;
+
+.#{$class-name-media} {
+
+  @extend %#{$class-name-media};
+
+
+  .#{$class-name-media}__thumbnail {
+
+    @extend %#{$class-name-media}__thumbnail;
+
+  }
+
+  .#{$class-name-media}__content {
+
+    @extend %#{$class-name-media}__content;
+
+    .#{$class-name-media}__content__title {
+
+
+      @extend %#{$class-name-media}__content__title;
+
+    }
+
+    .#{$class-name-media}__content__meta {
+
+      @extend %#{$class-name-media}__content__meta;
+
+    }
+
+    .#{$class-name-media}__content__excerpt {
+
+      @extend %#{$class-name-media}__content__excerpt;
+
+    }
+
+    .#{$class-name-media}__content__button {
+
+      @extend %#{$class-name-media}__content__button;
+
+    }
+
+
+  }
+
+  &.-small-header {
+
+    .#{$class-name-media}__content {
+
+      .#{$class-name-media}__content__title {
+
+        @extend %#{$class-name-media}-small-header__content__title;
+
+      }
+
+    }
+
+  }
+
+
+}
+
+%#{$class-name-media} {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &__thumbnail {
+
+    width: $small-thumbnail-width;
+
+    img {
+
+      @include responsive-image();
+
+    }
+
+  }
+
+  &__content {
+
+    padding:  0 $layout-box-single-padding $layout-box-single-padding;
+    width: calc(100% - #{$small-thumbnail-width});
+
+    &__title {
+
+      @extend %#{$class-name-heading};
+      @extend %-h5;
+      text-align: left;
+
+    }
+
+    &__meta {
+
+      display: flex;
+      justify-content: flex-start;
+
+      * {
+        &:first-child {
+
+          padding-left: 0;
+
+        }
+      }
+
+    }
+
+    &__excerpt {
+
+      padding: 1.5rem 0;
+
+    }
+
+    &__button {
+
+      display: flex;
+      justify-content: flex-end;
+
+    }
+
+  }
+
+  // smaller version of header
+
+  &-small-header {
+
+    &__content {
+
+      &__title {
+
+        @extend %#{$class-name-heading};
+        @extend %-h6;
+
+      }
+
+    }
+
+  }
+
+}
+
+

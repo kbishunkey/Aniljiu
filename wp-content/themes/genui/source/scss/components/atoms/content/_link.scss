@@ -1,0 +1,34 @@
+/*
+Link
+
+general link
+
+:hover - hover version
+
+
+Markup:
+<a href="#">Link Button</a>
+
+Style guide: Atoms.link
+
+*/
+
+a {
+
+	@extend %rocksite-a-link;
+
+}
+
+%rocksite-a-link{
+
+	text-decoration: none;
+	color: get-color-css(primary);
+
+	&:hover{
+
+		color: get-color-css(text);
+		text-decoration: none;
+
+	}
+
+}

@@ -1,0 +1,17 @@
+/*
+Panel Modifications (outside Editing area)
+*/
+
+
+
+.editor-post-title__block .editor-post-title__input{
+
+  font-family: font-family-css( secondary );
+
+}
+
+.editor-post-title__block .editor-post-title__input{
+
+  @include type-setting(h3);
+
+}

@@ -1,0 +1,43 @@
+.wp-block-getwid-advanced-heading {
+
+  @include type-setting(h2);
+
+
+  @include getwin-responsive-font-sizes('wp-block-getwid-advanced-heading__content');
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @extend %#{$class-name-heading};
+  }
+
+
+  h1 {
+    @include type-setting(h1);
+  }
+
+  h2 {
+    @include type-setting(h2);
+  }
+
+  h3 {
+    @include type-setting(h3);
+  }
+
+  h4 {
+    @include type-setting(h4);
+  }
+
+  h5 {
+    @include type-setting(h5);
+  }
+
+  h6 {
+    @include type-setting(h6);
+  }
+
+
+}

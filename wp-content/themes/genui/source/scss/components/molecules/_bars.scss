@@ -1,0 +1,85 @@
+/*
+Bars
+
+
+Accordion component
+
+.-close-btn - close button version
+
+Markup: ../../../../styleguide/templates/molecules/bars.html
+
+
+Style guide: Molecules.bars
+
+Wrapper:
+<div style="width:400">
+<wrapper-content/>
+</div>
+
+*/
+
+$class-name-bars: rocksite-m-bars;
+
+.#{$class-name-bars} {
+
+  height: 1.6rem;
+  position: relative;
+  width: 2.3rem;
+
+  .#{$class-name-bars}__bar {
+
+    background: get-color-css(text);
+    display: block;
+    height: .14rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transition: transform 0.2s ease-in, opacity 0s ease-out 0.2s, margin 0.2s ease-out 0.2s;
+    width: 100%;
+
+    &:nth-child(1) {
+
+      margin-top: -.6rem;
+
+    }
+
+    &:nth-child(3) {
+
+      margin-top: 0.6rem;
+
+    }
+
+  }
+
+  &.-close-btn {
+
+
+
+    .#{$class-name-bars}__bar {
+
+      transition: margin 0.2s ease-in, opacity 0s ease-in 0.2s, transform 0.2s ease-out 0.25s;
+
+      &:nth-child(1) {
+
+        margin-top: 0;
+        transform: rotate(45deg);
+
+      }
+
+      &:nth-child(2) {
+
+        opacity: 0;
+
+      }
+
+      &:nth-child(3) {
+
+        margin-top: 0;
+        transform: rotate(-45deg);
+
+      }
+
+    }
+  }
+
+}

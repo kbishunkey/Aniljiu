@@ -1,0 +1,68 @@
+/*
+Accordion - FAQ
+
+
+Accordion component
+
+Markup: ../../../../styleguide/templates/molecules/accordion.html
+
+
+Style guide: Molecules.accordion
+
+Wrapper:
+<div style="width:400">
+<wrapper-content/>
+</div>
+
+*/
+
+
+$class-name-accordion: rocksite-m-accordion;
+
+.#{$class-name-accordion} {
+
+	.#{$class-name-accordion}__item {
+
+		margin-bottom: 3px;
+
+
+		.#{$class-name-accordion}__item__heading {
+
+			.#{$class-name-accordion}__item__heading__title {
+
+				font-size: 1.6rem;
+				background: get-color-css(gray4);
+				padding: 0.5rem 1rem;
+				margin-bottom: 1px;
+				line-height: 4rem;
+
+				a {
+
+					display: block;
+					color: get-color-css(primary);
+					font-weight: 600;
+
+					&:hover {
+
+						text-decoration: none;
+
+					}
+
+				}
+
+			}
+
+
+		}
+
+		.#{$class-name-accordion}__item__collapse {
+
+			height: 0;
+			overflow: hidden;
+
+		}
+
+
+	}
+
+}

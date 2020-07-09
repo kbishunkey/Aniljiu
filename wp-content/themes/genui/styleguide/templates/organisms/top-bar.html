@@ -1,0 +1,22 @@
+<div class="rocksite-o-top-bar {{modifier_class}}">
+    <div class="rocksite-o-top-bar__language_menu">
+    </div>
+    <div class="rocksite-o-top-bar__nav_menu">
+
+        {{> "menu" modifier_class="-horizontal -invert -classic-item rocksite-m-nav-menu"}}
+
+    </div>
+    <div class="rocksite-o-top-bar__info">
+        {{top_bar_text}}
+    </div>
+    <div class="rocksite-o-top-bar__social-menu">
+        {{#each icons}}
+            {{> "buttons-icon" modifier_class="-transparent -invert -small"}}
+        {{/each}}
+    </div>
+</div>
+
+
+
+
+

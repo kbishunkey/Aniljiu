@@ -1,0 +1,50 @@
+.gallery {
+
+	@extend %#{$class-name-gallery};
+
+		@for $i from 2 through 9 {
+
+			&.gallery-columns-#{ $i } {
+
+				.gallery-item {
+
+					@extend %#{$class-name-gallery}-columns-#{ $i }__item;
+
+				}
+
+			}
+
+
+		}
+
+
+	.gallery-item {
+
+		.gallery-icon {
+
+			@extend %#{$class-name-image-figure}-card;
+
+			img {
+
+				@extend %#{$class-name-image-figure}__image;
+
+			}
+
+
+
+		}
+
+		.gallery-caption {
+
+			@extend %#{$class-name-image-figure}__caption;
+
+		}
+
+	}
+
+	&-icon {
+		img {}
+	}
+
+	&-caption {}
+}

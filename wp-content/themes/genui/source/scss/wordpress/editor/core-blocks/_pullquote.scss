@@ -1,0 +1,12 @@
+.wp-block-pullquote {
+
+  border-bottom: none;
+  border-top: none;
+
+  blockquote {
+    p {
+      font-size: editor-font-size(large)
+    }
+  }
+
+}

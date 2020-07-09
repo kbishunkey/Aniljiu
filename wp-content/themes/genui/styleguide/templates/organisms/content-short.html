@@ -1,0 +1,62 @@
+<article class="rocksite-o-content {{modifier_class}}">
+
+
+    <header class="rocksite-o-content__header">
+
+        {{#if category_name}}
+
+        <div class="rocksite-o-content__header__categories">
+            <a href="#" class="rocksite-a-chips-label">{{category_name}}</a>
+        </div>
+
+        {{/if}}
+
+
+
+        <h3 class="rocksite-o-content__header__title">
+            <a href="{{link}}"
+               title="Permalink {{title}}"
+               rel="bookmark">{{title}}</a>
+        </h3>
+
+        {{#if meta_date}}
+        <div class="rocksite-o-content__header__meta">
+
+
+            <span class="rocksite-m-meta-label rocksite-force-display"><i class="la la-calendar"></i> <a href="{{link_date}}"
+                                                                                                         rel="bookmark">
+                <time class="entry-date published" datetime="2013-09-27T15:00:38+00:00">{{meta_date}}</time>
+            </a></span>
+
+            <span class="rocksite-m-meta-label"><em>Published by: </em> <a href="{{link_author}}" title="Posts by {{author_name}}"
+                                                                  rel="author">{{author_name}}</a> </span>
+        			<span class="rocksite-m-meta-label">            <a href="#"><i
+                            class="la la-comments" data-toggle="tooltip" data-placement="top" title=""
+                            data-original-title="Comments"></i> {{comments_number}} </a>
+        </span>
+        </div>
+        {{/if}}
+
+
+
+    </header>
+
+    <div class="rocksite-o-content__thumbnail">
+        <div class="rocksite-m-thumbnail">
+
+            <img width="1000" height="520" src="{{image}}" alt="">
+
+        </div>
+    </div>
+
+    <div class="rocksite-o-content__entry entry-content">
+        <p>{{text_entry}}</p>
+        <div class="rocksite-o-content__entry__more">
+
+            {{> buttons text="Continue reading" icon="la la-arrow-right"}}
+
+        </div>
+    </div>
+
+
+</article>

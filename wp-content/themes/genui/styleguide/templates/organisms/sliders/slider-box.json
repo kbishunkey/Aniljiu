@@ -1,0 +1,11 @@
+{
+
+  "image": "../assets/images/portfolio-image1.jpg",
+  "meta1": "August 21",
+  "meta2": "Published by",
+  "title": "Duis vitae lobortis odio, sed convallis lacus",
+  "column_class" : "col-md-6 col-sm-6",
+  "conten_type" : "card"
+
+
+}

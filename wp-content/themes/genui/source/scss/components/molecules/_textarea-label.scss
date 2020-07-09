@@ -1,0 +1,40 @@
+/*
+Textarea Label
+
+
+Labels for displaying info
+
+
+Markup: ../../../../styleguide/templates/molecules/textarea-label.html
+
+
+Style guide: Molecules.input-label
+
+Wrapper:
+<div style="max-width:350px">
+<wrapper-content/>
+</div>
+
+*/
+
+$class-name-label-textarea: rocksite-m-label-textarea;
+
+.#{$class-name-label-textarea} {
+
+  .#{$class-name-label-textarea}__label {
+
+    @extend %#{$class-name-label-textarea}__label;
+
+  }
+
+}
+
+
+%#{$class-name-label-textarea}__label {
+
+  padding: 0.5rem 0 0.2rem 0;
+  display: block;
+
+}
+
+

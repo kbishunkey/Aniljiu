@@ -1,0 +1,10 @@
+{
+  "image": "../assets/images/person-men.jpg",
+  "icon": {
+    "-email": "fa fa-envelope",
+    "-twitter": "fab fa-twitter",
+    "-facebook": "fab fa-facebook-f",
+    "-gplus": "fab fa-google-plus-g",
+    "-linkedin":"fab fa-linkedin-in"
+  }
+}

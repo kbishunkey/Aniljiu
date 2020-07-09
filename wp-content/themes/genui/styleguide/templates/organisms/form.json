@@ -1,0 +1,103 @@
+{
+  "input_lines": [
+    {
+      "id_for": "input_text",
+      "name": "your-name",
+      "label_text": "Your Name",
+      "type": "text"
+    },
+    {
+      "id_for": "input_surname",
+      "name": "your-surnname",
+      "label_text": "Your Surname",
+      "type": "text"
+    },
+    {
+      "id_for": "input_email",
+      "name": "your-surnname",
+      "label_text": "Your E-mail",
+      "type": "email"
+    }
+  ],
+  "textarea_lines": [
+    {
+      "id_for": "input_text",
+      "name": "your-message",
+      "label_text": "Your Message",
+      "type": "text"
+    }
+  ],
+  "fieldset_title1": "Which option do you prefer",
+  "radio_lines": [
+    {
+      "id_for": "input_radio1",
+      "name": "radio_name",
+      "label_text": "Option 1",
+      "value": "Option 1"
+    },
+    {
+      "id_for": "input_radio2",
+      "name": "radio_name",
+      "label_text": "Option 2",
+      "value": "Option 2"
+    },
+    {
+      "id_for": "input_radio3",
+      "name": "radio_name",
+      "label_text": "Option 3",
+      "value": "Option 3"
+    }
+  ],
+  "fieldset_title2": "Choose your preferences",
+  "checkbox_lines": [
+    {
+      "id_for": "input_checkbox1",
+      "name": "checkbox_name1",
+      "label_text": "Option 1",
+      "value": "Option 1"
+    },
+    {
+      "id_for": "input_checkbox2",
+      "name": "checkbox_name2",
+      "label_text": "Option 2",
+      "value": "Option 2"
+    },
+    {
+      "id_for": "input_checkbox3",
+      "name": "checkbox_name3",
+      "label_text": "Option 3",
+      "value": "Option 3"
+    }
+  ],
+  "select_lines": [
+    {
+      "name": "select_option",
+      "id_for": "input_text",
+      "label_text": "Select this option",
+      "options_select": [
+        {
+          "value": "first-option",
+          "option": "First option"
+        },
+        {
+          "value": "second-option",
+          "option": "Second option",
+          "selected_option": "true"
+        },
+        {
+          "value": "third-option",
+          "option": "Third option"
+        },
+        {
+          "value": "fourth-option",
+          "option": "Fourth option"
+        }
+      ]
+    }
+  ],
+  "button_line": [
+    {
+      "button_label": "Send Message"
+    }
+  ]
+}

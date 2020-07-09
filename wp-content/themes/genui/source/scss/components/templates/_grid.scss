@@ -1,0 +1,78 @@
+// variables
+
+$article-sidebar-class-name: rocksite-g-article-sidebar;
+$gallery-grid-class-name: rocksite-o-gallery-grid;
+
+
+
+// box list grid
+.rocksite-g-box-grid{
+
+  @include list-core();
+  display: flex;
+
+
+  &__item{
+
+
+
+  }
+
+}
+
+// article sidebar grid
+
+.#{$article-sidebar-class-name}{
+
+  display: flex;
+
+	.#{$article-sidebar-class-name}__content{
+
+    width: 70%;
+    padding-right: $layout-grid-gutter/2;
+
+  }
+
+	.#{$article-sidebar-class-name}__sidebar{
+
+    width: 30%;
+    padding-left: $layout-grid-gutter/2;
+
+  }
+
+  &.-left-sidebar{
+
+    flex-direction: row-reverse;
+
+	  .#{$article-sidebar-class-name}__sidebar {
+		  padding-left: 0;
+	  }
+
+  }
+
+}
+
+// Gallery Grid
+
+.#{$gallery-grid-class-name}{
+
+  @include list-core();
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+
+
+  &__item{
+
+    width: 50%;
+
+    img{
+
+      @include responsive-image();
+      display: block;
+
+    }
+
+  }
+
+}

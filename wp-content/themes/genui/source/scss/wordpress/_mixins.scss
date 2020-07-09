@@ -1,0 +1,90 @@
+/*
+WordPress Content Specific Helper Mixins
+*/
+
+
+// text colors utilities clasess
+
+@mixin text-color-class($current: false) {
+
+  @if $current {
+    @each $color, $hex in $colors {
+      &.has-#{$color}-color {
+        color: $hex;
+
+        * {
+          color: $hex;
+        }
+      }
+    }
+  } @else {
+
+    @each $color, $hex in $colors {
+      .has-#{$color}-color {
+        color: $hex;
+
+        * {
+          color: $hex;
+        }
+      }
+    }
+
+  }
+
+}
+
+// background colors utilities clasess
+
+@mixin background-color-classes($current: false, $need_before: false) {
+
+  @if $current {
+    @each $color, $hex in $colors {
+      &.has-#{$color}-background-color {
+        background-color: $hex;
+
+        @if $need_before {
+          &:before {
+            background-color: $hex;
+          }
+        }
+
+
+      }
+    }
+  } @else {
+
+    @each $color, $hex in $colors {
+      .has-#{$color}-background-color {
+        background-color: $hex;
+
+        @if $need_before {
+          &:before {
+            background-color: $hex;
+          }
+        }
+
+      }
+    }
+
+  }
+
+}
+
+
+// Font Sizes
+
+@mixin font-sizes-classes {
+
+  @each $name, $size in font-sizes(){
+
+    .has-#{$name}-font-size
+    {
+      font-size: font-size-css($name);
+      line-height: line-height-css($name);
+    }
+
+  }
+
+}
+
+

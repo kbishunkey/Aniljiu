@@ -1,0 +1,27 @@
+
+// Define content
+@mixin slider-core {
+
+  position: relative;
+  poadding-bottom: 6rem;
+
+
+
+  > ul {
+
+    overflow: hidden;
+    margin: 0;
+
+  }
+
+      img {
+
+        @include responsive-image();
+
+      }
+
+
+
+
+
+}

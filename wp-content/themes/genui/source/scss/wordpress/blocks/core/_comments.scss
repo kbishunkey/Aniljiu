@@ -1,0 +1,137 @@
+/**
+Extend: Media Box
+**/
+
+.wp-block-latest-comments {
+
+
+  @include list-core;
+  margin: $layout-box-horizontal-space 0;
+
+  .wp-block-latest-comments__comment {
+
+    @extend %#{$class-name-media};
+
+
+    img {
+
+      height: $wordpress-comment-avatar-size;
+      width: $wordpress-comment-avatar-size;
+      @include avatar-image;
+
+    }
+
+    article {
+
+      @extend %#{$class-name-media}__content;
+
+      width: calc(100% - #{$wordpress-comment-avatar-size});
+
+      .wp-block-latest-comments__comment-meta {
+
+        @extend %#{$class-name-media}-small-header__content__title;
+
+        .wp-block-latest-comments__comment-date {
+
+          @include type-setting(x-small);
+          color: get-color(dark-gray1);
+          display: block;
+          font-weight: normal;
+
+        }
+
+      }
+
+
+
+      .wp-block-latest-comments__comment-excerpt {
+
+        @extend %#{$class-name-media}__content__excerpt;
+
+        p {
+
+          margin: 0;
+
+        }
+
+
+      }
+
+    }
+
+
+
+  }
+
+  &:not( .has-avatars) {
+
+    article {
+
+      width: 100%;
+      padding-left: 0;
+
+    }
+
+
+
+  }
+
+  .has-avatars & {
+
+
+    .wp-block-latest-comments__comment-meta,
+    .wp-block-latest-comments__comment-excerpt {
+
+    }
+  }
+
+  .has-dates &,
+  .has-excerpts & {
+
+  }
+
+}
+
+.swp-block-latest-comments__comment {
+  font-size: 15px;
+  line-height: 1.1;
+  list-style: none;
+  margin-bottom: 1em;
+
+  .has-avatars & {
+    min-height: 36px;
+    list-style: none;
+
+    .wp-block-latest-comments__comment-meta,
+    .wp-block-latest-comments__comment-excerpt {
+      margin-left: 52px;
+    }
+  }
+
+  .has-dates &,
+  .has-excerpts & {
+    line-height: 1.5;
+  }
+}
+
+.swp-block-latest-comments__comment-excerpt p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 5px 0 20px;
+}
+
+.swp-block-latest-comments__comment-date {
+
+  display: block;
+  font-size: 12px;
+}
+
+.swp-block-latest-comments .avatar,
+.swp-block-latest-comments__comment-avatar {
+  border-radius: 24px;
+  display: block;
+  float: left;
+  height: 40px;
+  margin-right: 12px;
+  width: 40px;
+}

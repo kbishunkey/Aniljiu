@@ -1,0 +1,575 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Genui 1.0\n"
+"POT-Creation-Date: 2020-01-04 09:10+0100\n"
+"PO-Revision-Date: 2015-10-18 23:52+0100\n"
+"Last-Translator: \n"
+"Language-Team: Peter Bielecki <contact@rocksite.pro>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: inc\n"
+"X-Poedit-SearchPath-1: views\n"
+"X-Poedit-SearchPath-2: page-templates\n"
+"X-Poedit-SearchPath-3: config\n"
+
+#: config/customizer/customizer-fields.php:8
+msgid "Font Family"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:11
+msgid "Choose a default font for your site"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:26
+msgid "Blog Layout Settings:"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:42
+msgid "Display Entry Tags Below the Content"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:54
+msgid "Article Meta Settings:"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:70
+msgid "Display related posts box"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:81
+msgid "Display the navigation to next/previous post"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:82
+msgid "User can navigate to previous or next post below the article"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:93
+#: config/customizer/customizer-fields.php:287
+msgid "Archive Header Layout"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:106
+msgid "Display Category Name"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:116
+msgid "Text before category"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:126
+#: config/customizer/customizer-fields.php:300
+msgid "Display breadcrumbs"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:136
+#: config/customizer/customizer-fields.php:310
+msgid "Breadcrumbs Color"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:149
+#: config/customizer/customizer-fields.php:323
+msgid "Breadcrumbs Hover Color"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:166
+msgid "Archive Header Background Image"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:181
+#: config/customizer/customizer-fields.php:423
+msgid "Paralax Background"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:182
+#: config/customizer/customizer-fields.php:214
+#: config/customizer/customizer-fields.php:337
+msgid ""
+"Enabling this option will animate background image while Archive is scrolling"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:192
+#: config/customizer/customizer-fields.php:434
+msgid "Background Overlay"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:204
+#: config/customizer/customizer-fields.php:446
+msgid "Invert section: white text and dark background"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:213
+#: config/customizer/customizer-fields.php:336
+msgid "Text alignment"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:234
+msgid "Category Name & Description Text Color"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:254
+msgid "Articles List Type"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:270
+msgid "Archives Pagination Type"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:366
+msgid "Title Text Color in the large header"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:379
+msgid "Meta Color in the large header"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:396
+msgid "Page Header Layout"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:409
+msgid "Page Header Background Image"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:424
+msgid ""
+"Enabling this option will animate background image while page is scrolling"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:456
+msgid "Title & Subtitle Text Color"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:470
+msgid "Enabling this option will display breadcrumbs block"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:481
+#: inc/classes/class-navigation.php:218
+msgid "Home"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:534
+msgid "Navbar Background"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:591
+msgid "Link Color"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:605
+msgid "Link Color on Hover"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:619
+msgid "Link Decoration Color"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:633
+msgid "Submenu background color"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:646
+msgid "Submenu text color"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:659
+msgid "Submenu text color: hover"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:672
+msgid "Submenu link hover background"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:690
+msgid "Brand Logo"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:703
+msgid "Footer Sidebar Background"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:717
+msgid "Footer Sidebar Header Color"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:730
+msgid "Footer Sidebar Link Color"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:743
+msgid "Footer Sidebar Link Color Hover"
+msgstr ""
+
+#: config/customizer/customizer-fields.php:756
+msgid "Footer Sidebar Text Color"
+msgstr ""
+
+#: config/customizer/customizer-panels.php:6
+msgid "General Settings"
+msgstr ""
+
+#: config/customizer/customizer-panels.php:11
+msgid "Blog settings"
+msgstr ""
+
+#: config/customizer/customizer-panels.php:17
+msgid "Pages settings"
+msgstr ""
+
+#: config/customizer/customizer-panels.php:23
+msgid "Navigation"
+msgstr ""
+
+#: config/customizer/customizer-panels.php:29
+msgid "Layout Sections"
+msgstr ""
+
+#: config/customizer/customizer-panels.php:36
+msgid "Navbar Section"
+msgstr ""
+
+#: config/customizer/customizer-panels.php:41
+msgid "Home Page"
+msgstr ""
+
+#: config/customizer/customizer-panels.php:42
+msgid "All sections form Home Page"
+msgstr ""
+
+#: config/customizer/customizer-sections.php:7
+msgid "Logo & favicon"
+msgstr ""
+
+#: config/customizer/customizer-sections.php:13
+msgid "Page Typography"
+msgstr ""
+
+#: config/customizer/customizer-sections.php:21
+msgid "Blog layout"
+msgstr ""
+
+#: config/customizer/customizer-sections.php:27
+msgid "Archives header"
+msgstr ""
+
+#: config/customizer/customizer-sections.php:32
+msgid "Posts list"
+msgstr ""
+
+#: config/customizer/customizer-sections.php:38
+msgid "Articles Header"
+msgstr ""
+
+#: config/customizer/customizer-sections.php:44
+msgid "Articles Content"
+msgstr ""
+
+#: config/customizer/customizer-sections.php:52
+msgid "Page Header"
+msgstr ""
+
+#: config/customizer/customizer-sections.php:62
+msgid "Breadcrumbs"
+msgstr ""
+
+#: config/customizer/customizer-sections.php:70
+msgid "Top Bar"
+msgstr ""
+
+#: config/customizer/customizer-sections.php:78
+msgid "Main Navigation Bar"
+msgstr ""
+
+#: config/customizer/customizer-sections.php:86 config/default-values.php:57
+msgid "Main Menu"
+msgstr ""
+
+#: config/customizer/customizer-sections.php:94
+msgid "Footer"
+msgstr ""
+
+#: config/customizer/customizer-sections.php:100
+msgid "Custom Code"
+msgstr ""
+
+#: config/customizer/customizer-sections.php:106
+msgid "Layout"
+msgstr ""
+
+#: config/customizer/customizer-sections.php:112
+msgid "Pages Settings"
+msgstr ""
+
+#: config/customizer/customizer-sections.php:118
+msgid "Blog Settings"
+msgstr ""
+
+#: config/default-values.php:58
+msgid "Footer Menu"
+msgstr ""
+
+#: config/default-values.php:59
+msgid "Top Menu"
+msgstr ""
+
+#: config/default-values.php:60
+msgid "Social Menu"
+msgstr ""
+
+#: config/sidebars.php:28
+msgid "Footer Sidebar"
+msgstr ""
+
+#: inc/classes/class-content.php:121
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: inc/classes/class-content.php:123
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: inc/classes/class-content.php:125
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: inc/classes/class-customizer.php:143
+msgid "Footer Text"
+msgstr ""
+
+#: inc/classes/class-customizer.php:148
+msgid "Footer copyright text"
+msgstr ""
+
+#: inc/classes/class-customizer.php:157 views/sections/header-image.php:11
+msgid "Default Website Title"
+msgstr ""
+
+#: inc/classes/class-customizer.php:162
+msgid "Header Title"
+msgstr ""
+
+#: inc/classes/class-customizer.php:169 views/sections/header-image.php:13
+msgid "Short description below the title. You can change it in the customizer"
+msgstr ""
+
+#: inc/classes/class-customizer.php:174
+msgid "Header Description"
+msgstr ""
+
+#: inc/classes/class-customizer.php:194
+msgid "Primary Color"
+msgstr ""
+
+#: inc/classes/class-customizer.php:209
+msgid "Secondary Color"
+msgstr ""
+
+#: inc/classes/class-customizer.php:224
+msgid "Text Color (Headings)"
+msgstr ""
+
+#: inc/classes/class-customizer.php:239
+msgid "Text Color Lighten"
+msgstr ""
+
+#: inc/classes/class-customizer.php:254
+msgid "Background Color"
+msgstr ""
+
+#: inc/classes/class-customizer.php:265
+msgid "Theme Fonts"
+msgstr ""
+
+#: inc/classes/class-customizer.php:276
+msgid "Primary font family: paragraphs, buttons, forms"
+msgstr ""
+
+#: inc/classes/class-customizer.php:288
+msgid "Secondary font family: Headings, Titles"
+msgstr ""
+
+#: inc/classes/class-navigation.php:293
+#, php-format
+msgid ""
+"<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%s</"
+"span>"
+msgstr ""
+
+#: inc/classes/class-navigation.php:300
+msgid "Next Post"
+msgstr ""
+
+#: inc/classes/class-navigation.php:300
+msgid "Next post:"
+msgstr ""
+
+#: inc/classes/class-navigation.php:300
+msgid "Previous Post"
+msgstr ""
+
+#: inc/classes/class-navigation.php:300
+msgid "Previous post:"
+msgstr ""
+
+#: inc/classes/class-widgets.php:14
+msgid "The most recent posts on your site (extended contorls)"
+msgstr ""
+
+#: inc/classes/class-widgets.php:15
+msgid " Extended Recent Posts"
+msgstr ""
+
+#: inc/classes/class-widgets.php:28
+msgid "Recent Posts"
+msgstr ""
+
+#: inc/classes/class-widgets.php:128
+msgid "Title:"
+msgstr ""
+
+#: inc/classes/class-widgets.php:134
+msgid "Number of posts to show:"
+msgstr ""
+
+#: inc/classes/class-widgets.php:143
+msgid "Display post date?"
+msgstr ""
+
+#: inc/classes/class-widgets.php:150
+msgid "Display post thumbnail?"
+msgstr ""
+
+#: inc/classes/class-widgets.php:157
+msgid "Display post author?"
+msgstr ""
+
+#: inc/classes/components/class-content.php:163
+msgid "Last updated on"
+msgstr ""
+
+#: inc/classes/components/class-content.php:230
+msgid "Published by: "
+msgstr ""
+
+#: inc/classes/components/class-content.php:248
+#: inc/classes/components/class-layout.php:111
+msgid "Pingback:"
+msgstr ""
+
+#: inc/classes/components/class-content.php:248
+#: inc/classes/components/class-layout.php:111
+msgid "(Edit)"
+msgstr ""
+
+#: inc/classes/components/class-content.php:276
+#: inc/classes/components/class-layout.php:140
+msgid "Post author"
+msgstr ""
+
+#: inc/classes/components/class-content.php:278
+#: inc/classes/components/class-layout.php:146
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/classes/components/class-content.php:280
+#: inc/classes/components/class-layout.php:149
+msgid "Edit"
+msgstr ""
+
+#: inc/classes/components/class-content.php:285
+#: inc/classes/components/class-layout.php:154
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/classes/components/class-content.php:297
+#: inc/classes/components/class-layout.php:167
+msgid "Reply"
+msgstr ""
+
+#: inc/classes/components/class-content.php:318
+msgid "Tags: "
+msgstr ""
+
+#: inc/classes/components/class-content.php:334
+#: inc/classes/components/class-content.php:510
+msgid "Related posts"
+msgstr ""
+
+#: inc/classes/components/class-content.php:441
+msgid "Technologies:"
+msgstr ""
+
+#: inc/classes/components/class-nav.php:64
+#: inc/classes/components/class-nav.php:66
+#: inc/classes/components/class-nav.php:68
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: inc/classes/components/class-nav.php:70
+msgid "Blog Archives"
+msgstr ""
+
+#: inc/classes/components/class-nav.php:105
+#: inc/classes/components/class-nav.php:120
+msgid "Languages"
+msgstr ""
+
+#: inc/functions/theme-functions.php:22
+msgid "Pages:"
+msgstr ""
+
+#: views/content/author-info.php:9
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: views/content/author-info.php:16
+#, php-format
+msgid "View all posts by %s <span class=\"icon-chevron-sign-right\"></span>"
+msgstr ""
+
+#: views/content/content-loop.php:19
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: views/content/content-loop.php:36
+msgid "Read More"
+msgstr ""
+
+#: views/content/content-none.php:10
+msgid "Nothing Found"
+msgstr ""
+
+#: views/content/content-none.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: views/content/content-none.php:33
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: views/content/content-none.php:40
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: views/sections/top-bar.php:15
+msgid "Top bar info"
+msgstr ""

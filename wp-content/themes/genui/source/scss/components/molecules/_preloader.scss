@@ -1,0 +1,45 @@
+
+.rocksite-m-preloader {
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+
+  &__inside {
+
+    margin: 260px auto;
+    font-size: 10px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 1.1em solid $preloader-light-color;
+    border-right: 1.1em solid $preloader-light-color;
+    border-bottom: 1.1em solid $preloader-light-color;
+    border-left: 1.1em solid $preloader-strong-color;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: preloader-animation-1 1.1s infinite linear;
+    animation: preloader-animation-1 1.1s infinite linear;
+
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+
+    &:after {
+      border-radius: 50%;
+      width: 10em;
+      height: 10em;
+    }
+
+  }
+
+}
+
+

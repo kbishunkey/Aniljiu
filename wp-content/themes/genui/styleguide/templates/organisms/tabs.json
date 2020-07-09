@@ -1,0 +1,25 @@
+{
+  "tab_labels":[ {
+    "name": "Tab Name 1",
+    "link": "#",
+    "active_modificator": "-active ui-tabs-active"
+  },
+    {
+      "name": "Tab Name 2",
+      "link": "#",
+      "active_modificator": ""
+    },
+    {
+      "name": "Tab Name 3",
+      "link": "#",
+      "active_modificator": ""
+    }
+
+  ],
+
+  "tab_content": [
+    {"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae dignissim massa, at viverra ligula. Sed id neque porta leo mattis vehicula. Quisque accumsan massa in lacus tincidunt, vitae aliquam lacus aliquet.", "utility": ""},
+    {"content": "Nunc ultricies lectus quis odio consequat tincidunt. Duis nec lectus sit amet nisl malesuada imperdiet. Cras ac viverra purus, quis pretium sem. Nunc vehicula nunc non nibh molestie gravida. Maecenas fermentum est non ipsum blandit bibendum. Aliquam maximus, diam in rhoncus ultrices, eros urna ultricies metus, sit amet maximus turpis elit eu augue. Pellentesque non dignissim neque, a luctus mi.", "utility": "u-hidden"},
+    {"content": "Donec sed nisi blandit, dapibus lectus et, pellentesque dolor. Suspendisse eu placerat eros, eu maximus nisi. Maecenas imperdiet posuere pretium.","utility": "u-hidden"}
+  ]
+}

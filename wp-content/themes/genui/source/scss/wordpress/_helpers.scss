@@ -1,0 +1,132 @@
+
+/**
+Wordpress class Helpers
+**/
+
+
+
+
+
+
+%alignwide {
+
+
+  @include respond-to(components-wide) {
+
+    width: 140rem;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+}
+
+%alignwideinside {
+
+  width: auto;
+  margin-left: -$grid-gutter-width/2;
+  margin-right: -$grid-gutter-width/2;
+
+
+  @include respond-to(components-wide) {
+
+    width: 140rem;
+    margin-left: -10rem;
+    margin-right: -10rem;
+    max-width: none;
+
+  }
+}
+
+%alignwideinsidenarrow {
+
+  width: auto;
+  margin-left: -$grid-gutter-width/2;
+  margin-right: -$grid-gutter-width/2;
+
+
+  @include respond-to(components-wide) {
+
+    width: $layout-narrow-width + 20rem;
+    margin-left: -10rem;
+    margin-right: -10rem;
+    max-width: none;
+
+  }
+}
+
+%alignfullinside {
+  width: auto;
+  margin-left: -$grid-gutter-width/2;
+  margin-right: -$grid-gutter-width/2;
+
+  @include respond-to(components-wide) {
+    @include alignfull;
+  }
+}
+
+%alignwidereset {
+
+  @include respond-to(components-wide) {
+
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+
+  }
+
+}
+
+
+
+%alignfull {
+
+    position: relative;
+    @include alignfull;
+
+}
+
+%aligncenter {
+
+  @include respond-to( medium ) {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    clear: both;
+    max-width: 100%;
+  }
+
+}
+
+
+%alignnone {
+  max-width: 100%;
+}
+
+
+%alignright {
+
+  @include respond-to( medium ) {
+
+    float: right;
+    margin-top: 0;
+    margin-bottom: $layout-grid-gutter/2;
+    margin-left: $layout-grid-gutter/2;
+    max-width: 50%;
+
+  }
+
+}
+%alignleft {
+
+  @include respond-to(medium) {
+
+    float: left;
+    margin-top: 0;
+    margin-right: $layout-grid-gutter/2;
+    margin-bottom: $layout-grid-gutter/2;
+    max-width: 50%;
+
+  }
+
+}

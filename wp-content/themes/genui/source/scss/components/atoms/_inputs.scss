@@ -1,0 +1,129 @@
+
+/*
+
+Text Input
+
+:hover - Highlight the text box when hovering
+:focus - Similar to :hover, however it should demand more attention than when an input is simply hovered.
+:disabled - When disabled, the input's appearance should reflect as such.
+
+Markup: ../../../../styleguide/templates/atoms/inputs/input.html
+
+Style guide: Atoms.forms.input
+
+*/
+
+$class-name-input: rocksite-a-input;
+
+.#{$class-name-input},
+input[type="text"],
+input[type="phone"],
+input[type="email"],
+input[type="search"],
+input[type="number"]{
+
+	@include form-input();
+
+}
+input[type="number"] {
+	padding-right: 0;
+}
+
+	/*
+Textarea
+
+Textarea field
+
+:hover - Highlight the text box when hovering
+:focus - Similar to :hover, however it should demand more attention than when an input is simply hovered.
+:disabled - When disabled, the input's appearance should reflect as such.
+
+Markup: ../../../../styleguide/templates/atoms/inputs/textarea.html
+
+Wrapper:
+<div style="width:300px">
+<wrapper-content/>
+</div>
+
+Style guide: Atoms.forms.textarea
+
+
+*/
+$class-name-textarea: rocksite-a-textarea;
+
+.#{$class-name-textarea},
+textarea {
+
+	@include form-input();
+
+}
+
+/*
+
+Form button
+
+:hover - Highlight the text box when hovering
+
+
+Markup: ../../../../styleguide/templates/atoms/inputs/button.html
+
+Style guide: Atoms.forms.button
+
+*/
+input[type="submit"],
+button {
+
+	@include button-label-core;
+	@include btn-specify(primary);
+	background: get-btn-background-css(primary);
+	border: $button-primary-border;
+
+	&:hover {
+
+		background: get-color-css(primary-darken);
+
+	}
+}
+
+label {
+
+	font-weight: 400;
+	font-size: font-size(p-small);
+	color: $form-label-color;
+
+
+}
+
+// checbox
+input[type="checkbox"] {
+
+	outline: none;
+
+}
+
+/*
+
+Form select
+
+
+Markup: ../../../../styleguide/templates/atoms/inputs/select.html
+
+Style guide: Atoms.forms.select
+
+Wrapper:
+<div style="width:300px">
+<wrapper-content/>
+</div>
+
+*/
+
+
+
+select {
+
+	@include form-input();
+	height: 4.2rem;
+	position: relative;
+
+}
+

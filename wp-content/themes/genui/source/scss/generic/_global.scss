@@ -1,0 +1,29 @@
+
+
+
+
+body {
+
+  font-family: font-family-css( primary );
+  font-size: 1.6rem;
+  overflow-x: hidden;
+
+  a {
+
+    color: get-color-css(primary);
+
+    &:hover {
+
+      color: get-color-css(text-lighten);
+      text-decoration: none;
+
+    }
+
+  }
+
+
+
+
+
+
+}

@@ -1,0 +1,80 @@
+.wp-block-getwid-content-timeline {
+
+  .wp-block-getwid-content-timeline__line {
+
+  }
+
+  .wp-block-getwid-content-timeline__bar {
+
+  }
+
+  .wp-block-getwid-content-timeline__wrapper {
+
+  }
+}
+
+.wp-block-getwid-content-timeline-item {
+
+  &.is-active {
+
+  }
+
+  .wp-block-getwid-content-timeline-item__wrapper {
+
+    .wp-block-getwid-content-timeline-item__content-wrapper {
+      padding: 40px;
+
+      h3,
+      h4{
+        margin-bottom: 15px;
+        font-size: editor-font-size(h4)
+      }
+    }
+
+  }
+
+  .wp-block-getwid-content-timeline-item__image {
+
+  }
+
+  .wp-block-getwid-content-timeline-item__card {
+
+    filter: none;
+    background: get-color-css(gray1);
+
+    &:after {
+      filter: none;
+      background: get-color-css(gray1);
+      top: 60%;
+    }
+  }
+
+  .wp-block-getwid-content-timeline-item__meta {
+
+    .wp-block-getwid-content-timeline-item__meta-content {
+      @extend %#{$class-name-chips-label};
+      font-size: editor-font-size(small);
+      padding: 9px 20px;
+      margin: 0;
+
+    }
+
+
+
+  }
+
+  .wp-block-getwid-content-timeline-item__mobile-meta {
+
+  }
+
+  .wp-block-getwid-content-timeline-item__point {
+
+  }
+
+  .wp-block-getwid-content-timeline-item__point-content {
+
+
+
+  }
+}
+

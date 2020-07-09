@@ -1,0 +1,95 @@
+
+/*
+Text
+
+All types of text sizes
+
+.-xx-large - Hero Heading
+.-x-large - Heading
+.-large - Heading
+.-medium - Heading
+.-small - Heading
+.-x-small - Heading
+.-xx-small - Heading
+.-bold - Heading
+
+Markup: ../../../../styleguide/templates/atoms/content/text.html
+
+Style guide: Atoms.text
+
+*/
+
+$class-name-text: rocksite-a-text;
+
+.#{$class-name-text} {
+
+	@extend %#{$class-name-text};
+
+	&.-xx-large {
+
+		@include type-setting(xx-large);
+
+	}
+
+	&.-x-large {
+
+		@include type-setting(x-large);
+
+	}
+
+	&.-large {
+
+		@include type-setting(large);
+
+	}
+
+	&.-medium {
+
+		@include type-setting(medium);
+
+	}
+
+	&.-small {
+
+		@include type-setting(small);
+
+	}
+
+	&.-x-small {
+
+		@include type-setting(x-small);
+
+	}
+
+	&.-xx-small {
+
+		@include type-setting(xx-small);
+
+	}
+
+	&.-bold {
+
+		font-weight: 900;
+
+
+	}
+
+}
+
+p {
+	@include type-setting(medium);
+}
+
+%#{$class-name-text} {
+
+	font-family: font-family-css(primary);
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: 0.1px;
+	color: get-color-css(text-lighten);
+	@include type-setting(medium);
+
+}
+
+

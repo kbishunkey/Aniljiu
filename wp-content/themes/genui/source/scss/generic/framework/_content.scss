@@ -1,0 +1,105 @@
+/*
+Typography
+
+Markup: ../../../../styleguide/templates/global/typography.html
+
+Style guide: 1 Global.typography
+
+*/
+
+@mixin content-core {
+
+	font-weight: 300;
+
+	img {
+
+		max-width: 100%;
+		height: auto;
+
+	}
+
+	/**
+** Content Elements
+*/
+
+
+
+	h1,
+	h2,
+	h3 {
+
+		margin: 3rem 0 3rem;
+
+	}
+
+	h4,
+	h5,
+	h6 {
+
+		margin: 2rem 0 2rem;
+
+	}
+
+
+
+	p {
+
+		@include type-setting(medium);
+		margin-bottom: 2rem;
+
+	}
+
+
+
+	ul,
+	ol{
+
+
+		margin: 0 0 2rem 4rem;
+
+		li {
+
+			@include type-setting(p);
+
+		}
+
+
+	}
+
+
+
+	iframe {
+
+		max-width: 100%;
+
+	}
+
+	hr {
+
+		box-shadow: none;
+
+		border: none;
+
+	}
+
+
+	cite,
+	q {
+		font-style: italic;
+	}
+
+	code,
+	pre {
+
+		word-wrap: break-word;
+		margin-bottom: 1.5rem;
+
+	}
+
+	pre {
+
+		white-space: pre-wrap;
+
+	}
+
+}

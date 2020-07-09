@@ -1,0 +1,71 @@
+/*
+Section Header
+
+Your standard button suitable for clicking.
+
+Markup: ../../../../styleguide/templates/molecules/section-header.html
+
+Wrapper:
+<div style="text-align: center">
+<wrapper-content/>
+</div>
+
+Style guide: Molecules.section-header
+
+
+
+*/
+
+$class-name-section-header: rocksite-o-section-header;
+
+.#{$class-name-section-header} {
+
+  @extend %#{$class-name-section-header};
+
+  .#{$class-name-section-header}__title {
+
+   @extend %#{$class-name-section-header}__title;
+
+  }
+
+  .#{$class-name-section-header}__subtitle {
+
+    @extend %#{$class-name-section-header}__subtitle;
+
+  }
+
+  .#{$class-name-section-header}__abovetitle {
+
+    @extend %#{$class-name-section-header}__abovetitle;
+
+  }
+}
+
+
+%#{$class-name-section-header} {
+  font-family: font-family-css(secondary);
+  margin-bottom: 6rem;
+}
+%#{$class-name-section-header}__title {
+  @extend %#{$class-name-heading};
+  @extend %-h3;
+}
+
+%#{$class-name-section-header}__subtitle {
+
+  margin-top: 2rem;
+  font-weight: 400;
+  color: get-color-css(dark-gray1);
+  font-size: 2.5rem;
+
+}
+
+%#{$class-name-section-header}__abovetitle {
+
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  color: get-color-css(primary)
+
+}

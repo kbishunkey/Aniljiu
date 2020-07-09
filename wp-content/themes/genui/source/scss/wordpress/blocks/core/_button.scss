@@ -1,0 +1,91 @@
+.wp-block-button {
+
+	margin-bottom: 1.5em;
+
+
+
+
+		.wp-block-button__link {
+
+			background: none;
+			@include button-label-core;
+			@include btn-specify(primary);
+
+			@each $color, $hex in $colors {
+
+				&.has-#{$color}-background-color {
+					&:before
+					{
+						background-color: $hex;
+					}
+
+
+				}
+
+				&.has-#{$color}-color {
+					color: $hex;
+				}
+			}
+
+		}
+
+
+
+
+
+	&.is-style-outline {
+
+
+
+
+
+		.wp-block-button__link {
+
+			@include button-label-core;
+			@include btn-specify(ghost);
+
+
+			&:before,
+			&:after {
+
+				display: none;
+
+			}
+
+			@each $color, $hex in $colors {
+
+				&.has-#{$color}-background-color {
+					border-color: $hex;
+					background-color: transparent!important;
+				}
+
+				&.has-#{$color}-color {
+					color: $hex;
+				}
+			}
+
+			&:hover {
+				opacity: 0.8;
+			}
+
+		}
+
+	}
+
+	&.is-style-squared {
+
+		.wp-block-button__link {
+
+			border-radius: 0;
+
+		}
+
+
+
+	}
+
+
+
+}
+
+

@@ -1,0 +1,17 @@
+<select name="{{name}}" class="rocksite-a-select {{modifier_class}}" aria-label="Shop order">
+    {{#each options_select}}
+
+    {{#if selected_option}}
+    <option value="{{value}}" selected="selected">
+        {{option}}
+    </option>
+
+    {{else}}
+    <option value="{{value}}">
+        {{option}}
+    </option>
+    {{/if}}
+
+    {{/each}}
+
+</select>

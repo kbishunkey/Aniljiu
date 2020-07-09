@@ -1,0 +1,24 @@
+{
+  "name": "select_option",
+  "id_for": "input_text",
+  "label_text": "Select this option",
+  "options_select": [
+    {
+      "value": "first-option",
+      "option": "First option"
+    },
+    {
+      "value": "second-option",
+      "option": "Second option",
+      "selected_option": "true"
+    },
+    {
+      "value": "third-option",
+      "option": "Third option"
+    },
+    {
+      "value": "fourth-option",
+      "option": "Fourth option"
+    }
+  ]
+}

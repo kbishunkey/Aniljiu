@@ -1,0 +1,24 @@
+
+
+.wp-block-archives {
+
+	margin: $layout-box-horizontal-space 0;
+
+	&-list {
+
+		@extend %#{$class-name-list}-table;
+
+		li {
+
+			@extend %#{$class-name-list}-table__item;
+
+		}
+
+	}
+
+	&-dropdown {
+
+		margin-bottom: 1.5rem;
+
+	}
+}

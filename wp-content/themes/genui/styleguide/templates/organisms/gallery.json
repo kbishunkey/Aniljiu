@@ -1,0 +1,42 @@
+{
+  "gallery_items":[
+    {
+      "figure_image": "../assets/images/photo-gallery.jpg",
+      "figure_caption": "Try selecting and removing or editing"
+    },
+    {
+      "figure_image": "../assets/images/photo-gallery.jpg",
+      "figure_caption": "Try selecting and removing or editing"
+    },
+    {
+      "figure_image": "../assets/images/photo-gallery.jpg",
+      "figure_caption": "Try selecting and removing or editing"
+    },
+    {
+      "figure_image": "../assets/images/photo-gallery.jpg",
+      "figure_caption": "Try selecting and removing or editing"
+    },
+    {
+      "figure_image": "../assets/images/photo-gallery.jpg",
+      "figure_caption": "Try selecting and removing or editing"
+    },
+    {
+      "figure_image": "../assets/images/photo-gallery.jpg",
+      "figure_caption": "Try selecting and removing or editing"
+    },
+    {
+      "figure_image": "../assets/images/photo-gallery.jpg",
+      "figure_caption": "Try selecting and removing or editing"
+    },
+    {
+      "figure_image": "../assets/images/photo-gallery.jpg",
+      "figure_caption": "Try selecting and removing or editing"
+    },
+    {
+      "figure_image": "../assets/images/photo-gallery.jpg",
+      "figure_caption": "Try selecting and removing or editing"
+    }
+
+  ]
+
+}

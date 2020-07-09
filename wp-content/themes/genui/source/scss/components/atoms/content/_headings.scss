@@ -1,0 +1,168 @@
+/*
+Headings
+
+All types of headings
+
+.-hero - Hero Heading
+.-h1 - Heading
+.-h2 - Heading
+.-h3 - Heading
+.-h4 - Heading
+.-h5 - Heading
+.-h6 - Heading
+.-h7 - Heading
+
+Markup: ../../../../styleguide/templates/atoms/content/headings.html
+
+Style guide: Atoms.headings
+
+*/
+
+$class-name-heading: rocksite-a-heading;
+
+.#{$class-name-heading} {
+
+  @extend %#{$class-name-heading};
+
+  &.-hero {
+    @extend %-hero;
+  }
+
+  &.-h1 {
+    @extend %-h1;
+  }
+
+  &.-h2 {
+    @extend %-h2;
+  }
+
+  &.-h3 {
+    @extend %-h3;
+  }
+
+  &.-h4 {
+
+    @extend %-h4;
+
+  }
+
+  &.-h5 {
+    @extend %-h5;
+  }
+
+  &.-h6 {
+    @extend %-h6;
+  }
+
+  &.-h7 {
+    @extend %-h7;
+  }
+
+  &.-box-header-1 {
+
+    @extend %-box-header-1;
+
+  }
+
+}
+
+/*
+Modyficators
+*/
+
+%#{$class-name-heading} {
+
+  font-family: font-family-css(secondary);
+  letter-spacing: normal;
+  color: get-color-css(text);
+  font-weight: 600;
+  @include type-setting(h2);
+
+}
+
+%-hero {
+
+  @include type-setting(h1);
+
+  @include respond-to (medium) {
+    @include type-setting(hero);
+  }
+
+
+
+}
+
+
+%-h1 {
+
+  @include type-setting(h2);
+
+  @include respond-to (medium) {
+    @include type-setting(h1);
+  }
+
+
+}
+
+
+%-h2 {
+
+  @include type-setting(h3);
+
+  @include respond-to (medium) {
+
+    @include type-setting(h2);
+
+  }
+
+}
+
+
+%-h3 {
+
+  @include type-setting(h4);
+
+  @include respond-to (medium) {
+
+    @include type-setting(h3);
+
+  }
+
+}
+
+
+%-h4 {
+
+  @include type-setting(h4);
+
+}
+
+
+%-h5 {
+
+  @include type-setting(h5);
+
+}
+
+
+%-h6 {
+
+  @include type-setting(h6);
+
+}
+
+%-h7 {
+
+  @include type-setting(h7);
+
+}
+
+%-box-header-1 {
+
+  text-transform: uppercase;
+  font-family: font-family-css(secondary);
+  font-size: font-size(medium);
+  color: get-color-css(primary);
+  font-weight: 600;
+
+}

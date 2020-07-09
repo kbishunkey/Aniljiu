@@ -1,0 +1,18 @@
+<div class="rocksite-o-accordion {{modifier_class}}" data-active-element="0"
+     role="tablist">
+    {{#each accordion_content}}
+    <div class="rocksite-o-accordion__header-wrapper {{active_modificator}}" role="tab"
+         id="ui-id-4" aria-controls="ui-id-5" aria-selected="false" aria-expanded="false" tabindex="-1">
+        <span class="rocksite-o-accordion__header-wrapper__header">
+            <a href="#" class="rocksite-o-accordion__header-wrapper__header__link">
+                <span class="rocksite-o-accordion__header-wrapper__header__link__title">{{name}}</span>
+                <span class="rocksite-o-accordion__header-wrapper__header__link__icon is-active"><i class="las la-plus"></i></span>
+                <span class="rocksite-o-accordion__header-wrapper__header__link__icon is-passive"><i class="las la-minus"></i></span>
+            </a>
+    </span>
+    </div>
+    <div class="rocksite-o-accordion__content {{content_modificator}}"
+         id="ui-id-5" aria-labelledby="ui-id-4" role="tabpanel" aria-hidden="true">{{content}}
+    </div>
+    {{/each}}
+</div>

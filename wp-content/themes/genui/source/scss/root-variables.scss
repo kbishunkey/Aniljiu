@@ -1,0 +1,32 @@
+@import 'settings/_index';
+
+:root {
+  // each item in color map
+  @each $name, $color in colors-palette(1) {
+    --color-#{$name}: #{$color};
+  }
+
+  @each $name, $color in buttons-background-variants(){
+    --btn-bg-#{$name}: var(--color-#{$name});
+  }
+
+  @each $name, $color in colors-social-buttons(){
+    --btn-bg-#{$name}: #{$color};
+  }
+
+  @each $name, $color in buttons-color-variants-css(){
+    --btn-color-#{$name}: #{$color};
+  }
+
+  @each $name, $font in font-families(){
+    --font-#{$name}: #{$font};
+  }
+
+  @each $name, $size in font-sizes(){
+    --size-#{$name}: #{$size};
+  }
+
+  @each $name, $line in line-heights(){
+    --line-#{$name}: #{$line};
+  }
+}

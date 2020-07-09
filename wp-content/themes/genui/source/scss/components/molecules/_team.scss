@@ -1,0 +1,124 @@
+/*
+Team Box
+
+Dispaying teams member info
+
+Markup: ../../../../styleguide/templates/molecules/team-box.html
+
+Wrapper:
+<div style="width: 250px">
+<wrapper-content/>
+</div>
+
+Style guide: Molecules.team-box
+
+*/
+
+$class-name-team-box: rocksite-m-team;
+
+
+.#{$class-name-team-box} {
+
+
+    .#{$class-name-team-box}__image {
+
+      @extend %#{$class-name-team-box}__image;
+
+
+
+    }
+
+    .#{$class-name-team-box}__item {
+
+      @extend %#{$class-name-team-box}__item;
+
+      .#{$class-name-team-box}__item__title {
+
+        @extend %#{$class-name-team-box}__item__title;
+
+
+      }
+
+      .#{$class-name-team-box}__item__subtitle {
+
+        @extend %#{$class-name-team-box}__item__subtitle
+
+      }
+
+      .#{$class-name-team-box}__item__content {
+
+        @extend %#{$class-name-team-box}__item__content;
+
+      }
+
+    }
+
+    .#{$class-name-team-box}__shares {
+
+      @extend %#{$class-name-team-box}__shares;
+
+    }
+
+}
+
+%#{$class-name-team-box} {
+
+}
+
+%#{$class-name-team-box}__image {
+
+  img {
+
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+  }
+
+  margin-bottom: 1.7rem;
+
+}
+
+%#{$class-name-team-box}__item {
+
+  text-align: center;
+
+}
+
+%#{$class-name-team-box}__item__title {
+
+  @extend %#{$class-name-heading};
+  @extend %-h5;
+  @extend %-box-header-1;
+  margin: $layout-box-header-margin;
+
+}
+
+%#{$class-name-team-box}__item__subtitle {
+
+  @extend %#{$class-name-text};
+  @include type-setting(small);
+  margin-bottom: 1.2rem;
+  color: get-color-css(dark-gray1);
+
+}
+
+%#{$class-name-team-box}__item__content {
+
+  margin-bottom: 1.5rem;
+
+}
+
+%#{$class-name-team-box}__shares {
+
+  display: flex;
+  justify-content: center;
+
+  li {
+
+    margin-right: 0.5rem;
+
+  }
+
+
+}

@@ -1,0 +1,195 @@
+/*
+Testimonial
+
+Dispaying teams member info
+
+.-invert - inverted version
+
+Markup: ../../../../styleguide/templates/molecules/testimonial.html
+
+Wrapper:
+<div style="width: 350px">
+<wrapper-content/>
+</div>
+
+Style guide: Molecules.testimonial
+
+*/
+
+$class-name-testimonial: rocksite-m-testimonial;
+
+.#{$class-name-testimonial} {
+
+  @extend %#{$class-name-testimonial};
+
+  .#{$class-name-testimonial}__content {
+
+    @extend %#{$class-name-testimonial}__content;
+
+  }
+
+  .#{$class-name-testimonial}__footer {
+
+    @extend %#{$class-name-testimonial}__footer;
+
+    .#{$class-name-testimonial}__footer__content {
+
+      @extend %#{$class-name-testimonial}__footer__content;
+
+      .#{$class-name-testimonial}__footer__content__title {
+
+        @extend %#{$class-name-testimonial}__footer__content__title;
+
+
+      }
+
+      .#{$class-name-testimonial}__footer__content__subtitle {
+
+        @extend %#{$class-name-testimonial}__footer__content__subtitle;
+
+      }
+
+
+    }
+
+    .#{$class-name-testimonial}__footer__image {
+
+      @extend %#{$class-name-testimonial}__footer__image;
+
+    }
+
+  }
+
+  &.-invert {
+
+    @extend %#{$class-name-testimonial}-invert;
+
+    .#{$class-name-testimonial}__footer {
+
+      .#{$class-name-testimonial}__footer__content {
+
+        .#{$class-name-testimonial}__footer__content__title {
+
+          @extend %#{$class-name-testimonial}-invert__footer__content__title;
+
+
+        }
+
+        .#{$class-name-testimonial}__footer__content__subtitle {
+
+          @extend %#{$class-name-testimonial}-invert__footer__content__subtitle;
+
+
+        }
+      }
+
+    }
+
+  }
+
+
+}
+
+%#{$class-name-testimonial} {
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $layout-box-vertical-space;
+  padding: $layout-box-single-padding;
+
+  @include respond-to( medium ) {
+    padding: 0;
+  }
+
+
+}
+
+%#{$class-name-testimonial}-invert {
+  * {
+    color: get-color-css(invert);
+  }
+}
+
+%#{$class-name-testimonial}__footer {
+
+  display: flex;
+  padding: $layout-box-vertical-space 0 0 5rem;
+
+}
+
+%#{$class-name-testimonial}__footer__content {
+
+  width: 80%;
+  padding-left: $layout-grid-gutter/2;
+
+}
+
+%#{$class-name-testimonial}__footer__content__title {
+
+  @extend %#{$class-name-heading};
+  @extend %-h6;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+
+}
+
+%#{$class-name-testimonial}-invert__footer__content__title {
+  color: get-color-css(invert);
+}
+
+%#{$class-name-testimonial}__footer__content__subtitle {
+
+  display: block;
+  font-size: font-size(small);
+  color: get-color-css(dark-gray1);
+  text-transform: none;
+
+}
+
+%#{$class-name-testimonial}-invert__footer__content__subtitle {
+  color: get-color-css(invert);
+}
+
+%#{$class-name-testimonial}__footer__image {
+
+  width: 20%;
+
+  img {
+
+    max-width: 100%;
+    height: auto;
+
+  }
+
+}
+
+%#{$class-name-testimonial}__content {
+
+  position: relative;
+  padding-left: 5rem;
+  margin-bottom: 0;
+
+  &:before {
+    content: '„';
+    display: block;
+    position: absolute;
+    top: -2.4rem;
+    left: 0;
+    color: get-color-css(secondary);
+    font-size: 13rem;
+    font-family: Arial;
+    line-height: 0;
+  }
+
+
+  p:after {
+
+    content: '';
+    display: inline-block;
+    width: 4rem;
+    height: 1rem;
+
+  }
+
+
+}

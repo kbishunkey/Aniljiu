@@ -1,0 +1,151 @@
+// variables
+
+$single-template-class-name: rocksite-t-content-layout;
+
+
+
+
+// box list grid
+.#{$single-template-class-name}{
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+
+	.#{$single-template-class-name}__content{
+
+
+		margin-bottom: $layout-box-large-vertical-space;
+
+		width: 100%;
+
+
+
+
+
+		.#{$single-template-class-name}__content__posts-navigation {
+
+			margin: $layout-box-large-vertical-space 0;
+
+		}
+
+	}
+
+	.#{$single-template-class-name}__content-filetrs {
+
+		margin: $layout-box-large-vertical-space 0;
+		width: 100%;
+
+	}
+
+	.#{$single-template-class-name}__relative-content{
+
+		width: 100%;
+		padding: $layout-box-vertical-space 0;
+
+	}
+
+
+	&.-narrow-width {
+
+		.#{$single-template-class-name}__content{
+
+			@include respond-to(desktop) {
+
+				width: 70%;
+
+			}
+
+		}
+
+	}
+
+	&.-sidebar {
+
+		flex-direction: row;
+		align-items: flex-start;
+		flex-wrap:wrap;
+
+		@include respond-to(desktop) {
+
+			flex-wrap: nowrap;
+
+
+		}
+
+		.#{$single-template-class-name}__content{
+
+			@include respond-to(desktop) {
+
+				padding-right: $layout-grid-gutter/2;
+				width: 70%;
+
+			}
+
+		}
+
+
+		.#{$single-template-class-name}__sidebar{
+
+			width: 100%;
+
+			@include respond-to(desktop) {
+
+				width: 30%;
+				padding-left: $layout-grid-gutter/2;
+			}
+
+		}
+
+		// reset align wid i align full
+
+		@include reset-wordpress-align-styles();
+
+
+
+	}
+
+	&.-left-sidebar{
+
+		flex-direction: row-reverse;
+
+		.#{$single-template-class-name}__sidebar{
+
+			padding-left: 0;
+			padding-right: $layout-grid-gutter/2;
+
+
+		}
+
+		.#{$single-template-class-name}__content{
+
+
+			padding-left: $layout-grid-gutter/2;
+			padding-right: 0;
+
+		}
+
+	}
+
+	&.-portfolio {
+
+		flex-wrap: wrap;
+		flex-direction: row;
+
+		.#{$single-template-class-name}__media{
+
+			width: 60%;
+
+		}
+
+		.#{$single-template-class-name}__content{
+
+			width: 40%;
+			padding-left: 4rem;
+
+		}
+
+	}
+
+}

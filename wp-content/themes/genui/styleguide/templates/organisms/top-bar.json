@@ -1,0 +1,19 @@
+{
+  "menu_labels":[ {
+    "name": "Contact Us",
+    "link": "#"
+  },
+    {
+      "name": "About Us",
+      "link": "#"
+    }
+
+  ],
+  "top_bar_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+  "icons": [
+    {"icon": "fab fa-linkedin-in"},
+    {"icon": "fa fa-envelope"},
+    {"icon": "fab fa-twitter"},
+    {"icon": "fab fa-facebook-f"}
+  ]
+}

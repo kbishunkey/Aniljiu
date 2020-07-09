@@ -1,0 +1,31 @@
+/**
+Progress Bar
+
+Markup: ../../../../styleguide/templates/atoms/progress-bar.html
+
+Wrapper:
+<div style="width:700px">
+<wrapper-content/>
+</div>
+
+Style guide: Atoms.progress
+
+*/
+
+$class-name-progress-bar: rocksite-a-progress-bar;
+
+.#{$class-name-progress-bar} {
+
+	background: get-color(gray4);
+	width: 100%;
+
+
+	.#{$class-name-progress-bar}__chart {
+
+		height: 1rem;
+		background: get-color-css(primary);
+		width: 2px;
+
+	}
+
+}

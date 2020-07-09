@@ -1,0 +1,18 @@
+
+
+.wp-block-categories {
+
+	&-list {
+
+		@extend %#{$class-name-list}-icon-pointer;
+
+		li {
+
+			@extend %#{$class-name-list}-icon-pointer__item;
+
+		}
+
+	}
+
+	&-dropdown {}
+}

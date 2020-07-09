@@ -1,0 +1,228 @@
+/*
+Section Default
+
+
+Section component
+
+Markup: ../../../../styleguide/templates/templates/section-default.html
+
+Style guide: Templates.section-default
+
+
+*/
+
+.rocksite-s-default {
+
+  padding: 5rem 0;
+
+  > .container {
+
+    background: get-color-css(invert);
+
+  }
+
+  &.-narrow-width {
+
+  }
+
+  &.-border-bottom {
+    border-bottom: 1px solid get-color-css($global-border-color);
+  }
+
+  &.-margin-bottom {
+
+    margin-bottom: 4rem;
+
+  }
+
+  &.-light-background {
+
+    background: $section-light-background;
+
+    > .container {
+
+      background: none;
+
+    }
+
+  }
+
+  &.-no-padding {
+
+    padding: 0;
+
+  }
+
+  &.-small-top-padding {
+
+    padding: $grid-gutter-width/2 0 0 0;
+
+  }
+
+  &.-border-top {
+
+    border-top: 1px solid get-color-css($global-border-color);
+
+  }
+
+  &.-invert {
+
+    background: get-color-css(invert);
+
+  }
+}
+
+/*
+Section Top Bar
+
+
+Section top bar
+
+Markup: ../../../../styleguide/templates/templates/section-top-bar.html
+
+Style guide: Templates.section-top-bar
+
+
+*/
+
+.rocksite-s-top-bar {
+
+  background-color: get-color-css(background-topbar);
+
+}
+
+.admin-bar {
+
+  .rocksite-s-main-header {
+
+    &.-fixed-header {
+      @include respond-to(medium) {
+        top: 3rem;
+      }
+    }
+
+  }
+
+}
+
+.rocksite-s-main-header {
+
+  background: get-color-css(invert);
+  position: relative;
+  z-index: 100;
+
+  &.-fixed-header {
+
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    padding-top: 1rem;
+    box-shadow: $fixed-navbar-box-shadow;
+    transition: $fixed-navbar-transition;
+
+
+
+
+
+    @include respond-to(medium) {
+
+      padding-top: 0;
+      width: 100%;
+
+    }
+
+
+  }
+
+}
+
+.rocksite-s-header-image {
+
+  margin-bottom: 8rem;
+  margin-top: -$navbar-main-height;
+  position: relative;
+  z-index: 1;
+
+}
+
+.rocksite-s-page-header {
+
+  margin: $page-header-section-margin;
+  padding: $page-header-section-padding;
+  background: $page-header-section-padding-background;
+
+}
+
+.rocksite-s-pagination {
+
+  display: flex;
+  justify-content: flex-start;
+  padding: 5rem 0;
+  margin-top: 7rem;
+
+}
+
+.rocksite-s-footer {
+
+  width: 100%;
+  background: get-color-css(primary);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+
+  &.-transparent {
+    background: none;
+  }
+
+  &.-invert {
+    background: get-color-css(invert);
+  }
+
+  &__top {
+
+    background: $footer-section-background-top;
+    padding: $footer-section-top-padding;
+
+  }
+
+  &__bottom {
+  }
+}
+
+.rocksite-s-content {
+
+  overflow: hidden;
+  max-width: 100%;
+
+  .rocksite-s-content__content {
+
+    background: get-color-css(content);
+    padding-top: 5rem;
+
+  }
+
+
+  > .container {
+
+    background: get-color-css(invert);
+
+  }
+
+  &.-margin-top {
+
+    margin-top: 4rem;
+
+  }
+
+  &.-no-top-padding {
+
+    .rocksite-s-content__content {
+      padding-top: 0;
+    }
+
+  }
+
+}

@@ -1,0 +1,280 @@
+<body class="rocksite-p-main-page-1">
+
+{{#each top_bar}}
+<div class="rocksite-s-top-bar rocksite-p-main-page-1-s1">
+
+    <div class="container">
+        {{> "top-bar" }}
+    </div>
+
+</div>
+{{/each}}
+
+{{#each main_navbar}}
+
+<header class="rocksite-s-main-header -border-bottom rocksite-p-main-page-1-s2">
+    <div class="container">
+        {{> "main-navbar" }}
+    </div>
+</header>
+
+{{/each}}
+
+{{#each main_page_1_s3}}
+
+<section class="rocksite-s-default rocksite-p-main-page-1-s3" style="background-color:#f8f8f8">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                {{> "hero-content"}}
+            </div>
+            <div class="col-md-6">
+                <img src="{{section_image}}" alt="large-image"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/each}}
+
+{{#each main_page_1_s4}}
+<section class="rocksite-s-default rocksite-p-main-page-1-s4">
+
+    <div class="container">
+
+        {{#each section_header}}
+        {{> "section-header" }}
+        {{/each}}
+
+        <div class="row">
+
+            {{#each info_boxes}}
+            <div class="col-sm-3">
+                {{> "info"}}
+            </div>
+            {{/each}}
+
+        </div>
+
+    </div>
+
+</section>
+{{/each}}
+
+{{#each main_page_1_s5}}
+<section class="rocksite-s-default rocksite-p-main-page-1-s5">
+
+    <div class="container">
+
+        {{#each section_header}}
+        {{> "section-header" }}
+        {{/each}}
+
+        <div class="row">
+
+            {{#each card_boxes}}
+            <div class="col-sm-3">
+                {{> "card"}}
+            </div>
+            {{/each}}
+
+        </div>
+
+    </div>
+
+</section>
+{{/each}}
+
+{{#each main_page_1_s6}}
+<section class="rocksite-s-default rocksite-p-main-page-1-s6">
+
+    <div class="container">
+
+        {{#each section_header}}
+        {{> "section-header" }}
+        {{/each}}
+
+        <div class="row">
+
+            {{#each counter_boxes}}
+            <div class="col-sm-3">
+                {{> "counter-box"}}
+            </div>
+            {{/each}}
+
+        </div>
+
+    </div>
+
+</section>
+{{/each}}
+
+{{#each main_page_1_s7}}
+<section class="rocksite-s-default rocksite-p-main-page-1-s7">
+
+    <div class="container">
+
+        {{#each section_header}}
+        {{> "section-header" }}
+        {{/each}}
+
+        <div class="row">
+
+            {{#each team_boxes}}
+            <div class="col-sm-3">
+                {{> "team-box"}}
+            </div>
+            {{/each}}
+
+        </div>
+
+    </div>
+
+</section>
+{{/each}}
+
+{{#each main_page_1_s8}}
+<section class="rocksite-s-default rocksite-p-main-page-1-s8">
+
+    <div class="container">
+
+        {{#each section_header}}
+        {{> "section-header" }}
+        {{/each}}
+
+
+        {{#each sliders}}
+
+        {{> "slider-banner"}}
+
+        {{/each}}
+
+
+    </div>
+
+</section>
+{{/each}}
+
+{{#each main_page_1_s9}}
+<section class="rocksite-s-default rocksite-p-main-page-1-s9">
+
+    <div class="container">
+
+        {{#each section_header}}
+        {{> "section-header" }}
+        {{/each}}
+
+        {{#each content_boxes}}
+
+        {{> "content-short"}}
+
+        {{/each}}
+
+    </div>
+
+</section>
+{{/each}}
+{{#each main_page_1_s10}}
+<section class="rocksite-s-default rocksite-p-main-page-1-s10">
+
+    <div class="container">
+
+        {{#each section_header}}
+        {{> "section-header" }}
+        {{/each}}
+        <div class="row">
+            {{#each testimonials_boxes}}
+            <div class="col-sm-3">
+                {{> "testimonial"}}
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+</section>
+{{/each}}
+
+{{#each main_page_1_s11}}
+<section class="rocksite-s-default rocksite-p-main-page-1-s11">
+
+    <div class="container">
+
+        {{#each section_header}}
+        {{> "section-header" }}
+        {{/each}}
+        <div class="row">
+            {{#each pricing_boxes}}
+            <div class="col-sm-3">
+                {{> "pricing"}}
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+</section>
+{{/each}}
+
+{{#each main_page_1_s12}}
+<section class="rocksite-s-default rocksite-p-main-page-1-s12">
+
+    <div class="container">
+
+        {{#each section_header}}
+        {{> "section-header" }}
+        {{/each}}
+        <div class="row">
+
+            <div class="col-sm-6">
+                {{#each forms}}
+                {{> "form"}}
+                {{/each}}
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+{{/each}}
+
+{{#each footer_1}}
+<section class="rocksite-s-footer rocksite-p-main-page-1-footer-1">
+
+    <div class="container">
+
+
+        <div class="row">
+
+            <div class="col-lg-3">
+                {{#each column1}}
+                {{> "menu-widget" modifier_class=" -dark -footer"}}
+                {{/each}}
+
+            </div>
+            <div class="col-lg-3">
+                {{#each column2}}
+                {{> "menu-widget" modifier_class=" -dark -footer"}}
+                {{/each}}
+
+            </div>
+
+            <div class="col-lg-3">
+                {{#each column3}}
+                {{> "menu-widget" modifier_class=" -dark -footer"}}
+                {{/each}}
+
+            </div>
+            <div class="col-lg-3">
+                {{#each column4}}
+                {{> "menu-widget" modifier_class=" -dark -footer"}}
+                {{/each}}
+
+            </div>
+        </div>
+    </div>
+
+</section>
+{{/each}}
+
+</body>

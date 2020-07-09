@@ -1,0 +1,35 @@
+/*
+Select Label
+
+
+Labels for displaying info
+
+
+Markup: ../../../../styleguide/templates/molecules/select-label.html
+
+
+Style guide: Molecules.select-label
+
+Wrapper:
+<div style="max-width:350px">
+<wrapper-content/>
+</div>
+
+*/
+
+$class-name-label-select: rocksite-m-label-select;
+
+.#{$class-name-label-select} {
+
+  .#{$class-name-label-select}__label {
+
+    @extend %#{$class-name-label-input}__label;
+
+  }
+
+}
+
+
+
+
+

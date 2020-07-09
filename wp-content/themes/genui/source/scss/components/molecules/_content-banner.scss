@@ -1,0 +1,158 @@
+/*
+Content Banner
+
+
+Content Image box linked to content
+
+.-large-banner - larger version
+.-left-side-text - left side text
+.-right-side-text - right side
+
+Markup: ../../../../styleguide/templates/molecules/content-banner.html
+
+Style guide: Molecules.content-banner
+
+Wrapper:
+<div style="max-width:700px">
+<wrapper-content/>
+</div>
+
+*/
+
+$class-name-content-banner: rocksite-m-content-banner;
+
+.#{$class-name-content-banner} {
+
+  width: 100%;
+  position: relative;
+
+  .#{$class-name-content-banner}__wrapper {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    padding: 4rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+
+    .#{$class-name-content-banner}__wrapper__item {
+
+      max-width: 80%;
+
+      .#{$class-name-content-banner}__wrapper__item__title {
+
+        color: get-color-css(invert);
+        @extend %#{$class-name-heading};
+        @extend %-h5;
+        margin-bottom: 2rem;
+
+      }
+
+      .#{$class-name-content-banner}__wrapper__item__content {
+
+        color: get-color-css(invert);
+        @extend %#{$class-name-text};
+
+      }
+
+    }
+
+  }
+
+  .#{$class-name-content-banner}__image {
+
+
+    &:after {
+
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: $overlay-media-gradient;
+      z-index: 0;
+
+    }
+
+    img {
+
+      width: 100%;
+      height: auto;
+      display: block;
+
+    }
+
+  }
+
+  &.-large-banner {
+
+    .#{$class-name-content-banner}__wrapper {
+
+      .#{$class-name-content-banner}__wrapper__item {
+
+        .#{$class-name-content-banner}__wrapper__item__title {
+
+          @extend %-h3;
+
+        }
+
+        .#{$class-name-content-banner}__wrapper__item__content {
+
+          @include type-setting(large);
+
+        }
+
+
+
+
+      }
+
+    }
+
+  }
+
+  &.-left-side-text {
+
+    .#{$class-name-content-banner}__wrapper {
+
+      justify-content: flex-start;
+
+      .#{$class-name-content-banner}__wrapper__item {
+
+        width: 50%;
+
+      }
+
+    }
+
+
+  }
+
+
+  &.-right-side-text {
+
+    .#{$class-name-content-banner}__wrapper {
+
+      justify-content: flex-end;
+
+      .#{$class-name-content-banner}__wrapper__item {
+
+        width: 50%;
+
+      }
+
+    }
+
+  }
+
+}
+
+
+

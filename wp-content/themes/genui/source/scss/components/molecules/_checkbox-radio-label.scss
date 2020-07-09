@@ -1,0 +1,71 @@
+/*
+Radio Label
+
+
+Labels for displaying info
+
+
+Markup: ../../../../styleguide/templates/molecules/radio-label.html
+
+
+Style guide: Molecules.radio-label
+
+Wrapper:
+<div style="max-width:350px">
+<wrapper-content/>
+</div>
+
+*/
+
+$class-name-label-radio: rocksite-m-label-radio;
+
+.#{$class-name-label-input} {
+
+  .#{$class-name-label-input}__label {
+
+    @extend %#{$class-name-label-input}__label;
+
+  }
+
+}
+
+
+%#{$class-name-label-input}__label {
+
+  padding: 0.5rem 0 0.2rem 0;
+  display: block;
+
+}
+
+/*
+Radio Label
+
+
+Labels for displaying info
+
+
+Markup: ../../../../styleguide/templates/molecules/checkbox-label.html
+
+
+Style guide: Molecules.checkbox-label
+
+Wrapper:
+<div style="max-width:350px">
+<wrapper-content/>
+</div>
+
+*/
+
+$class-name-label-radio: rocksite-m-label-radio;
+
+.#{$class-name-label-input} {
+
+  .#{$class-name-label-input}__label {
+
+    @extend %#{$class-name-label-input}__label;
+
+  }
+
+}
+
+

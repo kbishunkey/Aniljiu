@@ -1,0 +1,15 @@
+{
+  "above_title": "Prus lobortis",
+  "text": "Ut ultrices diam quis purus lobortis, quis viverra mauris feugiat. Pellentesque nec nulla sagittis, dictum erat vitae, venenatis eros",
+  "title": "Pellentesque nec nulla sagittis",
+  "button_group": [
+    {
+      "text": "Read more",
+      "modifier_class": "-primary"
+    },
+    {
+      "text": "Contact Us",
+      "modifier_class": "-ghost"
+    }
+  ]
+}

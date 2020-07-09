@@ -1,0 +1,62 @@
+/*
+Form
+
+Classic form
+
+
+Markup: ../../../../styleguide/templates/organisms/form.html
+
+Wrapper:
+<div style="width:700px">
+<wrapper-content/>
+</div>
+
+Style guide: Organisms.form
+
+*/
+
+$class-name-form: rocksite-o-form;
+
+.#{$class-name-form} {
+
+	padding: 0;
+	margin: 0;
+
+	.#{$class-name-form}__line {
+
+		margin-bottom: 1rem;
+
+	}
+
+	.#{$class-name-form}__fieldset {
+
+		.#{$class-name-form}__fieldset__title {
+
+			margin: 1.5rem 0;
+
+		}
+
+
+	}
+
+	.rocksite-o-form__btn-line {
+
+		padding: 1rem 0;
+		display: flex;
+		justify-content: center;
+
+		&.-btn-right {
+
+			justify-content: flex-end;
+
+		}
+
+		&.-btn-left {
+
+			justify-content: flex-start;
+
+		}
+
+	}
+
+}

@@ -1,0 +1,55 @@
+<form action="/wordpress4.8/forms/#wpcf7-f1885-p1886-o1" method="post" class="rocksite-o-form wpcf7-form">
+		{{#each input_lines}}
+		<div class="rocksite-o-form__line">
+			{{> "input-label"}}
+		</div>
+		{{/each}}
+	{{#each select_lines}}
+	<div class="rocksite-o-form__line">
+		{{> "select-label"}}
+	</div>
+	{{/each}}
+
+	{{#each textarea_lines}}
+	<div class="rocksite-o-form__line">
+		{{> "textarea-label"}}
+	</div>
+	{{/each}}
+
+	{{#if fieldset_title1}}
+	<fieldset class="rocksite-o-form__fieldset">
+
+		<h5 class="rocksite-a-heading -h6 rocksite-o-form__fieldset__title">{{fieldset_title1}}</h5>
+
+		{{#each radio_lines}}
+	<div class="rocksite-o-form__line">
+		{{> "radio-label"}}
+	</div>
+	{{/each}}
+	</fieldset>
+
+	{{/if}}
+
+	{{#if fieldset_title2}}
+
+	<fieldset class="rocksite-o-form__fieldset">
+		<h5 class="rocksite-a-heading -h6 rocksite-o-form__fieldset__title">{{fieldset_title2}}</h5>
+		{{#each checkbox_lines}}
+		<div class="rocksite-o-form__line">
+			{{> "checkbox-label"}}
+		</div>
+		{{/each}}
+	</fieldset>
+
+	{{/if}}
+
+
+
+
+
+		<div class="rocksite-o-form__btn-line -btn-right">
+			{{#each button_line}}
+				{{> "button"}}
+			{{/each}}
+		</div>
+</form>

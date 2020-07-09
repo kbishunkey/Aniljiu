@@ -1,0 +1,23 @@
+<ul class="rocksite-m-nav-menu {{modifier_class}}">
+
+    {{#each menu_labels}}
+
+    <li class="rocksite-m-nav-menu__item {{additional_class}} {{#if icon}}-icon-item{{/if}}"><a
+            href="{{link}}" class="rocksite-m-nav-menu__link">{{#if icon}}<i class="{{icon}}"></i>{{else}}{{name}}{{/if}}</a>
+
+    {{#if submenu }}
+
+    <ul class="rocksite-m-nav-menu__sub-nav">
+
+    {{#each submenu}}
+
+    <li class="rocksite-m-nav-menu__sub-nav__item"><a
+            href="{{link}}" class="rocksite-m-nav-menu__sub-nav__link">{{name}}</a></li>
+    {{/each}}
+    </ul>
+    {{/if}}
+    </li>
+    {{/each}}
+
+
+</ul>

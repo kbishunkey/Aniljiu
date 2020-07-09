@@ -1,0 +1,11 @@
+<a href="#" class="rocksite-a-button-social {{modifier_class}}">
+	{{#if modifier_class}}
+	{{#with (lookup icon modifier_class) as |singleicon|}}
+		<i class="{{singleicon}}"></i>
+	{{/with}}
+	{{else}}
+		<i class="fab fa-twitter"></i>
+	{{/if}}
+</a>
+
+

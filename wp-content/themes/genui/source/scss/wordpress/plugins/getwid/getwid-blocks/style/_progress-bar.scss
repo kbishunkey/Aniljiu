@@ -1,0 +1,29 @@
+.wp-block-getwid-progress-bar {
+
+    margin-bottom: $layout-box-single-padding;
+
+    .wp-block-getwid-progress-bar__bar {
+
+        background-color: get-color-css(gray4)
+
+    }
+
+    .wp-block-getwid-progress-bar__progress {
+
+    }
+
+    .wp-block-getwid-progress-bar__header {
+
+        margin-bottom: 0;
+
+        .wp-block-getwid-progress-bar__title {
+            margin-bottom: 1rem;
+            font-family: font-family-css(secondary);
+            font-weight: 600;
+        }
+
+        .wp-block-getwid-progress-bar__percent {
+
+        }
+    }
+}

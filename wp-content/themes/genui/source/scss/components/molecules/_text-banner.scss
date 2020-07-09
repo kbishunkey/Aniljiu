@@ -1,0 +1,361 @@
+/*
+Text Banner
+
+
+Banner
+
+
+
+
+
+
+Style guide: Molecules.text-banner
+
+Wrapper:
+<div style="max-width:350px">
+<wrapper-content/>
+</div>
+
+*/
+
+$class-name-text-banner: rocksite-m-text-banner;
+
+.#{$class-name-text-banner} {
+
+  @extend %#{$class-name-card};
+
+  .#{$class-name-card}__thumbnail {
+
+    @extend %#{$class-name-card}__thumbnail;
+
+  }
+
+  .#{$class-name-card}__content {
+
+    @extend %#{$class-name-card}__content;
+
+    .#{$class-name-card}__content__meta {
+
+      @extend %#{$class-name-card}__content__meta;
+
+    }
+
+    .#{$class-name-card}__content__title {
+
+      @extend %#{$class-name-card}__content__title;
+
+    }
+
+    .#{$class-name-card}__content__button {
+
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+
+    }
+
+  }
+
+
+
+  &.-card-stack,
+  &.-card-stack-on-hover:hover{
+
+    position: relative;
+
+    .#{$class-name-card}__content {
+
+      @extend %#{$class-name-card}-card-stack__content;
+
+      .#{$class-name-card}__content__title {
+
+        @extend %#{$class-name-card}-card-stack__content__title;
+
+      }
+
+      .#{$class-name-card}__content__meta {
+
+        *{
+          color: get-color(gray3);
+        }
+
+
+
+      }
+
+    }
+
+    .#{$class-name-card}__thumbnail {
+
+      @include image-overlay-gradient-background($overlay-media-gradient);
+
+    }
+
+    .#{$class-name-card}__content__button {
+
+      display: none;
+
+    }
+
+  }
+
+  &.-card-stack-on-hover {
+
+    overflow: hidden;
+    position: relative;
+
+    .#{$class-name-card}__content {
+
+
+      @extend %#{$class-name-card}-card-stack-on-hover__content;
+
+      .#{$class-name-card}__content__title {
+
+        @extend %#{$class-name-card}-card-stack-on-hover__content__title;
+
+
+      }
+
+      .#{$class-name-card}__content__meta {
+
+        display: none;
+
+      }
+
+
+    }
+
+    .#{$class-name-card}__thumbnail {
+
+      position: relative;
+
+    }
+
+
+
+    &:hover {
+
+      .#{$class-name-card}__content {
+
+        @extend %#{$class-name-card}-card-stack-on-hover__content--hover;
+
+        .#{$class-name-card}__content__title {
+
+            @extend %#{$class-name-card}-card-stack-on-hover__content__title--hover;
+
+        }
+
+      }
+
+
+
+    }
+
+  }
+
+
+
+  &.-text-box {
+
+    .#{$class-name-card}__content {
+
+      text-align: left;
+      padding-bottom: 1.5rem;
+
+      .#{$class-name-card}__content__title {
+
+        text-align: left;
+
+      }
+
+      .#{$class-name-card}__content__meta {
+
+        justify-content: flex-start;
+
+        span{
+
+          &:first-child{
+
+            padding-left: 0;
+
+          }
+
+
+
+        }
+
+      }
+
+    }
+
+    .#{$class-name-card}__content__button {
+
+      display: none;
+
+    }
+
+  }
+
+}
+
+%#{$class-name-card} {
+
+  display: flex;
+  flex-direction: column;
+  border-bottom: 4px solid get-color-css(primary);
+
+  &__thumbnail {
+
+    order: 1;
+    overflow: hidden;
+
+    img {
+
+      // width: $small-thumbnail-width;
+      @include equal-height-image;
+
+    }
+
+  }
+
+  &__content {
+
+    order: 2;
+    position: relative;
+
+    //width: calc(100% - (#{$small-thumbnail-width}));
+
+    text-align: center;
+    padding: 2rem 0 5rem 0;
+
+    &__title {
+
+      @extend %#{$class-name-heading};
+      @extend %-h5;
+      text-align: center;
+
+
+      a {
+
+        color: get-color-css(text);
+
+
+        &:hover {
+
+          color: get-color-css(primary);
+          text-decoration: none;
+
+        }
+
+      }
+
+    }
+
+    &__meta {
+
+      display: flex;
+      justify-content: center;
+
+      a {
+
+        color: get-color-css(dark-gray1);
+
+      }
+
+    }
+
+  }
+
+  &-card-stack {
+
+    &__content {
+
+      padding: $layout-box-single-padding;
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+
+      &__title {
+
+        color: get-color-css(invert);
+
+        a {
+          color: get-color-css(invert);
+          &:hover {
+            color: get-color-css(gray3);
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  &-card-stack-on-hover {
+
+    &__content {
+
+      @include strech-absolute-container();
+      visibility: hidden;
+      overflow: hidden;
+      height: 0;
+      z-index: 200;
+
+      &__title {
+
+        @include strech-absolute-container();
+        z-index: 200;
+
+        &--hover {
+
+          &:hover {
+
+            a {
+
+              &:hover {
+
+                color: get-color-css(invert);
+
+              }
+
+            }
+
+          }
+
+        }
+
+        a {
+
+          display: flex;
+          height: 100%;
+          align-items: center;
+          justify-content: center;
+          padding: 2rem;
+
+
+        }
+      }
+
+      &--hover {
+
+        top: 0;
+        height: auto;
+        visibility: visible;
+
+      }
+
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+

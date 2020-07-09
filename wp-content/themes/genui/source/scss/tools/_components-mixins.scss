@@ -1,0 +1,14 @@
+// breadcrumbs
+
+@mixin breadcrumbs(){
+
+  @include list-core();
+
+  li{
+
+    float: left;
+
+  }
+
+}
+

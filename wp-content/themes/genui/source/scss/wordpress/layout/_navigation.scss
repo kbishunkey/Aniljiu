@@ -1,0 +1,122 @@
+/**
+Wordpress Post navigation
+**/
+
+.post-navigation {
+
+
+  .nav-links {
+
+
+    @extend %#{$class-name-nav-next-post};
+
+    > div {
+
+      @extend %#{$class-name-nav-next-post}__nav;
+
+      a {
+
+        @extend %#{$class-name-nav-next-post}__nav__link;
+        display: block;
+
+        &:hover {
+
+          text-decoration: none;
+
+          .rocksite-a-button-icon {
+
+            @extend %button-hover;
+
+          }
+
+        }
+
+        .post-navigation__link__meta-nav {
+
+          @extend %#{$class-name-nav-next-post}__nav__link__meta-nav;
+
+
+          .rocksite-a-button-icon {
+
+
+
+          }
+
+        }
+
+        .post-navigation__link__title__text {
+
+          @extend %#{$class-name-nav-next-post}__nav__link__title__text;
+
+        }
+
+
+
+
+      }
+
+      &.nav-next {
+
+          a {
+
+            @extend %#{$class-name-nav-next-post}__nav__link--next-link;
+
+          }
+
+      }
+
+    }
+
+  }
+
+
+
+}
+
+/**
+Wordpress Post/page Divider Pagination
+**/
+
+.post-nav-links {
+
+
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+
+  .post-nav-links__label {
+
+    line-height: $pagination-btn-line-height;
+
+
+  }
+
+  a {
+
+    &.post-page-numbers {
+
+      @include button-label-core;
+      @include btn-specify(ghost);
+      @include pagination-item;
+
+    }
+
+  }
+
+
+  span {
+
+    &.post-page-numbers {
+
+      @include pagination-item;
+      @include current-page-item;
+
+    }
+
+
+
+  }
+
+}
+

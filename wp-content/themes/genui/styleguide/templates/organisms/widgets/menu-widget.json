@@ -1,0 +1,26 @@
+{
+  "title_widget": "Menu",
+  "menu_labels": [
+    {
+      "name": "Home Page",
+      "link": "#"
+    },
+    {
+      "name": "About Us",
+      "link": "#"
+    },
+    {
+      "name": "Services",
+      "link": "#",
+      "additional_class": "-has-children"
+    },
+    {
+      "name": "Our Offer",
+      "link": "#"
+    },
+    {
+      "name": "Contact Us",
+      "link": "#"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<div class="rocksite-o-tabs {{modifier_class}}">
+    <ul class="rocksite-o-tabs__navigation"
+        role="tablist">
+        {{#each tab_labels}}
+        <li class="rocksite-o-tabs__navigation__item {{active_modificator}}"
+            role="tab" tabindex="0" aria-controls="tab-0" aria-labelledby="ui-id-1" aria-selected="true"
+            aria-expanded="true"><span class="rocksite-o-tabs__navigation__item__wrapper"><a href="#tab-0"
+                                                                                      class="rocksite-o-tabs__navigation__item__wrapper__link"
+                                                                                      role="presentation" tabindex="-1"
+                                                                                      id="ui-id-1"><span
+                class="rocksite-o-tabs__navigation__item__wrapper__link__title">{{name}}</span></a></span></li>
+        {{/each}}
+    </ul>
+    {{#each tab_content}}
+    <div id="tab-0" class="rocksite-o-tabs__content ui-tabs-panel ui-widget-content ui-corner-bottom {{utility}}"
+         aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false" style="display: block;">{{content}}
+    </div>
+    {{/each}}
+
+
+</div>

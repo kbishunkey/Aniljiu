@@ -1,0 +1,75 @@
+/*
+Blockquotes
+
+blocquote in the content
+
+
+Markup: ../../../../styleguide/templates/atoms/content/blockquotes.html
+
+Style guide: Atoms.blockquotes
+
+*/
+$class-name-blockquote: rocksite-a-blockquote;
+
+blockquote,
+.#{$class-name-blockquote}{
+
+	@extend %#{$class-name-blockquote};
+
+}
+
+%#{$class-name-blockquote} {
+
+
+	@include type-setting(x-large);
+	font-style: italic;
+	overflow: hidden;
+	padding: 1.2rem 2.5rem;
+	margin: 0 0 2.5rem;
+	border-left: 0.5rem solid get-color-css(primary);
+
+
+	p {
+		color: inherit;
+		font-style: inherit;
+		@include type-setting(x-large);
+		margin-bottom: 0;
+	}
+
+
+
+	footer,
+	cite{
+
+
+		float: right;
+		clear: both;
+		display: block;
+		@include type-setting(small);
+		font-style: normal;
+		color: get-color-css(dark-gray1);
+		@include type-setting(medium);
+
+		a {
+
+			color: get-color-css(dark-gray2);
+
+			&:hover {
+
+				color: get-color-css(primary)
+
+			}
+
+		}
+
+		&:before {
+
+			display: inline;
+			content: '- '
+
+		}
+
+	}
+
+}
+
